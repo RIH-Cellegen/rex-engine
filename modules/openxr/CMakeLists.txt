@@ -62,15 +62,6 @@ if (REX_PLATFORM MATCHES "linuxbsd|android|macos|windows" AND NOT DISABLE_XR)
 				XR_USE_PLATFORM_EGL
 			)
 		endif()
-	endif()
-
-	# FIXME: Review what needs to be set for Android and macOS.
-	# FreeBSD uses non-standard getenv functions.
-
-	if (NOT ${CMAKE_SYSTEM_NAME} STREQUAL "FreeBSD")
-		target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
-			HAVE_SECURE_GETENV
-		)
 	elseif(REX_PLATFORM STREQUAL "windows")
 		target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
 			XR_OS_WINDOWS
@@ -80,6 +71,15 @@ if (REX_PLATFORM MATCHES "linuxbsd|android|macos|windows" AND NOT DISABLE_XR)
 	elseif(REX_PLATFORM STREQUAL "macos")
 		target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
 			XR_OS_APPLE
+		)
+	endif()
+
+	# FIXME: Review what needs to be set for Android and macOS.
+	# FreeBSD uses non-standard getenv functions.
+
+	if (NOT ${CMAKE_SYSTEM_NAME} STREQUAL "FreeBSD")
+		target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+			HAVE_SECURE_GETENV
 		)
 	endif()
 	if (BUILTIN_OPENXR)
