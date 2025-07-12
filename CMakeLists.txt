@@ -15,6 +15,8 @@ set(CMAKE_C_EXTENSIONS ON)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
+# export compile commands database
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 if (MSVC)
 	add_compile_options(/permissive- /Zc:__cplusplus)
