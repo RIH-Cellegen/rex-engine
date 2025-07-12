@@ -21,7 +21,7 @@ if(REX_PLATFORM STREQUAL "windows")
 	option(INCREMENTAL_LINK "Use MSVC incremental linking. May increase or decrease build times." OFF)
 	option(SILENCE_MSVC "Silence MSVC's cl/link stdout bloat, redirecting any errors to stderr." ON)
 
-	if (MSYS)
+	if (MSVC)
 		set(WINDOWS_CRASH_HANDLER ${CMAKE_CURRENT_SOURCE_DIR}/crash_handler_windows_seh.cpp)
 	else()
 		set(WINDOWS_CRASH_HANDLER ${CMAKE_CURRENT_SOURCE_DIR}/crash_handler_windows_signal.cpp)
