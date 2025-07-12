@@ -7,18 +7,19 @@ project(rex_engine
         LANGUAGES C CXX
 )
 
+# C Standard
+set(CMAKE_C_STANDARD 17)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+set(CMAKE_C_EXTENSIONS ON)
 # C++ Standard
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+# export compile commands database
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 if (MSVC)
-	add_compile_options(/std:c17 /std:c++17 /permissive- /Zc:__cplusplus)
-else()
-	add_compile_options(
-		"$<$<COMPILE_LANGUAGE:C>:-std=gnu17>"
-		"$<$<COMPILE_LANGUAGE:CXX>:-std=gnu++17>"
-	)
+	add_compile_options(/permissive- /Zc:__cplusplus)
 endif()
 
 include(methods.cmake)
