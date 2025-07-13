@@ -60,7 +60,9 @@ void register_exporter_types() {{
 
 def make_doc_header(args):
     target = args.pop(0)
-    buffer = b"".join([methods.get_buffer(src) for src in map(str, args)])
+    source = args.pop(0)
+    with open(source, "r") as file_list:
+        buffer = b"".join([methods.get_buffer(src.strip()) for src in map(str, file_list)])
     decomp_size = len(buffer)
     buffer = methods.compress_buffer(buffer)
 
@@ -78,7 +80,9 @@ inline constexpr const unsigned char _doc_data_compressed[] = {{
 def make_translations_header(args):
     target = args.pop(0)
     category = os.path.basename(str(target)).split("_")[0]
-    sorted_paths = sorted([src for src in args], key=lambda path: os.path.splitext(os.path.basename(path))[0])
+    source = args.pop(0)
+    with open(source, "r") as file_list:
+        sorted_paths = sorted([src.strip() for src in file_list], key=lambda path: os.path.splitext(os.path.basename(path))[0])
 
     xl_names = []
     msgfmt = shutil.which("msgfmt")
@@ -155,12 +159,12 @@ if __name__ == "__main__":
     if args[0] == "doc_data_class_path_builder":
         args.pop(0)
         doc_data_class_path_builder(args)
-    if args[0] == "register_exporters_builder":
+    elif args[0] == "register_exporters_builder":
         args.pop(0)
         register_exporters_builder(args)
-    if args[0] == "make_doc_header":
+    elif args[0] == "make_doc_header":
         args.pop(0)
         make_doc_header(args)
-    if args[0] == "make_translations_header":
+    elif args[0] == "make_translations_header":
         args.pop(0)
         make_translations_header(args)

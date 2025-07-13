@@ -13,18 +13,20 @@ def make_editor_icons_action(args):
     icons_med = []
     icons_big = []
 
-    for idx, svg in enumerate(args):
-        path = str(svg)
-        with open(path, encoding="utf-8", newline="\n") as file:
-            icons_raw.append(methods.to_raw_cstring(file.read()))
+    source = args.pop(0)
+    with open(source, "r") as icon_file_list:
+        for idx, svg in enumerate(icon_file_list):
+            path = str(svg).strip()
+            with open(path, encoding="utf-8", newline="\n") as file:
+                icons_raw.append(methods.to_raw_cstring(file.read()))
 
-        name = os.path.splitext(os.path.basename(path))[0]
-        icons_names.append(f'"{name}"')
+            name = os.path.splitext(os.path.basename(path))[0]
+            icons_names.append(f'"{name}"')
 
-        if name.endswith("MediumThumb"):
-            icons_med.append(str(idx))
-        elif name.endswith(("BigThumb", "GodotFile")):
-            icons_big.append(str(idx))
+            if name.endswith("MediumThumb"):
+                icons_med.append(str(idx))
+            elif name.endswith(("BigThumb", "GodotFile")):
+                icons_big.append(str(idx))
 
     icons_names_str = ",\n\t".join(icons_names)
     icons_raw_str = ",\n\t".join(icons_raw)

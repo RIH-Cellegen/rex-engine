@@ -149,4 +149,6 @@ if (REX_PLATFORM MATCHES "linuxbsd|android|macos|windows" AND NOT DISABLE_XR)
 			${OPENXR_EDITOR_SOURCES}
 		)
 	endif()
+
+	add_dependencies(rex_module_${MODULE_NAME} rex_servers)
 endif()

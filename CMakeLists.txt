@@ -308,11 +308,6 @@ if (REX_PLATFORM STREQUAL "windows")
 	target_include_directories(rex_engine PUBLIC
 		${CMAKE_SOURCE_DIR}/platform/windows/
 	)
-	target_compile_definitions(rex_engine PUBLIC
-		IOS_ENABLED
-		UNIX_ENABLED
-		COREAUDIO_ENABLED
-	)
 	if (VULKAN)
 		target_compile_definitions(rex_engine PUBLIC
 			VULKAN_ENABLED
@@ -456,12 +451,16 @@ if (EDITOR_BUILD)
 		file(GLOB MODULE_DOCS ${DIR}/*.xml)
 		list(APPEND DOCS ${MODULE_DOCS})
 	endforeach()
-
+	set(DOCS_LIST_FILE ${CMAKE_BINARY_DIR}/docs_list.txt)
+	file(GENERATE
+		OUTPUT "${DOCS_LIST_FILE}"
+		CONTENT "$<JOIN:${DOCS},\n>"
+	)
 	add_custom_command(
 		OUTPUT ${CMAKE_SOURCE_DIR}/editor/doc_data_compressed.gen.h
 		COMMAND ${_Python3_EXECUTABLE}
 		ARGS ${CMAKE_SOURCE_DIR}/generators/rex_editor_builders.py make_doc_header
-		${CMAKE_SOURCE_DIR}/editor/doc_data_compressed.gen.h ${DOCS}
+		${CMAKE_SOURCE_DIR}/editor/doc_data_compressed.gen.h ${DOCS_LIST_FILE}
 		WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 		COMMENT "Generating Doc Data Compressed Header..."
 	)
@@ -469,44 +468,67 @@ if (EDITOR_BUILD)
 	add_dependencies(rex_editor doc_data_compressed)
 
 	file(GLOB EDITOR_TRANSLATIONS ${CMAKE_SOURCE_DIR}/editor/translations/editor/*)
+	set(EDITOR_TRANSLATIONS_LIST_FILE ${CMAKE_BINARY_DIR}/editor_translations_list.txt)
+	file(GENERATE
+		OUTPUT "${EDITOR_TRANSLATIONS_LIST_FILE}"
+		CONTENT "$<JOIN:${EDITOR_TRANSLATIONS},\n>"
+	)
 	add_custom_command(
 		OUTPUT ${CMAKE_SOURCE_DIR}/editor/editor_translations.gen.h
 		COMMAND ${_Python3_EXECUTABLE}
 		ARGS ${CMAKE_SOURCE_DIR}/generators/rex_editor_builders.py make_translations_header
-		${CMAKE_SOURCE_DIR}/editor/editor_translations.gen.h ${EDITOR_TRANSLATIONS}
+		${CMAKE_SOURCE_DIR}/editor/editor_translations.gen.h ${EDITOR_TRANSLATIONS_LIST_FILE}
 		WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 		COMMENT "Generating Editor Translations Header..."
 	)
 	add_custom_target(editor_translations DEPENDS ${CMAKE_SOURCE_DIR}/editor/editor_translations.gen.h)
 	add_dependencies(rex_editor editor_translations)
+
 	file(GLOB PROPERTIES_TRANSLATIONS ${CMAKE_SOURCE_DIR}/editor/translations/properties/*)
+	set(PROPERTIES_TRANSLATIONS_LIST_FILE ${CMAKE_BINARY_DIR}/properties_translations_list.txt)
+	file(GENERATE
+		OUTPUT "${PROPERTIES_TRANSLATIONS_LIST_FILE}"
+		CONTENT "$<JOIN:${PROPERTIES_TRANSLATIONS},\n>"
+	)
 	add_custom_command(
 		OUTPUT ${CMAKE_SOURCE_DIR}/editor/property_translations.gen.h
 		COMMAND ${_Python3_EXECUTABLE}
 		ARGS ${CMAKE_SOURCE_DIR}/generators/rex_editor_builders.py make_translations_header
-		${CMAKE_SOURCE_DIR}/editor/property_translations.gen.h ${PROPERTIES_TRANSLATIONS}
+		${CMAKE_SOURCE_DIR}/editor/property_translations.gen.h ${PROPERTIES_TRANSLATIONS_LIST_FILE}
 		WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 		COMMENT "Generating Properties Translations Header..."
 	)
 	add_custom_target(properties_translations DEPENDS ${CMAKE_SOURCE_DIR}/editor/property_translations.gen.h)
 	add_dependencies(rex_editor properties_translations)
+
 	file(GLOB DOC_TRANSLATIONS ${CMAKE_SOURCE_DIR}/doc/translations/*)
+	set(DOC_TRANSLATIONS_LIST_FILE ${CMAKE_BINARY_DIR}/doc_translations_list.txt)
+	file(GENERATE
+		OUTPUT "${DOC_TRANSLATIONS_LIST_FILE}"
+		CONTENT "$<JOIN:${DOC_TRANSLATIONS},\n>"
+	)
 	add_custom_command(
 		OUTPUT ${CMAKE_SOURCE_DIR}/editor/doc_translations.gen.h
 		COMMAND ${_Python3_EXECUTABLE}
 		ARGS ${CMAKE_SOURCE_DIR}/generators/rex_editor_builders.py make_translations_header
-		${CMAKE_SOURCE_DIR}/editor/doc_translations.gen.h ${DOC_TRANSLATIONS}
+		${CMAKE_SOURCE_DIR}/editor/doc_translations.gen.h ${DOC_TRANSLATIONS_LIST_FILE}
 		WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 		COMMENT "Generating Doc Translations Header..."
 	)
 	add_custom_target(doc_translations DEPENDS ${CMAKE_SOURCE_DIR}/editor/doc_translations.gen.h)
 	add_dependencies(rex_editor doc_translations)
+
 	file(GLOB EXTRACTABLE_TRANSLATIONS ${CMAKE_SOURCE_DIR}/editor/translations/extractable/*)
+	set(EXTRACTABLE_TRANSLATIONS_LIST_FILE ${CMAKE_BINARY_DIR}/extractable_translations_list.txt)
+	file(GENERATE
+		OUTPUT "${EXTRACTABLE_TRANSLATIONS_LIST_FILE}"
+		CONTENT "$<JOIN:${EXTRACTABLE_TRANSLATIONS},\n>"
+	)
 	add_custom_command(
 		OUTPUT ${CMAKE_SOURCE_DIR}/editor/extractable_translations.gen.h
 		COMMAND ${_Python3_EXECUTABLE}
 		ARGS ${CMAKE_SOURCE_DIR}/generators/rex_editor_builders.py make_translations_header
-		${CMAKE_SOURCE_DIR}/editor/extractable_translations.gen.h ${EXTRACTABLE_TRANSLATIONS}
+		${CMAKE_SOURCE_DIR}/editor/extractable_translations.gen.h ${EXTRACTABLE_TRANSLATIONS_LIST_FILE}
 		WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 		COMMENT "Generating Extractable Translations Header..."
 	)
@@ -519,11 +541,16 @@ if (EDITOR_BUILD)
 		file(GLOB MODULE_ICONS ${MODULE_ICON_PATH}/*.svg)
 		list(APPEND EDITOR_ICONS ${MODULE_ICONS})
 	endforeach()
+	set(EDITOR_ICONS_LIST_FILE ${CMAKE_BINARY_DIR}/editor_icons_list.txt)
+	file(GENERATE
+		OUTPUT "${EDITOR_ICONS_LIST_FILE}"
+		CONTENT "$<JOIN:${EDITOR_ICONS},\n>"
+	)
 	add_custom_command(
 		OUTPUT ${CMAKE_SOURCE_DIR}/editor/themes/editor_icons.gen.h
 		COMMAND ${_Python3_EXECUTABLE}
 		ARGS ${CMAKE_SOURCE_DIR}/generators/rex_editor_icons_builders.py make_editor_icons_action
-		${CMAKE_SOURCE_DIR}/editor/themes/editor_icons.gen.h ${EDITOR_ICONS}
+		${CMAKE_SOURCE_DIR}/editor/themes/editor_icons.gen.h ${EDITOR_ICONS_LIST_FILE}
 		WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 		COMMENT "Generating Editor Icons Header..."
 	)
