@@ -20,7 +20,7 @@ if(REX_PLATFORM STREQUAL "windows")
 	option(DEBUG_CRT "Compile with MSVC's debug CRT (/MDd)" OFF)
 	option(INCREMENTAL_LINK "Use MSVC incremental linking. May increase or decrease build times." OFF)
 	option(SILENCE_MSVC "Silence MSVC's cl/link stdout bloat, redirecting any errors to stderr." ON)
-
+	set(ANGLE_LIBS "" CACHE STRING "Path to the ANGLE static libraries")
 	if (MSVC)
 		set(WINDOWS_CRASH_HANDLER ${CMAKE_CURRENT_SOURCE_DIR}/crash_handler_windows_seh.cpp)
 	else()
@@ -94,8 +94,10 @@ if(REX_PLATFORM STREQUAL "windows")
 			)
 		endif()
 
+		set(PREBUILT_LIB_EXTRA_SUFFIX "")
 		if (USE_ASAN)
 			set(CMAKE_EXECUTABLE_SUFFIX ".san${CMAKE_EXECUTABLE_SUFFIX}")
+			set(PREBUILT_LIB_EXTRA_SUFFIX ".san")
 			target_compile_options(rex_engine PUBLIC /fsanitize=address)
 			target_compile_definitions(rex_engine PUBLIC SANITIZERS_ENABLED)
 			target_link_options(rex_engine PUBLIC /INFERASANLIBS)
@@ -157,6 +159,19 @@ if(REX_PLATFORM STREQUAL "windows")
 			target_compile_definitions(rex_engine PUBLIC
 				GLES3_ENABLED
 			)
+			if (NOT ANGLE_LIBS STREQUAL "")
+				target_compile_definitions(rex_engine PUBLIC
+					EGL_STATIC
+				)
+				set(APPEND SYSTEM_LIBRARIES
+					${ANGLE_LIBS}libANGLE.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX}
+					${ANGLE_LIBS}libEGL.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX}
+					${ANGLE_LIBS}libGLES.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX}
+					dxgi
+					d3d9
+					d3d11
+				)
+			endif()
 			target_include_directories(rex_engine PUBLIC
 				${CMAKE_SOURCE_DIR}/thirdparty/angle/include/
 			)
