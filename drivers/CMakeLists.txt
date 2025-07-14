@@ -48,5 +48,3 @@ if (REX_PLATFORM STREQUAL "windows")
 		add_subdirectory(backtrace)
 	endif()
 endif()
-
-#target_link_libraries(rex_engine PUBLIC rex_drivers)

@@ -157,7 +157,9 @@ if(REX_PLATFORM STREQUAL "windows")
 			target_compile_definitions(rex_engine PUBLIC
 				GLES3_ENABLED
 			)
-			# TODO Angle
+			target_include_directories(rex_engine PUBLIC
+				${CMAKE_SOURCE_DIR}/thirdparty/angle/include/
+			)
 		endif()
 
 
