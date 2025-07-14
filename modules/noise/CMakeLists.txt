@@ -17,6 +17,8 @@ list(APPEND ICON_PATHS ${CMAKE_CURRENT_SOURCE_DIR}/icons)
 set(ICON_PATHS ${ICON_PATHS} PARENT_SCOPE)
 
 add_library(rex_module_${MODULE_NAME} STATIC)
+clone_library(rex_modules rex_module_${MODULE_NAME})
+disable_warnings_for_target(rex_module_${MODULE_NAME})
 set(MODULE_IS_ENABLED ON PARENT_SCOPE)
 
 target_include_directories(rex_module_${MODULE_NAME} PRIVATE

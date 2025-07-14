@@ -12,6 +12,8 @@ endforeach()
 set(DOC_CLASS_PATHS ${DOC_CLASS_PATHS} PARENT_SCOPE)
 
 add_library(rex_module_${MODULE_NAME} STATIC)
+clone_library(rex_modules rex_module_${MODULE_NAME})
+disable_warnings_for_target(rex_module_${MODULE_NAME})
 set(MODULE_IS_ENABLED ON PARENT_SCOPE)
 
 option(GRAPHITE "Enable SIL Graphite smart fonts support" ON)
@@ -101,6 +103,7 @@ if (BUILTIN_HARFBUZZ)
         ${THIRDPARTY_HARFBUZZ_DIR}src/hb-unicode.cc
         ${THIRDPARTY_HARFBUZZ_DIR}src/OT/Var/VARC/VARC.cc
 	)
+	clone_library(rex_module_${MODULE_NAME} harfbuzz_builtin)
 	if ("freetype" IN_LIST ENABLED_MODULES)
 		target_sources(harfbuzz_builtin PRIVATE
 			${THIRDPARTY_HARFBUZZ_DIR}src/hb-ft.cc
@@ -193,6 +196,7 @@ if (BUILTIN_GRAPHITE)
 		${THIRDPARTY_GRAPHITE_DIR}src/FileFace.cpp
 		${THIRDPARTY_GRAPHITE_DIR}src/json.cpp
 	)
+	clone_library(rex_module_${MODULE_NAME} graphite_builtin)
 	if (MSVC)
 		target_sources(graphite_builtin PRIVATE
 			${THIRDPARTY_GRAPHITE_DIR}src/call_machine.cpp
@@ -422,6 +426,7 @@ if (BUILTIN_ICU4C)
 		${THIRDPARTY_ICU4C_DIR}i18n/uspoof.cpp
 		${THIRDPARTY_ICU4C_DIR}i18n/uspoof_impl.cpp
 	)
+	clone_library(rex_module_${MODULE_NAME} icu_builtin)
 	if (EDITOR_BUILD)
 		target_sources(icu_builtin PRIVATE
 			${CMAKE_CURRENT_SOURCE_DIR}/icu_data/icudata_stub.cpp

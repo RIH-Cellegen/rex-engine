@@ -13,6 +13,8 @@ set(DOC_CLASS_PATHS ${DOC_CLASS_PATHS} PARENT_SCOPE)
 
 if (NOT ARCH MATCHES "^rv.*")
 	add_library(rex_module_${MODULE_NAME} STATIC)
+	clone_library(rex_modules rex_module_${MODULE_NAME})
+	disable_warnings_for_target(rex_module_${MODULE_NAME})
 	set(MODULE_IS_ENABLED ON PARENT_SCOPE)
 
 	add_dependencies(rex_module_${MODULE_NAME}

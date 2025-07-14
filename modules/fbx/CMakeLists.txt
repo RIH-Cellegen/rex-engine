@@ -16,6 +16,8 @@ set(DOC_CLASS_PATHS ${DOC_CLASS_PATHS} PARENT_SCOPE)
 
 if (NOT DISABLE_3D)
 	add_library(rex_module_${MODULE_NAME} STATIC)
+	clone_library(rex_modules rex_module_${MODULE_NAME})
+	disable_warnings_for_target(rex_module_${MODULE_NAME})
 	set(MODULE_IS_ENABLED ON PARENT_SCOPE)
 
 	target_link_libraries(rex_module_${MODULE_NAME} PUBLIC rex_module_gltf)

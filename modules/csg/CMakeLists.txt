@@ -23,6 +23,8 @@ set(ICON_PATHS ${ICON_PATHS} PARENT_SCOPE)
 
 if (NOT DISABLE_3D)
 	add_library(rex_module_${MODULE_NAME} STATIC)
+	clone_library(rex_modules rex_module_${MODULE_NAME})
+	disable_warnings_for_target(rex_module_${MODULE_NAME})
 	set(MODULE_IS_ENABLED ON PARENT_SCOPE)
 
 	target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE

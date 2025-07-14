@@ -1,5 +1,7 @@
 if (NOT DISABLE_PHYSICS_3D AND NOT ARCH STREQUAL "ppc32")
 	add_library(rex_module_${MODULE_NAME} STATIC)
+	clone_library(rex_modules rex_module_${MODULE_NAME})
+	disable_warnings_for_target(rex_module_${MODULE_NAME})
 	set(MODULE_IS_ENABLED ON PARENT_SCOPE)
 	disable_warnings_for_target(rex_module_${MODULE_NAME})
 

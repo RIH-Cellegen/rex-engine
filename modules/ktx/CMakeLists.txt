@@ -1,11 +1,10 @@
 add_library(rex_module_${MODULE_NAME} STATIC)
-set(MODULE_IS_ENABLED ON PARENT_SCOPE)
+clone_library(rex_modules rex_module_${MODULE_NAME})
 disable_warnings_for_target(rex_module_${MODULE_NAME})
-
+set(MODULE_IS_ENABLED ON PARENT_SCOPE)
 add_dependencies(rex_module_${MODULE_NAME}
 	rex_module_basis_universal
 )
-clone_library(rex_modules rex_module_${MODULE_NAME})
 set(THIRDPARTY_KTX_DIR ${CMAKE_SOURCE_DIR}/thirdparty/libktx/)
 add_library(libktx OBJECT
     ${THIRDPARTY_KTX_DIR}lib/basis_transcode.cpp

@@ -1,5 +1,7 @@
 if (ARCH MATCHES "x86_64|arm64|wasm32" OR (ARCH STREQUAL "x86_32" AND REX_PLATFORM STREQUAL "windows"))
 	add_library(rex_module_${MODULE_NAME} STATIC)
+	clone_library(rex_modules rex_module_${MODULE_NAME})
+	disable_warnings_for_target(rex_module_${MODULE_NAME})
 	set(MODULE_IS_ENABLED ON PARENT_SCOPE)
 
 	if (BUILTIN_EMBREE)
