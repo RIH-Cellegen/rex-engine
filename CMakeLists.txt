@@ -438,6 +438,7 @@ if (EDITOR_BUILD)
 	)
 	add_custom_target(doc_data_class_path DEPENDS ${CMAKE_SOURCE_DIR}/editor/doc_data_class_path.gen.h)
 	add_dependencies(rex_editor doc_data_class_path)
+	add_dependencies(rex_main doc_data_class_path)
 
 	file(GLOB DOCS ${CMAKE_SOURCE_DIR}/doc/classes/*.xml)
 	set(MODULE_DIRS)

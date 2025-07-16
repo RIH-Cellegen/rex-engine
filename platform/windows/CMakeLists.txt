@@ -137,6 +137,24 @@ if(REX_PLATFORM STREQUAL "windows")
 			)
 		endif()
 
+		if (WINDOWS_SUBSYSTEM STREQUAL "gui")
+			add_executable(rex_console
+				${CMAKE_CURRENT_SOURCE_DIR}/godot_res_wrap.rc
+				${CMAKE_CURRENT_SOURCE_DIR}/console_wrapper_windows.cpp
+			)
+			clone_library(rex_engine rex_console)
+			disable_warnings_for_target(rex_console)
+
+			target_link_options(rex_console PRIVATE
+				/SUBSYSTEM:CONSOLE
+				version.lib
+			)
+			set_target_properties(rex_console PROPERTIES
+				OUTPUT_NAME "console.${OUTPUT_NAME}"
+				RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
+			)
+		endif()
+
 		if (ACCESSKIT)
 			# TODO
 		endif()

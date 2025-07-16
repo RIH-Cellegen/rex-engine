@@ -22,5 +22,6 @@ if (EDITOR_BUILD)
 	)
 
 	add_dependencies(rex_servers process_betsy_shaders)
+	add_dependencies(rex_module_${MODULE_NAME} process_betsy_shaders)
 
 endif()
