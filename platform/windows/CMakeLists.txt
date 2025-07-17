@@ -21,11 +21,17 @@ if(REX_PLATFORM STREQUAL "windows")
 	option(INCREMENTAL_LINK "Use MSVC incremental linking. May increase or decrease build times." OFF)
 	option(SILENCE_MSVC "Silence MSVC's cl/link stdout bloat, redirecting any errors to stderr." ON)
 	set(ANGLE_LIBS "" CACHE STRING "Path to the ANGLE static libraries")
+	option(USE_PIX "Enable PIX profiling support" OFF)
+	set(PIX_PATH "${CMAKE_SOURCE_DIR}/thirdparty/pix" CACHE PATH "Path to PIX SDK")
+	set(MESA_LIBS "${CMAKE_SOURCE_DIR}/thirdparty/mesa" CACHE PATH "Path to Mesa libraries")
 	if (MSVC)
 		set(WINDOWS_CRASH_HANDLER ${CMAKE_CURRENT_SOURCE_DIR}/crash_handler_windows_seh.cpp)
 	else()
 		set(WINDOWS_CRASH_HANDLER ${CMAKE_CURRENT_SOURCE_DIR}/crash_handler_windows_signal.cpp)
 	endif()
+
+	set(STACK_SIZE 8388608)
+	set(STACK_SIZE_SANITIZERS 31457280)
 
 	add_executable(rex_engine
 		${CMAKE_CURRENT_SOURCE_DIR}/godot_windows.cpp
@@ -46,6 +52,74 @@ if(REX_PLATFORM STREQUAL "windows")
 		${WINDOWS_CRASH_HANDLER}
 	)
 	if (MSVC)
+		set(DISABLED_WARNINGS
+			/wd4100
+			/wd4127
+			/wd4201
+			/wd4244
+			/wd4245
+			/wd4267
+			/wd4305
+			/wd4324
+			/wd4514
+			/wd4714
+			/wd4820
+		)
+		if (WARNINGS STREQUAL "extra")
+			target_compile_options(rex_engine PUBLIC
+				/W4
+				${DISABLED_WARNINGS}
+			)
+		elseif(WARINGS STREQUAL "all")
+			target_compile_options(rex_engine PUBLIC
+				/W3
+				/w34458
+				${DISABLED_WARNINGS}
+			)
+		elseif(WARINGS STREQUAL "moderate")
+			target_compile_options(rex_engine PUBLIC
+				/W2
+				${DISABLED_WARNINGS}
+			)
+		else()
+			target_compile_options(rex_engine PUBLIC
+				/w
+				/wd4267
+			)
+		endif()
+
+		if (BUILD_TARGET STREQUAL "template_release")
+			target_link_options(rex_engine PUBLIC /ENTRY:mainCRTStartup)
+		endif()
+
+		if (WINDOWS_SUBSYSTEM STREQUAL "gui")
+			target_link_options(rex_engine PRIVATE /SUBSYSTEM:WINDOWS)
+		else()
+			target_link_options(rex_engine PRIVATE /SUBSYSTEM:CONSOLE)
+			target_compile_definitions(rex_engine PUBLIC WINDOWS_SUBSYSTEM_CONSOLE)
+		endif()
+
+		if (USE_LLVM)
+			find_program(CMAKE_C_COMPILER clang-cl PATHS ENV PATH)
+			find_program(CMAKE_CXX_COMPILER clang-cl PATHS ENV PATH)
+			find_program(CMAKE_LINKER lld-link PATHS ENV PATH)
+			find_program(CMAKE_AR llvm-lib PATHS ENV PATH)
+			if(NOT CMAKE_C_COMPILER OR NOT CMAKE_CXX_COMPILER OR NOT CMAKE_LINKER OR NOT CMAKE_AR)
+				message(FATAL_ERROR "LLVM tools (clang-cl, lld-link, llvm-lib) not found")
+			endif()
+			set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -D -I")
+			set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D -I")
+			target_compile_definitions(rex_engine PUBLIC
+				R128_STDC_ONLY
+				alloca=_alloca
+			)
+			set(CMAKE_EXECUTABLE_SUFFIX ".llvm${CMAKE_EXECUTABLE_SUFFIX}")
+		endif()
+
+		if (SILENCE_MSVC)
+			# TODO
+		endif()
+
 		if (DEBUG_CRT)
 			target_compile_options(rex_engine PUBLIC /MDd)
 		else()
@@ -138,6 +212,12 @@ if(REX_PLATFORM STREQUAL "windows")
 			)
 		endif()
 
+		if (USE_LLVM)
+			list(APPEND SYSTEM_LIBRARIES
+				clang_rt.builtins-${ARCH}
+			)
+		endif()
+
 		if (WINDOWS_SUBSYSTEM STREQUAL "gui")
 			add_executable(rex_console
 				${CMAKE_CURRENT_SOURCE_DIR}/console_wrapper_windows.cpp
@@ -169,7 +249,35 @@ if(REX_PLATFORM STREQUAL "windows")
 		endif()
 
 		if (ACCESSKIT)
-			# TODO
+			if (NOT ACCESSKIT_SDK_PATH STREQUAL "")
+				target_include_directories(rex_engine PRIVATE "${ACCESSKIT_SDK_PATH}/include")
+				if(ARCH STREQUAL "arm64")
+					set(ACCESSKIT_LIB_PATH "${ACCESSKIT_SDK_PATH}/lib/windows/arm64/msvc/static")
+				elseif(ARCH STREQUAL "x86_64")
+					set(ACCESSKIT_LIB_PATH "${ACCESSKIT_SDK_PATH}/lib/windows/x86_64/msvc/static")
+				elseif(ARCH STREQUAL "x86_32")
+					set(ACCESSKIT_LIB_PATH "${ACCESSKIT_SDK_PATH}/lib/windows/x86/msvc/static")
+				else()
+					message(FATAL_ERROR "Unsupported architecture for AccessKit: ${ARCH}")
+				endif()
+				find_library(ACCESSKIT_LIB accesskit PATHS "${ACCESSKIT_LIB_PATH}" NO_DEFAULT_PATH)
+				if(NOT ACCESSKIT_LIB)
+					message(FATAL_ERROR "accesskit library not found in ${ACCESSKIT_LIB_PATH}")
+				endif()
+				list(APPEND SYSTEM_LIBRARIES
+					${ACCESSKIT_LIB}
+					uiautomationcore
+					runtimeobject
+					propsys
+					oleaut32
+					user32
+					userenv
+					ntdll
+				)
+			else()
+				target_compile_definitions(rex_engine PUBLIC ACCESSKIT_DYNAMIC)
+			endif()
+			target_compile_definitions(rex_engine PUBLIC ACCESSKIT_ENABLED)
 		endif()
 
 		if (VULKAN)
@@ -183,7 +291,38 @@ if(REX_PLATFORM STREQUAL "windows")
 		endif()
 
 		if (D3D12)
-			# TODO
+			list(APPEND SYSTEM_LIBRARIES dxgi version)
+			target_compile_definitions(rex_engine PUBLIC
+				D3D12_ENABLED
+				RD_ENABLED
+			)
+			if(USE_PIX)
+				if(ARCH MATCHES "x86_64|arm64" AND EXISTS "${PIX_PATH}")
+					set(PIX_ARCH_SUBDIR "arm64" MATCHES "${ARCH}" "arm64" "x64")
+					set(PIX_LIB_PATH "${PIX_PATH}/bin/${PIX_ARCH_SUBDIR}")
+					find_library(PIX_LIB WinPixEventRuntime PATHS "${PIX_LIB_PATH}" NO_DEFAULT_PATH)
+					if(NOT PIX_LIB)
+						message(WARNING "WinPixEventRuntime not found in ${PIX_LIB_PATH}; disabling PIX")
+						set(USE_PIX OFF CACHE BOOL "Enable PIX profiling support" FORCE)
+					else()
+						list(APPEND SYSTEM_LIBRARIES ${PIX_LIB})
+					endif()
+				else()
+					message(WARNING "PIX not supported for arch ${ARCH} or PIX_PATH ${PIX_PATH} does not exist; disabling PIX")
+					set(USE_PIX OFF CACHE BOOL "Enable PIX profiling support" FORCE)
+				endif()
+			endif()
+			if(EXISTS "${MESA_LIBS}-${ARCH}-msvc/bin")
+				set(MESA_LIB_PATH "${MESA_LIBS}-${ARCH}-msvc/bin")
+			else()
+				set(MESA_LIB_PATH "${MESA_LIBS}/bin")
+			endif()
+			find_library(NIR_LIB libNIR.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX}
+				PATHS "${MESA_LIB_PATH}" NO_DEFAULT_PATH)
+			if(NOT NIR_LIB)
+				message(FATAL_ERROR "libNIR.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX} not found in ${MESA_LIB_PATH}")
+			endif()
+			list(APPEND	SYSTEM_LIBRARIES ${NIR_LIB})
 		endif()
 
 		if (OPENGL3)
@@ -208,7 +347,32 @@ if(REX_PLATFORM STREQUAL "windows")
 			)
 		endif()
 
+		if (LTO STREQUAL "auto")  # No LTO by default for MSVC, doesn't help.
+			set(LTO "none")
+		endif()
 
+		if (NOT LTO STREQUAL "none")
+			if (LTO STREQUAL "thin")
+				if (NOT USE_LLVM)
+					MESSAGE(FATAL_ERROR "ThinLTO is only compatible with LLVM, use `use_llvm=yes` or `lto=full`.")
+				endif()
+				target_compile_options(rex_engine PUBLIC -flto=thin)
+			elseif(USE_LLVM)
+				target_compile_options(rex_engine PUBLIC -flto)
+			else()
+				target_compile_options(rex_engine PUBLIC /GL)
+			endif()
+			if (PROGRESS)
+				target_link_options(rex_engine PUBLIC /LTCG:STATUS)
+			else()
+				target_link_options(rex_engine PUBLIC /LTCG)
+			endif()
+		endif()
+		if (USE_ASAN)
+			target_link_options(rex_engine PUBLIC /STACK:${STACK_SIZE_SANITIZERS})
+		else()
+			target_link_options(rex_engine PUBLIC /STACK:${STACK_SIZE})
+		endif()
 	endif()
 
 	set(SYSTEM_LIBRARIES ${SYSTEM_LIBRARIES} PARENT_SCOPE)

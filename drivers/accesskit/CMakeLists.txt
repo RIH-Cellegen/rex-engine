@@ -19,6 +19,6 @@ if (ACCESSKIT_SDK_PATH STREQUAL "")
 		)
 	endif()
 	target_include_directories(rex_engine PUBLIC
-		{CMAKE_SOURCE_DIR}/thirdparty/accesskit/include/
+		${CMAKE_SOURCE_DIR}/thirdparty/accesskit/include/
 	)
 endif()

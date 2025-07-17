@@ -29,7 +29,11 @@ option(D3D12 "Enable the Direct3D 12 rendering driver on supported platforms" OF
 option(METAL "Enable the Metal rendering driver on supported platforms (Apple arm64 only)" OFF)
 option(USE_VOLK "Use the volk library to load the Vulkan loader dynamically" ON)
 option(DISABLE_EXCEPTIONS "Force disabling exception handling code" ON)
-
+# TODO Custom Modules
+option(ACCESSKIT "Use AccessKit C SDK" ON)
+set(ACCESSKIT_SDK_PATH "" CACHE STRING "Path to the AccessKit C SDK")
+set(PROGRESS "Show a progress indicator during compilation" ON)
+set(WARNINGS "all" CACHE STRING "Level of compilation warnings: extra, all, moderate, no")
 # Advanced options
 option(REX_TESTS "Build the unit tests" OFF)
 

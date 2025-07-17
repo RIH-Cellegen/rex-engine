@@ -567,6 +567,9 @@ target_link_libraries(rex_engine PUBLIC
 if (BUILD_TARGET STREQUAL "editor")
 	target_link_libraries(rex_engine PUBLIC rex_editor)
 endif()
+
+list(REMOVE_DUPLICATES SYSTEM_LIBRARIES)
+
 target_link_libraries(rex_engine PUBLIC
 	rex_scene
 	rex_servers

@@ -44,6 +44,30 @@ if(REX_PLATFORM STREQUAL "linuxbsd")
 		${CMAKE_CURRENT_SOURCE_DIR}/freedesktop_at_spi_monitor.cpp
 	)
 
+	if (REX_DEV_BUILD)
+		target_link_options(rex_engine PUBLIC -rdynamic)
+	endif()
+
+	# TODO: Cross compile
+
+	if (ARCH STREQUAL "rv64")
+		target_compile_options(rex_engine PUBLIC -march=rv64gc)
+	endif()
+
+	if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+		set(USE_LLVM ON CACHE BOOL "Use LLVM tools (clang-cl, lld-link, llvm-lib) for Windows builds" FORCE)
+		message(STATUS "Clang compiler detected; forcing USE_LLVM=ON")
+	endif()
+
+	if (USE_LLVM)
+		find_program(CMAKE_C_COMPILER clang PATHS ENV PATH)
+		find_program(CMAKE_CXX_COMPILER clang++ PATHS ENV PATH)
+		if(NOT CMAKE_C_COMPILER OR NOT CMAKE_CXX_COMPILER)
+			message(FATAL_ERROR "LLVM tools (clang, clang++) not found")
+		endif()
+		set(CMAKE_EXECUTABLE_SUFFIX ".llvm${CMAKE_EXECUTABLE_SUFFIX}")
+	endif()
+
 	if (USE_COVERAGE)
 		target_compile_options(rex_engine PUBLIC
 			-ftest-coverage
@@ -659,6 +683,34 @@ if(REX_PLATFORM STREQUAL "linuxbsd")
 		)
 	endif()
 
+	if (ACCESSKIT)
+		if (NOT ACCESSKIT_SDK_PATH STREQUAL "")
+			target_include_directories(rex_engine PRIVATE "${ACCESSKIT_SDK_PATH}/include")
+			if(ARCH STREQUAL "arm64")
+				set(ACCESSKIT_LIB_PATH "${ACCESSKIT_SDK_PATH}/lib/linux/arm64/msvc/static")
+			elseif(ARCH STREQUAL "arm32")
+				set(ACCESSKIT_LIB_PATH "${ACCESSKIT_SDK_PATH}/lib/linux/arm32/msvc/static")
+			elseif(ARCH STREQUAL "rv64")
+				set(ACCESSKIT_LIB_PATH "${ACCESSKIT_SDK_PATH}/lib/linux/riscv64gc/msvc/static")
+			elseif(ARCH STREQUAL "x86_64")
+				set(ACCESSKIT_LIB_PATH "${ACCESSKIT_SDK_PATH}/lib/linux/x86_64/msvc/static")
+			elseif(ARCH STREQUAL "x86_32")
+				set(ACCESSKIT_LIB_PATH "${ACCESSKIT_SDK_PATH}/lib/linux/x86/msvc/static")
+			else()
+				message(FATAL_ERROR "Unsupported architecture for AccessKit: ${ARCH}")
+			endif()
+			find_library(ACCESSKIT_LIB accesskit PATHS "${ACCESSKIT_LIB_PATH}" NO_DEFAULT_PATH)
+			if(NOT ACCESSKIT_LIB)
+				message(FATAL_ERROR "accesskit library not found in ${ACCESSKIT_LIB_PATH}")
+			endif()
+			list(APPEND SYSTEM_LIBRARIES
+				${ACCESSKIT_LIB}
+			)
+		else()
+			target_compile_definitions(rex_engine PUBLIC ACCESSKIT_DYNAMIC)
+		endif()
+		target_compile_definitions(rex_engine PUBLIC ACCESSKIT_ENABLED)
+	endif()
 	if (VULKAN)
 		target_compile_definitions(rex_engine PUBLIC
 			VULKAN_ENABLED
