@@ -42,6 +42,7 @@ if(REX_PLATFORM STREQUAL "windows")
 		${CMAKE_CURRENT_SOURCE_DIR}/wgl_detect_version.cpp
 		${CMAKE_CURRENT_SOURCE_DIR}/rendering_context_driver_vulkan_windows.cpp
 		${CMAKE_CURRENT_SOURCE_DIR}/drop_target_windows.cpp
+		${CMAKE_CURRENT_SOURCE_DIR}/godot_res.rc
 		${WINDOWS_CRASH_HANDLER}
 	)
 	if (MSVC)
@@ -139,11 +140,13 @@ if(REX_PLATFORM STREQUAL "windows")
 
 		if (WINDOWS_SUBSYSTEM STREQUAL "gui")
 			add_executable(rex_console
-				${CMAKE_CURRENT_SOURCE_DIR}/godot_res_wrap.rc
 				${CMAKE_CURRENT_SOURCE_DIR}/console_wrapper_windows.cpp
+				${CMAKE_CURRENT_SOURCE_DIR}/godot_res_wrap.rc
 			)
 			clone_library(rex_engine rex_console)
 			disable_warnings_for_target(rex_console)
+
+			target_link_libraries(rex_console PRIVATE ${SYSTEM_LIBRARIES})
 
 			target_link_options(rex_console PRIVATE
 				/SUBSYSTEM:CONSOLE
@@ -151,8 +154,9 @@ if(REX_PLATFORM STREQUAL "windows")
 			)
 			set_target_properties(rex_console PROPERTIES
 				OUTPUT_NAME "console.${OUTPUT_NAME}"
-				RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
+				RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin"
 			)
+			add_dependencies(rex_console rex_engine)
 		endif()
 
 		if (ACCESSKIT)
