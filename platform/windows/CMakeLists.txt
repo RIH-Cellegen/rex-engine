@@ -162,7 +162,7 @@ if(REX_PLATFORM STREQUAL "windows")
 				set(OUTPUT_NAME "${OUTPUT_NAME}.debug")
 			endif()
 			set_target_properties(rex_console PROPERTIES
-				OUTPUT_NAME "console.${OUTPUT_NAME}"
+				OUTPUT_NAME "${OUTPUT_NAME}.console"
 				RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin"
 			)
 			add_dependencies(rex_console rex_engine)
