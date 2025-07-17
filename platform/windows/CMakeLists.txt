@@ -152,6 +152,15 @@ if(REX_PLATFORM STREQUAL "windows")
 				/SUBSYSTEM:CONSOLE
 				version.lib
 			)
+			set(OUTPUT_NAME "rex.${REX_PLATFORM}")
+			if(EDITOR_BUILD)
+				set(OUTPUT_NAME "${OUTPUT_NAME}.editor")
+			else()
+				set(OUTPUT_NAME "${OUTPUT_NAME}.opt")
+			endif()
+			if(REX_BUILD_TYPE MATCHES "debug")
+				set(OUTPUT_NAME "${OUTPUT_NAME}.debug")
+			endif()
 			set_target_properties(rex_console PROPERTIES
 				OUTPUT_NAME "console.${OUTPUT_NAME}"
 				RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin"
