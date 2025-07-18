@@ -52,7 +52,6 @@ if(REX_PLATFORM STREQUAL "windows")
 		${WINDOWS_CRASH_HANDLER}
 	)
 	if (MSVC)
-		add_compile_options(/permissive- /Zc:__cplusplus)
 		set(DISABLED_WARNINGS
 			/wd4100
 			/wd4127
@@ -156,6 +155,7 @@ if(REX_PLATFORM STREQUAL "windows")
 		target_compile_definitions(rex_engine PUBLIC
 			TYPED_METHOD_BIND
 			WIN32
+			NOMINMAX
 		)
 		if (ARCH STREQUAL "x86_64")
 			target_compile_definitions(rex_engine PUBLIC
@@ -179,35 +179,6 @@ if(REX_PLATFORM STREQUAL "windows")
 			)
 		endif()
 
-		if (WINDOWS_SUBSYSTEM STREQUAL "gui")
-			add_executable(rex_console
-				${CMAKE_CURRENT_SOURCE_DIR}/console_wrapper_windows.cpp
-				${CMAKE_CURRENT_SOURCE_DIR}/godot_res_wrap.rc
-			)
-			clone_library(rex_engine rex_console)
-			disable_warnings_for_target(rex_console)
-
-			target_link_libraries(rex_console PRIVATE ${SYSTEM_LIBRARIES})
-
-			target_link_options(rex_console PRIVATE
-				/SUBSYSTEM:CONSOLE
-				version.lib
-			)
-			set(OUTPUT_NAME "rex.${REX_PLATFORM}")
-			if(EDITOR_BUILD)
-				set(OUTPUT_NAME "${OUTPUT_NAME}.editor")
-			else()
-				set(OUTPUT_NAME "${OUTPUT_NAME}.opt")
-			endif()
-			if(REX_BUILD_TYPE MATCHES "debug")
-				set(OUTPUT_NAME "${OUTPUT_NAME}.debug")
-			endif()
-			set_target_properties(rex_console PROPERTIES
-				OUTPUT_NAME "${OUTPUT_NAME}.console"
-				RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin"
-			)
-			add_dependencies(rex_console rex_engine)
-		endif()
 
 		if (ACCESSKIT)
 			if (NOT ACCESSKIT_SDK_PATH STREQUAL "")
@@ -499,6 +470,41 @@ if(REX_PLATFORM STREQUAL "windows")
 			psapi
 			dbghelp
 		)
+	endif()
+
+	if (WINDOWS_SUBSYSTEM STREQUAL "gui")
+		add_executable(rex_console
+			${CMAKE_CURRENT_SOURCE_DIR}/console_wrapper_windows.cpp
+			${CMAKE_CURRENT_SOURCE_DIR}/godot_res_wrap.rc
+		)
+		clone_library(rex_engine rex_console)
+		disable_warnings_for_target(rex_console)
+
+		target_link_libraries(rex_console PRIVATE ${SYSTEM_LIBRARIES})
+
+		if (MSVC)
+			target_link_options(rex_console PRIVATE
+				/SUBSYSTEM:CONSOLE
+				version.lib
+			)
+		else()
+			target_link_options(rex_console PRIVATE -Wl,--subsystem,console)
+			target_link_libraries(rex_console PRIVATE version)
+		endif()
+		set(OUTPUT_NAME "rex.${REX_PLATFORM}")
+		if(EDITOR_BUILD)
+			set(OUTPUT_NAME "${OUTPUT_NAME}.editor")
+		else()
+			set(OUTPUT_NAME "${OUTPUT_NAME}.opt")
+		endif()
+		if(REX_BUILD_TYPE MATCHES "debug")
+			set(OUTPUT_NAME "${OUTPUT_NAME}.debug")
+		endif()
+		set_target_properties(rex_console PROPERTIES
+			OUTPUT_NAME "${OUTPUT_NAME}.console"
+			RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin"
+		)
+		add_dependencies(rex_console rex_engine)
 	endif()
 
 	if (VULKAN)
