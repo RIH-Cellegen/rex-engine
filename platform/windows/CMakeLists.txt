@@ -333,14 +333,19 @@ if(REX_PLATFORM STREQUAL "windows")
 				target_compile_definitions(rex_engine PUBLIC
 					EGL_STATIC
 				)
-				set(APPEND SYSTEM_LIBRARIES
-					${ANGLE_LIBS}libANGLE.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX}
-					${ANGLE_LIBS}libEGL.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX}
-					${ANGLE_LIBS}libGLES.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX}
-					dxgi
-					d3d9
-					d3d11
-				)
+				find_library(ANGLE_LIB NAMES libANGLE.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX} libANGLE
+					PATHS ${ANGLE_LIBS}
+					NO_DEFAULT_PATH)
+				find_library(EGL_LIB NAMES libEGL.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX} libEGL
+					PATHS ${ANGLE_LIBS}
+					NO_DEFAULT_PATH)
+				find_library(GLES_LIB NAMES libGLES.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX} libGLES
+					PATHS ${ANGLE_LIBS}
+					NO_DEFAULT_PATH)
+				if(NOT ANGLE_LIB OR NOT EGL_LIB OR NOT GLES_LIB)
+					message(FATAL_ERROR "ANGLE libraries not found in ${ANGLE_LIBS}")
+				endif()
+				list(APPEND SYSTEM_LIBRARIES ${ANGLE_LIB} ${EGL_LIB} ${GLES_LIB} dxgi d3d9 d3d11)
 			endif()
 			target_include_directories(rex_engine PUBLIC
 				${CMAKE_SOURCE_DIR}/thirdparty/angle/include/
