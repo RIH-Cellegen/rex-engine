@@ -18,10 +18,6 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # export compile commands database
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-if (MSVC)
-	add_compile_options(/permissive- /Zc:__cplusplus)
-endif()
-
 include(methods.cmake)
 include(version.cmake)
 
@@ -29,10 +25,10 @@ include(version.cmake)
 # NOTE: Using strings that make the Scons build system.
 if (${CMAKE_HOST_SYSTEM_NAME} MATCHES "Linux|DragonFly|FreeBSD|NetBSD|OpenBSD")
 	set(REX_PLATFORM "linuxbsd")
-	execute_process( COMMAND uname -m COMMAND tr -d '\n' OUTPUT_VARIABLE ARCH )
+	execute_process( COMMAND uname -m OUTPUT_VARIABLE ARCH OUTPUT_STRIP_TRAILING_WHITESPACE)
 elseif (${CMAKE_HOST_SYSTEM_NAME} STREQUAL "Darwin")
 	set(REX_PLATFORM "macos")
-	execute_process( COMMAND uname -m COMMAND tr -d '\n' OUTPUT_VARIABLE ARCH )
+	execute_process( COMMAND uname -m OUTPUT_VARIABLE ARCH OUTPUT_STRIP_TRAILING_WHITESPACE)
 elseif (${CMAKE_HOST_SYSTEM_NAME} STREQUAL "Windows")
 	set(REX_PLATFORM "windows")
 	if(CMAKE_GENERATOR_PLATFORM MATCHES "x64")
@@ -57,12 +53,24 @@ endif()
 message(STATUS "Detected build platform: ${REX_PLATFORM}")
 message(STATUS "Architecture: ${ARCH}")
 
+if (CMAKE_SIZEOF_VOID_P EQUAL 8 AND ARCH STREQUAL "x86_32")
+	add_compile_options(-m32)
+	add_link_options(-m32)
+	message(STATUS "Cross-compilation detected.")
+elseif(CMAKE_SIZEOF_VOID_P EQUAL 4 AND ARCH STREQUAL "x86_64")
+	add_compile_options(-m64)
+	add_link_options(-m64)
+	message(STATUS "Cross-compilation detected.")
+endif()
+
 include(options.cmake)
 
-if (DEBUG_SYMBOLS)
-	set(CMAKE_BUILD_TYPE Debug)
-else()
-	set(CMAKE_BUILD_TYPE Release)
+if (NOT CMAKE_BUILD_TYPE)
+	if (DEBUG_SYMBOLS)
+		set(CMAKE_BUILD_TYPE Debug)
+	else()
+		set(CMAKE_BUILD_TYPE Release)
+	endif()
 endif()
 
 if (BUILD_TARGET STREQUAL "editor")
@@ -75,75 +83,66 @@ endif()
 
 # Executable is defined per platform
 
-#if (REX_PLATFORM STREQUAL "linuxbsd")
 add_subdirectory(platform/linuxbsd)
-	#elseif(REX_PLATFORM STREQUAL "macos")
-	#add_subdirectory(platform/macos)
-	#elseif(REX_PLATFORM STREQUAL "windows")
+# TODO: MacOS not implimented yet
+#add_subdirectory(platform/macos)
 add_subdirectory(platform/windows)
-	#endif()
 
 target_include_directories(rex_engine PUBLIC
 	${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 if (EDITOR_BUILD)
-	target_compile_definitions(rex_engine PUBLIC
-		TOOLS_ENABLED
-	)
+	target_compile_definitions(rex_engine PUBLIC TOOLS_ENABLED)
 	if (ENGINE_UPDATE_CHECK)
-		target_compile_definitions(rex_engine PUBLIC
-			ENGINE_UPDATE_CHECK_ENABLED
-		)
+		target_compile_definitions(rex_engine PUBLIC ENGINE_UPDATE_CHECK_ENABLED)
 	endif()
 	if (NOT EXISTS ${CMAKE_SOURCE_DIR}/main/splash_editor.png)
 		set(NO_EDITOR_SPLASH ON)
 	endif()
 	if (NO_EDITOR_SPLASH)
-		target_compile_definitions(rex_engine PUBLIC
-			NO_EDITOR_SPLASH
-		)
+		target_compile_definitions(rex_engine PUBLIC NO_EDITOR_SPLASH)
 	endif()
 endif()
 
 if (DEBUG_FEATURES)
-	target_compile_definitions(rex_engine PUBLIC
-		DEBUG_ENABLED
-	)
+	target_compile_definitions(rex_engine PUBLIC DEBUG_ENABLED)
 endif()
 
 if (REX_DEV_BUILD)
-	target_compile_definitions(rex_engine PUBLIC
-		DEV_ENABLED
-	)
+	target_compile_definitions(rex_engine PUBLIC DEV_ENABLED)
 else()
-	target_compile_definitions(rex_engine PUBLIC
-		NODEBUG
-	)
+	target_compile_definitions(rex_engine PUBLIC NODEBUG)
 endif()
 
 if (USE_PRECISE_MATH_CHECKS)
-	target_compile_definitions(rex_engine PUBLIC
-		PRECISE_MATH_CHECKS
-	)
+	target_compile_definitions(rex_engine PUBLIC PRECISE_MATH_CHECKS)
 endif()
 
 if (NOT DEPRICATED)
-	target_compile_definitions(rex_engine PUBLIC
-		DISABLE_DEPRECATED
-	)
+	target_compile_definitions(rex_engine PUBLIC DISABLE_DEPRECATED)
 endif()
 
 if (PRECISION STREQUAL "double")
-	target_compile_definitions(rex_engine PUBLIC
-		REAL_T_IS_DOUBLE
-	)
+	target_compile_definitions(rex_engine PUBLIC REAL_T_IS_DOUBLE)
+endif()
+
+if (DEV_MODE)
+	set(CMAKE_VERBOSE_MAKEFILE ON CACHE BOOL "Enable verbose build output" FORCE)
+	set(REX_TESTS ON CACHE BOOL "Build the unit tests" FORCE)
+	set(WARNING "extra" CACHE STRING "Level of compilation warnings: extra, all, moderate, no" FORCE)
+	set(WERROR ON CACHE BOOL "Treat compiler warnings as errors" FORCE)
+	set(STRICT_CHECKS ON CACHE BOOL "Enforce stricter checks (debug option)" FORCE)
+endif()
+
+if (PRODUCTION)
+	set(USE_STATIC_CPP ON CACHE BOOL "Link runtime libraries statically" FORCE)
+	set(DEBUG_SYMBOLS OFF CACHE BOOL "Build with debugging symbols" FORCE)
+	set(LTO "auto" CACHE STRING "Link-time optimization (production builds): none, auto, thin, full" FORCE)
 endif()
 
 if (STRICT_CHECKS)
-	target_compile_definitions(rex_engine PUBLIC
-		STRICT_CHECKS
-	)
+	target_compile_definitions(rex_engine PUBLIC STRICT_CHECKS)
 endif()
 
 
@@ -163,82 +162,56 @@ if (EDITOR_BUILD)
 endif()
 
 if (DISABLE_3D)
-	target_compile_definitions(rex_engine PUBLIC
-		_3D_DISABLED
-	)
+	target_compile_definitions(rex_engine PUBLIC _3D_DISABLED)
 	set(DISABLE_NAVIGATION_3D ON)
 	set(DISABLE_PHYSICS_3D ON)
 	set(DISABLE_XR ON)
 endif()
 
 if (DISABLE_ADVANCED_GUI)
-	target_compile_definitions(rex_engine PUBLIC
-		ADVANCED_GUI_DISABLED
-	)
+	target_compile_definitions(rex_engine PUBLIC ADVANCED_GUI_DISABLED)
 endif()
 
 if (DISABLE_PHYSICS_2D)
-	target_compile_definitions(rex_engine PUBLIC
-		PHYSICS_2D_DISABLED
-	)
+	target_compile_definitions(rex_engine PUBLIC PHYSICS_2D_DISABLED)
 endif()
 
 if (DISABLE_PHYSICS_3D)
-	target_compile_definitions(rex_engine PUBLIC
-		PHYSICS_3D_DISABLED
-	)
+	target_compile_definitions(rex_engine PUBLIC PHYSICS_3D_DISABLED)
 endif()
 
 if (DISABLE_NAVIGATION_2D)
-	target_compile_definitions(rex_engine PUBLIC
-		NAVIGATION_2D_DISABLED
-	)
+	target_compile_definitions(rex_engine PUBLIC NAVIGATION_2D_DISABLED)
 endif()
 
 if (DISABLE_NAVIGATION_3D)
-	target_compile_definitions(rex_engine PUBLIC
-		NAVIGATION_3D_DISABLED
-	)
+	target_compile_definitions(rex_engine PUBLIC NAVIGATION_3D_DISABLED)
 endif()
 
 if (DISABLE_XR)
-	target_compile_definitions(rex_engine PUBLIC
-		XR_DISABLED
-	)
+	target_compile_definitions(rex_engine PUBLIC XR_DISABLED)
 endif()
 
 if (MINIZIP)
-	target_compile_definitions(rex_engine PUBLIC
-		MINIZIP_ENABLED
-	)
+	target_compile_definitions(rex_engine PUBLIC MINIZIP_ENABLED)
 endif()
 
 if (BROTLI)
-	target_compile_definitions(rex_engine PUBLIC
-		BROTLI_ENABLED
-	)
+	target_compile_definitions(rex_engine PUBLIC BROTLI_ENABLED)
 endif()
 
 if (THREADS)
-	target_compile_definitions(rex_engine PUBLIC
-		THREADS_ENABLED
-	)
+	target_compile_definitions(rex_engine PUBLIC THREADS_ENABLED)
 endif()
 
 if (DISABLE_EXCEPTIONS)
 	if (MSVC)
-		target_compile_definitions(rex_engine PUBLIC
-			_HAS_EXCEPTIONS=0
-		)
+		target_compile_definitions(rex_engine PUBLIC _HAS_EXCEPTIONS=0)
 	else()
-		target_compile_options(rex_engine PUBLIC
-			-fno-exceptions
-		)
+		target_compile_options(rex_engine PUBLIC -fno-exceptions)
 	endif()
 elseif(MSVC)
-	target_compile_options(rex_engine PUBLIC
-		/EHsc
-	)
+	target_compile_options(rex_engine PUBLIC /EHsc)
 endif()
 
 if (REX_PLATFORM STREQUAL "macos")
@@ -339,9 +312,7 @@ endif()
 set_target_properties(rex_engine PROPERTIES OUTPUT_NAME "${OUTPUT_NAME}")
 
 if (OPTIMIZE STREQUAL "size_extra")
-	target_compile_definitions(rex_engine PUBLIC
-		SIZE_EXTRA
-	)
+	target_compile_definitions(rex_engine PUBLIC SIZE_EXTRA)
 endif()
 
 if (ARCH STREQUAL "x86_32")
@@ -408,7 +379,7 @@ target_compile_definitions(rex_engine PUBLIC ${PLATFORM_DEFINES})
 
 # Output binary directory
 set_target_properties(rex_engine PROPERTIES
-        RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin
 )
 
 add_subdirectory(core)

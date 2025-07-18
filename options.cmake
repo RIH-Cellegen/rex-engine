@@ -6,6 +6,7 @@ set(BUILD_TARGET "editor" CACHE STRING "Compilation target: editor, template_rel
 
 option(REX_TOOLS "Build editor tools" OFF)
 option(REX_DEV_BUILD "Enable developer build" OFF)
+option(DEV_MODE "Alias for dev options: verbose=yes warnings=extra werror=yes tests=yes strict_checks=yes" OFF)
 
 option(DEBUG_SYMBOLS "Build with debugging symbols" OFF)
 option(SEPARATE_DEBUG_SYMBOLS "Extract debugging symbols to a separate file" OFF)
@@ -34,6 +35,18 @@ option(ACCESSKIT "Use AccessKit C SDK" ON)
 set(ACCESSKIT_SDK_PATH "" CACHE STRING "Path to the AccessKit C SDK")
 set(PROGRESS "Show a progress indicator during compilation" ON)
 set(WARNINGS "all" CACHE STRING "Level of compilation warnings: extra, all, moderate, no")
+option(WERROR "Treat compiler warnings as errors" OFF)
+
+include(ProcessorCount)
+ProcessorCount(NUM_CORES)
+if(NUM_CORES GREATER 1)
+  math(EXPR DEFAULT_JOBS "${NUM_CORES} - 1")
+else()
+  set(DEFAULT_JOBS 1)
+endif()
+set(NUM_JOBS "${DEFAULT_JOBS}" CACHE STRING "Number of parallel build jobs (equivalent to make -j N)")
+message(STATUS "NUM_JOBS set to ${NUM_JOBS}. Use 'cmake --build . --parallel ${NUM_JOBS}' or override with -DNUM_JOBS=N")
+
 # Advanced options
 option(REX_TESTS "Build the unit tests" OFF)
 

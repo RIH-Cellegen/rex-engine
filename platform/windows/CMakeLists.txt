@@ -52,6 +52,7 @@ if(REX_PLATFORM STREQUAL "windows")
 		${WINDOWS_CRASH_HANDLER}
 	)
 	if (MSVC)
+		add_compile_options(/permissive- /Zc:__cplusplus)
 		set(DISABLED_WARNINGS
 			/wd4100
 			/wd4127
@@ -119,7 +120,6 @@ if(REX_PLATFORM STREQUAL "windows")
 		if (SILENCE_MSVC)
 			# TODO
 		endif()
-
 		if (DEBUG_CRT)
 			target_compile_options(rex_engine PUBLIC /MDd)
 		else()
@@ -154,14 +154,8 @@ if(REX_PLATFORM STREQUAL "windows")
 		endif()
 
 		target_compile_definitions(rex_engine PUBLIC
-            WINDOWS_ENABLED
-            WASAPI_ENABLED
-            WINMIDI_ENABLED
-            TYPED_METHOD_BIND
-            WIN32
-			WINVER=${TARGET_WIN_VERSION}
-            _WIN32_WINNT=${TARGET_WIN_VERSION}
-			NOMINMAX
+			TYPED_METHOD_BIND
+			WIN32
 		)
 		if (ARCH STREQUAL "x86_64")
 			target_compile_definitions(rex_engine PUBLIC
@@ -178,39 +172,6 @@ if(REX_PLATFORM STREQUAL "windows")
 			target_link_options(rex_engine PUBLIC /INFERASANLIBS)
 		endif()
 
-		set(SYSTEM_LIBRARIES
-			winmm
-			dsound
-			kernel32
-			ole32
-			oleaut32
-			sapi
-			user32
-			gdi32
-			IPHLPAPI
-			Shlwapi
-			wsock32
-			Ws2_32
-			shell32
-			advapi32
-			dinput8
-			dxguid
-			imm32
-			bcrypt
-			Crypt32
-			Avrt
-			dwmapi
-			dwrite
-			wbemuuid
-			ntdll
-		)
-
-		if (DEBUG_FEATURES)
-			list(APPEND SYSTEM_LIBRARIES
-				psapi
-				dbghelp
-			)
-		endif()
 
 		if (USE_LLVM)
 			list(APPEND SYSTEM_LIBRARIES
@@ -280,82 +241,9 @@ if(REX_PLATFORM STREQUAL "windows")
 			target_compile_definitions(rex_engine PUBLIC ACCESSKIT_ENABLED)
 		endif()
 
-		if (VULKAN)
-			target_compile_definitions(rex_engine PUBLIC
-				VULKAN_ENABLED
-				RD_ENABLED
-			)
-			if (NOT USE_VOLK)
-				list(APPEND SYSTEM_LIBRARIES vulkan)
-			endif()
-		endif()
-
-		if (D3D12)
-			list(APPEND SYSTEM_LIBRARIES dxgi version)
-			target_compile_definitions(rex_engine PUBLIC
-				D3D12_ENABLED
-				RD_ENABLED
-			)
-			if(USE_PIX)
-				if(ARCH MATCHES "x86_64|arm64" AND EXISTS "${PIX_PATH}")
-					string(REPLACE "x86_" "x" PIX_ARCH_SUBDIR ${ARCH})
-					set(PIX_LIB_PATH "${PIX_PATH}/bin/${PIX_ARCH_SUBDIR}")
-					find_library(PIX_LIB WinPixEventRuntime PATHS "${PIX_LIB_PATH}" NO_DEFAULT_PATH)
-					if(NOT PIX_LIB)
-						message(WARNING "WinPixEventRuntime not found in ${PIX_LIB_PATH}; disabling PIX")
-						set(USE_PIX OFF CACHE BOOL "Enable PIX profiling support" FORCE)
-					else()
-						list(APPEND SYSTEM_LIBRARIES ${PIX_LIB})
-					endif()
-				else()
-					message(WARNING "PIX not supported for arch ${ARCH} or PIX_PATH ${PIX_PATH} does not exist; disabling PIX")
-					set(USE_PIX OFF CACHE BOOL "Enable PIX profiling support" FORCE)
-				endif()
-			endif()
-			if(EXISTS "${MESA_LIBS}-${ARCH}-msvc/bin")
-				set(MESA_LIB_PATH "${MESA_LIBS}-${ARCH}-msvc/bin")
-			else()
-				set(MESA_LIB_PATH "${MESA_LIBS}/bin")
-			endif()
-			find_library(NIR_LIB libNIR.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX}
-				PATHS "${MESA_LIB_PATH}" NO_DEFAULT_PATH)
-			if(NOT NIR_LIB)
-				message(FATAL_ERROR "libNIR.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX} not found in ${MESA_LIB_PATH}")
-			endif()
-			list(APPEND	SYSTEM_LIBRARIES ${NIR_LIB})
-		endif()
-
-		if (OPENGL3)
-			target_compile_definitions(rex_engine PUBLIC
-				GLES3_ENABLED
-			)
-			if (NOT ANGLE_LIBS STREQUAL "")
-				target_compile_definitions(rex_engine PUBLIC
-					EGL_STATIC
-				)
-				find_library(ANGLE_LIB NAMES libANGLE.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX} libANGLE
-					PATHS ${ANGLE_LIBS}
-					NO_DEFAULT_PATH)
-				find_library(EGL_LIB NAMES libEGL.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX} libEGL
-					PATHS ${ANGLE_LIBS}
-					NO_DEFAULT_PATH)
-				find_library(GLES_LIB NAMES libGLES.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX} libGLES
-					PATHS ${ANGLE_LIBS}
-					NO_DEFAULT_PATH)
-				if(NOT ANGLE_LIB OR NOT EGL_LIB OR NOT GLES_LIB)
-					message(FATAL_ERROR "ANGLE libraries not found in ${ANGLE_LIBS}")
-				endif()
-				list(APPEND SYSTEM_LIBRARIES ${ANGLE_LIB} ${EGL_LIB} ${GLES_LIB} dxgi d3d9 d3d11)
-			endif()
-			target_include_directories(rex_engine PUBLIC
-				${CMAKE_SOURCE_DIR}/thirdparty/angle/include/
-			)
-		endif()
-
 		if (LTO STREQUAL "auto")  # No LTO by default for MSVC, doesn't help.
 			set(LTO "none")
 		endif()
-
 		if (NOT LTO STREQUAL "none")
 			if (LTO STREQUAL "thin")
 				if (NOT USE_LLVM)
@@ -373,11 +261,332 @@ if(REX_PLATFORM STREQUAL "windows")
 				target_link_options(rex_engine PUBLIC /LTCG)
 			endif()
 		endif()
+
+		if (PROGRESS)
+			target_link_options(rex_engine PUBLIC /LTCG:STATUS)
+		else()
+			target_link_options(rex_engine PUBLIC /LTCG)
+		endif()
+
 		if (USE_ASAN)
 			target_link_options(rex_engine PUBLIC /STACK:${STACK_SIZE_SANITIZERS})
 		else()
 			target_link_options(rex_engine PUBLIC /STACK:${STACK_SIZE})
 		endif()
+
+
+		set(SYSTEM_LIBRARIES
+			advapi32
+		)
+
+		#MINGW
+	else()
+		# TODO: Various checks Scons performs
+
+		if (REX_DEV_BUILD)
+			target_compile_options(rex_engine PUBLIC -Wa,-mbig-obj)
+		endif()
+
+		if (WINDOWS_SUBSYSTEM STREQUAL "gui")
+			target_link_options(rex_engine PRIVATE -Wl,--subsystem,windows)
+		else()
+			target_link_options(rex_engine PRIVATE -Wl,--subsystem,console)
+			target_compile_definitions(rex_engine PUBLIC WINDOWS_SUBSYSTEM_CONSOLE)
+		endif()
+
+		if (USE_STATIC_CPP)
+			target_link_options(rex_engine PUBLIC -static)
+			if (ARCH STREQUAL "x86_32")
+				target_link_options(rex_engine PUBLIC
+					-static-libgcc
+					-static-libstdc++
+				)
+			endif()
+		endif()
+
+		target_compile_options(rex_engine PUBLIC -ffp-contract=off)
+
+		if (USE_LLVM)
+			find_program(CMAKE_C_COMPILER clang PATHS ENV PATH)
+			find_program(CMAKE_CXX_COMPILER clang++ PATHS ENV PATH)
+			find_program(CMAKE_AR ar PATHS ENV PATH)
+			find_program(CMAKE_RANLIB ranlib PATHS ENV PATH)
+			if(NOT CMAKE_C_COMPILER OR NOT CMAKE_CXX_COMPILER OR NOT CMAKE_AR OR NOT CMAKE_RANLIB)
+				message(FATAL_ERROR "LLVM tools (clang, clang++, ar, ranlib) not found")
+			endif()
+			set(CMAKE_EXECUTABLE_SUFFIX ".llvm${CMAKE_EXECUTABLE_SUFFIX}")
+		else()
+			find_program(CMAKE_C_COMPILER gcc PATHS ENV PATH)
+			find_program(CMAKE_CXX_COMPILER g++ PATHS ENV PATH)
+			find_program(CMAKE_AR gcc-ar PATHS ENV PATH)
+			find_program(CMAKE_RANLIB gcc-ranlib PATHS ENV PATH)
+			if(NOT CMAKE_C_COMPILER OR NOT CMAKE_CXX_COMPILER OR NOT CMAKE_AR OR NOT CMAKE_RANLIB)
+				message(FATAL_ERROR "GCC tools (gcc, g++, gcc-ar, gcc-ranlib) not found")
+			endif()
+			target_compile_options(rex_engine PUBLIC -mwindows)
+		endif()
+
+		if (ARCH STREQUAL "x86_32")
+			set(CMAKE_RC_FLAGS "${CMAKE_RC_FLAGS} --target=pe-i386")
+		elseif(ARCH STREQUAL "x86_64")
+			set(CMAKE_RC_FLAGS "${CMAKE_RC_FLAGS} --target=pe-x86_64")
+		elseif(ARCH STREQUAL "arm32")
+			set(CMAKE_RC_FLAGS "${CMAKE_RC_FLAGS} --target=armv7-w64-mingw32")
+		elseif(ARCH STREQUAL "arm64")
+			set(CMAKE_RC_FLAGS "${CMAKE_RC_FLAGS} --target=aarch64-w64-mingw32")
+		endif()
+
+
+		set(PREBUILT_LIB_EXTRA_SUFFIX "")
+		if (USE_ASAN OR USE_UBSAN)
+			if (USE_LLVM)
+				message(FATAL_ERROR "GCC does not support sanitizers on Windows.")
+			endif()
+			if (NOT ARCH MATCHES "x86_32|x86_64")
+				message(FATAL_ERROR "Sanitizers are only supported for x86_32 and x86_64.")
+			endif()
+
+			set(CMAKE_EXECUTABLE_SUFFIX ".san${CMAKE_EXECUTABLE_SUFFIX}")
+			set(PREBUILT_LIB_EXTRA_SUFFIX ".san")
+
+			target_compile_definitions(rex_engine PUBLIC SANITIZERS_ENABLED)
+			if (USE_ASAN)
+				target_compile_options(rex_engine PUBLIC -fsanitize=address)
+				target_link_options(rex_engine PUBLIC -fsanitize=address)
+			endif()
+			if (USE_UBSAN)
+				target_compile_options(rex_engine PUBLIC
+					-fsanitize=undefined
+					-fno-sanitize=vptr
+				)
+				target_link_options(rex_engine PUBLIC
+					-fsanitize=undefined
+					-fno-sanitize=vptr
+				)
+			endif()
+		endif()
+
+		if (LTO STREQUAL "auto")  # No LTO by default for MSVC, doesn't help.
+			if (USE_LLVM)
+				set(LTO "thin")
+			else()
+				set(LTO "full")
+			endif()
+		endif()
+
+		if (NOT LTO STREQUAL "none")
+			if (LTO STREQUAL "thin")
+				if (NOT USE_LLVM)
+					MESSAGE(FATAL_ERROR "ThinLTO is only compatible with LLVM, use `use_llvm=yes` or `lto=full`.")
+				endif()
+				target_compile_options(rex_engine PUBLIC -flto=thin)
+				target_link_options(rex_engine PUBLIC -flto=thin)
+			elseif(NOT USE_LLVM)
+				target_compile_options(rex_engine PUBLIC -flto)
+				if (NUM_JOBS GREATER 1)
+					target_link_options(rex_engine PUBLIC -flto=${NUM_JOBS})
+				endif()
+			else()
+				target_compile_options(rex_engine PUBLIC -flto)
+				target_link_options(rex_engine PUBLIC -flto)
+			endif()
+			if (NOT USE_LLVM)
+				target_compile_options(rex_engine PUBLIC
+					-fno-use-linker-plugin
+					-fwhole-program
+				)
+				target_link_options(rex_engine PUBLIC
+					-fno-use-linker-plugin
+					-fwhole-program
+				)
+			endif()
+		endif()
+		if (USE_ASAN)
+			target_link_options(rex_engine PUBLIC -Wl,--stack,${STACK_SIZE_SANITIZERS})
+		else()
+			target_link_options(rex_engine PUBLIC -Wl,--stack,${STACK_SIZE})
+		endif()
+
+		set(SYSTEM_LIBRARIES
+			mingw32
+			d3d9
+			uuid
+			ksuser
+		)
+		if (ACCESSKIT)
+			if (NOT ACCESSKIT_SDK_PATH STREQUAL "")
+				target_include_directories(rex_engine PRIVATE "${ACCESSKIT_SDK_PATH}/include")
+				if (USE_LLVM)
+					if (ARCH STREQUAL "arm64")
+						set(ACCESSKIT_LIB_PATH "${ACCESSKIT_SDK_PATH}/lib/windows/arm64/mingw-llvm/static")
+					elseif(ARCH STREQUAL "x86_64")
+						set(ACCESSKIT_LIB_PATH "${ACCESSKIT_SDK_PATH}/lib/windows/x86_64/mingw-llvm/static")
+					elseif(ARCH STREQUAL "x86_32")
+						set(ACCESSKIT_LIB_PATH "${ACCESSKIT_SDK_PATH}/lib/windows/x86/mingw-llvm/static")
+					else()
+						message(FATAL_ERROR "Unsupported architecture for AccessKit: ${ARCH}")
+					endif()
+				else()
+					if(ARCH STREQUAL "x86_64")
+						set(ACCESSKIT_LIB_PATH "${ACCESSKIT_SDK_PATH}/lib/windows/x86_64/mingw/static")
+					elseif(ARCH STREQUAL "x86_32")
+						set(ACCESSKIT_LIB_PATH "${ACCESSKIT_SDK_PATH}/lib/windows/x86/mingw/static")
+					else()
+						message(FATAL_ERROR "Unsupported architecture for AccessKit: ${ARCH}")
+					endif()
+				endif()
+				find_library(ACCESSKIT_LIB accesskit PATHS "${ACCESSKIT_LIB_PATH}" NO_DEFAULT_PATH)
+				if (NOT ACCESSKIT_LIB)
+					message(FATAL_ERROR "accesskit library not found in ${ACCESSKIT_LIB_PATH}")
+				endif()
+				list(APPEND SYSTEM_LIBRARIES
+					${ACCESSKIT_LIB}
+					uiautomationcore.${ARCH}
+					runtimeobject
+					propsys
+					oleaut32
+					user32
+					userenv
+					ntdll
+				)
+			else()
+				target_compile_definitions(rex_engine PUBLIC ACCESSKIT_DYNAMIC)
+			endif()
+			target_compile_definitions(rex_engine PUBLIC ACCESSKIT_ENABLED)
+		endif()
+
+		target_compile_definitions(rex_engine PUBLIC
+			MINGW_ENABLED
+			MINGW_HAS_SECURE_API=1
+		)
+	endif()
+
+	target_compile_definitions(rex_engine PUBLIC
+		WINDOWS_ENABLED
+		WASAPI_ENABLED
+		WINMIDI_ENABLED
+		WINVER=${TARGET_WIN_VERSION}
+		_WIN32_WINNT=${TARGET_WIN_VERSION}
+	)
+	list(APPEND SYSTEM_LIBRARIES
+		winmm
+		dsound
+		kernel32
+		ole32
+		oleaut32
+		sapi
+		user32
+		gdi32
+		IPHLPAPI
+		Shlwapi
+		wsock32
+		Ws2_32
+		shell32
+		dinput8
+		dxguid
+		imm32
+		bcrypt
+		Crypt32
+		Avrt
+		dwmapi
+		dwrite
+		wbemuuid
+		ntdll
+	)
+
+	if (DEBUG_FEATURES)
+		list(APPEND SYSTEM_LIBRARIES
+			psapi
+			dbghelp
+		)
+	endif()
+
+	if (VULKAN)
+		target_compile_definitions(rex_engine PUBLIC
+			VULKAN_ENABLED
+			RD_ENABLED
+		)
+		if (NOT USE_VOLK)
+			list(APPEND SYSTEM_LIBRARIES vulkan)
+		endif()
+	endif()
+
+	if (D3D12)
+		if (MSVC)
+			list(APPEND SYSTEM_LIBRARIES dxgi version)
+		else()
+			list(APPEND SYSTEM_LIBRARIES dxgi dxguid version)
+		endif()
+		target_compile_definitions(rex_engine PUBLIC
+			D3D12_ENABLED
+			RD_ENABLED
+		)
+		if (USE_PIX)
+			if(ARCH MATCHES "x86_64|arm64" AND EXISTS "${PIX_PATH}")
+				string(REPLACE "x86_" "x" PIX_ARCH_SUBDIR ${ARCH})
+				set(PIX_LIB_PATH "${PIX_PATH}/bin/${PIX_ARCH_SUBDIR}")
+				find_library(PIX_LIB WinPixEventRuntime PATHS "${PIX_LIB_PATH}" NO_DEFAULT_PATH)
+				if(NOT PIX_LIB)
+					message(WARNING "WinPixEventRuntime not found in ${PIX_LIB_PATH}; disabling PIX")
+					set(USE_PIX OFF CACHE BOOL "Enable PIX profiling support" FORCE)
+				else()
+					list(APPEND SYSTEM_LIBRARIES ${PIX_LIB})
+				endif()
+			else()
+				message(WARNING "PIX not supported for arch ${ARCH} or PIX_PATH ${PIX_PATH} does not exist; disabling PIX")
+				set(USE_PIX OFF CACHE BOOL "Enable PIX profiling support" FORCE)
+			endif()
+		endif()
+		if (MSVC)
+			if (EXISTS "${MESA_LIBS}-${ARCH}-msvc/bin")
+				set(MESA_LIB_PATH "${MESA_LIBS}-${ARCH}-msvc/bin")
+			else()
+				set(MESA_LIB_PATH "${MESA_LIBS}/bin")
+			endif()
+			find_library(NIR_LIB libNIR.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX}
+				PATHS "${MESA_LIB_PATH}" NO_DEFAULT_PATH)
+			if (NOT NIR_LIB)
+				message(FATAL_ERROR "libNIR.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX} not found in ${MESA_LIB_PATH}")
+			endif()
+			list(APPEND	SYSTEM_LIBRARIES ${NIR_LIB})
+		else()
+			if (USE_LLVM AND EXISTS "${MESA_LIBS}-${ARCH}-llvm/bin")
+				set(MESA_LIB_PATH "${MESA_LIBS}-${ARCH}-llvm/bin")
+			elseif (NOT USE_LLVM AND EXISTS "${MESA_LIBS}-${ARCH}-gcc/bin")
+				set(MESA_LIB_PATH "${MESA_LIBS}-${ARCH}-gcc/bin")
+			else()
+				set(MESA_LIB_PATH "${MESA_LIBS}/bin")
+			endif()
+			find_library(NIR_LIB libNIR.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX}
+				PATHS "${MESA_LIB_PATH}" NO_DEFAULT_PATH)
+			if (NOT NIR_LIB)
+				message(FATAL_ERROR "libNIR.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX} not found in ${MESA_LIB_PATH}")
+			endif()
+			list(APPEND	SYSTEM_LIBRARIES ${NIR_LIB})
+		endif()
+	endif()
+
+	if (OPENGL3)
+		target_compile_definitions(rex_engine PUBLIC GLES3_ENABLED)
+		if (NOT ANGLE_LIBS STREQUAL "")
+			target_compile_definitions(rex_engine PUBLIC EGL_STATIC)
+			find_library(ANGLE_LIB NAMES libANGLE.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX} libANGLE
+				PATHS ${ANGLE_LIBS}
+				NO_DEFAULT_PATH)
+			find_library(EGL_LIB NAMES libEGL.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX} libEGL
+				PATHS ${ANGLE_LIBS}
+				NO_DEFAULT_PATH)
+			find_library(GLES_LIB NAMES libGLES.windows.${ARCH}${PREBUILT_LIB_EXTRA_SUFFIX} libGLES
+				PATHS ${ANGLE_LIBS}
+				NO_DEFAULT_PATH)
+			if(NOT ANGLE_LIB OR NOT EGL_LIB OR NOT GLES_LIB)
+				message(FATAL_ERROR "ANGLE libraries not found in ${ANGLE_LIBS}")
+			endif()
+			list(APPEND SYSTEM_LIBRARIES ${ANGLE_LIB} ${EGL_LIB} ${GLES_LIB} dxgi d3d9 d3d11)
+		endif()
+		target_include_directories(rex_engine PUBLIC
+			${CMAKE_SOURCE_DIR}/thirdparty/angle/include/
+		)
 	endif()
 
 	set(SYSTEM_LIBRARIES ${SYSTEM_LIBRARIES} PARENT_SCOPE)
