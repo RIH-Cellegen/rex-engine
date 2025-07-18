@@ -18,6 +18,10 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # export compile commands database
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+if (MSVC)
+	add_compile_options(/permissive- /Zc:__cplusplus)
+endif()
+
 include(methods.cmake)
 include(version.cmake)
 
