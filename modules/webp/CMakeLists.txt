@@ -130,7 +130,7 @@ if (BUILTIN_LIBWEBP)
         ${THIRDPARTY_LIBWEBP_DIR}src/utils/thread_utils.c
         ${THIRDPARTY_LIBWEBP_DIR}src/utils/utils.c
 	)
-	target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+	target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 		${THIRDPARTY_LIBWEBP_DIR}
 		${THIRDPARTY_LIBWEBP_DIR}src/
 	)

@@ -17,7 +17,7 @@ if (NOT DISABLE_3D)
 		${THIRDPARTY_VHACD_DIR}src/VHACD.cpp
 		${THIRDPARTY_VHACD_DIR}src/btConvexHullComputer.cpp
 	)
-	target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+	target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 		${THIRDPARTY_VHACD_DIR}inc/
 	)
 	clone_library(rex_module_${MODULE_NAME} vhacd)

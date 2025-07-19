@@ -8,10 +8,10 @@ set(THIRDPARTY_TINYEXR_DIR ${CMAKE_SOURCE_DIR}/thirdparty/tinyexr/)
 add_library(tinyexr OBJECT
 	${THIRDPARTY_TINYEXR_DIR}tinyexr.cc
 )
-target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 	${THIRDPARTY_TINYEXR_DIR}
 )
-target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 	TINYEXR_USE_THREAD
 	TINYEXR_USE_MINIZ=0
 )

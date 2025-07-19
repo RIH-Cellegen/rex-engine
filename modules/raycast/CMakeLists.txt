@@ -52,10 +52,10 @@ if (ARCH MATCHES "x86_64|arm64|wasm32" OR (ARCH STREQUAL "x86_32" AND REX_PLATFO
 			${THIRDPARTY_EMBREE_DIR}kernels/bvh/bvh_intersector1_bvh4.cpp
 			${THIRDPARTY_EMBREE_DIR}kernels/bvh/bvh_intersector_hybrid4_bvh4.cpp
 		)
-		target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+		target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 			${THIRDPARTY_EMBREE_DIR}include/
 		)
-		target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+		target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 			EMBREE_TARGET_SSE2
 			EMBREE_LOWEST_ISA
 			TASKING_INTERNAL

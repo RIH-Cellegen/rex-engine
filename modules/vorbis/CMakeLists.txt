@@ -48,11 +48,11 @@ if (BUILTIN_LIBVORBIS)
         ${THIRDPARTY_LIBVORBIS}vorbisfile.c
         ${THIRDPARTY_LIBVORBIS}window.c
 	)
-	target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+	target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 		${THIRDPARTY_LIBVORBIS}
 	)
 	if (BUILTIN_LIBOGG)
-		target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+		target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 			${CMAKE_SOURCE_DIR}/thirdparty/libogg/
 		)
 	endif()

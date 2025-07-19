@@ -12,7 +12,7 @@ if (NOT DISABLE_NAVIGATION_2D)
 			${THIRDPARTY_RVO2_2D_DIR}KdTree2d.cpp
 			${THIRDPARTY_RVO2_2D_DIR}RVOSimulator2d.cpp
 		)
-		target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+		target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 			${THIRDPARTY_RVO2_2D_DIR}
 		)
 		clone_library(rex_module_${MODULE_NAME} rvo2_2d)

@@ -110,12 +110,12 @@ if (BUILTIN_MBEDTLS)
         ${THIRDPARTY_MBEDTLS_DIR}library/x509write_csr.c
 	)
 
-	target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+	target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 		${THIRDPARTY_MBEDTLS_DIR}include
 	)
 	# TODO: ninja MSVC fix?
 	set(MBEDTLS_CONFIG_PATH "<${CMAKE_SOURCE_DIR}/thirdparty/mbedtls/include/godot_module_mbedtls_config.h>")
-	target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+	target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 		MBEDTLS_CONFIG_FILE=${MBEDTLS_CONFIG_PATH}
 	)
 

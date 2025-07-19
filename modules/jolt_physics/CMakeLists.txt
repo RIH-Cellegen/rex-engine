@@ -133,21 +133,21 @@ if (NOT DISABLE_PHYSICS_3D AND NOT ARCH STREQUAL "ppc32")
 		${THIRDPARTY_JOLT_PHYSICS_DIR}Jolt/TriangleSplitter/TriangleSplitterBinning.cpp
 		${THIRDPARTY_JOLT_PHYSICS_DIR}Jolt/TriangleSplitter/TriangleSplitterMean.cpp
 	)
-	target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+	target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 		${THIRDPARTY_JOLT_PHYSICS_DIR}
 	)
 	if (REX_DEV_BUILD)
-		target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+		target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 			JPH_ENABLE_ASSERTS
 		)
 	endif()
 	if (EDITOR_BUILD)
-		target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+		target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 			JPH_DEBUG_RENDERER
 		)
 	endif()
 	if (PRECISION STREQUAL "double")
-		target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+		target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 			JPH_DOUBLE_PRECISION
 		)
 	endif()

@@ -52,23 +52,23 @@ add_library(freetype STATIC
 )
 
 if (BROTLI)
-	target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+	target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 		FT_CONFIG_OPTION_USE_BROTLI
 	)
 endif()
 
-target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 	${THIRDPARTY_FREETYPE_DIR}include/
 )
 
-target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 	FT2_BUILD_LIBRARY
 	FT_CONFIG_OPTION_USE_PNG
 	FT_CONFIG_OPTION_SYSTEM_ZLIB
 )
 
 if (BUILTIN_LIBPNG)
-	target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+	target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 		${CMAKE_SOURCE_DIR}/thirdparty/libpng/
 	)
 endif()

@@ -49,22 +49,22 @@ if (VULKAN OR D3D12 OR METAL)
 			${THIRDPARTY_GLSLANG_DIR}SPIRV/SpvTools.cpp
 		)
 		if (REX_PLATFORM STREQUAL "windows")
-			target_sources(rex_module_${MODULE_NAME} INTERFACE
+			target_sources(rex_module_${MODULE_NAME} PRIVATE
 				${THIRDPARTY_GLSLANG_DIR}glslang/OSDependent/Windows/ossource.cpp
 			)
 		else()
-			target_sources(rex_module_${MODULE_NAME} INTERFACE
+			target_sources(rex_module_${MODULE_NAME} PRIVATE
 				${THIRDPARTY_GLSLANG_DIR}glslang/OSDependent/Unix/ossource.cpp
 			)
 		endif()
 
 		# Include `#thirdparty` to workaround mismatch between location of `SPIRV` in library source
 		# and in installed public headers.
-		target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+		target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 			${THIRDPARTY_GLSLANG_DIR}
 			${CMAKE_SOURCE_DIR}/thirdparty/
 		)
-		target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+		target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 			ENABLE_OPT=0
 		)
 		clone_library(rex_module_${MODULE_NAME} glslang)

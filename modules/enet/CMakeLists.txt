@@ -30,10 +30,10 @@ if (BUILTIN_ENET)
         ${THIRDPARTY_ENET_DIR}peer.c
         ${THIRDPARTY_ENET_DIR}protocol.c
 	)
-	target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+	target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 		${THIRDPARTY_ENET_DIR}
 	)
-	target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+	target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 		GODOT_ENET
 	)
 

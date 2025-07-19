@@ -35,15 +35,15 @@ if (BUILTIN_MINIUPNPC AND NOT REX_PLATFORM STREQUAL "web")
         ${THIRDPARTY_MINIUPNPC_DIR}src/addr_is_reserved.c
 	)
 
-	target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+	target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 		${THIRDPARTY_MINIUPNPC_DIR}include/
 	)
 
-	target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+	target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 		MINIUPNP_STATICLIB
 	)
 	if (REX_PLATFORM STREQUAL "windows")
-		target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+		target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 			MINIUPNPC_SET_SOCKET_TIMEOUT
 		)
 	endif()

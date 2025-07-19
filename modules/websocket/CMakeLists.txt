@@ -26,18 +26,18 @@ if (BUILTIN_WSLAY)
 		${THIRDPARTY_WSLAY_DIR}wslay_queue.c
 		${THIRDPARTY_WSLAY_DIR}wslay_frame.c
 	)
-	target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+	target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 		${THIRDPARTY_WSLAY_DIR}
 	)
-	target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+	target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 		HAVE_CONFIG_H
 	)
 	if (REX_PLATFORM STREQUAL "windows")
-		target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+		target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 			HAVE_WINSOCK2_H
 		)
 	else()
-		target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+		target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 			HAVE_NETINET_IN_H
 		)
 	endif()

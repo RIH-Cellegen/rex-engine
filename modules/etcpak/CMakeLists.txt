@@ -11,7 +11,7 @@ add_library(etcpak OBJECT
     ${THIRDPARTY_ETCPAK_DIR}ProcessRGB.cpp
     ${THIRDPARTY_ETCPAK_DIR}Tables.cpp
 )
-target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 	${THIRDPARTY_ETCPAK_DIR}
 )
 

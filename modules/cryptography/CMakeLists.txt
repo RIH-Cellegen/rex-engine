@@ -3,7 +3,7 @@ clone_library(rex_modules rex_module_${MODULE_NAME})
 disable_warnings_for_target(rex_module_${MODULE_NAME})
 set(MODULE_IS_ENABLED ON PARENT_SCOPE)
 if (${CMAKE_HOST_SYSTEM_NAME} MATCHES "Linux|OpenBSD")
-	target_include_directories(rex_engine INTERFACE
+	target_include_directories(rex_engine PRIVATE
 		/usr/include/openssl/
 	)
 	find_library(SSL_LIB ssl)
@@ -15,11 +15,11 @@ if (${CMAKE_HOST_SYSTEM_NAME} MATCHES "Linux|OpenBSD")
 		list(APPEND BUILTIN_LIBRARIES ${CRYPTO_LIB})
 	endif()
 elseif(${CMAKE_HOST_SYSTEM_NAME} STREQUAL "FreeBSD")
-	target_include_directories(rex_engine INTERFACE
+	target_include_directories(rex_engine PRIVATE
 		/usr/local/include/openssl/
 	)
 elseif (${CMAKE_HOST_SYSTEM_NAME} STREQUAL "Windows")
-	target_include_directories(rex_engine INTERFACE
+	target_include_directories(rex_engine PRIVATE
 		C:/OpenSSL/include  # Generic location for Windows?
 	)
 	find_library(SSL_LIB libssl.lib)

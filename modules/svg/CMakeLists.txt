@@ -47,10 +47,10 @@ add_library(thorvg OBJECT
     ${THIRDPARTY_THORVG_DIR}src/renderer/sw_engine/tvgSwShape.cpp
     ${THIRDPARTY_THORVG_DIR}src/renderer/sw_engine/tvgSwStroke.cpp
 )
-target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 	${THIRDPARTY_THORVG_DIR}inc/
 )
-target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 	TVG_STATIC
 	THORVG_FILE_IO_SUPPORT
 )
@@ -58,14 +58,14 @@ if ("webp" IN_LIST ENABLED_MODULES)
 	target_sources(thorvg PRIVATE
 		${THIRDPARTY_THORVG_DIR}src/loaders/external_webp/tvgWebpLoader.cpp
 	)
-	target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+	target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 		THORVG_WEBP_LOADER_SUPPORT
 	)
-	target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+	target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 		${THIRDPARTY_THORVG_DIR}src/loaders/external_webp/
 	)
 	if (BUILTIN_LIBWEBP)
-        target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+        target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 			${CMAKE_SOURCE_DIR}/thirdparty/libwebp/src/
 		)
 	endif()

@@ -2,11 +2,7 @@ file(GLOB CORE_SOURCES *.cpp)
 
 add_library(rex_core STATIC ${CORE_SOURCES})
 
-target_include_directories(rex_core PRIVATE "$<TARGET_PROPERTY:rex_engine,INTERFACE_INCLUDE_DIRECTORIES>")
-
-get_target_property(ENGINE_DEFINITIONS rex_engine INTERFACE_COMPILE_DEFINITIONS)
-
-target_compile_definitions(rex_core PRIVATE ${ENGINE_DEFINITIONS})
+clone_library(rex_engine rex_core)
 
 set(THIRDPARTY_DIR ${CMAKE_SOURCE_DIR}/thirdparty/)
 
@@ -37,7 +33,7 @@ if (BUILTIN_BROTLI)
         ${THIRDPARTY_BROTLI_DIR}dec/state.c
 	)
 
-	target_include_directories(rex_engine INTERFACE
+	target_include_directories(rex_engine PRIVATE
 		${THIRDPARTY_BROTLI_DIR}include
 	)
 
@@ -60,11 +56,11 @@ if (BUILTIN_CLIPPER2)
         ${THIRDPARTY_CLIPPER2_DIR}src/clipper.rectclip.cpp
 	)
 
-	target_include_directories(rex_engine INTERFACE
+	target_include_directories(rex_engine PRIVATE
 		${THIRDPARTY_CLIPPER2_DIR}include
 	)
 
-	target_compile_definitions(rex_engine INTERFACE
+	target_compile_definitions(rex_engine PRIVATE
 		CLIPPER2_ENABLED
 	)
 
@@ -88,7 +84,7 @@ if (BUILTIN_ZLIB)
         ${THIRDPARTY_ZLIB_DIR}zutil.c
 	)
 
-	target_include_directories(rex_engine INTERFACE
+	target_include_directories(rex_engine PRIVATE
 		${THIRDPARTY_ZLIB_DIR}
 	)
 
@@ -152,7 +148,7 @@ if (BUILTIN_ZSTD)
 		${THIRDPARTY_ZSTD_DIR}common/
 	)
 
-	target_include_directories(rex_engine INTERFACE
+	target_include_directories(rex_engine PRIVATE
 		${THIRDPARTY_ZSTD_DIR}
 	)
 

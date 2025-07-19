@@ -15,11 +15,11 @@ if(REX_PLATFORM STREQUAL "windows")
 		${THIRDPARTY_BACKTRACE_DIR}alloc.c
 	)
 
-	target_include_directories(rex_drivers INTERFACE
+	target_include_directories(rex_drivers PRIVATE
 		${THIRDPARTY_BACKTRACE_DIR}
 	)
 	clone_library(rex_drivers libbacktrace)
 	disable_warnings_for_target(libbacktrace)
 
-	target_link_libraries(rex_drivers backtrace)
+	target_link_libraries(rex_drivers PUBLIC backtrace)
 endif()

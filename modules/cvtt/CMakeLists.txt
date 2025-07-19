@@ -19,7 +19,7 @@ if (EDITOR_BUILD)
 		${THIRDPARTY_CVTT_DIR}ConvectionKernels_Util.cpp
 	)
 
-	target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+	target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 		${THIRDPARTY_CVTT_DIR}
 	)
 

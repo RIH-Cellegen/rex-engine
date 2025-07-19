@@ -45,33 +45,33 @@ if (REX_PLATFORM MATCHES "linuxbsd|android|macos|windows" AND NOT DISABLE_XR)
 	set(MODULE_IS_ENABLED ON PARENT_SCOPE)
 
 	if (REX_PLATFORM STREQUAL "android")
-		target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+		target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 			XR_OS_ANDROID
 			XR_USE_PLATFORM_ANDROID
 			JSON_USE_EXCEPTION=0
 		)
 	elseif(REX_PLATFORM STREQUAL "linuxbsd")
-		target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+		target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 			XR_OS_LINUX
 		)
 		if (X11)
-			target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+			target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 				XR_USE_PLATFORM_XLIB
 			)
 		endif()
 		if (WAYLAND AND OPENGL3)
-			target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+			target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 				XR_USE_PLATFORM_EGL
 			)
 		endif()
 	elseif(REX_PLATFORM STREQUAL "windows")
-		target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+		target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 			XR_OS_WINDOWS
 			NOMINMAX
 			XR_USE_PLATFORM_WIN32
 		)
 	elseif(REX_PLATFORM STREQUAL "macos")
-		target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+		target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 			XR_OS_APPLE
 		)
 	endif()
@@ -80,7 +80,7 @@ if (REX_PLATFORM MATCHES "linuxbsd|android|macos|windows" AND NOT DISABLE_XR)
 	# FreeBSD uses non-standard getenv functions.
 
 	if (NOT ${CMAKE_SYSTEM_NAME} STREQUAL "FreeBSD")
-		target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+		target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 			HAVE_SECURE_GETENV
 		)
 	endif()
@@ -108,7 +108,7 @@ if (REX_PLATFORM MATCHES "linuxbsd|android|macos|windows" AND NOT DISABLE_XR)
 			)
 		endif()
 
-		target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+		target_include_directories(rex_module_${MODULE_NAME} PRIVATE
             ${THIRDPARTY_OPENXR_DIR}
             ${THIRDPARTY_OPENXR_DIR}include/
             ${THIRDPARTY_OPENXR_DIR}src/

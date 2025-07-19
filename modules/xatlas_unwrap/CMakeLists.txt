@@ -9,7 +9,7 @@ if (EDITOR_BUILD AND NOT REX_PLATFORM MATCHES "android|ios")
 		add_library(xatlas OBJECT
 			${THIRDPARTY_XATLAS_DIR}xatlas.cpp
 		)
-		target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+		target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 			${THIRDPARTY_XATLAS_DIR}
 		)
 		clone_library(rex_module_${MODULE_NAME} xatlas)

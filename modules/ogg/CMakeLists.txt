@@ -23,7 +23,7 @@ if (BUILTIN_LIBOGG)
         ${THIRDPARTY_LIBOGG_DIR}bitwise.c
         ${THIRDPARTY_LIBOGG_DIR}framing.c
 	)
-	target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+	target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 		${THIRDPARTY_LIBOGG_DIR}
 	)
 	clone_library(rex_module_${MODULE_NAME} libogg)

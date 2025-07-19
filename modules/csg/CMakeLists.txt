@@ -27,7 +27,7 @@ if (NOT DISABLE_3D)
 	disable_warnings_for_target(rex_module_${MODULE_NAME})
 	set(MODULE_IS_ENABLED ON PARENT_SCOPE)
 
-	target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+	target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 		MANIFOLD_PAR=-1
 	)
 
@@ -50,7 +50,7 @@ if (NOT DISABLE_3D)
 		${THIRDPARTY_MANIFOLD_DIR}src/subdivision.cpp
 	)
 
-	target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+	target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 		${THIRDPARTY_MANIFOLD_DIR}include/
 	)
 

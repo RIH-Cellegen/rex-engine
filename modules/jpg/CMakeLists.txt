@@ -9,7 +9,7 @@ add_library(jpg OBJECT
     ${THIRDPARTY_JPG_DIR}jpge.cpp
 )
 
-target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 	${THIRDPARTY_JPG_DIR}
 )
 clone_library(rex_module_${MODULE_NAME} jpg)

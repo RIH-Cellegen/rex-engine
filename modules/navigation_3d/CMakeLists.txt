@@ -23,7 +23,7 @@ if (NOT DISABLE_3D)
 			${THIRDPARTY_RECASTNAVIGATION_DIR}Source/RecastRasterization.cpp
 			${THIRDPARTY_RECASTNAVIGATION_DIR}Source/RecastRegion.cpp
 		)
-		target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+		target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 			${THIRDPARTY_RECASTNAVIGATION_DIR}Include/
 		)
 		clone_library(rex_module_${MODULE_NAME} recastnavigation)
@@ -35,7 +35,7 @@ if (NOT DISABLE_3D)
 
 	if (BUILTIN_RVO2_2D)
 		set(THIRDPARTY_RVO2_2D_DIR ${CMAKE_SOURCE_DIR}/thirdparty/rvo2/rvo2_2d/)
-		target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+		target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 			${THIRDPARTY_RVO2_2D_DIR}
 		)
 		if (NOT "navigation_2d" IN_LIST ENABLED_MODULES)
@@ -60,7 +60,7 @@ if (NOT DISABLE_3D)
 			${THIRDPARTY_RVO2_3D_DIR}KdTree3d.cpp
 			${THIRDPARTY_RVO2_3D_DIR}RVOSimulator3d.cpp
 		)
-		target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+		target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 			${THIRDPARTY_RVO2_3D_DIR}
 		)
 		clone_library(rex_module_${MODULE_NAME} rvo2_3d)

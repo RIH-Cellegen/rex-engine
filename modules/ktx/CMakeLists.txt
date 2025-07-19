@@ -26,7 +26,7 @@ add_library(libktx OBJECT
     ${THIRDPARTY_KTX_DIR}lib/dfdutils/queries.c
     ${THIRDPARTY_KTX_DIR}lib/dfdutils/vk2dfd.c
 )
-target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 	${THIRDPARTY_KTX_DIR}include/
 	${THIRDPARTY_KTX_DIR}utils/
 	${THIRDPARTY_KTX_DIR}lib/
@@ -34,20 +34,20 @@ target_include_directories(rex_module_${MODULE_NAME} INTERFACE
 	${CMAKE_SOURCE_DIR}/thirdparty/basis_universal/
 )
 if (EDITOR_BUILD)
-	target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+	target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 		MINIZ_HEADER_FILE_ONLY
 	)
 endif()
 if (VULKAN)
-	target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+	target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 		${CMAKE_SOURCE_DIR}/thirdparty/vulkan/include/
 	)
 else()
-	target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+	target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 		LIBKTX
 	)
 endif()
-target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 	KHRONOS_STATIC=1
 )
 clone_library(rex_module_${MODULE_NAME} libktx)

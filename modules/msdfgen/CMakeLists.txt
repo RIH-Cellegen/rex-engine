@@ -29,10 +29,10 @@ if (BUILTIN_MSDFGEN)
         ${THIRDPARTY_MSDFGEN_DIR}core/sdf-error-estimation.cpp
         ${THIRDPARTY_MSDFGEN_DIR}core/shape-description.cpp
 	)
-	target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+	target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 		MSDFGEN_PUBLIC=
 	)
-	target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+	target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 		${CMAKE_SOURCE_DIR}/thirdparty/freetype/include
 		${CMAKE_SOURCE_DIR}/thirdparty/msdfgen
 		${CMAKE_SOURCE_DIR}/thirdparty/nanosvg

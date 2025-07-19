@@ -59,20 +59,20 @@ if (NOT ARCH MATCHES "^rv.*")
 			)
 		endif()
 		if (X86_LIBTHEORA_OPT_GCC OR X86_LIBTHEORA_OPT_VC)
-			target_compile_definitions(rex_module_${MODULE_NAME} INTERFACE
+			target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 				OC_X86_ASM
 			)
 		endif()
-		target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+		target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 			${THIRDPARTY_LIBTHEORA_DIR}
 		)
 		if (BUILTIN_LIBOGG)
-			target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+			target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 				${CMAKE_SOURCE_DIR}/thirdparty/libogg/
 			)
 		endif()
 		if (BUILTIN_LIBVORBIS)
-			target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+			target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 				${CMAKE_SOURCE_DIR}/thirdparty/libvorbis/
 			)
 		endif()

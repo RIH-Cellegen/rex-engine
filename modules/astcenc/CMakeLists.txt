@@ -28,7 +28,7 @@ add_library(astcenc OBJECT
     ${THIRDPARTY_ASTCENC_DIR}astcenc_weight_quant_xfer_tables.cpp
 )
 
-target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 	${THIRDPARTY_ASTCENC_DIR}
 )
 

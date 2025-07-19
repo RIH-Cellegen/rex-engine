@@ -1,7 +1,7 @@
 function(clone_library SRC DEST)
-	target_include_directories(${DEST} PUBLIC "$<TARGET_PROPERTY:${SRC},INTERFACE_INCLUDE_DIRECTORIES>")
-	target_compile_definitions(${DEST} PUBLIC "$<TARGET_PROPERTY:${SRC},INTERFACE_COMPILE_DEFINITIONS>")
-	target_compile_options(${DEST} PUBLIC "$<TARGET_PROPERTY:${SRC},INTERFACE_COMPILE_OPTIONS>")
+	target_include_directories(${DEST} PRIVATE "$<TARGET_PROPERTY:${SRC},INCLUDE_DIRECTORIES>")
+	target_compile_definitions(${DEST} PRIVATE "$<TARGET_PROPERTY:${SRC},COMPILE_DEFINITIONS>")
+	target_compile_options(${DEST} PRIVATE "$<TARGET_PROPERTY:${SRC},COMPILE_OPTIONS>")
 endfunction()
 
 function(disable_warnings_for_target TARGET)

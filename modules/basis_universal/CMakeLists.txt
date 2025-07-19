@@ -8,7 +8,7 @@ add_library(basis_universal OBJECT
 	${THIRDPARTY_BASIS_UNIVERSAL_DIR}transcoder/basisu_transcoder.cpp
 )
 
-target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 	${THIRDPARTY_BASIS_UNIVERSAL_DIR}
 )
 
@@ -40,14 +40,14 @@ if (EDITOR_BUILD)
         ${ENCODER_SOURCES_DIR}basisu_uastc_hdr_4x4_enc.cpp
         ${ENCODER_SOURCES_DIR}pvpngreader.cpp
 	)
-	target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+	target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 		${CMAKE_SOURCE_DIR}/thirdparty/jpeg-compressor/
 		${CMAKE_SOURCE_DIR}/thirdparty/tinyexr/
 	)
 endif()
 
 if (BUILTIN_ZSTD)
-	target_include_directories(rex_module_${MODULE_NAME} INTERFACE
+	target_include_directories(rex_module_${MODULE_NAME} PRIVATE
 		${CMAKE_SOURCE_DIR}/thirdparty/zstd/
 	)
 endif()

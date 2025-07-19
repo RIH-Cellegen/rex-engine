@@ -300,7 +300,7 @@ if(REX_PLATFORM STREQUAL "windows")
 		if (ARCH STREQUAL "x86_32")
 			set(CMAKE_RC_FLAGS "${CMAKE_RC_FLAGS} --target=pe-i386")
 		elseif(ARCH STREQUAL "x86_64")
-			set(CMAKE_RC_FLAGS "${CMAKE_RC_FLAGS} --target=pe-x86_64")
+			set(CMAKE_RC_FLAGS "${CMAKE_RC_FLAGS} --target=pe-x86-64")
 		elseif(ARCH STREQUAL "arm32")
 			set(CMAKE_RC_FLAGS "${CMAKE_RC_FLAGS} --target=armv7-w64-mingw32")
 		elseif(ARCH STREQUAL "arm64")
@@ -438,6 +438,9 @@ if(REX_PLATFORM STREQUAL "windows")
 		WINMIDI_ENABLED
 		WINVER=${TARGET_WIN_VERSION}
 		_WIN32_WINNT=${TARGET_WIN_VERSION}
+	)
+	target_include_directories(rex_engine PUBLIC
+		${CMAKE_SOURCE_DIR}/platform/windows/
 	)
 	list(APPEND SYSTEM_LIBRARIES
 		winmm
