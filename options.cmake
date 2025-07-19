@@ -45,7 +45,7 @@ else()
   set(DEFAULT_JOBS 1)
 endif()
 set(NUM_JOBS "${DEFAULT_JOBS}" CACHE STRING "Number of parallel build jobs (equivalent to make -j N)")
-message(STATUS "NUM_JOBS set to ${NUM_JOBS}. Use 'cmake --build . --parallel ${NUM_JOBS}' or override with -DNUM_JOBS=N")
+message(STATUS "NUM_JOBS set to ${NUM_JOBS}. Use ' -j ${NUM_JOBS}' or override with -DNUM_JOBS=N")
 
 # Advanced options
 option(REX_TESTS "Build the unit tests" OFF)
@@ -95,5 +95,3 @@ option(STRICT_CHECKS "Enforce stricter checks (debug option)" OFF)
 option(SCU_BUILD "Use single compilation unit build" OFF)
 option(ENGINE_UPDATE_CHECK "Enable engine update checks in the Project Manager" ON)
 option(STEAMAPI "Enable minimal SteamAPI integration for usage time tracking (editor only)" OFF)
-
-

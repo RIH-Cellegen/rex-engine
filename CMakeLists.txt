@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.26 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.28 FATAL_ERROR)
 find_package(Python3 REQUIRED COMPONENTS Interpreter)
 
 project(rex_engine

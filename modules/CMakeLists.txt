@@ -39,14 +39,12 @@ foreach(MODULE_NAME ${ENABLED_MODULES})
 	if (MODULE_IS_ENABLED)
 		string(TOUPPER "${MODULE_NAME}" MODULE_UPPER)
 		list(APPEND MODULE_COMPILE_DEFINES "MODULE_${MODULE_UPPER}_ENABLED")
-		#target_include_directories(rex_module_${MODULE_NAME} PRIVATE "$<TARGET_PROPERTY:rex_engine,INTERFACE_INCLUDE_DIRECTORIES>")
-		#get_target_property(ENGINE_DEFINITIONS rex_engine INTERFACE_COMPILE_DEFINITIONS)
-		target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE ${ENGINE_DEFINITIONS})
+		#target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE ${ENGINE_DEFINITIONS})
 		target_compile_definitions(rex_module_${MODULE_NAME} PRIVATE
 			GODOT_MODULE
 			${MODULE_COMPILE_DEFINES}
 		)
-		add_dependencies(rex_module_${MODULE_NAME} rex_core)
+		#add_dependencies(rex_module_${MODULE_NAME} rex_core)
 		target_link_libraries(rex_engine PUBLIC rex_module_${MODULE_NAME})
 		string(APPEND MODULE_ENABLED_FILE_CONTENT "#define MODULE_${MODULE_UPPER}_ENABLED\n")
 		string(APPEND REGISTER_MODULE_FILE_CONTENT "#include \"modules/${MODULE_NAME}/register_types.h\"\n")
