@@ -21,5 +21,5 @@ if(REX_PLATFORM STREQUAL "windows")
 	clone_library(rex_drivers libbacktrace)
 	disable_warnings_for_target(libbacktrace)
 
-	target_link_libraries(rex_drivers PUBLIC backtrace)
+	target_link_libraries(rex_drivers PUBLIC libbacktrace)
 endif()

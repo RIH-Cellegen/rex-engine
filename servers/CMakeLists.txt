@@ -44,5 +44,3 @@ if (NOT DISABLE_XR)
 	)
 	add_subdirectory(xr)
 endif()
-
-#target_link_libraries(rex_engine PUBLIC rex_servers)

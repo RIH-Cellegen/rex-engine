@@ -15,5 +15,3 @@ add_subdirectory(audio)
 add_subdirectory(resources)
 add_subdirectory(debugger)
 add_subdirectory(theme)
-
-#target_link_libraries(rex_engine PUBLIC rex_scene)

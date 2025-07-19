@@ -1,7 +1,6 @@
 add_library(rex_modules STATIC ${CMAKE_CURRENT_SOURCE_DIR}/register_module_types.gen.cpp)
 
 clone_library(rex_engine rex_modules)
-#get_target_property(ENGINE_DEFINITIONS rex_engine INTERFACE_COMPILE_DEFINITIONS)
 
 target_link_libraries(rex_engine PUBLIC rex_modules)
 # Modules are added dynamically like it was in Scons
