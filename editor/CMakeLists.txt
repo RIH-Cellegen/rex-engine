@@ -38,7 +38,7 @@ add_custom_command(
 	COMMENT "Generating register exporters..."
 )
 add_custom_target(editor_register_exporters DEPENDS ${CMAKE_SOURCE_DIR}/editor/register_exporters.gen.cpp)
-add_dependencies(rex_editor editor_register_exporters)
+add_dependencies(file_generators editor_register_exporters)
 target_sources(rex_editor PRIVATE ${CMAKE_SOURCE_DIR}/editor/register_exporters.gen.cpp)
 
 foreach(EXPORTER ${PLATFORM_EXPORTERS})

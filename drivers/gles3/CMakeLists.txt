@@ -24,9 +24,6 @@ set(GLSL_FILES
 
 list(JOIN GLSL_FILES " " SHADER_FILES_ARGS)
 list(TRANSFORM GLSL_FILES APPEND ".gen.h")
-#list(JOIN GL_INCLUDE_FILES " " INCLUDE_FILES_ARGS)
-#list(TRANSFORM GL_INCLUDE_FILES APPEND ".gen.h")
-
 
 add_custom_command(
 	OUTPUT ${GLSL_FILES}
@@ -34,18 +31,11 @@ add_custom_command(
 	WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
 	COMMENT "Generating GLES3 Shader Files..."
 )
-#add_custom_command(
-#	OUTPUT ${GL_INCLUDE_FILES}
-#	COMMAND ${_Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/generators/rex_glsl_builders.py build_raw_headers ${INCLUDE_FILES_ARGS}
-#	WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
-#	COMMENT "Generating GLSL Include Files..."
-#)
 add_custom_target(process_drivers_shaders DEPENDS
 	${GLSL_FILES}
-	#	${GL_INCLUDE_FILES}
 )
 
-add_dependencies(rex_drivers process_drivers_shaders)
+add_dependencies(file_generators process_drivers_shaders)
 
 file(GLOB_RECURSE GLES_SOURCES
 	*.cpp

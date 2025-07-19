@@ -219,7 +219,7 @@ add_custom_command(
 add_custom_target(certs_compressed DEPENDS
 	${CMAKE_SOURCE_DIR}/core/io/certs_compressed.gen.h
 )
-add_dependencies(rex_core certs_compressed)
+add_dependencies(file_generators certs_compressed)
 
 add_custom_command(
 	OUTPUT ${CMAKE_SOURCE_DIR}/core/redot_authors.gen.h
@@ -231,7 +231,7 @@ add_custom_command(
 add_custom_target(redot_authors DEPENDS
 	${CMAKE_SOURCE_DIR}/core/redot_authors.gen.h
 )
-add_dependencies(rex_core redot_authors)
+add_dependencies(file_generators redot_authors)
 
 add_custom_command(
 	OUTPUT ${CMAKE_SOURCE_DIR}/core/authors.gen.h
@@ -243,7 +243,7 @@ add_custom_command(
 add_custom_target(authors DEPENDS
 	${CMAKE_SOURCE_DIR}/core/authors.gen.h
 )
-add_dependencies(rex_core authors)
+add_dependencies(file_generators authors)
 
 add_custom_command(
 	OUTPUT ${CMAKE_SOURCE_DIR}/core/donors.gen.h
@@ -256,7 +256,7 @@ add_custom_target(donors DEPENDS
 	${CMAKE_SOURCE_DIR}/core/donors.gen.h
 )
 
-add_dependencies(rex_core donors)
+add_dependencies(file_generators donors)
 
 add_custom_command(
 	OUTPUT ${CMAKE_SOURCE_DIR}/core/license.gen.h
@@ -269,7 +269,7 @@ add_custom_target(license DEPENDS
 	${CMAKE_SOURCE_DIR}/core/license.gen.h
 )
 
-add_dependencies(rex_core license)
+add_dependencies(file_generators license)
 
 add_subdirectory(object)
 add_subdirectory(os)

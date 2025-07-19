@@ -13,7 +13,7 @@ add_custom_command(
 )
 
 add_custom_target(default_controller_mappings DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/default_controller_mappings.gen.cpp)
-add_dependencies(rex_core default_controller_mappings)
+add_dependencies(file_generators default_controller_mappings)
 target_sources(rex_core PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/default_controller_mappings.gen.cpp)
 
 file(GLOB_RECURSE CORE_INPUT_SOURCES *.cpp)

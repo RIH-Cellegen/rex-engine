@@ -514,6 +514,6 @@ add_custom_command(
 	COMMENT "Generating icu4data Header..."
 )
 add_custom_target(icu4_data DEPENDS ${CMAKE_SOURCE_DIR}/thirdparty/icu4c/icudata.gen.h)
-add_dependencies(rex_module_${MODULE_NAME} icu4_data)
+add_dependencies(file_generators icu4_data)
 
 set(BUILTIN_LIBRARIES ${BUILTIN_LIBRARIES} PARENT_SCOPE)

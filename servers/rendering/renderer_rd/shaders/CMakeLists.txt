@@ -27,4 +27,4 @@ add_custom_target(process_shaders DEPENDS
 	${GL_INCLUDE_FILES}
 )
 
-add_dependencies(rex_servers process_shaders)
+add_dependencies(file_generators process_shaders)

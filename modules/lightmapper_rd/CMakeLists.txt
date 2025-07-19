@@ -17,8 +17,7 @@ if (EDITOR_BUILD AND NOT REX_PLATFORM MATCHES "android|ios")
 		${GLSL_FILES}
 	)
 
-	add_dependencies(rex_servers process_lightmapper_rd_shaders)
-	add_dependencies(rex_module_${MODULE_NAME} process_lightmapper_rd_shaders)
+	add_dependencies(file_generators process_lightmapper_rd_shaders)
 
 	file(GLOB LIGHTMAPPER_RD_SOURCES *.cpp)
 	target_sources(rex_module_${MODULE_NAME} PRIVATE

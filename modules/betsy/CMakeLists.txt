@@ -21,7 +21,6 @@ if (EDITOR_BUILD)
 		${GLSL_FILES}
 	)
 
-	add_dependencies(rex_servers process_betsy_shaders)
-	add_dependencies(rex_module_${MODULE_NAME} process_betsy_shaders)
+	add_dependencies(file_generators process_betsy_shaders)
 
 endif()

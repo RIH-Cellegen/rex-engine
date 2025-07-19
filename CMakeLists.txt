@@ -24,6 +24,9 @@ elseif(MINGW)
 	add_compile_options(-fpermissive)
 endif()
 
+# Used to force generation of files before compile
+add_custom_target(file_generators)
+
 include(methods.cmake)
 include(version.cmake)
 
@@ -414,8 +417,7 @@ if (EDITOR_BUILD)
 		COMMENT "Generating Doc Data Class Path Header..."
 	)
 	add_custom_target(doc_data_class_path DEPENDS ${CMAKE_SOURCE_DIR}/editor/doc_data_class_path.gen.h)
-	add_dependencies(rex_editor doc_data_class_path)
-	add_dependencies(rex_main doc_data_class_path)
+	add_dependencies(file_generators doc_data_class_path)
 
 	file(GLOB DOCS ${CMAKE_SOURCE_DIR}/doc/classes/*.xml)
 	set(MODULE_DIRS)
@@ -443,7 +445,7 @@ if (EDITOR_BUILD)
 		COMMENT "Generating Doc Data Compressed Header..."
 	)
 	add_custom_target(doc_data_compressed DEPENDS ${CMAKE_SOURCE_DIR}/editor/doc_data_compressed.gen.h)
-	add_dependencies(rex_editor doc_data_compressed)
+	add_dependencies(file_generators doc_data_compressed)
 
 	file(GLOB EDITOR_TRANSLATIONS ${CMAKE_SOURCE_DIR}/editor/translations/editor/*)
 	set(EDITOR_TRANSLATIONS_LIST_FILE ${CMAKE_BINARY_DIR}/editor_translations_list.txt)
@@ -460,7 +462,7 @@ if (EDITOR_BUILD)
 		COMMENT "Generating Editor Translations Header..."
 	)
 	add_custom_target(editor_translations DEPENDS ${CMAKE_SOURCE_DIR}/editor/editor_translations.gen.h)
-	add_dependencies(rex_editor editor_translations)
+	add_dependencies(file_generators editor_translations)
 
 	file(GLOB PROPERTIES_TRANSLATIONS ${CMAKE_SOURCE_DIR}/editor/translations/properties/*)
 	set(PROPERTIES_TRANSLATIONS_LIST_FILE ${CMAKE_BINARY_DIR}/properties_translations_list.txt)
@@ -477,7 +479,7 @@ if (EDITOR_BUILD)
 		COMMENT "Generating Properties Translations Header..."
 	)
 	add_custom_target(properties_translations DEPENDS ${CMAKE_SOURCE_DIR}/editor/property_translations.gen.h)
-	add_dependencies(rex_editor properties_translations)
+	add_dependencies(file_generators properties_translations)
 
 	file(GLOB DOC_TRANSLATIONS ${CMAKE_SOURCE_DIR}/doc/translations/*)
 	set(DOC_TRANSLATIONS_LIST_FILE ${CMAKE_BINARY_DIR}/doc_translations_list.txt)
@@ -494,7 +496,7 @@ if (EDITOR_BUILD)
 		COMMENT "Generating Doc Translations Header..."
 	)
 	add_custom_target(doc_translations DEPENDS ${CMAKE_SOURCE_DIR}/editor/doc_translations.gen.h)
-	add_dependencies(rex_editor doc_translations)
+	add_dependencies(file_generators doc_translations)
 
 	file(GLOB EXTRACTABLE_TRANSLATIONS ${CMAKE_SOURCE_DIR}/editor/translations/extractable/*)
 	set(EXTRACTABLE_TRANSLATIONS_LIST_FILE ${CMAKE_BINARY_DIR}/extractable_translations_list.txt)
@@ -511,7 +513,7 @@ if (EDITOR_BUILD)
 		COMMENT "Generating Extractable Translations Header..."
 	)
 	add_custom_target(extractable_translations DEPENDS ${CMAKE_SOURCE_DIR}/editor/extractable_translations.gen.h)
-	add_dependencies(rex_editor extractable_translations)
+	add_dependencies(file_generators extractable_translations)
 
 	# Editor Icons
 	file(GLOB EDITOR_ICONS ${CMAKE_SOURCE_DIR}/editor/icons/*.svg)
@@ -533,7 +535,7 @@ if (EDITOR_BUILD)
 		COMMENT "Generating Editor Icons Header..."
 	)
 	add_custom_target(editor_icons DEPENDS ${CMAKE_SOURCE_DIR}/editor/themes/editor_icons.gen.h)
-	add_dependencies(rex_editor editor_icons)
+	add_dependencies(file_generators editor_icons)
 
 endif()
 

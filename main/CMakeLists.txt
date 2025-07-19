@@ -29,7 +29,7 @@ add_custom_target(splash DEPENDS
 	${CMAKE_SOURCE_DIR}/main/splash.gen.h
 )
 
-add_dependencies(rex_main splash)
+add_dependencies(file_generators splash)
 
 if (EDITOR_BUILD AND NOT NO_EDITOR_SPLASH)
 	add_custom_command(
@@ -43,7 +43,7 @@ if (EDITOR_BUILD AND NOT NO_EDITOR_SPLASH)
 		${CMAKE_SOURCE_DIR}/main/splash_editor.gen.h
 	)
 
-	add_dependencies(rex_main splash_editor)
+	add_dependencies(file_generators splash_editor)
 endif()
 
 add_custom_command(
@@ -57,6 +57,6 @@ add_custom_target(app_icon DEPENDS
 	${CMAKE_SOURCE_DIR}/main/app_icon.gen.h
 )
 
-add_dependencies(rex_main app_icon)
+add_dependencies(file_generators app_icon)
 
 target_link_libraries(rex_engine PUBLIC rex_main)

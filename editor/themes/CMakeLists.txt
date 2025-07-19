@@ -14,7 +14,7 @@ add_custom_command(
 	COMMENT "Generating Builtin Fonts Header..."
 )
 add_custom_target(builtin_fonts DEPENDS ${CMAKE_SOURCE_DIR}/editor/themes/builtin_fonts.gen.h)
-add_dependencies(rex_editor builtin_fonts)
+add_dependencies(file_generators builtin_fonts)
 
 file(GLOB_RECURSE EDITOR_THEMES_SOURCES *.cpp)
 target_sources(rex_editor PRIVATE ${EDITOR_THEMES_SOURCES})

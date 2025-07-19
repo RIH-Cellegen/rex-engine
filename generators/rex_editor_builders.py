@@ -86,7 +86,6 @@ def make_translations_header(args):
 
     xl_names = []
     msgfmt = shutil.which("msgfmt")
-    print(msgfmt)
     if not msgfmt:
         methods.print_warning("msgfmt not found, using .po files instead of .mo")
 

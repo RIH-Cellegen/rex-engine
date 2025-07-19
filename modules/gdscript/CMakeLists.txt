@@ -46,7 +46,7 @@ add_custom_command(
 	COMMENT "Generating GDScript Templates Header..."
 )
 add_custom_target(script_templates DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/editor/script_templates/templates.gen.h)
-add_dependencies(rex_module_${MODULE_NAME} script_templates)
+add_dependencies(file_generators script_templates)
 
 if (EDITOR_BUILD)
 	file(GLOB GDSCRIPT_EDITOR_SOURCES editor/*.cpp)

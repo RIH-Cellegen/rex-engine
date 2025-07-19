@@ -9,7 +9,7 @@ add_custom_target(gdvirtual DEPENDS
 	${CMAKE_SOURCE_DIR}/core/object/gdvirtual.gen.inc
 )
 
-add_dependencies(rex_core gdvirtual)
+add_dependencies(file_generators gdvirtual)
 
 file(GLOB_RECURSE CORE_OBJECT_SOURCES *.cpp)
 

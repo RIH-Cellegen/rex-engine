@@ -13,4 +13,4 @@ add_custom_target(default_theme_icon_action_header DEPENDS
 	${CMAKE_SOURCE_DIR}/scene/theme/default_theme_icons.gen.h
 )
 
-add_dependencies(rex_scene default_theme_icon_action_header)
+add_dependencies(file_generators default_theme_icon_action_header)

@@ -2,6 +2,9 @@ function(clone_library SRC DEST)
 	target_include_directories(${DEST} PRIVATE "$<TARGET_PROPERTY:${SRC},INCLUDE_DIRECTORIES>")
 	target_compile_definitions(${DEST} PRIVATE "$<TARGET_PROPERTY:${SRC},COMPILE_DEFINITIONS>")
 	target_compile_options(${DEST} PRIVATE "$<TARGET_PROPERTY:${SRC},COMPILE_OPTIONS>")
+
+	# Used to force file generation before compile
+	add_dependencies(${DEST} file_generators)
 endfunction()
 
 function(disable_warnings_for_target TARGET)
