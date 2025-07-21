@@ -93,8 +93,7 @@ endif()
 # Executable is defined per platform
 
 add_subdirectory(platform/linuxbsd)
-# TODO: MacOS not implimented yet
-#add_subdirectory(platform/macos)
+add_subdirectory(platform/macos)
 add_subdirectory(platform/windows)
 
 target_include_directories(rex_engine PUBLIC
