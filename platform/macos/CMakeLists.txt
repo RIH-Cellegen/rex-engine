@@ -296,7 +296,7 @@ if(REX_PLATFORM STREQUAL "macos")
 			Metal
 			IOSurface
 		)
-		if (NOT VOLK)
+		if (NOT USE_VOLK)
 			target_link_options(rex_engine PUBLIC -lMoltenVK)
 			find_package(Vulkan COMPONENTS MoltenVK)
 			if (Vulkan_MoltenVK_FOUND)
