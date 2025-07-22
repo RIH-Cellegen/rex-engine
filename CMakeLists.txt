@@ -7,11 +7,6 @@ project(rex_engine
         LANGUAGES C CXX
 )
 
-set(TEST_STACK 8388608)
-string(HEX "${TEST_STACK}" TEST_HEX)
-
-message(WARNING "${TEST_HEX}")
-
 # C Standard
 set(CMAKE_C_STANDARD 17)
 set(CMAKE_C_STANDARD_REQUIRED ON)
