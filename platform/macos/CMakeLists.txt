@@ -220,7 +220,7 @@ if(REX_PLATFORM STREQUAL "macos")
 		COREAUDIO_ENABLED
 		COREMIDI_ENABLED
 	)
-	target_link_options(
+	target_link_options(rex_engine PUBLIC
 		-framework Cocoa
 		-framework Carbon
 		-framework AudioUnit
