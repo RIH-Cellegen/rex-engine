@@ -29,19 +29,13 @@ if (BUILTIN_LIBPNG)
 		if (MSVC)
 			target_compile_definitions(libpng PRIVATE PNG_ARM_NEON_OPT=0)
 		else()
-			add_library(neon_objects OBJECT
+			message(WARNING "Sanity Check")
+			target_sources(libpng PRIVATE
 				${THIRDPARTY_LIBPNG_DIR}arm/arm_init.c
 				${THIRDPARTY_LIBPNG_DIR}arm/filter_neon_intrinsics.c
 				${THIRDPARTY_LIBPNG_DIR}arm/palette_neon_intrinsics.c
 			)
-			clone_library(libpng neon_objects)
-			if(DEFINED ENV{S_compiler})
-				set_target_properties(neon_objects PROPERTIES
-					C_COMPILER "$ENV{S_compiler}"
-				)
-			endif()
-		target_link_libraries(libpng PRIVATE neon_objects)
-	endif()
+		endif()
 	elseif(${ARCH} MATCHES "^x86.*")
 		target_sources(libpng PRIVATE
 			${THIRDPARTY_LIBPNG_DIR}intel/intel_init.c
