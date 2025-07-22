@@ -29,7 +29,6 @@ if (BUILTIN_LIBPNG)
 		if (MSVC)
 			target_compile_definitions(libpng PRIVATE PNG_ARM_NEON_OPT=0)
 		else()
-			message(WARNING "Sanity Check")
 			target_sources(libpng PRIVATE
 				${THIRDPARTY_LIBPNG_DIR}arm/arm_init.c
 				${THIRDPARTY_LIBPNG_DIR}arm/filter_neon_intrinsics.c

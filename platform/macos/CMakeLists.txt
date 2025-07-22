@@ -258,10 +258,14 @@ if(REX_PLATFORM STREQUAL "macos")
 		)
 	endif()
 
-	#	target_link_options(rex_engine PUBLIC
-	#	-rpath @executable_path/../Frameworks
-	#	-rpath @executable_path
-	#)
+	set_property(
+		TARGET rex_engine
+		PROPERTY INSTALL_RPATH
+		"@executable_path/../Frameworks"
+		"@executable_path"
+	)
+
+	set(CMAKE_BUILD_WITH_INSTALL_RPATH ON)
 
 	if (METAL AND NOT ARCH STREQUAL "arm64")
 		message(WARNING "Target architecture '${ARCH}' does not support the Metal rendering driver")
