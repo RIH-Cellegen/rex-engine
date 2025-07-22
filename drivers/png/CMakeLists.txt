@@ -25,13 +25,17 @@ if (BUILTIN_LIBPNG)
 
 	clone_library(rex_engine libpng)
 	disable_warnings_for_target(libpng)
-	#if (${CMAKE_SYSTEM_PROCESSOR} MATCHES "^arm.*")
-	#	target_sources(libpng PRIVATE
-	#       ${THIRDPARTY_LIBPNG_DIR}arm/arm_init.c
-	#       ${THIRDPARTY_LIBPNG_DIR}arm/filter_neon_intrinsics.c
-	#       ${THIRDPARTY_LIBPNG_DIR}arm/palette_neon_intrinsics.c
-	#	)
-	if(${CMAKE_SYSTEM_PROCESSOR} MATCHES "^x86.*")
+	if (${ARCH} MATCHES "^arm.*")
+		if (MSVC)
+			target_compile_definitions(libpng PRIVATE PNG_ARM_NEON_OPT=0)
+		else()
+			target_sources(libpng PRIVATE
+				${THIRDPARTY_LIBPNG_DIR}arm/arm_init.c
+				${THIRDPARTY_LIBPNG_DIR}arm/filter_neon_intrinsics.c
+				${THIRDPARTY_LIBPNG_DIR}arm/palette_neon_intrinsics.c
+			)
+		endif()
+	elseif(${ARCH} MATCHES "^x86.*")
 		target_sources(libpng PRIVATE
 			${THIRDPARTY_LIBPNG_DIR}intel/intel_init.c
 			${THIRDPARTY_LIBPNG_DIR}intel/filter_sse2_intrinsics.c
@@ -39,12 +43,12 @@ if (BUILTIN_LIBPNG)
 		target_compile_definitions(libpng PRIVATE
 			PNG_INTEL_SSE
 		)
-	elseif(${CMAKE_SYSTEM_PROCESSOR} STREQUAL "loongarch64")
+	elseif(${ARCH} STREQUAL "loongarch64")
 		target_sources(libpng PRIVATE
 			${THIRDPARTY_LIBPNG_DIR}loongarch/loongarch_lsx_init.c
 			${THIRDPARTY_LIBPNG_DIR}loongarch/filter_lsx_intrinsics.c
 		)
-	elseif(${CMAKE_SYSTEM_PROCESSOR} STREQUAL "ppc64")
+	elseif(${ARCH} STREQUAL "ppc64")
 		target_sources(libpng PRIVATE
 			${THIRDPARTY_LIBPNG_DIR}powerpc/powerpc_init.c
 			${THIRDPARTY_LIBPNG_DIR}powerpc/filter_vsx_intrinsics.c

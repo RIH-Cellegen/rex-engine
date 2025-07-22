@@ -23,7 +23,11 @@ The following is required:
 - CMake 3.28+.
 
 ### MacOS
-MacOS build support hasn't been implemented yet.
+The following is required:
+- Python 3.8+.
+- CMake 3.28+.
+- Xcode
+- Vulkan SDK
 
 ## Compiling
 Configure CMake by running the following command from the source root directory:
