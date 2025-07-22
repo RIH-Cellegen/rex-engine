@@ -221,20 +221,20 @@ if(REX_PLATFORM STREQUAL "macos")
 		COREMIDI_ENABLED
 	)
 	target_link_options(rex_engine PUBLIC
-		-framework Cocoa
-		-framework Carbon
-		-framework AudioUnit
-		-framework CoreAudio
-		-framework CoreMIDI
-		-framework IOKit
-		-framework GameController
-		-framework CoreHaptics
-		-framework CoreVideo
-		-framework AVFoundation
-		-framework CoreMedia
-		-framework QuartzCore
-		-framework Security
-		-framework UniformTypeIdentifiers
+		"-framework Cocoa"
+		"-framework Carbon"
+		"-framework AudioUnit"
+		"-framework CoreAudio"
+		"-framework CoreMIDI"
+		"-framework IOKit"
+		"-framework GameController"
+		"-framework CoreHaptics"
+		"-framework CoreVideo"
+		"-framework AVFoundation"
+		"-framework CoreMedia"
+		"-framework QuartzCore"
+		"-framework Security"
+		"-framework UniformTypeIdentifiers"
 	)
 	target_link_libraries(rex_engine PUBLIC
 		pthread
@@ -307,6 +307,6 @@ if(REX_PLATFORM STREQUAL "macos")
 	endif()
 
 	foreach(EXTRA_FRAMEWORK ${EXTRA_FRAMEWORKS})
-		target_link_options(rex_engine PUBLIC -framework ${EXTRA_FRAMEWORK})
+		target_link_options(rex_engine PUBLIC "-framework ${EXTRA_FRAMEWORK}")
 	endforeach()
 endif()
