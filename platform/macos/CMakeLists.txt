@@ -27,8 +27,8 @@ if(REX_PLATFORM STREQUAL "macos")
 		set(OSXCROSS_ENABLED ON CACHE BOOL "Enable OS X cross-compilation support")
 	endif()
 
-	set(STACK_SIZE 8388608)
-	set(STACK_SIZE_SANITIZERS 31457280)
+	set(STACK_SIZE 0x800000)   #8388608
+	set(STACK_SIZE_SANITIZERS 0x1E00000)  #31457280
 
 	add_executable(rex_engine
 		${CMAKE_CURRENT_SOURCE_DIR}/os_macos.mm
@@ -171,11 +171,9 @@ if(REX_PLATFORM STREQUAL "macos")
 			target_compile_options(rex_engine PUBLIC -fsanitize=thread)
 			target_link_options(rex_engine PUBLIC -fsanitize=thread)
 		endif()
-		string(HEX "${STACK_SIZE_SANITIZERS}" STACK_SIZE_HEX)
-		target_link_options(rex_engine PUBLIC -Wl,-stack_size,${STACK_SIZE_HEX})
+		target_link_options(rex_engine PUBLIC -Wl,-stack_size,${STACK_SIZE_SANITIZERS})
 	else()
-		string(HEX "${STACK_SIZE}" STACK_SIZE_HEX)
-		target_link_options(rex_engine PUBLIC -Wl,-stack_size,${STACK_SIZE_HEX})
+		target_link_options(rex_engine PUBLIC -Wl,-stack_size,${STACK_SIZE})
 	endif()
 
 	if (USE_COVERAGE)
