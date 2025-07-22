@@ -214,7 +214,7 @@ if(REX_PLATFORM STREQUAL "macos")
 	endif()
 
 	target_include_directories(rex_engine PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-	target_compile_options(rex_engine PUBLIC
+	target_compile_definitions(rex_engine PUBLIC
 		MACOS_ENABLED
 		UNIX_ENABLED
 		COREAUDIO_ENABLED
@@ -244,9 +244,9 @@ if(REX_PLATFORM STREQUAL "macos")
 	set(EXTRA_FRAMEWORKS "")
 
 	if (OPENGL3)
-		target_compile_options(rex_engine PUBLIC GLES3_ENABLED)
+		target_compile_definitions(rex_engine PUBLIC GLES3_ENABLED)
 		if (NOT ANGLE_LIBS STREQUAL "")
-			target_compile_options(rex_engine PUBLIC EGL_STATIC)
+			target_compile_definitions(rex_engine PUBLIC EGL_STATIC)
 			target_link_options(rex_engine PUBLIC
 				-L${ANGLE_LIBS}
 				-lANGLE.macos.${ARCH}
@@ -271,7 +271,7 @@ if(REX_PLATFORM STREQUAL "macos")
 	endif()
 
 	if (METAL)
-		target_compile_options(rex_engine PUBLIC
+		target_compile_definitions(rex_engine PUBLIC
 			METAL_ENABLED
 			RD_ENABLED
 		)
@@ -280,13 +280,13 @@ if(REX_PLATFORM STREQUAL "macos")
 			MetalKit
 			MetalFX
 		)
-		target_compile_definitions(rex_engine PUBLIC
+		target_include_directories(rex_engine PUBLIC
 			${CMAKE_SOURCE_DIR}/thirdparty/spirv-cross
 		)
 	endif()
 
 	if (VULKAN)
-		target_compile_options(rex_engine PUBLIC
+		target_compile_definitions(rex_engine PUBLIC
 			VULKAN_ENABLED
 			RD_ENABLED
 		)
