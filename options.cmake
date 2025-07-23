@@ -1,3 +1,8 @@
+# Default disabled modules. Use -DENABLE_MODULES='module dir' as a semi-colon separated list.
+set(DEFAULT_DISABLED_MODULES
+	mono
+)
+
 # Build options
 
 set(OPTIMIZE "auto" CACHE STRING "Optimization level (by default inferred from 'target' and 'dev_build'): auto, none,

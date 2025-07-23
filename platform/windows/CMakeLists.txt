@@ -24,14 +24,16 @@ if(REX_PLATFORM STREQUAL "windows")
 	option(USE_PIX "Enable PIX profiling support" OFF)
 	set(PIX_PATH "${CMAKE_SOURCE_DIR}/thirdparty/pix" CACHE PATH "Path to PIX SDK")
 	set(MESA_LIBS "${CMAKE_SOURCE_DIR}/thirdparty/mesa" CACHE PATH "Path to Mesa libraries")
+
+	# To match other platforms
+	set(STACK_SIZE 8388608)
+	set(STACK_SIZE_SANITIZERS 31457280)
+
 	if (MSVC)
 		set(WINDOWS_CRASH_HANDLER ${CMAKE_CURRENT_SOURCE_DIR}/crash_handler_windows_seh.cpp)
 	else()
 		set(WINDOWS_CRASH_HANDLER ${CMAKE_CURRENT_SOURCE_DIR}/crash_handler_windows_signal.cpp)
 	endif()
-
-	set(STACK_SIZE 8388608)
-	set(STACK_SIZE_SANITIZERS 31457280)
 
 	add_executable(rex_engine
 		${CMAKE_CURRENT_SOURCE_DIR}/godot_windows.cpp
@@ -172,13 +174,11 @@ if(REX_PLATFORM STREQUAL "windows")
 			target_link_options(rex_engine PUBLIC /INFERASANLIBS)
 		endif()
 
-
 		if (USE_LLVM)
 			list(APPEND SYSTEM_LIBRARIES
 				clang_rt.builtins-${ARCH}
 			)
 		endif()
-
 
 		if (ACCESSKIT)
 			if (NOT ACCESSKIT_SDK_PATH STREQUAL "")
@@ -245,7 +245,6 @@ if(REX_PLATFORM STREQUAL "windows")
 			target_link_options(rex_engine PUBLIC /STACK:${STACK_SIZE})
 		endif()
 
-
 		set(SYSTEM_LIBRARIES
 			advapi32
 		)
@@ -306,7 +305,6 @@ if(REX_PLATFORM STREQUAL "windows")
 		elseif(ARCH STREQUAL "arm64")
 			set(CMAKE_RC_FLAGS "${CMAKE_RC_FLAGS} --target=aarch64-w64-mingw32")
 		endif()
-
 
 		set(PREBUILT_LIB_EXTRA_SUFFIX "")
 		if (USE_ASAN OR USE_UBSAN)
@@ -372,6 +370,7 @@ if(REX_PLATFORM STREQUAL "windows")
 				)
 			endif()
 		endif()
+
 		if (USE_ASAN)
 			target_link_options(rex_engine PUBLIC -Wl,--stack,${STACK_SIZE_SANITIZERS})
 		else()
@@ -384,6 +383,7 @@ if(REX_PLATFORM STREQUAL "windows")
 			uuid
 			ksuser
 		)
+
 		if (ACCESSKIT)
 			if (NOT ACCESSKIT_SDK_PATH STREQUAL "")
 				target_include_directories(rex_engine PRIVATE "${ACCESSKIT_SDK_PATH}/include")

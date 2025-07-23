@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.28 FATAL_ERROR)
 find_package(Python3 REQUIRED COMPONENTS Interpreter)
 
 project(rex_engine
-        VERSION 4.3
-        DESCRIPTION "Rex Game Engine"
+        VERSION 4.5
+        DESCRIPTION "ReX Game Engine"
         LANGUAGES C CXX
 )
 
@@ -31,7 +31,7 @@ include(methods.cmake)
 include(version.cmake)
 
 # TODO: Only checking for desktop platforms for now.
-# NOTE: Using strings that make the Scons build system.
+# NOTE: Using strings that match the Scons build system.
 if (${CMAKE_HOST_SYSTEM_NAME} MATCHES "Linux|DragonFly|FreeBSD|NetBSD|OpenBSD")
 	set(REX_PLATFORM "linuxbsd")
 	execute_process( COMMAND uname -m OUTPUT_VARIABLE ARCH OUTPUT_STRIP_TRAILING_WHITESPACE)
@@ -62,6 +62,8 @@ endif()
 message(STATUS "Detected build platform: ${REX_PLATFORM}")
 message(STATUS "Architecture: ${ARCH}")
 
+# For Cross-compilation support, check the host system architecture.
+# TODO: This only support x86 platforms.
 if (CMAKE_SIZEOF_VOID_P EQUAL 8 AND ARCH STREQUAL "x86_32")
 	add_compile_options(-m32)
 	add_link_options(-m32)
@@ -90,8 +92,23 @@ if (BUILD_TARGET STREQUAL "editor" OR BUILD_TARGET STREQUAL "template_debug")
 	set(DEBUG_FEATURES ON)
 endif()
 
-# Executable is defined per platform
+# 'DEV_MODE' and 'PRODUCTION' are aliases to set default options if they haven't been
+# set manually by the user.
+if (DEV_MODE)
+	set(CMAKE_VERBOSE_MAKEFILE ON CACHE BOOL "Enable verbose build output" FORCE)
+	set(REX_TESTS ON CACHE BOOL "Build the unit tests" FORCE)
+	set(WARNING "extra" CACHE STRING "Level of compilation warnings: extra, all, moderate, no" FORCE)
+	set(WERROR ON CACHE BOOL "Treat compiler warnings as errors" FORCE)
+	set(STRICT_CHECKS ON CACHE BOOL "Enforce stricter checks (debug option)" FORCE)
+endif()
 
+if (PRODUCTION)
+	set(USE_STATIC_CPP ON CACHE BOOL "Link runtime libraries statically" FORCE)
+	set(DEBUG_SYMBOLS OFF CACHE BOOL "Build with debugging symbols" FORCE)
+	set(LTO "auto" CACHE STRING "Link-time optimization (production builds): none, auto, thin, full" FORCE)
+endif()
+
+# The executable target 'rex_engine' is defined within the target platforms subdirectory
 add_subdirectory(platform/linuxbsd)
 add_subdirectory(platform/macos)
 add_subdirectory(platform/windows)
@@ -114,14 +131,19 @@ if (EDITOR_BUILD)
 endif()
 
 if (DEBUG_FEATURES)
+    # DEBUG_ENABLED enables debugging *features* and debug-only code, which is intended
+    # to give *users* extra debugging information for their game development.
 	target_compile_definitions(rex_engine PUBLIC DEBUG_ENABLED)
 endif()
 
 if (REX_DEV_BUILD)
+    # DEV_ENABLED enables *engine developer* code which should only be compiled for those
+    # working on the engine itself.
 	set(DEBUG_SYMBOLS ON)
 	target_compile_definitions(rex_engine PUBLIC DEV_ENABLED)
 else()
-	target_compile_definitions(rex_engine PUBLIC NODEBUG)
+    # Disable assert() for production targets (only used in thirdparty code).
+	target_compile_definitions(rex_engine PUBLIC NDEBUG)
 endif()
 
 if (USE_PRECISE_MATH_CHECKS)
@@ -134,20 +156,6 @@ endif()
 
 if (PRECISION STREQUAL "double")
 	target_compile_definitions(rex_engine PUBLIC REAL_T_IS_DOUBLE)
-endif()
-
-if (DEV_MODE)
-	set(CMAKE_VERBOSE_MAKEFILE ON CACHE BOOL "Enable verbose build output" FORCE)
-	set(REX_TESTS ON CACHE BOOL "Build the unit tests" FORCE)
-	set(WARNING "extra" CACHE STRING "Level of compilation warnings: extra, all, moderate, no" FORCE)
-	set(WERROR ON CACHE BOOL "Treat compiler warnings as errors" FORCE)
-	set(STRICT_CHECKS ON CACHE BOOL "Enforce stricter checks (debug option)" FORCE)
-endif()
-
-if (PRODUCTION)
-	set(USE_STATIC_CPP ON CACHE BOOL "Link runtime libraries statically" FORCE)
-	set(DEBUG_SYMBOLS OFF CACHE BOOL "Build with debugging symbols" FORCE)
-	set(LTO "auto" CACHE STRING "Link-time optimization (production builds): none, auto, thin, full" FORCE)
 endif()
 
 if (STRICT_CHECKS)
@@ -213,6 +221,8 @@ if (THREADS)
 	target_compile_definitions(rex_engine PUBLIC THREADS_ENABLED)
 endif()
 
+# Disable exception handling. Redot doesn't use exceptions anywhere, and this
+# saves around 20% of binary size and very significant build time (GH-80513).
 if (DISABLE_EXCEPTIONS)
 	if (MSVC)
 		target_compile_definitions(rex_engine PUBLIC _HAS_EXCEPTIONS=0)
@@ -223,91 +233,6 @@ elseif(MSVC)
 	target_compile_options(rex_engine PUBLIC /EHsc)
 endif()
 
-if (REX_PLATFORM STREQUAL "macos")
-	target_include_directories(rex_engine PUBLIC
-		${CMAKE_SOURCE_DIR}/platform/linuxbsd/
-	)
-	target_compile_definitions(rex_engine PUBLIC
-		MACOS_ENABLED
-		UNIX_ENABLED
-		COREAUDIO_ENABLED
-		COREMIDI_ENABLED
-	)
-	if (METAL)
-		target_compile_definitions(rex_engine PUBLIC
-			METAL_ENABLED
-			RD_ENABLED
-		)
-		target_include_directories(rex_engine PUBLIC
-			${CMAKE_SOURCE_DIR}/thirdparty/spirv-cross/
-		)
-	endif()
-	if (VULKAN)
-		target_compile_definitions(rex_engine PUBLIC
-			VULKAN_ENABLED
-			RD_ENABLED
-		)
-	endif()
-	if (OPENGL3)
-		target_compile_definitions(rex_engine PUBLIC
-			GLES3_ENABLED
-		)
-	endif()
-endif()
-if (REX_PLATFORM STREQUAL "ios")
-	target_include_directories(rex_engine PUBLIC
-		${CMAKE_SOURCE_DIR}/platform/ios/
-	)
-	target_compile_definitions(rex_engine PUBLIC
-		IOS_ENABLED
-		UNIX_ENABLED
-		COREAUDIO_ENABLED
-	)
-	if (METAL)
-		target_compile_definitions(rex_engine PUBLIC
-			METAL_ENABLED
-			RD_ENABLED
-		)
-		target_include_directories(rex_engine PUBLIC
-			${CMAKE_SOURCE_DIR}/thirdparty/spirv-cross/
-		)
-	endif()
-	if (VULKAN)
-		target_compile_definitions(rex_engine PUBLIC
-			VULKAN_ENABLED
-			RD_ENABLED
-		)
-	endif()
-	if (OPENGL3)
-		target_compile_definitions(rex_engine PUBLIC
-			GLES3_ENABLED
-			GLES_SILENCE_DEPRECATION
-		)
-
-	endif()
-endif()
-if (REX_PLATFORM STREQUAL "windows")
-	target_include_directories(rex_engine PUBLIC
-		${CMAKE_SOURCE_DIR}/platform/windows/
-	)
-	if (VULKAN)
-		target_compile_definitions(rex_engine PUBLIC
-			VULKAN_ENABLED
-			RD_ENABLED
-		)
-	endif()
-	if (OPENGL3)
-		target_compile_definitions(rex_engine PUBLIC
-			GLES3_ENABLED
-		)
-	endif()
-	if (D3D12)
-		target_compile_definitions(rex_engine PUBLIC
-			D3D12_ENABLED
-			RD_ENABLED
-		)
-	endif()
-endif()
 # Output name
 set(OUTPUT_NAME "rex.${REX_PLATFORM}")
 if(EDITOR_BUILD)
@@ -338,6 +263,8 @@ if (ARCH STREQUAL "x86_32")
 	endif()
 endif()
 # Compiler flags
+# Set optimize and debug_symbols flags.
+# "custom" means do nothing and let users set their own optimization flags.
 if (MSVC)
 	if (DEBUG_SYMBOLS)
 		set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} /Zi /FS")
@@ -383,14 +310,12 @@ else()
 	endif()
 endif()
 
-# Preprocessor definitions
-target_compile_definitions(rex_engine PUBLIC ${PLATFORM_DEFINES})
-
 # Output binary directory
 set_target_properties(rex_engine PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin
 )
 
+# These subdirectories need to be in this order for linking to work.
 add_subdirectory(core)
 add_subdirectory(servers)
 add_subdirectory(scene)

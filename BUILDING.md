@@ -38,3 +38,6 @@ Once CMake is configured, you can start compiling with the following command:
 
 You can speed up compile time by specifying `-j #` to allow for multiple jobs to run simultaniously.
 `cmake --build build -j 15`
+
+To compile with mono support add `-DENABLE_MODULES="mono"`.
+`cmake -DENABLE_MODULES="mono" -B build`
