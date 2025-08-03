@@ -36,12 +36,12 @@
 #include "../effects/metal_fx.h"
 #endif
 #include "../effects/vrs.h"
-#include "core/templates/hash_map.h"
+#include "../../../../core/templates/hash_map.h"
 #include "material_storage.h"
 #include "render_buffer_custom_data_rd.h"
-#include "servers/rendering/rendering_device.h"
-#include "servers/rendering/rendering_device_binds.h"
-#include "servers/rendering/storage/render_scene_buffers.h"
+#include "../../rendering_device.h"
+#include "../../rendering_device_binds.h"
+#include "../../storage/render_scene_buffers.h"
 
 #define RB_SCOPE_BUFFERS SNAME("render_buffers")
 #define RB_SCOPE_VRS SNAME("VRS")

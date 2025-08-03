@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/3d/visual_instance_3d.h"
-#include "scene/resources/immediate_mesh.h"
+#include "../3d/visual_instance_3d.h"
+#include "../resources/immediate_mesh.h"
 class RootMotionView : public VisualInstance3D {
 	GDCLASS(RootMotionView, VisualInstance3D);
 

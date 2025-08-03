@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/templates/rid_owner.h"
-#include "servers/rendering/storage/mesh_storage.h"
+#include "../../../../core/templates/rid_owner.h"
+#include "../../storage/mesh_storage.h"
 
 namespace RendererDummy {
 

@@ -32,7 +32,7 @@
 
 #include "windows_terminal_logger.h"
 
-#include "core/os/os.h"
+#include "../../core/os/os.h"
 
 #ifdef WINDOWS_ENABLED
 

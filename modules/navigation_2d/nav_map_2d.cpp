@@ -40,9 +40,9 @@
 #include "nav_obstacle_2d.h"
 #include "nav_region_2d.h"
 
-#include "core/config/project_settings.h"
-#include "core/object/worker_thread_pool.h"
-#include "servers/navigation_server_2d.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/object/worker_thread_pool.h"
+#include "../../servers/navigation_server_2d.h"
 
 #include <Obstacle2d.h>
 

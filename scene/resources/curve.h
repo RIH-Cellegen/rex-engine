@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/io/resource.h"
+#include "../../core/io/resource.h"
 
 // y(x) curve
 class Curve : public Resource {

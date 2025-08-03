@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/resources/multimesh.h"
+#include "../resources/multimesh.h"
 
 class Voxelizer {
 public:

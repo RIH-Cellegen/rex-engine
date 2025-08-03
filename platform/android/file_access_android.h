@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/io/file_access.h"
+#include "../../core/io/file_access.h"
 
 #include <android/asset_manager.h>
 #include <android/log.h>

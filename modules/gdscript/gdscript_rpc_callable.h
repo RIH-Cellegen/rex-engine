@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/variant/callable.h"
-#include "core/variant/variant.h"
+#include "../../core/variant/callable.h"
+#include "../../core/variant/variant.h"
 
 class Node;
 

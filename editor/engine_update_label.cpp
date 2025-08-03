@@ -32,12 +32,12 @@
 
 #include "engine_update_label.h"
 
-#include "core/io/dir_access.h"
-#include "core/io/json.h"
-#include "core/os/time.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "scene/main/http_request.h"
+#include "../core/io/dir_access.h"
+#include "../core/io/json.h"
+#include "../core/os/time.h"
+#include "editor_settings.h"
+#include "editor_string_names.h"
+#include "../scene/main/http_request.h"
 
 bool EngineUpdateLabel::_can_check_updates() const {
 	return int(EDITOR_GET("network/connection/network_mode")) == EditorSettings::NETWORK_ONLINE &&

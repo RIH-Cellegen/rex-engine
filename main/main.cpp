@@ -32,121 +32,121 @@
 
 #include "main.h"
 
-#include "core/config/project_settings.h"
-#include "core/core_globals.h"
-#include "core/crypto/crypto.h"
-#include "core/debugger/engine_debugger.h"
-#include "core/extension/extension_api_dump.h"
-#include "core/extension/gdextension_interface_dump.gen.h"
-#include "core/extension/gdextension_manager.h"
-#include "core/input/input.h"
-#include "core/input/input_map.h"
-#include "core/io/dir_access.h"
-#include "core/io/file_access_pack.h"
-#include "core/io/file_access_zip.h"
-#include "core/io/image.h"
-#include "core/io/image_loader.h"
-#include "core/io/ip.h"
-#include "core/io/resource_loader.h"
-#include "core/object/message_queue.h"
-#include "core/object/script_language.h"
-#include "core/os/os.h"
-#include "core/os/time.h"
-#include "core/register_core_types.h"
-#include "core/string/translation_server.h"
-#include "core/version.h"
-#include "drivers/register_driver_types.h"
-#include "main/app_icon.gen.h"
-#include "main/main_timer_sync.h"
-#include "main/performance.h"
-#include "main/splash.gen.h"
-#include "modules/register_module_types.h"
-#include "platform/register_platform_apis.h"
-#include "scene/main/scene_tree.h"
-#include "scene/main/window.h"
-#include "scene/property_list_helper.h"
-#include "scene/register_scene_types.h"
-#include "scene/resources/packed_scene.h"
-#include "scene/theme/theme_db.h"
-#include "servers/audio/audio_driver_dummy.h"
-#include "servers/audio_server.h"
-#include "servers/camera_server.h"
-#include "servers/display_server.h"
-#include "servers/movie_writer/movie_writer.h"
-#include "servers/movie_writer/movie_writer_mjpeg.h"
-#include "servers/register_server_types.h"
-#include "servers/rendering/rendering_server_default.h"
-#include "servers/text/text_server_dummy.h"
-#include "servers/text_server.h"
+#include "../core/config/project_settings.h"
+#include "../core/core_globals.h"
+#include "../core/crypto/crypto.h"
+#include "../core/debugger/engine_debugger.h"
+#include "../core/extension/extension_api_dump.h"
+#include "../core/extension/gdextension_interface_dump.gen.h"
+#include "../core/extension/gdextension_manager.h"
+#include "../core/input/input.h"
+#include "../core/input/input_map.h"
+#include "../core/io/dir_access.h"
+#include "../core/io/file_access_pack.h"
+#include "../core/io/file_access_zip.h"
+#include "../core/io/image.h"
+#include "../core/io/image_loader.h"
+#include "../core/io/ip.h"
+#include "../core/io/resource_loader.h"
+#include "../core/object/message_queue.h"
+#include "../core/object/script_language.h"
+#include "../core/os/os.h"
+#include "../core/os/time.h"
+#include "../core/register_core_types.h"
+#include "../core/string/translation_server.h"
+#include "../core/version.h"
+#include "../drivers/register_driver_types.h"
+#include "app_icon.gen.h"
+#include "main_timer_sync.h"
+#include "performance.h"
+#include "splash.gen.h"
+#include "../modules/register_module_types.h"
+#include "../platform/register_platform_apis.h"
+#include "../scene/main/scene_tree.h"
+#include "../scene/main/window.h"
+#include "../scene/property_list_helper.h"
+#include "../scene/register_scene_types.h"
+#include "../scene/resources/packed_scene.h"
+#include "../scene/theme/theme_db.h"
+#include "../servers/audio/audio_driver_dummy.h"
+#include "../servers/audio_server.h"
+#include "../servers/camera_server.h"
+#include "../servers/display_server.h"
+#include "../servers/movie_writer/movie_writer.h"
+#include "../servers/movie_writer/movie_writer_mjpeg.h"
+#include "../servers/register_server_types.h"
+#include "../servers/rendering/rendering_server_default.h"
+#include "../servers/text/text_server_dummy.h"
+#include "../servers/text_server.h"
 
 // 2D
 #ifndef NAVIGATION_2D_DISABLED
-#include "servers/navigation_server_2d.h"
-#include "servers/navigation_server_2d_dummy.h"
+#include "../servers/navigation_server_2d.h"
+#include "../servers/navigation_server_2d_dummy.h"
 #endif // NAVIGATION_2D_DISABLED
 
 #ifndef PHYSICS_2D_DISABLED
-#include "servers/physics_server_2d.h"
-#include "servers/physics_server_2d_dummy.h"
+#include "../servers/physics_server_2d.h"
+#include "../servers/physics_server_2d_dummy.h"
 #endif // PHYSICS_2D_DISABLED
 
 // 3D
 #ifndef NAVIGATION_3D_DISABLED
-#include "servers/navigation_server_3d.h"
-#include "servers/navigation_server_3d_dummy.h"
+#include "../servers/navigation_server_3d.h"
+#include "../servers/navigation_server_3d_dummy.h"
 #endif // NAVIGATION_3D_DISABLED
 
 #ifndef PHYSICS_3D_DISABLED
-#include "servers/physics_server_3d.h"
-#include "servers/physics_server_3d_dummy.h"
+#include "../servers/physics_server_3d.h"
+#include "../servers/physics_server_3d_dummy.h"
 #endif // PHYSICS_3D_DISABLED
 
 #ifndef XR_DISABLED
-#include "servers/xr_server.h"
+#include "../servers/xr_server.h"
 #endif // XR_DISABLED
 
 #ifdef TESTS_ENABLED
-#include "tests/test_main.h"
+#include "../tests/test_main.h"
 #endif
 
 #ifdef TOOLS_ENABLED
-#include "editor/debugger/debug_adapter/debug_adapter_server.h"
-#include "editor/debugger/editor_debugger_node.h"
-#include "editor/doc_data_class_path.gen.h"
-#include "editor/doc_tools.h"
-#include "editor/editor_file_system.h"
-#include "editor/editor_help.h"
-#include "editor/editor_node.h"
-#include "editor/editor_paths.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_translation.h"
-#include "editor/progress_dialog.h"
-#include "editor/project_manager.h"
-#include "editor/register_editor_types.h"
+#include "../editor/debugger/debug_adapter/debug_adapter_server.h"
+#include "../editor/debugger/editor_debugger_node.h"
+#include "../editor/doc_data_class_path.gen.h"
+#include "../editor/doc_tools.h"
+#include "../editor/editor_file_system.h"
+#include "../editor/editor_help.h"
+#include "../editor/editor_node.h"
+#include "../editor/editor_paths.h"
+#include "../editor/editor_settings.h"
+#include "../editor/editor_translation.h"
+#include "../editor/progress_dialog.h"
+#include "../editor/project_manager.h"
+#include "../editor/register_editor_types.h"
 
 #if defined(TOOLS_ENABLED) && !defined(NO_EDITOR_SPLASH)
-#include "main/splash_editor.gen.h"
+#include "splash_editor.gen.h"
 #endif
 
 #ifndef DISABLE_DEPRECATED
-#include "editor/project_converter_3_to_4.h"
+#include "../editor/project_converter_3_to_4.h"
 #endif // DISABLE_DEPRECATED
 #endif // TOOLS_ENABLED
 
 #if defined(STEAMAPI_ENABLED)
-#include "main/steam_tracker.h"
+#include "steam_tracker.h"
 #endif
 
-#include "modules/modules_enabled.gen.h" // For mono.
+#include "../modules/modules_enabled.gen.h" // For mono.
 
 #if defined(MODULE_MONO_ENABLED) && defined(TOOLS_ENABLED)
-#include "modules/mono/editor/bindings_generator.h"
+#include "../modules/mono/editor/bindings_generator.h"
 #endif
 
 #ifdef MODULE_GDSCRIPT_ENABLED
-#include "modules/gdscript/gdscript.h"
+#include "../modules/gdscript/gdscript.h"
 #if defined(TOOLS_ENABLED) && !defined(GDSCRIPT_NO_LSP)
-#include "modules/gdscript/language_server/gdscript_language_server.h"
+#include "../modules/gdscript/language_server/gdscript_language_server.h"
 #endif // TOOLS_ENABLED && !GDSCRIPT_NO_LSP
 #endif // MODULE_GDSCRIPT_ENABLED
 

@@ -33,8 +33,8 @@
 #include "audio_stream_player.h"
 #include "audio_stream_player.compat.inc"
 
-#include "scene/audio/audio_stream_player_internal.h"
-#include "servers/audio/audio_stream.h"
+#include "audio_stream_player_internal.h"
+#include "../../servers/audio/audio_stream.h"
 
 void AudioStreamPlayer::_notification(int p_what) {
 	if (p_what == NOTIFICATION_ACCESSIBILITY_UPDATE) {

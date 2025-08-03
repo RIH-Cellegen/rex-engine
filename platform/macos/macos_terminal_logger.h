@@ -34,7 +34,7 @@
 
 #ifdef MACOS_ENABLED
 
-#include "core/io/logger.h"
+#include "../../../core/io/logger.h"
 
 class MacOSTerminalLogger : public StdLogger {
 public:

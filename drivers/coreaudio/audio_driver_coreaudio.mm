@@ -34,8 +34,8 @@
 
 #ifdef COREAUDIO_ENABLED
 
-#include "core/config/project_settings.h"
-#include "core/os/os.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/os/os.h"
 
 #define kOutputBus 0
 #define kInputBus 1

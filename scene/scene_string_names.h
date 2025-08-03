@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/string/node_path.h"
-#include "core/string/string_name.h"
+#include "../core/string/node_path.h"
+#include "../core/string/string_name.h"
 
 class SceneStringNames {
 	inline static SceneStringNames *singleton = nullptr;

@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/math/vector3.h"
-#include "core/variant/typed_array.h"
+#include "../../core/math/vector3.h"
+#include "../../core/variant/typed_array.h"
 
 namespace NavigationUtilities {
 

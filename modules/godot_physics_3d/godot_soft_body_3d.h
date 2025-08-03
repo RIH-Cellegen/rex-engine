@@ -35,12 +35,12 @@
 #include "godot_area_3d.h"
 #include "godot_collision_object_3d.h"
 
-#include "core/math/aabb.h"
-#include "core/math/dynamic_bvh.h"
-#include "core/math/vector3.h"
-#include "core/templates/hash_set.h"
-#include "core/templates/local_vector.h"
-#include "core/templates/vset.h"
+#include "../../core/math/aabb.h"
+#include "../../core/math/dynamic_bvh.h"
+#include "../../core/math/vector3.h"
+#include "../../core/templates/hash_set.h"
+#include "../../core/templates/local_vector.h"
+#include "../../core/templates/vset.h"
 
 class GodotConstraint3D;
 

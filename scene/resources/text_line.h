@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/resources/font.h"
-#include "servers/text_server.h"
+#include "font.h"
+#include "../../servers/text_server.h"
 
 /*************************************************************************/
 

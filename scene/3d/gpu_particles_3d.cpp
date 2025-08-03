@@ -33,10 +33,10 @@
 #include "gpu_particles_3d.h"
 #include "gpu_particles_3d.compat.inc"
 
-#include "scene/3d/cpu_particles_3d.h"
-#include "scene/resources/curve_texture.h"
-#include "scene/resources/gradient_texture.h"
-#include "scene/resources/particle_process_material.h"
+#include "cpu_particles_3d.h"
+#include "../resources/curve_texture.h"
+#include "../resources/gradient_texture.h"
+#include "../resources/particle_process_material.h"
 
 AABB GPUParticles3D::get_aabb() const {
 	return AABB();

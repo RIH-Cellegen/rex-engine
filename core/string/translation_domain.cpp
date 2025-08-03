@@ -32,8 +32,8 @@
 
 #include "translation_domain.h"
 
-#include "core/string/translation.h"
-#include "core/string/translation_server.h"
+#include "translation.h"
+#include "translation_server.h"
 
 struct _character_accent_pair {
 	const char32_t character;

@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/3d/mesh_instance_3d.h"
-#include "scene/resources/3d/primitive_meshes.h"
-#include "servers/navigation_server_3d.h"
+#include "../../scene/3d/mesh_instance_3d.h"
+#include "../../scene/resources/3d/primitive_meshes.h"
+#include "../../servers/navigation_server_3d.h"
 
 namespace TestNavigationServer3D {
 

@@ -32,13 +32,13 @@
 
 #pragma once
 
-#include "core/math/aabb.h"
-#include "core/math/transform_3d.h"
-#include "core/math/vector2.h"
-#include "core/math/vector3.h"
-#include "core/object/ref_counted.h"
-#include "core/templates/vector.h"
-#include "scene/resources/material.h"
+#include "../../core/math/aabb.h"
+#include "../../core/math/transform_3d.h"
+#include "../../core/math/vector2.h"
+#include "../../core/math/vector3.h"
+#include "../../core/object/ref_counted.h"
+#include "../../core/templates/vector.h"
+#include "../../scene/resources/material.h"
 
 struct CSGBrush {
 	struct Face {

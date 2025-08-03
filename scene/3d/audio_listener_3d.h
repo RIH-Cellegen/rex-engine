@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/3d/node_3d.h"
+#include "node_3d.h"
 
 class AudioListener3D : public Node3D {
 	GDCLASS(AudioListener3D, Node3D);

@@ -32,10 +32,10 @@
 
 #include "cpu_particles_3d_gizmo_plugin.h"
 
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "scene/3d/cpu_particles_3d.h"
+#include "../../editor_node.h"
+#include "../../editor_settings.h"
+#include "../../editor_string_names.h"
+#include "../../../scene/3d/cpu_particles_3d.h"
 
 CPUParticles3DGizmoPlugin::CPUParticles3DGizmoPlugin() {
 	Color gizmo_color = EDITOR_GET("editors/3d_gizmos/gizmo_colors/particles");

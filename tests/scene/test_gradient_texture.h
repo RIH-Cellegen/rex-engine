@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/resources/gradient_texture.h"
+#include "../../scene/resources/gradient_texture.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestGradientTexture {
 

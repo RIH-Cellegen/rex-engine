@@ -32,10 +32,10 @@
 
 #include "optimized_translation.h"
 
-#include "core/templates/pair.h"
+#include "../templates/pair.h"
 
 extern "C" {
-#include "thirdparty/misc/smaz.h"
+#include "../../thirdparty/misc/smaz.h"
 }
 
 struct CompressedString {

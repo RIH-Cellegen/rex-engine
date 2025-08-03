@@ -32,8 +32,8 @@
 
 #include "multiplayer_synchronizer.h"
 
-#include "core/config/engine.h"
-#include "scene/main/multiplayer_api.h"
+#include "../../core/config/engine.h"
+#include "../../scene/main/multiplayer_api.h"
 
 Object *MultiplayerSynchronizer::_get_prop_target(Object *p_obj, const NodePath &p_path) {
 	if (p_path.get_name_count() == 0) {

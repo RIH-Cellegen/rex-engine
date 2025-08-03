@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/math/quaternion.h"
-#include "core/math/vector3.h"
+#include "quaternion.h"
+#include "vector3.h"
 
 struct [[nodiscard]] Basis {
 	Vector3 rows[3] = {

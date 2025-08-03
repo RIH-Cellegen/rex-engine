@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/gui/control.h"
-#include "scene/gui/popup_menu.h"
+#include "control.h"
+#include "popup_menu.h"
 
 class LineEdit : public Control {
 	GDCLASS(LineEdit, Control);

@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/config/project_settings.h"
-#include "core/debugger/remote_debugger.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../core/debugger/remote_debugger.h"
 #include "debug_adapter_protocol.h"
 #include "debug_adapter_types.h"
 

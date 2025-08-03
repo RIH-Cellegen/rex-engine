@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "editor/plugins/editor_plugin.h"
+#include "../editor_plugin.h"
 
 #include "tile_map_layer_editor.h"
 #include "tile_set_editor.h"

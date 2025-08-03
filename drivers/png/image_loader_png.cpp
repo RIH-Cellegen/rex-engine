@@ -32,7 +32,7 @@
 
 #include "image_loader_png.h"
 
-#include "drivers/png/png_driver_common.h"
+#include "png_driver_common.h"
 
 #include <string.h>
 

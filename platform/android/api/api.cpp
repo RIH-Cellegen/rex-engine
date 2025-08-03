@@ -35,7 +35,7 @@
 #include "java_class_wrapper.h"
 #include "jni_singleton.h"
 
-#include "core/config/engine.h"
+#include "../../../core/config/engine.h"
 
 #if !defined(ANDROID_ENABLED)
 static JavaClassWrapper *java_class_wrapper = nullptr;

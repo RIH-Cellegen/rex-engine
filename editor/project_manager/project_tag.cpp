@@ -32,9 +32,9 @@
 
 #include "project_tag.h"
 
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/button.h"
-#include "scene/gui/color_rect.h"
+#include "../themes/editor_scale.h"
+#include "../../scene/gui/button.h"
+#include "../../scene/gui/color_rect.h"
 
 void ProjectTag::_notification(int p_what) {
 	if (display_close && p_what == NOTIFICATION_THEME_CHANGED) {

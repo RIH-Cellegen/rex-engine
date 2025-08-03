@@ -32,19 +32,19 @@
 
 #include "editor_resource_preview.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/file_access.h"
-#include "core/io/resource_loader.h"
-#include "core/io/resource_saver.h"
-#include "core/variant/variant_utility.h"
-#include "editor/editor_node.h"
-#include "editor/editor_paths.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/main/window.h"
-#include "scene/resources/image_texture.h"
-#include "servers/rendering/rendering_server_globals.h"
+#include "../core/config/project_settings.h"
+#include "../core/io/file_access.h"
+#include "../core/io/resource_loader.h"
+#include "../core/io/resource_saver.h"
+#include "../core/variant/variant_utility.h"
+#include "editor_node.h"
+#include "editor_paths.h"
+#include "editor_settings.h"
+#include "editor_string_names.h"
+#include "themes/editor_scale.h"
+#include "../scene/main/window.h"
+#include "../scene/resources/image_texture.h"
+#include "../servers/rendering/rendering_server_globals.h"
 
 bool EditorResourcePreviewGenerator::handles(const String &p_type) const {
 	bool success = false;

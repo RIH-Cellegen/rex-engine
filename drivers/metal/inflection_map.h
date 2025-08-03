@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/templates/hash_map.h"
-#include "core/templates/local_vector.h"
+#include "../../core/templates/hash_map.h"
+#include "../../core/templates/local_vector.h"
 
 /// An unordered map that splits elements between a fast-access vector of LinearCount consecutively
 /// indexed elements, and a slower-access map holding sparse indexes larger than LinearCount.

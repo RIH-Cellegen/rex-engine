@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/error/error_macros.h"
-#include "core/os/memory.h"
-#include "core/templates/sort_array.h"
-#include "core/templates/vector.h"
+#include "../error/error_macros.h"
+#include "../os/memory.h"
+#include "sort_array.h"
+#include "vector.h"
 
 #include <initializer_list>
 #include <type_traits>

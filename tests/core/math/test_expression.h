@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/math/expression.h"
+#include "../../../core/math/expression.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestExpression {
 

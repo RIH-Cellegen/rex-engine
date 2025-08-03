@@ -34,8 +34,8 @@
 
 #include "nav_rid_3d.h"
 
-#include "core/object/class_db.h"
-#include "core/templates/self_list.h"
+#include "../../core/object/class_db.h"
+#include "../../core/templates/self_list.h"
 
 #include <Agent2d.h>
 #include <Agent3d.h>

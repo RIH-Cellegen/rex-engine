@@ -33,10 +33,10 @@
 #include "openxr_visibility_mask_extension.h"
 
 #include "../openxr_api.h"
-#include "core/string/print_string.h"
-#include "core/variant/array.h"
-#include "core/variant/variant.h"
-#include "servers/rendering_server.h"
+#include "../../../core/string/print_string.h"
+#include "../../../core/variant/array.h"
+#include "../../../core/variant/variant.h"
+#include "../../../servers/rendering_server.h"
 
 static const char *VISIBILITY_MASK_SHADER_CODE =
 		"shader_type spatial;\n"

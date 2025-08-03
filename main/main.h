@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/os/thread.h"
-#include "core/typedefs.h"
+#include "../core/os/thread.h"
+#include "../core/typedefs.h"
 
 template <typename T>
 class Vector;

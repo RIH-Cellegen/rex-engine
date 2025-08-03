@@ -32,11 +32,11 @@
 
 #include "lightmap_gi_editor_plugin.h"
 
-#include "editor/editor_node.h"
-#include "editor/editor_string_names.h"
-#include "editor/gui/editor_file_dialog.h"
+#include "../editor_node.h"
+#include "../editor_string_names.h"
+#include "../gui/editor_file_dialog.h"
 
-#include "modules/modules_enabled.gen.h" // For lightmapper_rd.
+#include "../../modules/modules_enabled.gen.h" // For lightmapper_rd.
 
 void LightmapGIEditorPlugin::_bake_select_file(const String &p_file) {
 	if (lightmap) {

@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/gui/option_button.h"
+#include "../../scene/gui/option_button.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestOptionButton {
 

@@ -34,10 +34,10 @@
 
 #ifdef JOYDEV_ENABLED
 
-#include "core/input/input.h"
-#include "core/os/mutex.h"
-#include "core/os/thread.h"
-#include "core/templates/local_vector.h"
+#include "../../core/input/input.h"
+#include "../../core/os/mutex.h"
+#include "../../core/os/thread.h"
+#include "../../core/templates/local_vector.h"
 
 struct input_absinfo;
 

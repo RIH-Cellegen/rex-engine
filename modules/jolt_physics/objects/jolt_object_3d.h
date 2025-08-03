@@ -34,17 +34,17 @@
 
 #include "../shapes/jolt_shape_instance_3d.h"
 
-#include "core/math/vector3.h"
-#include "core/object/object.h"
-#include "core/string/ustring.h"
-#include "core/templates/local_vector.h"
-#include "core/templates/rid.h"
+#include "../../../core/math/vector3.h"
+#include "../../../core/object/object.h"
+#include "../../../core/string/ustring.h"
+#include "../../../core/templates/local_vector.h"
+#include "../../../core/templates/rid.h"
 
-#include "Jolt/Jolt.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Jolt.h"
 
-#include "Jolt/Physics/Body/Body.h"
-#include "Jolt/Physics/Collision/BroadPhase/BroadPhaseLayer.h"
-#include "Jolt/Physics/Collision/ObjectLayer.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Body/Body.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/BroadPhase/BroadPhaseLayer.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/ObjectLayer.h"
 
 class JoltArea3D;
 class JoltBody3D;

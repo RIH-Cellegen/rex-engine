@@ -32,15 +32,15 @@
 
 #include "particles_3d_emission_shape_gizmo_plugin.h"
 
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/plugins/node_3d_editor_plugin.h"
-#include "scene/3d/cpu_particles_3d.h"
-#include "scene/3d/gpu_particles_3d.h"
-#include "scene/resources/3d/primitive_meshes.h"
-#include "scene/resources/particle_process_material.h"
+#include "../../editor_node.h"
+#include "../../editor_settings.h"
+#include "../../editor_string_names.h"
+#include "../../editor_undo_redo_manager.h"
+#include "../node_3d_editor_plugin.h"
+#include "../../../scene/3d/cpu_particles_3d.h"
+#include "../../../scene/3d/gpu_particles_3d.h"
+#include "../../../scene/resources/3d/primitive_meshes.h"
+#include "../../../scene/resources/particle_process_material.h"
 
 Particles3DEmissionShapeGizmoPlugin::Particles3DEmissionShapeGizmoPlugin() {
 	helper.instantiate();

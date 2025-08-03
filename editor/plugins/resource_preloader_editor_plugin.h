@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "editor/plugins/editor_plugin.h"
-#include "scene/gui/dialogs.h"
-#include "scene/gui/panel_container.h"
-#include "scene/gui/tree.h"
-#include "scene/main/resource_preloader.h"
+#include "editor_plugin.h"
+#include "../../scene/gui/dialogs.h"
+#include "../../scene/gui/panel_container.h"
+#include "../../scene/gui/tree.h"
+#include "../../scene/main/resource_preloader.h"
 
 class EditorFileDialog;
 

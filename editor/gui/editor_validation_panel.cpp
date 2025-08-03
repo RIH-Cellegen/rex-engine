@@ -32,11 +32,11 @@
 
 #include "editor_validation_panel.h"
 
-#include "editor/editor_string_names.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/box_container.h"
-#include "scene/gui/button.h"
-#include "scene/gui/label.h"
+#include "../editor_string_names.h"
+#include "../themes/editor_scale.h"
+#include "../../scene/gui/box_container.h"
+#include "../../scene/gui/button.h"
+#include "../../scene/gui/label.h"
 
 void EditorValidationPanel::_update() {
 	for (const KeyValue<int, String> &E : valid_messages) {

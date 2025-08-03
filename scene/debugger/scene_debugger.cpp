@@ -32,35 +32,35 @@
 
 #include "scene_debugger.h"
 
-#include "core/debugger/debugger_marshalls.h"
-#include "core/debugger/engine_debugger.h"
-#include "core/io/marshalls.h"
-#include "core/math/math_fieldwise.h"
-#include "core/object/script_language.h"
-#include "core/templates/local_vector.h"
-#include "scene/gui/popup_menu.h"
-#include "scene/main/canvas_layer.h"
-#include "scene/main/scene_tree.h"
-#include "scene/main/window.h"
-#include "scene/resources/packed_scene.h"
-#include "scene/theme/theme_db.h"
-#include "servers/audio_server.h"
+#include "../../core/debugger/debugger_marshalls.h"
+#include "../../core/debugger/engine_debugger.h"
+#include "../../core/io/marshalls.h"
+#include "../../core/math/math_fieldwise.h"
+#include "../../core/object/script_language.h"
+#include "../../core/templates/local_vector.h"
+#include "../gui/popup_menu.h"
+#include "../main/canvas_layer.h"
+#include "../main/scene_tree.h"
+#include "../main/window.h"
+#include "../resources/packed_scene.h"
+#include "../theme/theme_db.h"
+#include "../../servers/audio_server.h"
 
 #ifndef PHYSICS_2D_DISABLED
-#include "scene/2d/physics/collision_object_2d.h"
-#include "scene/2d/physics/collision_polygon_2d.h"
-#include "scene/2d/physics/collision_shape_2d.h"
+#include "../2d/physics/collision_object_2d.h"
+#include "../2d/physics/collision_polygon_2d.h"
+#include "../2d/physics/collision_shape_2d.h"
 #endif // PHYSICS_2D_DISABLED
 
 #ifndef _3D_DISABLED
-#include "scene/3d/camera_3d.h"
+#include "../3d/camera_3d.h"
 #ifndef PHYSICS_3D_DISABLED
-#include "scene/3d/physics/collision_object_3d.h"
-#include "scene/3d/physics/collision_shape_3d.h"
+#include "../3d/physics/collision_object_3d.h"
+#include "../3d/physics/collision_shape_3d.h"
 #endif // PHYSICS_3D_DISABLED
-#include "scene/3d/visual_instance_3d.h"
-#include "scene/resources/3d/convex_polygon_shape_3d.h"
-#include "scene/resources/surface_tool.h"
+#include "../3d/visual_instance_3d.h"
+#include "../resources/3d/convex_polygon_shape_3d.h"
+#include "../resources/surface_tool.h"
 #endif // _3D_DISABLED
 
 SceneDebugger::SceneDebugger() {

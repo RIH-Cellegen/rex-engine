@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/config/project_settings.h"
-#include "core/io/dir_access.h"
-#include "core/variant/variant.h"
-#include "tests/test_macros.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../core/io/dir_access.h"
+#include "../../../core/variant/variant.h"
+#include "../../test_macros.h"
 
 class TestProjectSettingsInternalsAccessor {
 public:

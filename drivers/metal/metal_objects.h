@@ -56,7 +56,7 @@
 #import "metal_utils.h"
 #import "pixel_formats.h"
 
-#include "servers/rendering/rendering_device_driver.h"
+#include "../../servers/rendering/rendering_device_driver.h"
 
 #import <CommonCrypto/CommonDigest.h>
 #import <Foundation/Foundation.h>

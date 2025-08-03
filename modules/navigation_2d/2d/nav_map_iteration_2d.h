@@ -36,8 +36,8 @@
 #include "../nav_utils_2d.h"
 #include "nav_mesh_queries_2d.h"
 
-#include "core/math/math_defs.h"
-#include "core/os/semaphore.h"
+#include "../../../core/math/math_defs.h"
+#include "../../../core/os/semaphore.h"
 
 struct NavLinkIteration2D;
 class NavRegion2D;

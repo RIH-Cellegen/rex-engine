@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/gui/color_picker.h"
+#include "color_picker.h"
 
 class GradientTexture2D;
 

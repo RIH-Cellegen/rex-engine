@@ -34,10 +34,10 @@
 
 #include "gdscript.h"
 
-#include "core/object/ref_counted.h"
-#include "core/os/safe_binary_mutex.h"
-#include "core/templates/hash_map.h"
-#include "core/templates/hash_set.h"
+#include "../../core/object/ref_counted.h"
+#include "../../core/os/safe_binary_mutex.h"
+#include "../../core/templates/hash_map.h"
+#include "../../core/templates/hash_set.h"
 
 class GDScriptAnalyzer;
 class GDScriptParser;

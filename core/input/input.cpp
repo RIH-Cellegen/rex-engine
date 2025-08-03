@@ -33,13 +33,13 @@
 #include "input.h"
 #include "input.compat.inc"
 
-#include "core/config/project_settings.h"
-#include "core/input/default_controller_mappings.h"
-#include "core/input/input_map.h"
-#include "core/os/os.h"
+#include "../config/project_settings.h"
+#include "default_controller_mappings.h"
+#include "input_map.h"
+#include "../os/os.h"
 
 #ifdef DEV_ENABLED
-#include "core/os/thread.h"
+#include "../os/thread.h"
 #endif
 
 static const char *_joy_buttons[(size_t)JoyButton::SDL_MAX] = {

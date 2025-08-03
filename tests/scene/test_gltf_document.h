@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "modules/gltf/extensions/gltf_document_extension_convert_importer_mesh.h"
-#include "modules/gltf/gltf_document.h"
+#include "../../modules/gltf/extensions/gltf_document_extension_convert_importer_mesh.h"
+#include "../../modules/gltf/gltf_document.h"
 
-#include "tests/test_macros.h"
-#include "tests/test_utils.h"
+#include "../test_macros.h"
+#include "../test_utils.h"
 
 namespace TestGLTFDocument {
 

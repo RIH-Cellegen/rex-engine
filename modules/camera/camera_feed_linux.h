@@ -34,8 +34,8 @@
 
 #include "buffer_decoder.h"
 
-#include "core/os/thread.h"
-#include "servers/camera/camera_feed.h"
+#include "../../core/os/thread.h"
+#include "../../servers/camera/camera_feed.h"
 
 #include <linux/videodev2.h>
 

@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/object/worker_thread_pool.h"
+#include "../../../core/object/worker_thread_pool.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestWorkerThreadPool {
 

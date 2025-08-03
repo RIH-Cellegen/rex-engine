@@ -32,7 +32,7 @@
 
 #include "shader_globals_override.h"
 
-#include "scene/main/node.h"
+#include "node.h"
 
 StringName *ShaderGlobalsOverride::_remap(const StringName &p_name) const {
 	StringName *r = param_remaps.getptr(p_name);

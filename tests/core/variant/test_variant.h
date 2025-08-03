@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/variant/variant.h"
-#include "core/variant/variant_parser.h"
+#include "../../../core/variant/variant.h"
+#include "../../../core/variant/variant_parser.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestVariant {
 

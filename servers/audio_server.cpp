@@ -32,18 +32,18 @@
 
 #include "audio_server.h"
 
-#include "core/config/project_settings.h"
-#include "core/debugger/engine_debugger.h"
-#include "core/error/error_macros.h"
-#include "core/io/resource_loader.h"
-#include "core/math/audio_frame.h"
-#include "core/os/os.h"
-#include "core/string/string_name.h"
-#include "core/templates/pair.h"
-#include "scene/scene_string_names.h"
-#include "servers/audio/audio_driver_dummy.h"
-#include "servers/audio/audio_stream.h"
-#include "servers/audio/effects/audio_effect_compressor.h"
+#include "../core/config/project_settings.h"
+#include "../core/debugger/engine_debugger.h"
+#include "../core/error/error_macros.h"
+#include "../core/io/resource_loader.h"
+#include "../core/math/audio_frame.h"
+#include "../core/os/os.h"
+#include "../core/string/string_name.h"
+#include "../core/templates/pair.h"
+#include "../scene/scene_string_names.h"
+#include "audio/audio_driver_dummy.h"
+#include "audio/audio_stream.h"
+#include "audio/effects/audio_effect_compressor.h"
 
 #include <cstring>
 

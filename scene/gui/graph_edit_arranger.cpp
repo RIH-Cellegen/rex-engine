@@ -32,7 +32,7 @@
 
 #include "graph_edit_arranger.h"
 
-#include "scene/gui/graph_edit.h"
+#include "graph_edit.h"
 
 void GraphEditArranger::arrange_nodes() {
 	ERR_FAIL_NULL(graph_edit);

@@ -34,7 +34,7 @@
 
 #include "syslog_logger.h"
 
-#include "core/string/print_string.h"
+#include "../../core/string/print_string.h"
 
 #include <syslog.h>
 

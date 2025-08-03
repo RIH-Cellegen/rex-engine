@@ -36,7 +36,7 @@
 #include <godot_cpp/core/class_db.hpp>
 using namespace godot;
 #elif defined(GODOT_MODULE)
-#include "modules/register_module_types.h"
+#include "../register_module_types.h"
 #endif
 
 void initialize_text_server_fb_module(ModuleInitializationLevel p_level);

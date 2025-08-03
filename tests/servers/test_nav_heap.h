@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "servers/navigation/nav_heap.h"
+#include "../../servers/navigation/nav_heap.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestHeap {
 struct GreaterThan {

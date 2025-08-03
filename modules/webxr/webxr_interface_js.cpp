@@ -36,15 +36,15 @@
 
 #include "godot_webxr.h"
 
-#include "core/input/input.h"
-#include "core/os/os.h"
-#include "drivers/gles3/storage/texture_storage.h"
-#include "scene/main/scene_tree.h"
-#include "scene/main/window.h"
-#include "scene/scene_string_names.h"
-#include "servers/rendering/renderer_compositor.h"
-#include "servers/rendering/rendering_server_globals.h"
-#include "servers/xr/xr_hand_tracker.h"
+#include "../../core/input/input.h"
+#include "../../core/os/os.h"
+#include "../../drivers/gles3/storage/texture_storage.h"
+#include "../../scene/main/scene_tree.h"
+#include "../../scene/main/window.h"
+#include "../../scene/scene_string_names.h"
+#include "../../servers/rendering/renderer_compositor.h"
+#include "../../servers/rendering/rendering_server_globals.h"
+#include "../../servers/xr/xr_hand_tracker.h"
 
 #include <emscripten.h>
 #include <stdlib.h>

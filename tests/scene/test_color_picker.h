@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/gui/color_picker.h"
+#include "../../scene/gui/color_picker.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestColorPicker {
 

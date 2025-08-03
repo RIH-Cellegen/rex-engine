@@ -35,7 +35,7 @@
 #include "../csg.h"
 #include "../csg_shape.h"
 
-#include "tests/test_macros.h"
+#include "../../../tests/test_macros.h"
 
 namespace TestCSG {
 

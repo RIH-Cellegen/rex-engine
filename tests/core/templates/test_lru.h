@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/templates/lru.h"
+#include "../../../ore/templates/lru.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestLRU {
 

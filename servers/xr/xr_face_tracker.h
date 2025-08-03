@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "servers/xr/xr_tracker.h"
+#include "xr_tracker.h"
 
 /**
 	The XRFaceTracker class provides face blend shape weights.

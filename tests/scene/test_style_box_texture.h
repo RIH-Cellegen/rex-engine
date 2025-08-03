@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/resources/style_box_texture.h"
+#include "../../scene/resources/style_box_texture.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestStyleBoxTexture {
 

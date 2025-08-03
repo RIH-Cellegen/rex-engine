@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "editor/editor_run.h"
-#include "editor/export/editor_export.h"
-#include "scene/gui/margin_container.h"
+#include "../editor_run.h"
+#include "../export/editor_export.h"
+#include "../../scene/gui/margin_container.h"
 
 class Button;
 class EditorRunNative;

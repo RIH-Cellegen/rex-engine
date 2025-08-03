@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/templates/rid_owner.h"
-#include "servers/physics_server_3d.h"
+#include "../../core/templates/rid_owner.h"
+#include "../../servers/physics_server_3d.h"
 
 class JoltArea3D;
 class JoltBody3D;

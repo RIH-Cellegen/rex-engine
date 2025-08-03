@@ -32,13 +32,13 @@
 
 #include "editor_undo_redo_manager.h"
 
-#include "core/io/resource.h"
-#include "core/os/os.h"
-#include "editor/debugger/editor_debugger_inspector.h"
-#include "editor/debugger/editor_debugger_node.h"
-#include "editor/editor_log.h"
-#include "editor/editor_node.h"
-#include "scene/main/node.h"
+#include "../core/io/resource.h"
+#include "../core/os/os.h"
+#include "debugger/editor_debugger_inspector.h"
+#include "debugger/editor_debugger_node.h"
+#include "editor_log.h"
+#include "editor_node.h"
+#include "../scene/main/node.h"
 
 EditorUndoRedoManager *EditorUndoRedoManager::singleton = nullptr;
 

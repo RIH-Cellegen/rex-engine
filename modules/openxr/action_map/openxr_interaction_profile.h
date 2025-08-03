@@ -36,7 +36,7 @@
 #include "openxr_binding_modifier.h"
 #include "openxr_interaction_profile_metadata.h"
 
-#include "core/io/resource.h"
+#include "../../../core/io/resource.h"
 
 class OpenXRActionMap;
 

@@ -33,8 +33,8 @@
 #import "metal_fx.h"
 
 #import "../storage_rd/render_scene_buffers_rd.h"
-#import "drivers/metal/pixel_formats.h"
-#import "drivers/metal/rendering_device_driver_metal.h"
+#import "...../drivers/metal/pixel_formats.h"
+#import "...../drivers/metal/rendering_device_driver_metal.h"
 
 #import <Metal/Metal.h>
 #import <MetalFX/MetalFX.h>

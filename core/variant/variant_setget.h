@@ -34,9 +34,9 @@
 
 #include "variant.h"
 
-#include "core/debugger/engine_debugger.h"
-#include "core/object/class_db.h"
-#include "core/variant/variant_internal.h"
+#include "../debugger/engine_debugger.h"
+#include "../object/class_db.h"
+#include "variant_internal.h"
 
 /**** NAMED SETTERS AND GETTERS ****/
 

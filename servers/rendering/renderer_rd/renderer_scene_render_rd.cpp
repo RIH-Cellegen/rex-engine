@@ -32,17 +32,17 @@
 
 #include "renderer_scene_render_rd.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/image.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../core/io/image.h"
 #include "renderer_compositor_rd.h"
-#include "servers/rendering/renderer_rd/environment/fog.h"
-#include "servers/rendering/renderer_rd/shaders/decal_data_inc.glsl.gen.h"
-#include "servers/rendering/renderer_rd/shaders/light_data_inc.glsl.gen.h"
-#include "servers/rendering/renderer_rd/shaders/scene_data_inc.glsl.gen.h"
-#include "servers/rendering/renderer_rd/storage_rd/texture_storage.h"
-#include "servers/rendering/rendering_server_default.h"
-#include "servers/rendering/shader_include_db.h"
-#include "servers/rendering/storage/camera_attributes_storage.h"
+#include "environment/fog.h"
+#include "shaders/decal_data_inc.glsl.gen.h"
+#include "shaders/light_data_inc.glsl.gen.h"
+#include "shaders/scene_data_inc.glsl.gen.h"
+#include "storage_rd/texture_storage.h"
+#include "../rendering_server_default.h"
+#include "../shader_include_db.h"
+#include "../storage/camera_attributes_storage.h"
 
 void get_vogel_disk(float *r_kernel, int p_sample_count) {
 	const float golden_angle = 2.4;

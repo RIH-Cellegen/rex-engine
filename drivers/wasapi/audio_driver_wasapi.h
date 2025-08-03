@@ -34,10 +34,10 @@
 
 #ifdef WASAPI_ENABLED
 
-#include "core/os/mutex.h"
-#include "core/os/thread.h"
-#include "core/templates/safe_refcount.h"
-#include "servers/audio_server.h"
+#include "../../core/os/mutex.h"
+#include "../../core/os/thread.h"
+#include "../../core/templates/safe_refcount.h"
+#include "../../servers/audio_server.h"
 
 #include <audioclient.h>
 #include <mmdeviceapi.h>

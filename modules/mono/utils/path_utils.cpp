@@ -32,10 +32,10 @@
 
 #include "path_utils.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/dir_access.h"
-#include "core/io/file_access.h"
-#include "core/os/os.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../core/io/dir_access.h"
+#include "../../../core/io/file_access.h"
+#include "../../../core/os/os.h"
 
 #include <stdlib.h>
 

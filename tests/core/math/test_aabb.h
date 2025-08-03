@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/math/aabb.h"
+#include "../../../core/math/aabb.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestAABB {
 

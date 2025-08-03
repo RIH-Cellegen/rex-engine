@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/variant/variant_utility.h"
+#include "../../../core/variant/variant_utility.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestVariantUtility {
 

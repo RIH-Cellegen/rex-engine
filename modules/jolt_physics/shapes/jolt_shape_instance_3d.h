@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/math/transform_3d.h"
+#include "../../../core/math/transform_3d.h"
 
-#include "Jolt/Jolt.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Jolt.h"
 
-#include "Jolt/Physics/Collision/Shape/Shape.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/Shape/Shape.h"
 
 class JoltShapedObject3D;
 class JoltShape3D;

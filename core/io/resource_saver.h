@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/io/resource.h"
-#include "core/object/gdvirtual.gen.inc"
+#include "resource.h"
+#include "../object/gdvirtual.gen.inc"
 
 class ResourceFormatSaver : public RefCounted {
 	GDCLASS(ResourceFormatSaver, RefCounted);

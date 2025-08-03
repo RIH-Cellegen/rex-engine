@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/io/dir_access.h"
-#include "core/io/file_access.h"
-#include "core/string/print_string.h"
-#include "core/templates/hash_set.h"
-#include "core/templates/list.h"
+#include "dir_access.h"
+#include "file_access.h"
+#include "../string/print_string.h"
+#include "../templates/hash_set.h"
+#include "../templates/list.h"
 
 // Redot's packed file magic header ("GDPC" in ASCII).
 #define PACK_HEADER_MAGIC 0x43504447

@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "editor/plugins/abstract_polygon_2d_editor.h"
+#include "abstract_polygon_2d_editor.h"
 
-#include "editor/plugins/editor_plugin.h"
+#include "editor_plugin.h"
 
 class AcceptDialog;
 class HBoxContainer;

@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/templates/vector.h"
-#include "core/typedefs.h"
+#include "vector.h"
+#include "../typedefs.h"
 
 template <typename T>
 class VSet {

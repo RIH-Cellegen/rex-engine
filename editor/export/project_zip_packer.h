@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/io/zip_io.h"
-#include "core/variant/variant.h"
+#include "../../core/io/zip_io.h"
+#include "../../core/variant/variant.h"
 
 class ProjectZIPPacker {
 	static void _zip_file(const String &p_path, const String &p_base_path, zipFile p_zip);

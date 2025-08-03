@@ -38,13 +38,13 @@
 #include "../gdscript_tokenizer.h"
 #include "../gdscript_tokenizer_buffer.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/file_access.h"
-#include "core/os/os.h"
-#include "core/string/string_builder.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../core/io/file_access.h"
+#include "../../../core/os/os.h"
+#include "../../../core/string/string_builder.h"
 
 #ifdef TOOLS_ENABLED
-#include "editor/editor_settings.h"
+#include "../../../editor/editor_settings.h"
 #endif
 
 namespace GDScriptTests {

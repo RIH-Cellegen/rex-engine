@@ -32,7 +32,7 @@
 
 #include "openxr_interaction_profile_editor.h"
 #include "../openxr_api.h"
-#include "editor/editor_string_names.h"
+#include "../../../editor/editor_string_names.h"
 
 ///////////////////////////////////////////////////////////////////////////
 // Interaction profile editor base

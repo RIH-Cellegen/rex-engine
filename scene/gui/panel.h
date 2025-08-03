@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/gui/control.h"
+#include "control.h"
 
 class Panel : public Control {
 	GDCLASS(Panel, Control);

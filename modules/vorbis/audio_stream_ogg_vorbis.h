@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/variant/variant.h"
-#include "servers/audio/audio_stream.h"
+#include "../../core/variant/variant.h"
+#include "../../servers/audio/audio_stream.h"
 
-#include "modules/ogg/ogg_packet_sequence.h"
+#include "../ogg/ogg_packet_sequence.h"
 
 #include <vorbis/codec.h>
 

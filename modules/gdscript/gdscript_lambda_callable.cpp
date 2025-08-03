@@ -34,7 +34,7 @@
 
 #include "gdscript.h"
 
-#include "core/templates/hashfuncs.h"
+#include "../../core/templates/hashfuncs.h"
 
 bool GDScriptLambdaCallable::compare_equal(const CallableCustom *p_a, const CallableCustom *p_b) {
 	// Lambda callables are only compared by reference.

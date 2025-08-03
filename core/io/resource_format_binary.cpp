@@ -32,12 +32,12 @@
 
 #include "resource_format_binary.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/dir_access.h"
-#include "core/io/file_access_compressed.h"
-#include "core/io/missing_resource.h"
-#include "core/object/script_language.h"
-#include "core/version.h"
+#include "../config/project_settings.h"
+#include "dir_access.h"
+#include "file_access_compressed.h"
+#include "missing_resource.h"
+#include "../object/script_language.h"
+#include "../version.h"
 
 //#define print_bl(m_what) print_line(m_what)
 #define print_bl(m_what) (void)(m_what)

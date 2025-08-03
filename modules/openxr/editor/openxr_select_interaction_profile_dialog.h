@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "scene/gui/box_container.h"
-#include "scene/gui/dialogs.h"
-#include "scene/gui/label.h"
-#include "scene/gui/scroll_container.h"
+#include "../../../scene/gui/box_container.h"
+#include "../../../scene/gui/dialogs.h"
+#include "../../../scene/gui/label.h"
+#include "../../../scene/gui/scroll_container.h"
 
 class OpenXRSelectInteractionProfileDialog : public ConfirmationDialog {
 	GDCLASS(OpenXRSelectInteractionProfileDialog, ConfirmationDialog);

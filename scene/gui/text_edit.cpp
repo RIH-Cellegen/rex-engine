@@ -33,17 +33,17 @@
 #include "text_edit.h"
 #include "text_edit.compat.inc"
 
-#include "core/config/project_settings.h"
-#include "core/input/input.h"
-#include "core/input/input_map.h"
-#include "core/object/script_language.h"
-#include "core/os/keyboard.h"
-#include "core/os/os.h"
-#include "core/string/string_builder.h"
-#include "core/string/translation_server.h"
-#include "scene/gui/label.h"
-#include "scene/main/window.h"
-#include "scene/theme/theme_db.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/input/input.h"
+#include "../../core/input/input_map.h"
+#include "../../core/object/script_language.h"
+#include "../../core/os/keyboard.h"
+#include "../../core/os/os.h"
+#include "../../core/string/string_builder.h"
+#include "../../core/string/translation_server.h"
+#include "label.h"
+#include "../main/window.h"
+#include "../theme/theme_db.h"
 
 ///////////////////////////////////////////////////////////////////////////////
 ///                            TEXT                                         ///

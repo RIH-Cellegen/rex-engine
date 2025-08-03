@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "editor/plugins/animation_tree_editor_plugin.h"
-#include "scene/animation/animation_node_state_machine.h"
-#include "scene/gui/graph_edit.h"
-#include "scene/gui/popup.h"
+#include "animation_tree_editor_plugin.h"
+#include "../../scene/animation/animation_node_state_machine.h"
+#include "../../scene/gui/graph_edit.h"
+#include "../../scene/gui/popup.h"
 
 class ConfirmationDialog;
 class EditorFileDialog;

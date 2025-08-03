@@ -32,17 +32,17 @@
 
 #include "node.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/resource_loader.h"
-#include "core/object/message_queue.h"
-#include "core/object/script_language.h"
-#include "core/string/print_string.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/io/resource_loader.h"
+#include "../../core/object/message_queue.h"
+#include "../../core/object/script_language.h"
+#include "../../core/string/print_string.h"
 #include "instance_placeholder.h"
-#include "scene/animation/tween.h"
-#include "scene/debugger/scene_debugger.h"
-#include "scene/main/multiplayer_api.h"
-#include "scene/main/window.h"
-#include "scene/resources/packed_scene.h"
+#include "../animation/tween.h"
+#include "../debugger/scene_debugger.h"
+#include "multiplayer_api.h"
+#include "window.h"
+#include "../resources/packed_scene.h"
 #include "viewport.h"
 
 int Node::orphan_node_count = 0;

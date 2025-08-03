@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/string/string_name.h"
-#include "core/variant/variant.h"
+#include "../../core/string/string_name.h"
+#include "../../core/variant/variant.h"
 
 template <typename T>
 class TypedArray;

@@ -32,7 +32,7 @@
 
 #ifndef DISABLE_DEPRECATED
 
-#include "scene/gui/line_edit.h"
+#include "line_edit.h"
 
 void AcceptDialog::_register_text_enter_bind_compat_89419(Control *p_line_edit) {
 	register_text_enter(Object::cast_to<LineEdit>(p_line_edit));

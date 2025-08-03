@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/variant/typed_dictionary.h"
-#include "tests/test_macros.h"
+#include "../../../core/variant/typed_dictionary.h"
+#include "../../test_macros.h"
 
 namespace TestDictionary {
 

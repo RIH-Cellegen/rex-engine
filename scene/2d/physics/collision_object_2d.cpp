@@ -32,7 +32,7 @@
 
 #include "collision_object_2d.h"
 
-#include "scene/resources/world_2d.h"
+#include "../../resources/world_2d.h"
 
 void CollisionObject2D::_notification(int p_what) {
 	switch (p_what) {

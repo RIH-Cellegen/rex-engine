@@ -34,18 +34,18 @@
 
 #include "godot_plugin_config.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/file_access.h"
-#include "core/io/image_loader.h"
-#include "core/io/marshalls.h"
-#include "core/io/resource_saver.h"
-#include "core/io/zip_io.h"
-#include "core/os/os.h"
-#include "core/templates/safe_refcount.h"
-#include "editor/editor_settings.h"
-#include "editor/export/editor_export_platform.h"
-#include "main/splash.gen.h"
-#include "scene/resources/image_texture.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../core/io/file_access.h"
+#include "../../../core/io/image_loader.h"
+#include "../../../core/io/marshalls.h"
+#include "../../../core/io/resource_saver.h"
+#include "../../../core/io/zip_io.h"
+#include "../../../core/os/os.h"
+#include "../../../core/templates/safe_refcount.h"
+#include "../../../editor/editor_settings.h"
+#include "../../../editor/export/editor_export_platform.h"
+#include "../../../main/splash.gen.h"
+#include "../../../scene/resources/image_texture.h"
 
 #include <string.h>
 #include <sys/stat.h>

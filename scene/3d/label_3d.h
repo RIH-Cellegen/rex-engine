@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "scene/3d/visual_instance_3d.h"
-#include "scene/resources/font.h"
+#include "visual_instance_3d.h"
+#include "../resources/font.h"
 
-#include "servers/text_server.h"
+#include "../../servers/text_server.h"
 
 class Label3D : public GeometryInstance3D {
 	GDCLASS(Label3D, GeometryInstance3D);

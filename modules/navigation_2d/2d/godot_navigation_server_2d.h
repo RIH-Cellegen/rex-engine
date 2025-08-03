@@ -38,12 +38,12 @@
 #include "../nav_obstacle_2d.h"
 #include "../nav_region_2d.h"
 
-#include "core/templates/local_vector.h"
-#include "core/templates/rid.h"
-#include "core/templates/rid_owner.h"
-#include "servers/navigation/navigation_path_query_parameters_2d.h"
-#include "servers/navigation/navigation_path_query_result_2d.h"
-#include "servers/navigation_server_2d.h"
+#include "../../../core/templates/local_vector.h"
+#include "../../../core/templates/rid.h"
+#include "../../../core/templates/rid_owner.h"
+#include "../../../servers/navigation/navigation_path_query_parameters_2d.h"
+#include "../../../servers/navigation/navigation_path_query_result_2d.h"
+#include "../../../servers/navigation_server_2d.h"
 
 /// The commands are functions executed during the `sync` phase.
 

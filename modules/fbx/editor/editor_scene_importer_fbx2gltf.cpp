@@ -32,11 +32,11 @@
 
 #include "editor_scene_importer_fbx2gltf.h"
 
-#include "core/config/project_settings.h"
-#include "editor/editor_settings.h"
+#include "../../core/config/project_settings.h"
+#include "../../editor/editor_settings.h"
 #include "editor_scene_importer_ufbx.h"
 
-#include "modules/gltf/gltf_document.h"
+#include "../../modules/gltf/gltf_document.h"
 
 void EditorSceneFormatImporterFBX2GLTF::get_extensions(List<String> *r_extensions) const {
 	r_extensions->push_back("fbx");

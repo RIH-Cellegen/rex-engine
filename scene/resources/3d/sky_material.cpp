@@ -32,8 +32,8 @@
 
 #include "sky_material.h"
 
-#include "core/config/project_settings.h"
-#include "core/version.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../core/version.h"
 
 Mutex ProceduralSkyMaterial::shader_mutex;
 RID ProceduralSkyMaterial::shader_cache[4];

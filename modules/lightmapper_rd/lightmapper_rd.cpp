@@ -32,24 +32,24 @@
 
 #include "lightmapper_rd.h"
 
-#include "core/string/print_string.h"
+#include "../../core/string/print_string.h"
 #include "lm_blendseams.glsl.gen.h"
 #include "lm_compute.glsl.gen.h"
 #include "lm_raster.glsl.gen.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/dir_access.h"
-#include "core/math/geometry_2d.h"
-#include "editor/editor_paths.h"
-#include "editor/editor_settings.h"
-#include "servers/rendering/rendering_device_binds.h"
-#include "servers/rendering/rendering_server_globals.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/io/dir_access.h"
+#include "../../core/math/geometry_2d.h"
+#include "../../editor/editor_paths.h"
+#include "../../editor/editor_settings.h"
+#include "../../servers/rendering/rendering_device_binds.h"
+#include "../../servers/rendering/rendering_server_globals.h"
 
 #if defined(VULKAN_ENABLED)
-#include "drivers/vulkan/rendering_context_driver_vulkan.h"
+#include "../../drivers/vulkan/rendering_context_driver_vulkan.h"
 #endif
 #if defined(METAL_ENABLED)
-#include "drivers/metal/rendering_context_driver_metal.h"
+#include "../../drivers/metal/rendering_context_driver_metal.h"
 #endif
 
 //uncomment this if you want to see textures from all the process saved

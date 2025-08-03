@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/string/ustring.h"
-#include "core/templates/hash_map.h"
-#include "core/templates/local_vector.h"
-#include "core/templates/pair.h"
-#include "core/variant/array.h"
+#include "../string/ustring.h"
+#include "../templates/hash_map.h"
+#include "../templates/local_vector.h"
+#include "../templates/pair.h"
+#include "array.h"
 
 class Variant;
 

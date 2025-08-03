@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/templates/paged_allocator.h"
+#include "../../core/templates/paged_allocator.h"
 #include "renderer_compositor.h"
 #include "renderer_viewport.h"
-#include "servers/rendering/instance_uniforms.h"
+#include "instance_uniforms.h"
 
 class RendererCanvasCull {
 	static void _dependency_changed(Dependency::DependencyChangedNotification p_notification, DependencyTracker *p_tracker);

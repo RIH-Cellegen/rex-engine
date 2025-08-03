@@ -38,7 +38,7 @@
 #include "godot_collision_object_3d.h"
 #include "godot_soft_body_3d.h"
 
-#include "core/typedefs.h"
+#include "../../core/typedefs.h"
 
 class GodotPhysicsDirectSpaceState3D : public PhysicsDirectSpaceState3D {
 	GDCLASS(GodotPhysicsDirectSpaceState3D, PhysicsDirectSpaceState3D);

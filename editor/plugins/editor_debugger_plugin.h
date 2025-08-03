@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/gui/control.h"
+#include "../../scene/gui/control.h"
 
 class ScriptEditorDebugger;
 

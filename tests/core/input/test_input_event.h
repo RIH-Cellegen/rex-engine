@@ -32,12 +32,12 @@
 
 #pragma once
 
-#include "core/input/input_event.h"
-#include "core/math/rect2.h"
-#include "core/os/memory.h"
-#include "core/variant/array.h"
+#include "../../../core/input/input_event.h"
+#include "../../../core/math/rect2.h"
+#include "../../../core/os/memory.h"
+#include "../../../core/variant/array.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestInputEvent {
 TEST_CASE("[InputEvent] Signal is emitted when device is changed") {

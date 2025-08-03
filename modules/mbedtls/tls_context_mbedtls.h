@@ -34,7 +34,7 @@
 
 #include "crypto_mbedtls.h"
 
-#include "core/object/ref_counted.h"
+#include "../../core/object/ref_counted.h"
 
 #include <mbedtls/ctr_drbg.h>
 #include <mbedtls/debug.h>

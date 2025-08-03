@@ -32,15 +32,15 @@
 
 #pragma once
 
-#include "editor/add_metadata_dialog.h"
-#include "editor/editor_properties.h"
-#include "editor/gui/editor_file_dialog.h"
-#include "editor/plugins/editor_plugin.h"
-#include "editor/plugins/node_3d_editor_plugin.h"
-#include "scene/3d/camera_3d.h"
-#include "scene/3d/mesh_instance_3d.h"
-#include "scene/3d/skeleton_3d.h"
-#include "scene/resources/immediate_mesh.h"
+#include "../add_metadata_dialog.h"
+#include "../editor_properties.h"
+#include "../gui/editor_file_dialog.h"
+#include "editor_plugin.h"
+#include "node_3d_editor_plugin.h"
+#include "../../scene/3d/camera_3d.h"
+#include "../../scene/3d/mesh_instance_3d.h"
+#include "../../scene/3d/skeleton_3d.h"
+#include "../../scene/resources/immediate_mesh.h"
 
 class EditorInspectorPluginSkeleton;
 class EditorPropertyVector3;

@@ -34,12 +34,12 @@
 
 #include "jolt_object_3d.h"
 
-#include "servers/physics_server_3d.h"
+#include "../../../servers/physics_server_3d.h"
 
-#include "Jolt/Jolt.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Jolt.h"
 
-#include "Jolt/Physics/SoftBody/SoftBodyCreationSettings.h"
-#include "Jolt/Physics/SoftBody/SoftBodySharedSettings.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/SoftBody/SoftBodyCreationSettings.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/SoftBody/SoftBodySharedSettings.h"
 
 class JoltSpace3D;
 

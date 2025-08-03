@@ -32,17 +32,17 @@
 
 #include "file_dialog.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/dir_access.h"
-#include "core/os/keyboard.h"
-#include "scene/gui/box_container.h"
-#include "scene/gui/check_box.h"
-#include "scene/gui/grid_container.h"
-#include "scene/gui/label.h"
-#include "scene/gui/line_edit.h"
-#include "scene/gui/option_button.h"
-#include "scene/gui/tree.h"
-#include "scene/theme/theme_db.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/io/dir_access.h"
+#include "../../core/os/keyboard.h"
+#include "box_container.h"
+#include "check_box.h"
+#include "grid_container.h"
+#include "label.h"
+#include "line_edit.h"
+#include "option_button.h"
+#include "tree.h"
+#include "../theme/theme_db.h"
 
 void FileDialog::popup_file_dialog() {
 	popup_centered_clamped(Size2i(700, 500), 0.8f);

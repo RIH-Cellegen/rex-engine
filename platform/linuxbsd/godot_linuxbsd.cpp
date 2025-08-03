@@ -32,7 +32,7 @@
 
 #include "os_linuxbsd.h"
 
-#include "main/main.h"
+#include "../../main/main.h"
 
 #include <limits.h>
 #include <locale.h>

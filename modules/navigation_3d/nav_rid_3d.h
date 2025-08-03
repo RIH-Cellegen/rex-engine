@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/templates/rid.h"
+#include "../../core/templates/rid.h"
 
 class NavRid3D {
 	RID self;

@@ -34,7 +34,7 @@
 #include "../action_map/openxr_interaction_profile_metadata.h"
 #include "openxr_action_map_editor.h"
 
-#include "editor/themes/editor_scale.h"
+#include "../../../editor/themes/editor_scale.h"
 
 void OpenXRBindingModifiersDialog::_bind_methods() {
 	ClassDB::bind_method(D_METHOD("_do_add_binding_modifier_editor", "binding_modifier_editor"), &OpenXRBindingModifiersDialog::_do_add_binding_modifier_editor);

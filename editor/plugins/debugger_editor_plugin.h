@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "editor/plugins/editor_plugin.h"
+#include "editor_plugin.h"
 
 class EditorFileServer;
 class MenuButton;

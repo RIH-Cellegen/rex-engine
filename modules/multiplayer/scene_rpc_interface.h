@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/object/ref_counted.h"
-#include "scene/main/multiplayer_api.h"
+#include "../../core/object/ref_counted.h"
+#include "../../scene/main/multiplayer_api.h"
 
 class SceneMultiplayer;
 class SceneCacheInterface;

@@ -42,8 +42,8 @@
 #include "editor/navigation_mesh_editor_plugin.h"
 #endif
 
-#include "core/config/engine.h"
-#include "servers/navigation_server_3d.h"
+#include "../../core/config/engine.h"
+#include "../../servers/navigation_server_3d.h"
 
 #ifndef DISABLE_DEPRECATED
 NavigationMeshGenerator *_nav_mesh_generator = nullptr;

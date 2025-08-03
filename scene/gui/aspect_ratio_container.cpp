@@ -32,7 +32,7 @@
 
 #include "aspect_ratio_container.h"
 
-#include "scene/gui/texture_rect.h"
+#include "texture_rect.h"
 
 Size2 AspectRatioContainer::get_minimum_size() const {
 	Size2 ms;

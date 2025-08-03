@@ -33,7 +33,7 @@
 #pragma once
 
 #include "debug_adapter_protocol.h"
-#include "editor/plugins/editor_plugin.h"
+#include "../../plugins/editor_plugin.h"
 
 class DebugAdapterServer : public EditorPlugin {
 	GDCLASS(DebugAdapterServer, EditorPlugin);

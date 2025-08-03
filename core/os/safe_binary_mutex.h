@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/error/error_macros.h"
-#include "core/os/mutex.h"
-#include "core/typedefs.h"
+#include "../error/error_macros.h"
+#include "mutex.h"
+#include "../typedefs.h"
 
 #ifdef THREADS_ENABLED
 

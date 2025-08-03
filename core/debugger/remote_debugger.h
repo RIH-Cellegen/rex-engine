@@ -32,13 +32,13 @@
 
 #pragma once
 
-#include "core/debugger/debugger_marshalls.h"
-#include "core/debugger/engine_debugger.h"
-#include "core/debugger/remote_debugger_peer.h"
-#include "core/object/class_db.h"
-#include "core/string/string_name.h"
-#include "core/string/ustring.h"
-#include "core/variant/array.h"
+#include "debugger_marshalls.h"
+#include "engine_debugger.h"
+#include "remote_debugger_peer.h"
+#include "../object/class_db.h"
+#include "../string/string_name.h"
+#include "../string/ustring.h"
+#include "../variant/array.h"
 
 class RemoteDebugger : public EngineDebugger {
 public:

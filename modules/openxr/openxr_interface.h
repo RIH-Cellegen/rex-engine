@@ -59,8 +59,8 @@
 #include "extensions/openxr_hand_tracking_extension.h"
 #include "openxr_api.h"
 
-#include "servers/xr/xr_controller_tracker.h"
-#include "servers/xr/xr_interface.h"
+#include "../../servers/xr/xr_controller_tracker.h"
+#include "../../servers/xr/xr_interface.h"
 
 // declare some default strings
 #define INTERACTION_PROFILE_NONE "/interaction_profiles/none"

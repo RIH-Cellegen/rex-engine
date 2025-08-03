@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "editor/plugins/editor_plugin.h"
-#include "editor/plugins/texture_editor_plugin.h"
+#include "editor_plugin.h"
+#include "texture_editor_plugin.h"
 
 class EditorInspectorPluginSubViewportPreview : public EditorInspectorPluginTexture {
 	GDCLASS(EditorInspectorPluginSubViewportPreview, EditorInspectorPluginTexture);

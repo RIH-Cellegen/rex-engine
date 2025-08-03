@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/main/viewport.h"
-#include "scene/resources/theme.h"
-#include "servers/display_server.h"
+#include "viewport.h"
+#include "../resources/theme.h"
+#include "../../servers/display_server.h"
 
 class Font;
 class Shortcut;

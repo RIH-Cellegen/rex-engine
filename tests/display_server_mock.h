@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "servers/display_server_headless.h"
+#include "../servers/display_server_headless.h"
 
-#include "servers/rendering/dummy/rasterizer_dummy.h"
+#include "../servers/rendering/dummy/rasterizer_dummy.h"
 
 // Specialized DisplayServer for unittests based on DisplayServerHeadless, that
 // additionally supports things like mouse enter/exit events and clipboard.

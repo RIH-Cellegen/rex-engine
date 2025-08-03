@@ -34,8 +34,8 @@
 
 #include "godot_space_3d.h"
 
-#include "core/math/geometry_3d.h"
-#include "servers/rendering_server.h"
+#include "../../core/math/geometry_3d.h"
+#include "../../servers/rendering_server.h"
 
 // Based on Bullet soft body.
 

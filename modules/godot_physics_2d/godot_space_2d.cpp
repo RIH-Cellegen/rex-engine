@@ -35,7 +35,7 @@
 #include "godot_collision_solver_2d.h"
 #include "godot_physics_server_2d.h"
 
-#include "core/config/project_settings.h"
+#include "../../core/config/project_settings.h"
 #include "godot_area_pair_2d.h"
 #include "godot_body_pair_2d.h"
 

@@ -32,10 +32,10 @@
 
 #include "occluder_instance_3d_gizmo_plugin.h"
 
-#include "editor/editor_settings.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/plugins/node_3d_editor_plugin.h"
-#include "scene/3d/occluder_instance_3d.h"
+#include "../../editor_settings.h"
+#include "../../editor_undo_redo_manager.h"
+#include "../node_3d_editor_plugin.h"
+#include "../../../scene/3d/occluder_instance_3d.h"
 
 OccluderInstance3DGizmoPlugin::OccluderInstance3DGizmoPlugin() {
 	create_material("line_material", EDITOR_GET("editors/3d_gizmos/gizmo_colors/occluder"));

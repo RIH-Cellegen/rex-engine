@@ -46,12 +46,12 @@
 #include "editor/editor_debugger_server_websocket.h"
 #endif
 
-#include "core/debugger/engine_debugger.h"
-#include "core/error/error_macros.h"
+#include "../../core/debugger/engine_debugger.h"
+#include "../../core/error/error_macros.h"
 
 #ifdef TOOLS_ENABLED
-#include "editor/debugger/editor_debugger_server.h"
-#include "editor/editor_node.h"
+#include "../../editor/debugger/editor_debugger_server.h"
+#include "../../editor/editor_node.h"
 #endif
 
 #ifdef TOOLS_ENABLED

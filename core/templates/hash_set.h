@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/os/memory.h"
-#include "core/templates/hashfuncs.h"
+#include "../os/memory.h"
+#include "hashfuncs.h"
 
 /**
  * Implementation of Set using a bidi indexed hash map.

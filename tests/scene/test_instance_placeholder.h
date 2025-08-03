@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "scene/main/instance_placeholder.h"
-#include "scene/resources/packed_scene.h"
+#include "../../scene/main/instance_placeholder.h"
+#include "../../scene/resources/packed_scene.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 class _TestInstancePlaceholderNode : public Node {
 	GDCLASS(_TestInstancePlaceholderNode, Node);

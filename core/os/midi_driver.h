@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/typedefs.h"
-#include "core/variant/variant.h"
+#include "../typedefs.h"
+#include "../variant/variant.h"
 
 /**
  * Multi-Platform abstraction for accessing to MIDI.

@@ -34,7 +34,7 @@
 
 #ifdef WINDOWS_ENABLED
 
-#include "core/io/dir_access.h"
+#include "../../core/io/dir_access.h"
 
 struct DirAccessWindowsPrivate;
 

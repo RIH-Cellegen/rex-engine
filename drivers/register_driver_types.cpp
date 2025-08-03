@@ -32,8 +32,8 @@
 
 #include "register_driver_types.h"
 
-#include "drivers/png/image_loader_png.h"
-#include "drivers/png/resource_saver_png.h"
+#include "png/image_loader_png.h"
+#include "png/resource_saver_png.h"
 
 static Ref<ImageLoaderPNG> image_loader_png;
 static Ref<ResourceSaverPNG> resource_saver_png;

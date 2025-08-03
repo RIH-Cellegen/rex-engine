@@ -32,7 +32,7 @@
 
 #include "collision_object_3d.h"
 
-#include "scene/resources/3d/shape_3d.h"
+#include "../../resources/3d/shape_3d.h"
 
 void CollisionObject3D::_notification(int p_what) {
 	switch (p_what) {

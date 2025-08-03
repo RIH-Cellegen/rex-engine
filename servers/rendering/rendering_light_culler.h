@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/math/plane.h"
-#include "core/math/vector3.h"
+#include "../../core/math/plane.h"
+#include "../../core/math/vector3.h"
 #include "renderer_scene_cull.h"
 
 struct Projection;

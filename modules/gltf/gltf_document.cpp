@@ -37,40 +37,40 @@
 #include "gltf_state.h"
 #include "skin_tool.h"
 
-#include "core/config/project_settings.h"
-#include "core/crypto/crypto_core.h"
-#include "core/io/config_file.h"
-#include "core/io/dir_access.h"
-#include "core/io/file_access.h"
-#include "core/io/file_access_memory.h"
-#include "core/io/json.h"
-#include "core/io/stream_peer.h"
-#include "core/object/object_id.h"
-#include "core/version.h"
-#include "scene/2d/node_2d.h"
-#include "scene/3d/bone_attachment_3d.h"
-#include "scene/3d/camera_3d.h"
-#include "scene/3d/importer_mesh_instance_3d.h"
-#include "scene/3d/light_3d.h"
-#include "scene/3d/mesh_instance_3d.h"
-#include "scene/3d/multimesh_instance_3d.h"
-#include "scene/animation/animation_player.h"
-#include "scene/resources/3d/skin.h"
-#include "scene/resources/image_texture.h"
-#include "scene/resources/portable_compressed_texture.h"
-#include "scene/resources/surface_tool.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/crypto/crypto_core.h"
+#include "../../core/io/config_file.h"
+#include "../../core/io/dir_access.h"
+#include "../../core/io/file_access.h"
+#include "../../core/io/file_access_memory.h"
+#include "../../core/io/json.h"
+#include "../../core/io/stream_peer.h"
+#include "../../core/object/object_id.h"
+#include "../../core/version.h"
+#include "../../scene/2d/node_2d.h"
+#include "../../scene/3d/bone_attachment_3d.h"
+#include "../../scene/3d/camera_3d.h"
+#include "../../scene/3d/importer_mesh_instance_3d.h"
+#include "../../scene/3d/light_3d.h"
+#include "../../scene/3d/mesh_instance_3d.h"
+#include "../../scene/3d/multimesh_instance_3d.h"
+#include "../../scene/animation/animation_player.h"
+#include "../../scene/resources/3d/skin.h"
+#include "../../scene/resources/image_texture.h"
+#include "../../scene/resources/portable_compressed_texture.h"
+#include "../../scene/resources/surface_tool.h"
 
 #ifdef TOOLS_ENABLED
-#include "editor/editor_file_system.h"
+#include "../../editor/editor_file_system.h"
 #endif
 
-#include "modules/modules_enabled.gen.h" // For csg, gridmap.
+#include "../modules_enabled.gen.h" // For csg, gridmap.
 
 #ifdef MODULE_CSG_ENABLED
-#include "modules/csg/csg_shape.h"
+#include "../csg/csg_shape.h"
 #endif
 #ifdef MODULE_GRIDMAP_ENABLED
-#include "modules/gridmap/grid_map.h"
+#include "../gridmap/grid_map.h"
 #endif
 
 // FIXME: Hardcoded to avoid editor dependency.

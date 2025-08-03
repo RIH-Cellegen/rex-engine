@@ -34,11 +34,11 @@
 
 #include "scene_multiplayer.h"
 
-#include "core/debugger/engine_debugger.h"
-#include "core/io/marshalls.h"
-#include "scene/main/multiplayer_api.h"
-#include "scene/main/node.h"
-#include "scene/main/window.h"
+#include "../../core/debugger/engine_debugger.h"
+#include "../../core/io/marshalls.h"
+#include "../../scene/main/multiplayer_api.h"
+#include "../../scene/main/node.h"
+#include "../../scene/main/window.h"
 
 // The RPC meta is composed by a single byte that contains (starting from the least significant bit):
 // - `NetworkCommands` in the first four bits.

@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/io/resource.h"
+#include "../../../core/io/resource.h"
 
 class GLTFObjectModelProperty;
 class Light3D;

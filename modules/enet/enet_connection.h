@@ -34,8 +34,8 @@
 
 #include "enet_packet_peer.h"
 
-#include "core/crypto/crypto.h"
-#include "core/object/ref_counted.h"
+#include "../../core/crypto/crypto.h"
+#include "../../core/object/ref_counted.h"
 
 #include <enet/enet.h>
 

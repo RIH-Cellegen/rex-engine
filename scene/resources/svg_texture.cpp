@@ -32,15 +32,15 @@
 
 #include "svg_texture.h"
 
-#include "core/io/image_loader.h"
-#include "scene/main/canvas_item.h"
-#include "scene/main/viewport.h"
-#include "scene/resources/bit_map.h"
-#include "scene/resources/placeholder_textures.h"
+#include "../../core/io/image_loader.h"
+#include "../main/canvas_item.h"
+#include "../main/viewport.h"
+#include "bit_map.h"
+#include "placeholder_textures.h"
 
-#include "modules/modules_enabled.gen.h" // For svg.
+#include "../../modules/modules_enabled.gen.h" // For svg.
 #ifdef MODULE_SVG_ENABLED
-#include "modules/svg/image_loader_svg.h"
+#include "../../modules/svg/image_loader_svg.h"
 #endif
 
 Mutex SVGTexture::mutex;

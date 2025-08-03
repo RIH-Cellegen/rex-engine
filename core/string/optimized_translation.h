@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/string/translation.h"
+#include "translation.h"
 
 class OptimizedTranslation : public Translation {
 	GDCLASS(OptimizedTranslation, Translation);

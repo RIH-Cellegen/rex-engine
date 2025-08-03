@@ -32,11 +32,11 @@
 
 #include "path_2d.h"
 
-#include "core/math/geometry_2d.h"
-#include "scene/main/timer.h"
+#include "../../core/math/geometry_2d.h"
+#include "../main/timer.h"
 
 #ifdef TOOLS_ENABLED
-#include "editor/themes/editor_scale.h"
+#include "../../editor/themes/editor_scale.h"
 #endif
 
 #ifdef DEBUG_ENABLED

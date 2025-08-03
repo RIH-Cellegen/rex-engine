@@ -33,7 +33,7 @@
 #ifndef CRYPTOGRAPHY_REGISTER_TYPES_H
 #define CRYPTOGRAPHY_REGISTER_TYPES_H
 
-#include "modules/register_module_types.h"
+#include "../register_module_types.h"
 
 void initialize_cryptography_module(ModuleInitializationLevel p_level);
 void uninitialize_cryptography_module(ModuleInitializationLevel p_level);

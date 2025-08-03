@@ -32,11 +32,11 @@
 
 #include "property_selector.h"
 
-#include "editor/editor_help.h"
-#include "editor/editor_node.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/line_edit.h"
-#include "scene/gui/tree.h"
+#include "editor_help.h"
+#include "editor_node.h"
+#include "themes/editor_scale.h"
+#include "../scene/gui/line_edit.h"
+#include "../scene/gui/tree.h"
 
 void PropertySelector::_text_changed(const String &p_newtext) {
 	_update_search();

@@ -32,8 +32,8 @@
 
 #include "rendering_light_culler.h"
 
-#include "core/math/plane.h"
-#include "core/math/projection.h"
+#include "../../core/math/plane.h"
+#include "../../core/math/projection.h"
 #include "rendering_server_globals.h"
 
 #ifdef RENDERING_LIGHT_CULLER_DEBUG_STRINGS

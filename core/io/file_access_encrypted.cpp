@@ -32,7 +32,7 @@
 
 #include "file_access_encrypted.h"
 
-#include "core/variant/variant.h"
+#include "../variant/variant.h"
 
 CryptoCore::RandomGenerator *FileAccessEncrypted::_fae_static_rng = nullptr;
 

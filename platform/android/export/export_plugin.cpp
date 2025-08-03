@@ -35,28 +35,28 @@
 #include "logo_svg.gen.h"
 #include "run_icon_svg.gen.h"
 
-#include "core/io/dir_access.h"
-#include "core/io/file_access.h"
-#include "core/io/image_loader.h"
-#include "core/io/json.h"
-#include "core/io/marshalls.h"
-#include "core/version.h"
-#include "drivers/png/png_driver_common.h"
-#include "editor/editor_log.h"
-#include "editor/editor_node.h"
-#include "editor/editor_paths.h"
-#include "editor/editor_settings.h"
-#include "editor/export/export_template_manager.h"
-#include "editor/import/resource_importer_texture_settings.h"
-#include "editor/themes/editor_scale.h"
-#include "main/splash.gen.h"
-#include "scene/resources/image_texture.h"
+#include "../../../core/io/dir_access.h"
+#include "../../../core/io/file_access.h"
+#include "../../../core/io/image_loader.h"
+#include "../../../core/io/json.h"
+#include "../../../core/io/marshalls.h"
+#include "../../../core/version.h"
+#include "../../../drivers/png/png_driver_common.h"
+#include "../../../editor/editor_log.h"
+#include "../../../editor/editor_node.h"
+#include "../../../editor/editor_paths.h"
+#include "../../../editor/editor_settings.h"
+#include "../../../editor/export/export_template_manager.h"
+#include "../../../editor/import/resource_importer_texture_settings.h"
+#include "../../../editor/themes/editor_scale.h"
+#include "../../../main/splash.gen.h"
+#include "../../../scene/resources/image_texture.h"
 
-#include "modules/modules_enabled.gen.h" // For mono.
-#include "modules/svg/image_loader_svg.h"
+#include "../../../modules/modules_enabled.gen.h" // For mono.
+#include "../../../modules/svg/image_loader_svg.h"
 
 #ifdef MODULE_MONO_ENABLED
-#include "modules/mono/utils/path_utils.h"
+#include "../../../modules/mono/utils/path_utils.h"
 #endif
 
 #ifdef ANDROID_ENABLED

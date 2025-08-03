@@ -32,10 +32,10 @@
 
 #include "resource_importer_bitmask.h"
 
-#include "core/io/image.h"
-#include "core/io/image_loader.h"
-#include "core/io/resource_saver.h"
-#include "scene/resources/bit_map.h"
+#include "../../core/io/image.h"
+#include "../../core/io/image_loader.h"
+#include "../../core/io/resource_saver.h"
+#include "../../scene/resources/bit_map.h"
 
 String ResourceImporterBitMap::get_importer_name() const {
 	return "bitmap";

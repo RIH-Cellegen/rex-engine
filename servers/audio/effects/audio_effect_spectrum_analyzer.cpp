@@ -31,7 +31,7 @@
 /**************************************************************************/
 
 #include "audio_effect_spectrum_analyzer.h"
-#include "servers/audio_server.h"
+#include "../../audio_server.h"
 
 static void smbFft(float *fftBuffer, long fftFrameSize, long sign)
 /*

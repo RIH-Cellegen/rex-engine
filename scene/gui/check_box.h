@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/gui/button.h"
+#include "button.h"
 
 class CheckBox : public Button {
 	GDCLASS(CheckBox, Button);

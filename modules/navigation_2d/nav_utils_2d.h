@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/math/vector3.h"
-#include "core/templates/hash_map.h"
-#include "core/templates/hashfuncs.h"
-#include "servers/navigation/nav_heap.h"
-#include "servers/navigation/navigation_utilities.h"
+#include "../../core/math/vector3.h"
+#include "../../core/templates/hash_map.h"
+#include "../../core/templates/hashfuncs.h"
+#include "../../servers/navigation/nav_heap.h"
+#include "../../servers/navigation/navigation_utilities.h"
 
 struct NavBaseIteration2D;
 

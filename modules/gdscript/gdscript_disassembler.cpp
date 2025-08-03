@@ -35,7 +35,7 @@
 #include "gdscript.h"
 #include "gdscript_function.h"
 
-#include "core/string/string_builder.h"
+#include "../../core/string/string_builder.h"
 
 static String _get_variant_string(const Variant &p_variant) {
 	String txt;

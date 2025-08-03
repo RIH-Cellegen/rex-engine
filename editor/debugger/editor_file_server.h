@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/io/tcp_server.h"
-#include "core/os/thread.h"
-#include "editor/editor_file_system.h"
+#include "../../core/io/tcp_server.h"
+#include "../../core/os/thread.h"
+#include "../editor_file_system.h"
 
 class EditorFileServer : public Object {
 	GDCLASS(EditorFileServer, Object);

@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/math/random_number_generator.h"
-#include "tests/test_macros.h"
+#include "../../../core/math/random_number_generator.h"
+#include "../../test_macros.h"
 
 namespace TestRandomNumberGenerator {
 

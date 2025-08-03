@@ -32,7 +32,7 @@
 
 #include "openxr_binding_modifier_editor.h"
 
-#include "editor/editor_string_names.h"
+#include "../../../editor/editor_string_names.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // EditorPropertyActionSet

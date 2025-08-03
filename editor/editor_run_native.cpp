@@ -32,11 +32,11 @@
 
 #include "editor_run_native.h"
 
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/export/editor_export.h"
-#include "editor/export/editor_export_platform.h"
-#include "editor/themes/editor_scale.h"
+#include "editor_node.h"
+#include "editor_settings.h"
+#include "export/editor_export.h"
+#include "export/editor_export_platform.h"
+#include "themes/editor_scale.h"
 
 void EditorRunNative::_notification(int p_what) {
 	switch (p_what) {

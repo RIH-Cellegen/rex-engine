@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/io/stream_peer_tcp.h"
-#include "core/io/tcp_server.h"
-#include "tests/test_macros.h"
+#include "../../../core/io/stream_peer_tcp.h"
+#include "../../../core/io/tcp_server.h"
+#include "../../test_macros.h"
 
 #include <functional>
 

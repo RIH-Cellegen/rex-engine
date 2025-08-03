@@ -45,15 +45,15 @@ using namespace godot;
 #elif defined(GODOT_MODULE)
 // Headers for building as built-in module.
 
-#include "core/error/error_macros.h"
-#include "core/io/xml_parser.h"
-#include "core/os/memory.h"
-#include "core/os/os.h"
-#include "core/string/ustring.h"
-#include "core/typedefs.h"
-#include "core/variant/variant.h"
+#include "../../core/error/error_macros.h"
+#include "../../core/io/xml_parser.h"
+#include "../../core/os/memory.h"
+#include "../../core/os/os.h"
+#include "../../core/string/ustring.h"
+#include "../../core/typedefs.h"
+#include "../../core/variant/variant.h"
 
-#include "modules/modules_enabled.gen.h" // For svg, freetype.
+#include "../modules_enabled.gen.h" // For svg, freetype.
 #endif
 
 #ifdef MODULE_SVG_ENABLED

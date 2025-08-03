@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/io/image.h"
-#include "core/io/resource.h"
+#include "../../core/io/image.h"
+#include "../../core/io/resource.h"
 
 template <typename T>
 class TypedArray;

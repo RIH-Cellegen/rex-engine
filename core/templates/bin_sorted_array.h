@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/templates/local_vector.h"
-#include "core/templates/paged_array.h"
+#include "local_vector.h"
+#include "paged_array.h"
 
 template <typename T>
 class BinSortedArray {

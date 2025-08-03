@@ -33,7 +33,7 @@
 #pragma once
 
 #include "animation_track_editor.h"
-#include "core/templates/hashfuncs.h"
+#include "../core/templates/hashfuncs.h"
 
 class ViewPanner;
 

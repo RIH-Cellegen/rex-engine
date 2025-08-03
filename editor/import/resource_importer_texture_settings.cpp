@@ -32,8 +32,8 @@
 
 #include "resource_importer_texture_settings.h"
 
-#include "core/config/project_settings.h"
-#include "core/os/os.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/os/os.h"
 
 // ResourceImporterTextureSettings contains code used by
 // multiple texture importers and the export dialog.

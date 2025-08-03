@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/math/expression.h"
-#include "scene/animation/animation_tree.h"
+#include "../../core/math/expression.h"
+#include "animation_tree.h"
 
 class AnimationNodeStateMachineTransition : public Resource {
 	GDCLASS(AnimationNodeStateMachineTransition, Resource);

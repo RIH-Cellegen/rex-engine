@@ -32,14 +32,14 @@
 
 #pragma once
 
-#include "core/io/resource.h"
-#include "core/math/face3.h"
-#include "core/math/triangle_mesh.h"
-#include "scene/resources/material.h"
-#include "servers/rendering_server.h"
+#include "../../core/io/resource.h"
+#include "../../core/math/face3.h"
+#include "../../core/math/triangle_mesh.h"
+#include "material.h"
+#include "../../servers/rendering_server.h"
 
 #ifndef PHYSICS_3D_DISABLED
-#include "scene/resources/3d/shape_3d.h"
+#include "3d/shape_3d.h"
 
 class ConcavePolygonShape3D;
 class ConvexPolygonShape3D;

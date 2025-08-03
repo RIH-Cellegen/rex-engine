@@ -32,14 +32,14 @@
 
 #include "shader_create_dialog.h"
 
-#include "core/config/project_settings.h"
-#include "editor/editor_node.h"
-#include "editor/gui/editor_file_dialog.h"
-#include "editor/gui/editor_validation_panel.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/resources/shader_include.h"
-#include "scene/resources/visual_shader.h"
-#include "servers/rendering/shader_types.h"
+#include "../core/config/project_settings.h"
+#include "editor_node.h"
+#include "gui/editor_file_dialog.h"
+#include "gui/editor_validation_panel.h"
+#include "themes/editor_scale.h"
+#include "../scene/resources/shader_include.h"
+#include "../scene/resources/visual_shader.h"
+#include "../servers/rendering/shader_types.h"
 
 enum ShaderType {
 	SHADER_TYPE_TEXT,

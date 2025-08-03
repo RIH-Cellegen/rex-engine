@@ -34,8 +34,8 @@
 
 #include "godot_lsp.h"
 
-#include "core/io/file_access.h"
-#include "core/object/ref_counted.h"
+#include "../../../core/io/file_access.h"
+#include "../../../core/object/ref_counted.h"
 
 class GDScript;
 

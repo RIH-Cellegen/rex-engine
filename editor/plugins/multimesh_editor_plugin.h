@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "editor/plugins/editor_plugin.h"
-#include "scene/3d/multimesh_instance_3d.h"
-#include "scene/gui/slider.h"
-#include "scene/gui/spin_box.h"
+#include "editor_plugin.h"
+#include "../../scene/3d/multimesh_instance_3d.h"
+#include "../../scene/gui/slider.h"
+#include "../../scene/gui/spin_box.h"
 
 class AcceptDialog;
 class ConfirmationDialog;

@@ -34,9 +34,9 @@
 
 #include "audio_driver_opensl.h"
 
-#include "core/os/main_loop.h"
-#include "drivers/unix/os_unix.h"
-#include "servers/audio_server.h"
+#include "../../core/os/main_loop.h"
+#include "../../drivers/unix/os_unix.h"
+#include "../../servers/audio_server.h"
 
 class GodotJavaWrapper;
 class GodotIOJavaWrapper;

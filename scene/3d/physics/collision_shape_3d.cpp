@@ -32,12 +32,12 @@
 
 #include "collision_shape_3d.h"
 
-#include "scene/3d/mesh_instance_3d.h"
-#include "scene/3d/physics/character_body_3d.h"
-#include "scene/3d/physics/vehicle_body_3d.h"
-#include "scene/resources/3d/concave_polygon_shape_3d.h"
-#include "scene/resources/3d/convex_polygon_shape_3d.h"
-#include "scene/resources/3d/world_boundary_shape_3d.h"
+#include "../mesh_instance_3d.h"
+#include "character_body_3d.h"
+#include "vehicle_body_3d.h"
+#include "../../resources/3d/concave_polygon_shape_3d.h"
+#include "../../resources/3d/convex_polygon_shape_3d.h"
+#include "../../resources/3d/world_boundary_shape_3d.h"
 
 void CollisionShape3D::make_convex_from_siblings() {
 	Node *p = get_parent();

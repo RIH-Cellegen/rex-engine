@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/extension/gdextension.h"
+#include "gdextension.h"
 
 class GDExtensionManager : public Object {
 	GDCLASS(GDExtensionManager, Object);

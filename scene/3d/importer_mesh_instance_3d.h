@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/3d/node_3d.h"
-#include "scene/3d/visual_instance_3d.h"
-#include "scene/resources/3d/skin.h"
+#include "node_3d.h"
+#include "visual_instance_3d.h"
+#include "../resources/3d/skin.h"
 
 class ImporterMesh;
 

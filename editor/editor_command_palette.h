@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/input/shortcut.h"
-#include "scene/gui/dialogs.h"
-#include "scene/gui/tree.h"
+#include "../core/input/shortcut.h"
+#include "../scene/gui/dialogs.h"
+#include "../scene/gui/tree.h"
 
 class EditorCommandPalette : public ConfirmationDialog {
 	GDCLASS(EditorCommandPalette, ConfirmationDialog);

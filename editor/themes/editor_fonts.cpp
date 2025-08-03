@@ -32,13 +32,13 @@
 
 #include "editor_fonts.h"
 
-#include "core/io/dir_access.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/themes/builtin_fonts.gen.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/resources/font.h"
-#include "scene/scene_string_names.h"
+#include "../../core/io/dir_access.h"
+#include "../editor_settings.h"
+#include "../editor_string_names.h"
+#include "builtin_fonts.gen.h"
+#include "editor_scale.h"
+#include "../../scene/resources/font.h"
+#include "../../scene/scene_string_names.h"
 
 Ref<FontFile> load_external_font(const String &p_path, TextServer::Hinting p_hinting, TextServer::FontAntialiasing p_aa, bool p_autohint, TextServer::SubpixelPositioning p_font_subpixel_positioning, bool p_font_disable_embedded_bitmaps, bool p_msdf = false, TypedArray<Font> *r_fallbacks = nullptr) {
 	Ref<FontFile> font;

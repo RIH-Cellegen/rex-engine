@@ -32,7 +32,7 @@
 
 #include "audio_stream_interactive.h"
 
-#include "core/math/math_funcs.h"
+#include "../../core/math/math_funcs.h"
 
 AudioStreamInteractive::AudioStreamInteractive() {
 }

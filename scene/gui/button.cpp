@@ -32,9 +32,9 @@
 
 #include "button.h"
 
-#include "scene/gui/dialogs.h"
+#include "dialogs.h"
 
-#include "scene/theme/theme_db.h"
+#include "../theme/theme_db.h"
 
 Size2 Button::get_minimum_size() const {
 	Ref<Texture2D> _icon = icon;

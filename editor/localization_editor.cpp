@@ -32,16 +32,16 @@
 
 #include "localization_editor.h"
 
-#include "core/config/project_settings.h"
-#include "core/string/translation_server.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_translation_parser.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/filesystem_dock.h"
-#include "editor/gui/editor_file_dialog.h"
-#include "editor/pot_generator.h"
-#include "scene/gui/control.h"
-#include "scene/gui/tab_container.h"
+#include "../core/config/project_settings.h"
+#include "../core/string/translation_server.h"
+#include "editor_settings.h"
+#include "editor_translation_parser.h"
+#include "editor_undo_redo_manager.h"
+#include "filesystem_dock.h"
+#include "gui/editor_file_dialog.h"
+#include "pot_generator.h"
+#include "../scene/gui/control.h"
+#include "../scene/gui/tab_container.h"
 
 void LocalizationEditor::_notification(int p_what) {
 	switch (p_what) {

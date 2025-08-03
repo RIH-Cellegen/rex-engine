@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/gui/container.h"
-#include "scene/gui/popup.h"
-#include "scene/gui/tab_bar.h"
+#include "container.h"
+#include "popup.h"
+#include "tab_bar.h"
 
 class TabContainer : public Container {
 	GDCLASS(TabContainer, Container);

@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/io/resource.h"
+#include "../../../core/io/resource.h"
 
 class Shape2D : public Resource {
 	GDCLASS(Shape2D, Resource);

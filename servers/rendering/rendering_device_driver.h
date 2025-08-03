@@ -47,10 +47,10 @@
 //   There's no backwards communication from the driver to query data from RenderingDevice.
 // ***********************************************************************************
 
-#include "core/object/object.h"
-#include "core/variant/type_info.h"
-#include "servers/rendering/rendering_context_driver.h"
-#include "servers/rendering/rendering_device_commons.h"
+#include "../../core/object/object.h"
+#include "../../core/variant/type_info.h"
+#include "rendering_context_driver.h"
+#include "rendering_device_commons.h"
 
 #include <algorithm>
 

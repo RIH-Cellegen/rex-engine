@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/crypto/hashing_context.h"
-#include "core/io/resource.h"
-#include "core/io/resource_loader.h"
-#include "core/io/resource_saver.h"
-#include "core/object/ref_counted.h"
+#include "hashing_context.h"
+#include "../io/resource.h"
+#include "../io/resource_loader.h"
+#include "../io/resource_saver.h"
+#include "../object/ref_counted.h"
 
 class CryptoKey : public Resource {
 	GDCLASS(CryptoKey, Resource);

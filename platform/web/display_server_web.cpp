@@ -36,12 +36,12 @@
 #include "godot_js.h"
 #include "os_web.h"
 
-#include "core/config/project_settings.h"
-#include "core/object/callable_method_pointer.h"
-#include "servers/rendering/dummy/rasterizer_dummy.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/object/callable_method_pointer.h"
+#include "../../servers/rendering/dummy/rasterizer_dummy.h"
 
 #ifdef GLES3_ENABLED
-#include "drivers/gles3/rasterizer_gles3.h"
+#include "../../drivers/gles3/rasterizer_gles3.h"
 #endif
 
 #include <emscripten.h>

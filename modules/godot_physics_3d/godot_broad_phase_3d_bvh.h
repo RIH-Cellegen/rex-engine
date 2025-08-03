@@ -34,7 +34,7 @@
 
 #include "godot_broad_phase_3d.h"
 
-#include "core/math/bvh.h"
+#include "../../core/math/bvh.h"
 
 class GodotBroadPhase3DBVH : public GodotBroadPhase3D {
 	template <typename T>

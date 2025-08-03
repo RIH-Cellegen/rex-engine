@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/io/net_socket.h"
+#include "../../core/io/net_socket.h"
 
 #include <sys/socket.h>
 

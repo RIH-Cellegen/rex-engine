@@ -33,9 +33,9 @@
 #include "multimesh_instance_3d.h"
 
 #ifndef NAVIGATION_3D_DISABLED
-#include "scene/resources/3d/navigation_mesh_source_geometry_data_3d.h"
-#include "scene/resources/navigation_mesh.h"
-#include "servers/navigation_server_3d.h"
+#include "../resources/3d/navigation_mesh_source_geometry_data_3d.h"
+#include "../resources/navigation_mesh.h"
+#include "../../servers/navigation_server_3d.h"
 
 Callable MultiMeshInstance3D::_navmesh_source_geometry_parsing_callback;
 RID MultiMeshInstance3D::_navmesh_source_geometry_parser;

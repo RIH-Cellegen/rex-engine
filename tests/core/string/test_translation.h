@@ -32,17 +32,17 @@
 
 #pragma once
 
-#include "core/string/optimized_translation.h"
-#include "core/string/translation.h"
-#include "core/string/translation_po.h"
-#include "core/string/translation_server.h"
+#include "../../../core/string/optimized_translation.h"
+#include "../../../core/string/translation.h"
+#include "../../../core/string/translation_po.h"
+#include "../../../core/string/translation_server.h"
 
 #ifdef TOOLS_ENABLED
-#include "editor/import/resource_importer_csv_translation.h"
+#include "../../../editor/import/resource_importer_csv_translation.h"
 #endif
 
-#include "tests/test_macros.h"
-#include "tests/test_utils.h"
+#include "../../test_macros.h"
+#include "../../test_utils.h"
 
 namespace TestTranslation {
 

@@ -32,26 +32,26 @@
 
 #pragma once
 
-#include "core/io/resource.h"
-#include "core/object/object.h"
-#include "core/templates/local_vector.h"
-#include "core/templates/rb_set.h"
-#include "scene/2d/light_occluder_2d.h"
-#include "scene/main/canvas_item.h"
-#include "scene/resources/image_texture.h"
-#include "scene/resources/packed_scene.h"
-#include "scene/resources/physics_material.h"
+#include "../../../core/io/resource.h"
+#include "../../../core/object/object.h"
+#include "../../../core/templates/local_vector.h"
+#include "../../../core/templates/rb_set.h"
+#include "../../2d/light_occluder_2d.h"
+#include "../../main/canvas_item.h"
+#include "../image_texture.h"
+#include "../packed_scene.h"
+#include "../physics_material.h"
 
 #ifndef PHYSICS_2D_DISABLED
-#include "scene/resources/2d/convex_polygon_shape_2d.h"
+#include "convex_polygon_shape_2d.h"
 #endif // PHYSICS_2D_DISABLED
 
 #ifndef NAVIGATION_2D_DISABLED
-#include "scene/resources/2d/navigation_polygon.h"
+#include "navigation_polygon.h"
 #endif // NAVIGATION_2D_DISABLED
 
 #ifndef DISABLE_DEPRECATED
-#include "scene/resources/shader.h"
+#include "../shader.h"
 #endif
 
 class TileMap;

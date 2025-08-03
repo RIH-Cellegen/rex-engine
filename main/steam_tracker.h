@@ -34,7 +34,7 @@
 
 #if defined(STEAMAPI_ENABLED)
 
-#include "core/os/os.h"
+#include "../core/os/os.h"
 
 // SteamTracker is used to load SteamAPI dynamic library and initialize
 // the interface, this notifies Steam that Redot editor is running and

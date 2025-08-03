@@ -34,9 +34,9 @@
 
 #include "../objects/jolt_object_3d.h"
 
-#include "Jolt/Jolt.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Jolt.h"
 
-#include "Jolt/Physics/Body/BodyLockInterface.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Body/BodyLockInterface.h"
 
 #include <variant>
 

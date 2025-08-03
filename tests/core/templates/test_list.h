@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/templates/list.h"
+#include "../../../core/templates/list.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestList {
 

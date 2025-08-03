@@ -34,9 +34,9 @@
 
 #include "jolt_custom_shape_type.h"
 
-#include "Jolt/Jolt.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Jolt.h"
 
-#include "Jolt/Physics/Collision/Shape/ConvexShape.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/Shape/ConvexShape.h"
 
 class JoltCustomRayShapeSettings final : public JPH::ConvexShapeSettings {
 public:

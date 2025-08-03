@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/math/math_funcs.h"
-#include "scene/resources/curve.h"
+#include "../../core/math/math_funcs.h"
+#include "../../scene/resources/curve.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestCurve2D {
 

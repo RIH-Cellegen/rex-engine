@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/io/packet_peer_udp.h"
-#include "core/io/udp_server.h"
-#include "tests/test_macros.h"
+#include "../../../core/io/packet_peer_udp.h"
+#include "../../../core/io/udp_server.h"
+#include "../../test_macros.h"
 
 namespace TestUDPServer {
 

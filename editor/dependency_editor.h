@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "scene/gui/box_container.h"
-#include "scene/gui/dialogs.h"
-#include "scene/gui/item_list.h"
-#include "scene/gui/tree.h"
+#include "../scene/gui/box_container.h"
+#include "../scene/gui/dialogs.h"
+#include "../scene/gui/item_list.h"
+#include "../scene/gui/tree.h"
 
 class EditorFileDialog;
 class EditorFileSystemDirectory;

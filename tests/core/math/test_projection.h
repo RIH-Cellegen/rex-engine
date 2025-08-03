@@ -32,13 +32,13 @@
 
 #pragma once
 
-#include "core/math/aabb.h"
-#include "core/math/plane.h"
-#include "core/math/projection.h"
-#include "core/math/rect2.h"
-#include "core/math/transform_3d.h"
+#include "../../../core/math/aabb.h"
+#include "../../../core/math/plane.h"
+#include "../../../core/math/projection.h"
+#include "../../../core/math/rect2.h"
+#include "../../../core/math/transform_3d.h"
 
-#include "thirdparty/doctest/doctest.h"
+#include "../../../thirdparty/doctest/doctest.h"
 
 namespace TestProjection {
 

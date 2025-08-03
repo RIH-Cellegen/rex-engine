@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/io/resource.h"
-#include "core/variant/typed_array.h"
+#include "../../core/io/resource.h"
+#include "../../core/variant/typed_array.h"
 
 class SceneReplicationConfig : public Resource {
 	GDCLASS(SceneReplicationConfig, Resource);

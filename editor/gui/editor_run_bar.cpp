@@ -32,25 +32,25 @@
 
 #include "editor_run_bar.h"
 
-#include "core/config/project_settings.h"
-#include "editor/debugger/editor_debugger_node.h"
-#include "editor/debugger/script_editor_debugger.h"
-#include "editor/editor_command_palette.h"
-#include "editor/editor_node.h"
-#include "editor/editor_run_native.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/gui/editor_bottom_panel.h"
-#include "editor/gui/editor_quick_open_dialog.h"
-#include "editor/gui/editor_toaster.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/box_container.h"
-#include "scene/gui/button.h"
-#include "scene/gui/menu_button.h"
-#include "scene/gui/panel_container.h"
+#include "../../core/config/project_settings.h"
+#include "../debugger/editor_debugger_node.h"
+#include "../debugger/script_editor_debugger.h"
+#include "../editor_command_palette.h"
+#include "../editor_node.h"
+#include "../editor_run_native.h"
+#include "../editor_settings.h"
+#include "../editor_string_names.h"
+#include "editor_bottom_panel.h"
+#include "editor_quick_open_dialog.h"
+#include "editor_toaster.h"
+#include "../themes/editor_scale.h"
+#include "../../scene/gui/box_container.h"
+#include "../../scene/gui/button.h"
+#include "../../scene/gui/menu_button.h"
+#include "../../scene/gui/panel_container.h"
 
 #ifndef XR_DISABLED
-#include "servers/xr_server.h"
+#include "../../servers/xr_server.h"
 #endif // XR_DISABLED
 
 EditorRunBar *EditorRunBar::singleton = nullptr;

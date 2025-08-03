@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/resources/theme.h"
+#include "../../scene/resources/theme.h"
 
 class EditorTheme : public Theme {
 	GDCLASS(EditorTheme, Theme);

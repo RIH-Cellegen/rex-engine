@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/math/plane.h"
+#include "../../../core/math/plane.h"
 
-#include "thirdparty/doctest/doctest.h"
+#include "../../../thirdparty/doctest/doctest.h"
 
 namespace TestPlane {
 

@@ -31,7 +31,7 @@
 /**************************************************************************/
 
 #include "openxr_fb_foveation_extension.h"
-#include "core/config/project_settings.h"
+#include "../../../core/config/project_settings.h"
 
 #include "../openxr_platform_inc.h"
 

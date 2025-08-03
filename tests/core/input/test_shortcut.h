@@ -32,14 +32,14 @@
 
 #pragma once
 
-#include "core/input/input_event.h"
-#include "core/input/shortcut.h"
-#include "core/io/config_file.h"
-#include "core/object/ref_counted.h"
-#include "core/os/keyboard.h"
-#include "core/os/os.h"
+#include "../../../core/input/input_event.h"
+#include "../../../core/input/shortcut.h"
+#include "../../../core/io/config_file.h"
+#include "../../../core/object/ref_counted.h"
+#include "../../../core/os/keyboard.h"
+#include "../../../core/os/os.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestShortcut {
 

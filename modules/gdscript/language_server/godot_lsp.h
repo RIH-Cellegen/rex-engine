@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/doc_data.h"
-#include "core/object/class_db.h"
-#include "core/templates/list.h"
+#include "../../../core/doc_data.h"
+#include "../../../core/object/class_db.h"
+#include "../../../core/templates/list.h"
 
 namespace LSP {
 

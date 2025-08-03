@@ -34,7 +34,7 @@
 
 #include "csharp_script.h"
 
-#include "core/config/engine.h"
+#include "../../core/config/engine.h"
 
 CSharpLanguage *script_language_cs = nullptr;
 Ref<ResourceFormatLoaderCSharpScript> resource_loader_cs;

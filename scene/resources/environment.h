@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/io/resource.h"
-#include "scene/resources/sky.h"
-#include "scene/resources/texture.h"
+#include "../../core/io/resource.h"
+#include "sky.h"
+#include "texture.h"
 
 class Environment : public Resource {
 	GDCLASS(Environment, Resource);

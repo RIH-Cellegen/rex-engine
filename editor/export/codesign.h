@@ -42,8 +42,8 @@
 //  - Requirements code generator is not implemented (only hard-coded requirements for the ad-hoc signing is supported).
 //  - RFC5652/CMS blob generation is not implemented, supports ad-hoc signing only.
 
-#include "core/io/file_access.h"
-#include "core/object/ref_counted.h"
+#include "../../core/io/file_access.h"
+#include "../../core/object/ref_counted.h"
 
 /*************************************************************************/
 /* CodeSignCodeResources                                                 */

@@ -32,8 +32,8 @@
 
 #include "naming_utils.h"
 
-#include "core/string/ucaps.h"
-#include "core/templates/hash_map.h"
+#include "../../../core/string/ucaps.h"
+#include "../../../core/templates/hash_map.h"
 
 HashMap<String, String> _create_hashmap_from_vector(Vector<Pair<String, String>> vector) {
 	HashMap<String, String> hashmap = HashMap<String, String>(vector.size());

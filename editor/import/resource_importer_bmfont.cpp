@@ -32,8 +32,8 @@
 
 #include "resource_importer_bmfont.h"
 
-#include "core/io/config_file.h"
-#include "core/io/resource_saver.h"
+#include "../../core/io/config_file.h"
+#include "../../core/io/resource_saver.h"
 
 String ResourceImporterBMFont::get_importer_name() const {
 	return "font_data_bmfont";

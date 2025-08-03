@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/os/thread_safe.h"
-#include "servers/xr/xr_pose.h"
-#include "servers/xr/xr_tracker.h"
-#include "servers/xr_server.h"
+#include "../../core/os/thread_safe.h"
+#include "xr_pose.h"
+#include "xr_tracker.h"
+#include "../xr_server.h"
 
 /**
 	The positional tracker object as an object that represents the position and orientation of a tracked object like a controller or headset.

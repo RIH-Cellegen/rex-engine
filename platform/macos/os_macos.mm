@@ -38,9 +38,9 @@
 #import "godot_application_delegate.h"
 #import "macos_terminal_logger.h"
 
-#include "core/crypto/crypto_core.h"
-#include "core/version_generated.gen.h"
-#include "main/main.h"
+#include "../../../core/crypto/crypto_core.h"
+#include "../../../core/version_generated.gen.h"
+#include "../../../main/main.h"
 
 #include <dlfcn.h>
 #include <libproc.h>

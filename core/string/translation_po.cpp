@@ -33,7 +33,7 @@
 #include "translation_po.h"
 
 #ifdef DEBUG_TRANSLATION_PO
-#include "core/io/file_access.h"
+#include "../io/file_access.h"
 
 void TranslationPO::print_translation_map() {
 	Error err;

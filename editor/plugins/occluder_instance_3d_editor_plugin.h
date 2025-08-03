@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "editor/plugins/editor_plugin.h"
-#include "scene/3d/occluder_instance_3d.h"
-#include "scene/resources/material.h"
+#include "editor_plugin.h"
+#include "../../scene/3d/occluder_instance_3d.h"
+#include "../../scene/resources/material.h"
 
 class EditorFileDialog;
 

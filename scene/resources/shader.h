@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/io/resource.h"
-#include "core/io/resource_loader.h"
-#include "core/io/resource_saver.h"
-#include "scene/resources/texture.h"
+#include "../../core/io/resource.h"
+#include "../../core/io/resource_loader.h"
+#include "../../core/io/resource_saver.h"
+#include "texture.h"
 #include "shader_include.h"
 
 class Shader : public Resource {

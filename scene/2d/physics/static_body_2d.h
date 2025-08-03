@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/2d/physics/physics_body_2d.h"
+#include "physics_body_2d.h"
 
 class NavigationPolygon;
 class NavigationMeshSourceGeometryData2D;

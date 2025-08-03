@@ -34,9 +34,9 @@
 
 #if defined(WINDOWS_ENABLED) && defined(GLES3_ENABLED)
 
-#include "core/os/os.h"
-#include "core/templates/local_vector.h"
-#include "servers/display_server.h"
+#include "../../core/os/os.h"
+#include "../../core/templates/local_vector.h"
+#include "../../servers/display_server.h"
 
 #include <windows.h>
 

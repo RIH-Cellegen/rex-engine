@@ -32,7 +32,7 @@
 
 #include "hash_map.h"
 
-#include "core/variant/variant.h"
+#include "../variant/variant.h"
 
 bool _hashmap_variant_less_than(const Variant &p_left, const Variant &p_right) {
 	bool valid = false;

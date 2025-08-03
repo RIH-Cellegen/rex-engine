@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/object/method_bind.h"
-#include "core/object/object.h"
+#include "../core/object/method_bind.h"
+#include "../core/object/object.h"
 
 class PropertyListHelper {
 	struct Property {

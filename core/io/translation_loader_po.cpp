@@ -32,8 +32,8 @@
 
 #include "translation_loader_po.h"
 
-#include "core/io/file_access.h"
-#include "core/string/translation_po.h"
+#include "file_access.h"
+#include "../string/translation_po.h"
 
 Ref<Resource> TranslationLoaderPO::load_translation(Ref<FileAccess> f, Error *r_error) {
 	if (r_error) {

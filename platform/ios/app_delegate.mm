@@ -36,9 +36,9 @@
 #import "os_ios.h"
 #import "view_controller.h"
 
-#include "core/config/project_settings.h"
-#import "drivers/coreaudio/audio_driver_coreaudio.h"
-#include "main/main.h"
+#include "../../core/config/project_settings.h"
+#import ".../drivers/coreaudio/audio_driver_coreaudio.h"
+#include "../../main/main.h"
 
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioServices.h>

@@ -34,11 +34,11 @@
 
 #ifdef DBUS_ENABLED
 
-#include "core/crypto/crypto_core.h"
-#include "core/error/error_macros.h"
-#include "core/os/os.h"
-#include "core/string/ustring.h"
-#include "core/variant/variant.h"
+#include "../../core/crypto/crypto_core.h"
+#include "../../core/error/error_macros.h"
+#include "../../core/os/os.h"
+#include "../../core/string/ustring.h"
+#include "../../core/variant/variant.h"
 
 #ifdef SOWRAP_ENABLED
 #include "dbus-so_wrap.h"

@@ -33,14 +33,14 @@
 #include "canvas_item.h"
 #include "canvas_item.compat.inc"
 
-#include "scene/2d/canvas_group.h"
-#include "scene/main/canvas_layer.h"
-#include "scene/main/window.h"
-#include "scene/resources/atlas_texture.h"
-#include "scene/resources/font.h"
-#include "scene/resources/multimesh.h"
-#include "scene/resources/style_box.h"
-#include "scene/resources/world_2d.h"
+#include "../2d/canvas_group.h"
+#include "canvas_layer.h"
+#include "window.h"
+#include "../resources/atlas_texture.h"
+#include "../resources/font.h"
+#include "../resources/multimesh.h"
+#include "../resources/style_box.h"
+#include "../resources/world_2d.h"
 
 #define ERR_DRAW_GUARD \
 	ERR_FAIL_COND_MSG(!drawing, "Drawing is only allowed inside this node's `_draw()`, functions connected to its `draw` signal, or when it receives NOTIFICATION_DRAW.")

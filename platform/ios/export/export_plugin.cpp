@@ -35,21 +35,21 @@
 #include "logo_svg.gen.h"
 #include "run_icon_svg.gen.h"
 
-#include "core/io/json.h"
-#include "core/io/plist.h"
-#include "core/string/translation.h"
-#include "editor/editor_node.h"
-#include "editor/editor_paths.h"
-#include "editor/editor_string_names.h"
-#include "editor/export/editor_export.h"
-#include "editor/export/lipo.h"
-#include "editor/export/macho.h"
-#include "editor/import/resource_importer_texture_settings.h"
-#include "editor/plugins/script_editor_plugin.h"
-#include "editor/themes/editor_scale.h"
+#include "../../../core/io/json.h"
+#include "../../../core/io/plist.h"
+#include "../../../core/string/translation.h"
+#include "../../../editor/editor_node.h"
+#include "../../../editor/editor_paths.h"
+#include "../../../editor/editor_string_names.h"
+#include "../../../editor/export/editor_export.h"
+#include "../../../editor/export/lipo.h"
+#include "../../../editor/export/macho.h"
+#include "../../../editor/import/resource_importer_texture_settings.h"
+#include "../../../editor/plugins/script_editor_plugin.h"
+#include "../../../editor/themes/editor_scale.h"
 
-#include "modules/modules_enabled.gen.h" // For mono.
-#include "modules/svg/image_loader_svg.h"
+#include "../../../modules/modules_enabled.gen.h" // For mono.
+#include "../../../modules/svg/image_loader_svg.h"
 
 void EditorExportPlatformIOS::get_preset_features(const Ref<EditorExportPreset> &p_preset, List<String> *r_features) const {
 	// Vulkan and OpenGL ES 3.0 both mandate ETC2 support.

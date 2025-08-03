@@ -35,14 +35,14 @@
 #include "mono_gc_handle.h"
 #include "mono_gd/gd_mono.h"
 
-#include "core/doc_data.h"
-#include "core/io/resource_loader.h"
-#include "core/io/resource_saver.h"
-#include "core/object/script_language.h"
-#include "core/templates/self_list.h"
+#include "../../core/doc_data.h"
+#include "../../core/io/resource_loader.h"
+#include "../../core/io/resource_saver.h"
+#include "../../core/object/script_language.h"
+#include "../../core/templates/self_list.h"
 
 #ifdef TOOLS_ENABLED
-#include "editor/plugins/editor_plugin.h"
+#include "../../editor/plugins/editor_plugin.h"
 #endif
 
 class CSharpScript;

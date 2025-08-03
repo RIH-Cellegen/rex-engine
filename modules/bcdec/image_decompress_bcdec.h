@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/io/image.h"
+#include "../../core/io/image.h"
 
 enum BCdecFormat {
 	BCdec_BC1,

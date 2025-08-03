@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/gui/link_button.h"
+#include "../scene/gui/link_button.h"
 
 class HTTPRequest;
 

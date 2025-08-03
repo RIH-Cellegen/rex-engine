@@ -39,18 +39,18 @@
 #include "../gdscript.h"
 #include "gdscript_test_runner.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/config_file.h"
-#include "core/io/dir_access.h"
-#include "core/io/file_access.h"
-#include "core/object/script_language.h"
-#include "core/variant/dictionary.h"
-#include "core/variant/variant.h"
-#include "editor/editor_settings.h"
-#include "scene/resources/packed_scene.h"
-#include "scene/theme/theme_db.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../core/io/config_file.h"
+#include "../../../core/io/dir_access.h"
+#include "../../../core/io/file_access.h"
+#include "../../../core/object/script_language.h"
+#include "../../../core/variant/dictionary.h"
+#include "../../../core/variant/variant.h"
+#include "../../../editor/editor_settings.h"
+#include "../../../scene/resources/packed_scene.h"
+#include "../../../scene/theme/theme_db.h"
 
-#include "modules/modules_enabled.gen.h" // For mono.
+#include "../../modules_enabled.gen.h" // For mono.
 
 namespace GDScriptTests {
 

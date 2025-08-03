@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "editor/editor_inspector.h"
-#include "editor/plugins/editor_plugin.h"
+#include "../editor_inspector.h"
+#include "editor_plugin.h"
 
 class Button;
 class EditorSpinSlider;

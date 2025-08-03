@@ -32,12 +32,12 @@
 
 #pragma once
 
-#include "core/os/thread.h"
-#include "core/templates/local_vector.h"
-#include "core/templates/rid.h"
-#include "core/templates/rid_owner.h"
+#include "../../../core/os/thread.h"
+#include "../../../core/templates/local_vector.h"
+#include "../../../core/templates/rid.h"
+#include "../../../core/templates/rid_owner.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 #ifdef THREADS_ENABLED
 #ifdef SANITIZERS_ENABLED

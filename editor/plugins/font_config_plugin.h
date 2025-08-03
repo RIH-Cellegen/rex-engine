@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "editor/editor_properties.h"
-#include "editor/editor_properties_array_dict.h"
-#include "editor/plugins/editor_plugin.h"
+#include "../editor_properties.h"
+#include "../editor_properties_array_dict.h"
+#include "editor_plugin.h"
 
 /*************************************************************************/
 

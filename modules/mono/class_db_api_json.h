@@ -34,11 +34,11 @@
 
 // 'core/object/method_bind.h' defines DEBUG_METHODS_ENABLED, but it looks like we
 // cannot include it here. That's why we include it through 'core/object/class_db.h'.
-#include "core/object/class_db.h"
+#include "../../core/object/class_db.h"
 
 #ifdef DEBUG_METHODS_ENABLED
 
-#include "core/string/ustring.h"
+#include "../../core/string/ustring.h"
 
 void class_db_api_to_json(const String &p_output_file, ClassDB::APIType p_api);
 

@@ -32,9 +32,9 @@
 
 #include "bokeh_dof.h"
 #include "copy_effects.h"
-#include "servers/rendering/renderer_rd/storage_rd/material_storage.h"
-#include "servers/rendering/renderer_rd/uniform_set_cache_rd.h"
-#include "servers/rendering/storage/camera_attributes_storage.h"
+#include "../storage_rd/material_storage.h"
+#include "../uniform_set_cache_rd.h"
+#include "../../storage/camera_attributes_storage.h"
 
 using namespace RendererRD;
 

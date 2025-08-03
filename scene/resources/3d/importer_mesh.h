@@ -32,13 +32,13 @@
 
 #pragma once
 
-#include "core/io/resource.h"
-#include "scene/resources/mesh.h"
-#include "scene/resources/navigation_mesh.h"
+#include "../../../core/io/resource.h"
+#include "../mesh.h"
+#include "../navigation_mesh.h"
 
 #ifndef PHYSICS_3D_DISABLED
-#include "scene/resources/3d/concave_polygon_shape_3d.h"
-#include "scene/resources/3d/convex_polygon_shape_3d.h"
+#include "concave_polygon_shape_3d.h"
+#include "convex_polygon_shape_3d.h"
 #endif // PHYSICS_3D_DISABLED
 
 // The following classes are used by importers instead of ArrayMesh and MeshInstance3D

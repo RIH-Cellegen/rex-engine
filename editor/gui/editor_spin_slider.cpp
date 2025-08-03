@@ -32,12 +32,12 @@
 
 #include "editor_spin_slider.h"
 
-#include "core/input/input.h"
-#include "core/math/expression.h"
-#include "core/os/keyboard.h"
-#include "editor/editor_settings.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/theme/theme_db.h"
+#include "../../core/input/input.h"
+#include "../../core/math/expression.h"
+#include "../../core/os/keyboard.h"
+#include "../editor_settings.h"
+#include "../themes/editor_scale.h"
+#include "../../scene/theme/theme_db.h"
 
 String EditorSpinSlider::get_tooltip(const Point2 &p_pos) const {
 	if (!read_only && grabber->is_visible()) {

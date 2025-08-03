@@ -32,10 +32,10 @@
 
 #include "texture_3d_editor_plugin.h"
 
-#include "editor/editor_string_names.h"
-#include "editor/plugins/color_channel_selector.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/label.h"
+#include "../editor_string_names.h"
+#include "color_channel_selector.h"
+#include "../themes/editor_scale.h"
+#include "../../scene/gui/label.h"
 
 // Shader sources.
 

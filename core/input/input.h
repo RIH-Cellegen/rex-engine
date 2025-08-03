@@ -32,12 +32,12 @@
 
 #pragma once
 
-#include "core/input/input_event.h"
-#include "core/object/object.h"
-#include "core/os/keyboard.h"
-#include "core/os/thread_safe.h"
-#include "core/templates/rb_set.h"
-#include "core/variant/typed_array.h"
+#include "input_event.h"
+#include "../object/object.h"
+#include "../os/keyboard.h"
+#include "../os/thread_safe.h"
+#include "../templates/rb_set.h"
+#include "../variant/typed_array.h"
 
 class Input : public Object {
 	GDCLASS(Input, Object);

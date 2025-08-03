@@ -33,14 +33,14 @@
 #include "cpu_particles_2d.h"
 #include "cpu_particles_2d.compat.inc"
 
-#include "core/math/random_number_generator.h"
-#include "core/math/transform_interpolator.h"
-#include "scene/2d/gpu_particles_2d.h"
-#include "scene/resources/atlas_texture.h"
-#include "scene/resources/canvas_item_material.h"
-#include "scene/resources/curve_texture.h"
-#include "scene/resources/gradient_texture.h"
-#include "scene/resources/particle_process_material.h"
+#include "../../core/math/random_number_generator.h"
+#include "../../core/math/transform_interpolator.h"
+#include "gpu_particles_2d.h"
+#include "../resources/atlas_texture.h"
+#include "../resources/canvas_item_material.h"
+#include "../resources/curve_texture.h"
+#include "../resources/gradient_texture.h"
+#include "../resources/particle_process_material.h"
 
 void CPUParticles2D::set_emitting(bool p_emitting) {
 	if (emitting == p_emitting) {

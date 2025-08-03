@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/object/gdvirtual.gen.inc"
-#include "core/object/ref_counted.h"
-#include "core/variant/typed_array.h"
+#include "../core/object/gdvirtual.gen.inc"
+#include "../core/object/ref_counted.h"
+#include "../core/variant/typed_array.h"
 
 class EditorTranslationParserPlugin : public RefCounted {
 	GDCLASS(EditorTranslationParserPlugin, RefCounted);

@@ -35,8 +35,8 @@
 #include "audio_stream_mp3.h"
 
 #ifdef TOOLS_ENABLED
-#include "core/config/engine.h"
-#include "editor/editor_node.h"
+#include "../../core/config/engine.h"
+#include "../../editor/editor_node.h"
 #include "resource_importer_mp3.h"
 
 static void _editor_init() {

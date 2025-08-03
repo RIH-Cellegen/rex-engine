@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/string/ustring.h"
-#include "core/templates/safe_refcount.h"
+#include "ustring.h"
+#include "../templates/safe_refcount.h"
 
 #define UNIQUE_NODE_PREFIX "%"
 

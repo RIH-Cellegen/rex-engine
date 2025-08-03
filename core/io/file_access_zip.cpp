@@ -34,7 +34,7 @@
 
 #include "file_access_zip.h"
 
-#include "core/io/file_access.h"
+#include "file_access.h"
 
 extern "C" {
 

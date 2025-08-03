@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/math/plane.h"
-#include "core/math/vector3.h"
+#include "plane.h"
+#include "vector3.h"
 
 /**
  * AABB (Axis Aligned Bounding Box)

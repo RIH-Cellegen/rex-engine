@@ -48,24 +48,24 @@
 #endif // TOOLS_ENABLED
 
 #ifdef TESTS_ENABLED
-#include "tests/test_gdscript.h"
+#include "../../tests/test_gdscript.h"
 #endif
 
-#include "core/io/file_access.h"
-#include "core/io/resource_loader.h"
+#include "../../core/io/file_access.h"
+#include "../../core/io/resource_loader.h"
 
 #ifdef TOOLS_ENABLED
-#include "editor/editor_node.h"
-#include "editor/editor_translation_parser.h"
-#include "editor/export/editor_export.h"
+#include "../../editor/editor_node.h"
+#include "../../editor/editor_translation_parser.h"
+#include "../../editor/export/editor_export.h"
 
 #ifndef GDSCRIPT_NO_LSP
-#include "core/config/engine.h"
+#include "../../core/config/engine.h"
 #endif
 #endif // TOOLS_ENABLED
 
 #ifdef TESTS_ENABLED
-#include "tests/test_macros.h"
+#include "../../tests/test_macros.h"
 #endif
 
 GDScriptLanguage *script_language_gd = nullptr;

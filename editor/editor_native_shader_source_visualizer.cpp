@@ -32,12 +32,12 @@
 
 #include "editor_native_shader_source_visualizer.h"
 
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/code_edit.h"
-#include "scene/gui/text_edit.h"
-#include "servers/rendering/shader_language.h"
+#include "editor_settings.h"
+#include "editor_string_names.h"
+#include "themes/editor_scale.h"
+#include "../scene/gui/code_edit.h"
+#include "../scene/gui/text_edit.h"
+#include "../servers/rendering/shader_language.h"
 
 void EditorNativeShaderSourceVisualizer::_load_theme_settings() {
 	syntax_highlighter->set_number_color(EDITOR_GET("text_editor/theme/highlighting/number_color"));

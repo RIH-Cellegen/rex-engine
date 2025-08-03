@@ -32,41 +32,41 @@
 
 #include "editor_help.h"
 
-#include "core/config/project_settings.h"
-#include "core/core_constants.h"
-#include "core/extension/gdextension.h"
-#include "core/input/input.h"
-#include "core/io/json.h"
-#include "core/object/script_language.h"
-#include "core/os/keyboard.h"
-#include "core/string/string_builder.h"
-#include "core/version.h"
-#include "editor/doc_data_compressed.gen.h"
-#include "editor/editor_file_system.h"
-#include "editor/editor_main_screen.h"
-#include "editor/editor_node.h"
-#include "editor/editor_paths.h"
-#include "editor/editor_property_name_processor.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/filesystem_dock.h"
-#include "editor/gui/editor_toaster.h"
-#include "editor/plugins/script_editor_plugin.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/line_edit.h"
+#include "../core/config/project_settings.h"
+#include "../core/core_constants.h"
+#include "../core/extension/gdextension.h"
+#include "../core/input/input.h"
+#include "../core/io/json.h"
+#include "../core/object/script_language.h"
+#include "../core/os/keyboard.h"
+#include "../core/string/string_builder.h"
+#include "../core/version.h"
+#include "doc_data_compressed.gen.h"
+#include "editor_file_system.h"
+#include "editor_main_screen.h"
+#include "editor_node.h"
+#include "editor_paths.h"
+#include "editor_property_name_processor.h"
+#include "editor_settings.h"
+#include "editor_string_names.h"
+#include "filesystem_dock.h"
+#include "gui/editor_toaster.h"
+#include "plugins/script_editor_plugin.h"
+#include "themes/editor_scale.h"
+#include "../scene/gui/line_edit.h"
 
-#include "modules/modules_enabled.gen.h" // For gdscript, mono.
+#include "../modules/modules_enabled.gen.h" // For gdscript, mono.
 
 // For syntax highlighting.
 #ifdef MODULE_GDSCRIPT_ENABLED
-#include "modules/gdscript/editor/gdscript_highlighter.h"
-#include "modules/gdscript/gdscript.h"
+#include "../modules/gdscript/editor/gdscript_highlighter.h"
+#include "../modules/gdscript/gdscript.h"
 #endif
 
 // For syntax highlighting.
 #ifdef MODULE_MONO_ENABLED
-#include "editor/plugins/script_editor_plugin.h"
-#include "modules/mono/csharp_script.h"
+#include "plugins/script_editor_plugin.h"
+#include "../modules/mono/csharp_script.h"
 #endif
 
 #define CONTRIBUTE_URL vformat("%s/contributing/documentation/updating_the_class_reference.html", REDOT_VERSION_DOCS_URL)

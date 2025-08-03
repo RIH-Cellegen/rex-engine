@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "editor/editor_locale_dialog.h"
-#include "scene/gui/check_box.h"
-#include "scene/gui/tree.h"
+#include "editor_locale_dialog.h"
+#include "../scene/gui/check_box.h"
+#include "../scene/gui/tree.h"
 
 class EditorFileDialog;
 class FileSystemDock;

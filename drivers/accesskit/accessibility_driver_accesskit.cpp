@@ -34,10 +34,10 @@
 
 #include "accessibility_driver_accesskit.h"
 
-#include "core/config/project_settings.h"
-#include "core/version.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/version.h"
 
-#include "servers/text_server.h"
+#include "../../servers/text_server.h"
 
 AccessibilityDriverAccessKit *AccessibilityDriverAccessKit::singleton = nullptr;
 

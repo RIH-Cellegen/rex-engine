@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "editor/import/3d/resource_importer_scene.h"
+#include "resource_importer_scene.h"
 
 class EditorSceneFormatImporterCollada : public EditorSceneFormatImporter {
 	GDCLASS(EditorSceneFormatImporterCollada, EditorSceneFormatImporter);

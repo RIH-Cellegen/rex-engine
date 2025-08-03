@@ -32,7 +32,7 @@
 
 #include "visual_instance_3d.h"
 
-#include "core/config/project_settings.h"
+#include "../../core/config/project_settings.h"
 
 AABB VisualInstance3D::get_aabb() const {
 	AABB ret;

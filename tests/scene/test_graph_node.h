@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "scene/gui/graph_node.h"
-#include "scene/main/window.h"
+#include "../../scene/gui/graph_node.h"
+#include "../../scene/main/window.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestGraphNode {
 

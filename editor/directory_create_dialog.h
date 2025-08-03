@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/gui/dialogs.h"
+#include "../scene/gui/dialogs.h"
 
 class EditorValidationPanel;
 class Label;

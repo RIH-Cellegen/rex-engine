@@ -32,15 +32,15 @@
 
 #pragma once
 
-#include "core/error/error_macros.h"
-#include "core/math/projection.h"
-#include "core/object/class_db.h"
-#include "core/object/gdvirtual.gen.inc"
-#include "core/templates/hash_map.h"
-#include "core/templates/rid.h"
-#include "core/variant/native_ptr.h"
-#include "core/variant/typed_array.h"
-#include "core/variant/variant.h"
+#include "../../../core/error/error_macros.h"
+#include "../../../core/math/projection.h"
+#include "../../../core/object/class_db.h"
+#include "../../../core/object/gdvirtual.gen.inc"
+#include "../../../core/templates/hash_map.h"
+#include "../../../core/templates/rid.h"
+#include "../../../core/variant/native_ptr.h"
+#include "../../../core/variant/typed_array.h"
+#include "../../../core/variant/variant.h"
 
 #include <openxr/openxr.h>
 

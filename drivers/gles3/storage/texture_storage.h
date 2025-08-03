@@ -37,13 +37,13 @@
 #include "platform_gl.h"
 
 #include "config.h"
-#include "core/io/image.h"
-#include "core/os/os.h"
-#include "core/templates/rid_owner.h"
-#include "servers/rendering/renderer_compositor.h"
-#include "servers/rendering/storage/texture_storage.h"
+#include "../../../core/io/image.h"
+#include "../../../core/os/os.h"
+#include "../../../core/templates/rid_owner.h"
+#include "../../../servers/rendering/renderer_compositor.h"
+#include "../../../servers/rendering/storage/texture_storage.h"
 
-#include "drivers/gles3/shaders/canvas_sdf.glsl.gen.h"
+#include "../shaders/canvas_sdf.glsl.gen.h"
 
 namespace GLES3 {
 

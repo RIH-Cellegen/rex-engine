@@ -32,7 +32,7 @@
 
 #include "ref_counted.h"
 
-#include "core/object/script_language.h"
+#include "script_language.h"
 
 bool RefCounted::init_ref() {
 	if (reference()) {

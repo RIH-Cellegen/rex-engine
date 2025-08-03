@@ -33,7 +33,7 @@
 #pragma once
 
 #include "../action_map/openxr_action.h"
-#include "core/io/resource.h"
+#include "../../../core/io/resource.h"
 
 // Part of implementation for:
 // https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_KHR_binding_modification

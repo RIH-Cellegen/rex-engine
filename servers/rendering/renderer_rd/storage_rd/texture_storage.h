@@ -32,13 +32,13 @@
 
 #pragma once
 
-#include "core/templates/paged_array.h"
-#include "core/templates/rid_owner.h"
-#include "servers/rendering/renderer_rd/shaders/canvas_sdf.glsl.gen.h"
-#include "servers/rendering/renderer_rd/storage_rd/forward_id_storage.h"
-#include "servers/rendering/rendering_server_default.h"
-#include "servers/rendering/storage/texture_storage.h"
-#include "servers/rendering/storage/utilities.h"
+#include "../../../../core/templates/paged_array.h"
+#include "../../../../core/templates/rid_owner.h"
+#include "../shaders/canvas_sdf.glsl.gen.h"
+#include "forward_id_storage.h"
+#include "../../rendering_server_default.h"
+#include "../../storage/texture_storage.h"
+#include "../../storage/utilities.h"
 
 namespace RendererRD {
 

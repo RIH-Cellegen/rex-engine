@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/io/resource.h"
-#include "core/io/resource_loader.h"
-#include "core/io/resource_saver.h"
-#include "core/variant/variant.h"
+#include "resource.h"
+#include "resource_loader.h"
+#include "resource_saver.h"
+#include "../variant/variant.h"
 
 class JSON : public Resource {
 	GDCLASS(JSON, Resource);

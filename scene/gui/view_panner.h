@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/object/ref_counted.h"
+#include "../../core/object/ref_counted.h"
 
 class InputEvent;
 class Shortcut;

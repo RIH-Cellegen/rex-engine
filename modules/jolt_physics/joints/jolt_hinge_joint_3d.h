@@ -35,9 +35,9 @@
 #include "../jolt_physics_server_3d.h"
 #include "jolt_joint_3d.h"
 
-#include "Jolt/Jolt.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Jolt.h"
 
-#include "Jolt/Physics/Constraints/SliderConstraint.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Constraints/SliderConstraint.h"
 
 class JoltHingeJoint3D final : public JoltJoint3D {
 	typedef PhysicsServer3D::HingeJointParam Parameter;

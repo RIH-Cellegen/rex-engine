@@ -33,14 +33,14 @@
 #include "array.h"
 
 #include "container_type_validate.h"
-#include "core/math/math_funcs.h"
-#include "core/object/script_language.h"
-#include "core/templates/hashfuncs.h"
-#include "core/templates/search_array.h"
-#include "core/templates/vector.h"
-#include "core/variant/callable.h"
-#include "core/variant/dictionary.h"
-#include "core/variant/variant.h"
+#include "../math/math_funcs.h"
+#include "../object/script_language.h"
+#include "../templates/hashfuncs.h"
+#include "../templates/search_array.h"
+#include "../templates/vector.h"
+#include "callable.h"
+#include "dictionary.h"
+#include "variant.h"
 
 struct ArrayPrivate {
 	SafeRefCount refcount;

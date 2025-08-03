@@ -40,8 +40,8 @@
 #include "joints/godot_pin_joint_3d.h"
 #include "joints/godot_slider_joint_3d.h"
 
-#include "core/debugger/engine_debugger.h"
-#include "core/os/os.h"
+#include "../../core/debugger/engine_debugger.h"
+#include "../../core/os/os.h"
 
 #define FLUSH_QUERY_CHECK(m_object) \
 	ERR_FAIL_COND_MSG(m_object->get_space() && flushing_queries, "Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.");

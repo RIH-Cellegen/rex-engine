@@ -32,7 +32,7 @@
 
 #include "shader_include.h"
 
-#include "servers/rendering/shader_preprocessor.h"
+#include "../../servers/rendering/shader_preprocessor.h"
 
 void ShaderInclude::_dependency_changed() {
 	emit_changed();

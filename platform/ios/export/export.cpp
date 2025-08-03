@@ -34,7 +34,7 @@
 
 #include "export_plugin.h"
 
-#include "editor/export/editor_export.h"
+#include "../../../editor/export/editor_export.h"
 
 void register_ios_exporter_types() {
 	GDREGISTER_VIRTUAL_CLASS(EditorExportPlatformIOS);

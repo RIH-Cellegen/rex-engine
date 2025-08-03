@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "servers/display_server.h"
+#include "../display_server.h"
 
 class RenderingDeviceDriver;
 

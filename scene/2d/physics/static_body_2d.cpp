@@ -33,14 +33,14 @@
 #include "static_body_2d.h"
 
 #ifndef NAVIGATION_2D_DISABLED
-#include "scene/resources/2d/capsule_shape_2d.h"
-#include "scene/resources/2d/circle_shape_2d.h"
-#include "scene/resources/2d/concave_polygon_shape_2d.h"
-#include "scene/resources/2d/convex_polygon_shape_2d.h"
-#include "scene/resources/2d/navigation_mesh_source_geometry_data_2d.h"
-#include "scene/resources/2d/navigation_polygon.h"
-#include "scene/resources/2d/rectangle_shape_2d.h"
-#include "servers/navigation_server_2d.h"
+#include "../../resources/2d/capsule_shape_2d.h"
+#include "../../resources/2d/circle_shape_2d.h"
+#include "../../resources/2d/concave_polygon_shape_2d.h"
+#include "../../resources/2d/convex_polygon_shape_2d.h"
+#include "../../resources/2d/navigation_mesh_source_geometry_data_2d.h"
+#include "../../resources/2d/navigation_polygon.h"
+#include "../../resources/2d/rectangle_shape_2d.h"
+#include "../../../servers/navigation_server_2d.h"
 #endif // NAVIGATION_2D_DISABLED
 
 Callable StaticBody2D::_navmesh_source_geometry_parsing_callback;

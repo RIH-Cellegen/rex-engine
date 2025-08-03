@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/os/os.h"
+#include "../core/os/os.h"
 
 typedef void (*EditorRunInstanceStarting)(int p_index, List<String> &r_arguments);
 

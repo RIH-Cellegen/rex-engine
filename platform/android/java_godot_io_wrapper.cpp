@@ -32,8 +32,8 @@
 
 #include "java_godot_io_wrapper.h"
 
-#include "core/math/rect2.h"
-#include "core/variant/variant.h"
+#include "../../core/math/rect2.h"
+#include "../../core/variant/variant.h"
 
 // JNIEnv is only valid within the thread it belongs to, in a multi threading environment
 // we can't cache it.

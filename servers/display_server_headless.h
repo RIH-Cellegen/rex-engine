@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "servers/display_server.h"
+#include "display_server.h"
 
-#include "servers/rendering/dummy/rasterizer_dummy.h"
+#include "rendering/dummy/rasterizer_dummy.h"
 
 class DisplayServerHeadless : public DisplayServer {
 	GDSOFTCLASS(DisplayServerHeadless, DisplayServer);

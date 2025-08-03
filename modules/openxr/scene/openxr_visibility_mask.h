@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/3d/visual_instance_3d.h"
+#include "../../../scene/3d/visual_instance_3d.h"
 
 class OpenXRVisibilityMask : public VisualInstance3D {
 	GDCLASS(OpenXRVisibilityMask, VisualInstance3D);

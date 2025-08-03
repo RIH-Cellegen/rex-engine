@@ -34,7 +34,7 @@
 
 #include "../openxr_interface.h"
 
-#include "scene/resources/mesh.h"
+#include "../../../scene/resources/mesh.h"
 
 OpenXRCompositionLayerEquirect::OpenXRCompositionLayerEquirect() :
 		OpenXRCompositionLayer((XrCompositionLayerBaseHeader *)&composition_layer) {

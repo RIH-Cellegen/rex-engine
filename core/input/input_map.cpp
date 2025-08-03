@@ -33,11 +33,11 @@
 #include "input_map.h"
 #include "input_map.compat.inc"
 
-#include "core/config/project_settings.h"
-#include "core/input/input.h"
-#include "core/os/keyboard.h"
-#include "core/os/os.h"
-#include "core/variant/typed_array.h"
+#include "../config/project_settings.h"
+#include "input.h"
+#include "../os/keyboard.h"
+#include "../os/os.h"
+#include "../variant/typed_array.h"
 
 void InputMap::_bind_methods() {
 	ClassDB::bind_method(D_METHOD("has_action", "action"), &InputMap::has_action);

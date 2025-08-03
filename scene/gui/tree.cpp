@@ -33,15 +33,15 @@
 #include "tree.h"
 #include "tree.compat.inc"
 
-#include "core/config/project_settings.h"
-#include "core/input/input.h"
-#include "core/math/math_funcs.h"
-#include "core/os/keyboard.h"
-#include "core/os/os.h"
-#include "scene/gui/box_container.h"
-#include "scene/gui/text_edit.h"
-#include "scene/main/window.h"
-#include "scene/theme/theme_db.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/input/input.h"
+#include "../../core/math/math_funcs.h"
+#include "../../core/os/keyboard.h"
+#include "../../core/os/os.h"
+#include "box_container.h"
+#include "text_edit.h"
+#include "../main/window.h"
+#include "../theme/theme_db.h"
 
 #include <limits.h>
 

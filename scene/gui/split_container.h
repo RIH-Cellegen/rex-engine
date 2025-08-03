@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/gui/container.h"
+#include "container.h"
 
 class SplitContainerDragger : public Control {
 	GDCLASS(SplitContainerDragger, Control);

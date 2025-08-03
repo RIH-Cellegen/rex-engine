@@ -34,7 +34,7 @@
 
 #if defined(X11_ENABLED) && defined(GLES3_ENABLED)
 
-#include "thirdparty/glad/glad/glx.h"
+#include "../../../thirdparty/glad/glad/glx.h"
 
 #include <stdio.h>
 #include <stdlib.h>

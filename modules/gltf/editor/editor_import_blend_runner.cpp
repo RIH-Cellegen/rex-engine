@@ -32,10 +32,10 @@
 
 #include "editor_import_blend_runner.h"
 
-#include "core/io/http_client.h"
-#include "editor/editor_file_system.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
+#include "../../../core/io/http_client.h"
+#include "../../../editor/editor_file_system.h"
+#include "../../../editor/editor_node.h"
+#include "../../../editor/editor_settings.h"
 
 static constexpr char PYTHON_SCRIPT_RPC[] = R"(
 import bpy, sys, threading

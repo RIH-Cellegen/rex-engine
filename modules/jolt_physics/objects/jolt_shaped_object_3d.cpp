@@ -38,9 +38,9 @@
 #include "../shapes/jolt_shape_3d.h"
 #include "../spaces/jolt_space_3d.h"
 
-#include "Jolt/Physics/Collision/Shape/EmptyShape.h"
-#include "Jolt/Physics/Collision/Shape/MutableCompoundShape.h"
-#include "Jolt/Physics/Collision/Shape/StaticCompoundShape.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/Shape/EmptyShape.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/Shape/MutableCompoundShape.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/Shape/StaticCompoundShape.h"
 
 bool JoltShapedObject3D::_is_big() const {
 	// This number is completely arbitrary, and mostly just needs to capture `WorldBoundaryShape3D`, which needs to be kept out of the normal broadphase layers.

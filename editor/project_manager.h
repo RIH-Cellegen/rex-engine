@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/gui/dialogs.h"
-#include "scene/gui/scroll_container.h"
+#include "../scene/gui/dialogs.h"
+#include "../scene/gui/scroll_container.h"
 
 class CheckBox;
 class EditorAbout;

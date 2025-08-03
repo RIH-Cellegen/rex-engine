@@ -32,10 +32,10 @@
 
 #include "geometry_2d.h"
 
-#include "thirdparty/clipper2/include/clipper2/clipper.h"
-#include "thirdparty/misc/polypartition.h"
+#include "../../thirdparty/clipper2/include/clipper2/clipper.h"
+#include "../../thirdparty/misc/polypartition.h"
 #define STB_RECT_PACK_IMPLEMENTATION
-#include "thirdparty/misc/stb_rect_pack.h"
+#include "../../thirdparty/misc/stb_rect_pack.h"
 
 const int clipper_precision = 5; // Based on CMP_EPSILON.
 const double clipper_scale = Math::pow(10.0, clipper_precision);

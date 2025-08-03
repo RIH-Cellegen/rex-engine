@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/object/ref_counted.h"
-#include "servers/navigation/navigation_utilities.h"
+#include "../../core/object/ref_counted.h"
+#include "navigation_utilities.h"
 
 class NavigationPathQueryResult2D : public RefCounted {
 	GDCLASS(NavigationPathQueryResult2D, RefCounted);

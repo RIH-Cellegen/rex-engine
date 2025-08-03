@@ -35,7 +35,7 @@
 #include "image_saver_dds.h"
 #include "texture_loader_dds.h"
 
-#include "scene/resources/texture.h"
+#include "../../scene/resources/texture.h"
 
 static Ref<ResourceFormatDDS> resource_loader_dds;
 

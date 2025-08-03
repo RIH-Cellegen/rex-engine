@@ -35,7 +35,7 @@
 #include "../effects/copy_effects.h"
 #include "../framebuffer_cache_rd.h"
 #include "material_storage.h"
-#include "servers/rendering/renderer_rd/renderer_scene_render_rd.h"
+#include "../renderer_scene_render_rd.h"
 
 using namespace RendererRD;
 

@@ -32,7 +32,7 @@
 
 #include "crypto_core.h"
 
-#include "core/os/os.h"
+#include "../os/os.h"
 
 #include <mbedtls/aes.h>
 #include <mbedtls/base64.h>

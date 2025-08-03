@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "scene/3d/navigation/navigation_agent_3d.h"
-#include "scene/3d/node_3d.h"
-#include "scene/main/window.h"
+#include "../../scene/3d/navigation/navigation_agent_3d.h"
+#include "../../scene/3d/node_3d.h"
+#include "../../scene/main/window.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestNavigationAgent3D {
 

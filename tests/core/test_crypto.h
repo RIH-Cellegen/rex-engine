@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/crypto/crypto.h"
-#include "tests/test_macros.h"
+#include "../../core/crypto/crypto.h"
+#include "../test_macros.h"
 
 namespace TestCrypto {
 

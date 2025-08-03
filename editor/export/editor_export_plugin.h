@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/os/shared_object.h"
+#include "../../core/os/shared_object.h"
 #include "editor_export_platform.h"
 #include "editor_export_preset.h"
-#include "scene/main/node.h"
+#include "../../scene/main/node.h"
 
 class EditorExportPlugin : public RefCounted {
 	GDCLASS(EditorExportPlugin, RefCounted);

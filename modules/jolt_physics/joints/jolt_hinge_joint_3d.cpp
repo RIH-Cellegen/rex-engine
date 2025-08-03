@@ -36,10 +36,10 @@
 #include "../objects/jolt_body_3d.h"
 #include "../spaces/jolt_space_3d.h"
 
-#include "core/config/engine.h"
+#include "../../../core/config/engine.h"
 
-#include "Jolt/Physics/Constraints/FixedConstraint.h"
-#include "Jolt/Physics/Constraints/HingeConstraint.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Constraints/FixedConstraint.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Constraints/HingeConstraint.h"
 
 namespace {
 

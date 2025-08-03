@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/3d/navigation/navigation_region_3d.h"
-#include "scene/resources/navigation_mesh.h"
+#include "../../../scene/3d/navigation/navigation_region_3d.h"
+#include "../../../scene/resources/navigation_mesh.h"
 
 class NavigationMeshSourceGeometryData3D;
 

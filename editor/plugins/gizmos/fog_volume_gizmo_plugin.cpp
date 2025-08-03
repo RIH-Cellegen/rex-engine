@@ -32,11 +32,11 @@
 
 #include "fog_volume_gizmo_plugin.h"
 
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/plugins/gizmos/gizmo_3d_helper.h"
-#include "scene/3d/fog_volume.h"
+#include "../../editor_node.h"
+#include "../../editor_settings.h"
+#include "../../editor_string_names.h"
+#include "gizmo_3d_helper.h"
+#include "../../../scene/3d/fog_volume.h"
 
 FogVolumeGizmoPlugin::FogVolumeGizmoPlugin() {
 	helper.instantiate();

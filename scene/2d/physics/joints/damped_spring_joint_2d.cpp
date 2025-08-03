@@ -32,7 +32,7 @@
 
 #include "damped_spring_joint_2d.h"
 
-#include "scene/2d/physics/physics_body_2d.h"
+#include "../physics_body_2d.h"
 
 void DampedSpringJoint2D::_notification(int p_what) {
 	switch (p_what) {

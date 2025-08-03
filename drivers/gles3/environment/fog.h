@@ -34,7 +34,7 @@
 
 #ifdef GLES3_ENABLED
 
-#include "servers/rendering/environment/renderer_fog.h"
+#include "../../../servers/rendering/environment/renderer_fog.h"
 
 namespace GLES3 {
 

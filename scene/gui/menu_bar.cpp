@@ -32,8 +32,8 @@
 
 #include "menu_bar.h"
 
-#include "scene/main/window.h"
-#include "scene/theme/theme_db.h"
+#include "../main/window.h"
+#include "../theme/theme_db.h"
 
 void MenuBar::gui_input(const Ref<InputEvent> &p_event) {
 	ERR_FAIL_COND(p_event.is_null());

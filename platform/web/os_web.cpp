@@ -38,13 +38,13 @@
 #include "ip_web.h"
 #include "net_socket_web.h"
 
-#include "core/config/project_settings.h"
-#include "core/debugger/engine_debugger.h"
-#include "drivers/unix/dir_access_unix.h"
-#include "drivers/unix/file_access_unix.h"
-#include "main/main.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/debugger/engine_debugger.h"
+#include "../../drivers/unix/dir_access_unix.h"
+#include "../../drivers/unix/file_access_unix.h"
+#include "../../main/main.h"
 
-#include "modules/modules_enabled.gen.h" // For websocket.
+#include "../../modules/modules_enabled.gen.h" // For websocket.
 
 #include <dlfcn.h>
 #include <emscripten.h>

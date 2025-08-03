@@ -32,9 +32,9 @@
 
 #include "navigation_link_2d.h"
 
-#include "core/math/geometry_2d.h"
-#include "scene/resources/world_2d.h"
-#include "servers/navigation_server_2d.h"
+#include "../../../core/math/geometry_2d.h"
+#include "../../resources/world_2d.h"
+#include "../../../servers/navigation_server_2d.h"
 
 void NavigationLink2D::_bind_methods() {
 	ClassDB::bind_method(D_METHOD("get_rid"), &NavigationLink2D::get_rid);

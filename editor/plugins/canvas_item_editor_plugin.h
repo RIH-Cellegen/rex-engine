@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "editor/plugins/editor_plugin.h"
-#include "scene/gui/box_container.h"
+#include "editor_plugin.h"
+#include "../../scene/gui/box_container.h"
 
 class AcceptDialog;
 class Button;

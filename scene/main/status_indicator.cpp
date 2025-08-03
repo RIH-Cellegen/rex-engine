@@ -32,7 +32,7 @@
 
 #include "status_indicator.h"
 
-#include "scene/gui/popup_menu.h"
+#include "../gui/popup_menu.h"
 
 void StatusIndicator::_notification(int p_what) {
 	ERR_MAIN_THREAD_GUARD;

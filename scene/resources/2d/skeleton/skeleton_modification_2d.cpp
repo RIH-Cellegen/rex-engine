@@ -31,10 +31,10 @@
 /**************************************************************************/
 
 #include "skeleton_modification_2d.h"
-#include "scene/2d/skeleton_2d.h"
+#include "../../../2d/skeleton_2d.h"
 
 #ifdef TOOLS_ENABLED
-#include "editor/editor_settings.h"
+#include "../../../../editor/editor_settings.h"
 #endif // TOOLS_ENABLED
 
 ///////////////////////////////////////

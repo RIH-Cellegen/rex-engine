@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/math/vector2.h"
-#include "core/math/vector2i.h"
-#include "tests/test_macros.h"
+#include "../../../core/math/vector2.h"
+#include "../../../core/math/vector2i.h"
+#include "../../test_macros.h"
 
 namespace TestVector2i {
 

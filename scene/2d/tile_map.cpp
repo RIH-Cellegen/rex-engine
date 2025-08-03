@@ -33,10 +33,10 @@
 #include "tile_map.h"
 #include "tile_map.compat.inc"
 
-#include "core/io/marshalls.h"
+#include "../../core/io/marshalls.h"
 #ifndef NAVIGATION_2D_DISABLED
-#include "scene/resources/2d/navigation_mesh_source_geometry_data_2d.h"
-#include "servers/navigation_server_2d.h"
+#include "../resources/2d/navigation_mesh_source_geometry_data_2d.h"
+#include "../../servers/navigation_server_2d.h"
 #endif // NAVIGATION_2D_DISABLED
 
 #define TILEMAP_CALL_FOR_LAYER(layer, function, ...) \

@@ -34,14 +34,14 @@
 
 #include "csg.h"
 
-#include "scene/3d/path_3d.h"
-#include "scene/3d/visual_instance_3d.h"
+#include "../../scene/3d/path_3d.h"
+#include "../../scene/3d/visual_instance_3d.h"
 
 #ifndef PHYSICS_3D_DISABLED
-#include "scene/resources/3d/concave_polygon_shape_3d.h"
+#include "../../scene/resources/3d/concave_polygon_shape_3d.h"
 #endif // PHYSICS_3D_DISABLED
 
-#include "thirdparty/misc/mikktspace.h"
+#include "../../thirdparty/misc/mikktspace.h"
 
 class NavigationMesh;
 class NavigationMeshSourceGeometryData3D;

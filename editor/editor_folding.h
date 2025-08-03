@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/main/node.h"
+#include "../scene/main/node.h"
 
 class EditorFolding {
 	Vector<String> _get_unfolds(const Object *p_object);

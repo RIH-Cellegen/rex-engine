@@ -32,7 +32,7 @@
 
 #include "ray_cast_3d_gizmo_plugin.h"
 
-#include "scene/3d/physics/ray_cast_3d.h"
+#include "../../../scene/3d/physics/ray_cast_3d.h"
 
 RayCast3DGizmoPlugin::RayCast3DGizmoPlugin() {
 	const Color gizmo_color = SceneTree::get_singleton()->get_debug_collisions_color();

@@ -33,7 +33,7 @@
 #include "regex.h"
 #include "regex.compat.inc"
 
-#include "core/os/memory.h"
+#include "../../core/os/memory.h"
 
 extern "C" {
 #include <pcre2.h>

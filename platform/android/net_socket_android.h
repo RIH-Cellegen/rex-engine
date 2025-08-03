@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "drivers/unix/net_socket_unix.h"
+#include "../../drivers/unix/net_socket_unix.h"
 
 #include <jni.h>
 

@@ -32,8 +32,8 @@
 
 #include "fog_volume.h"
 
-#include "scene/main/viewport.h"
-#include "scene/resources/environment.h"
+#include "../main/viewport.h"
+#include "../resources/environment.h"
 
 ///////////////////////////
 

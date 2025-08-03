@@ -32,17 +32,17 @@
 
 #include "editor_data.h"
 
-#include "core/config/project_settings.h"
-#include "core/extension/gdextension_manager.h"
-#include "core/io/file_access.h"
-#include "core/io/resource_loader.h"
-#include "editor/editor_node.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/multi_node_edit.h"
-#include "editor/plugins/editor_context_menu_plugin.h"
-#include "editor/plugins/editor_plugin.h"
-#include "scene/property_utils.h"
-#include "scene/resources/packed_scene.h"
+#include "../core/config/project_settings.h"
+#include "../core/extension/gdextension_manager.h"
+#include "../core/io/file_access.h"
+#include "../core/io/resource_loader.h"
+#include "editor_node.h"
+#include "editor_undo_redo_manager.h"
+#include "multi_node_edit.h"
+#include "plugins/editor_context_menu_plugin.h"
+#include "plugins/editor_plugin.h"
+#include "../scene/property_utils.h"
+#include "../scene/resources/packed_scene.h"
 
 void EditorSelectionHistory::cleanup_history() {
 	for (int i = 0; i < history.size(); i++) {

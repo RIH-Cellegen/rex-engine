@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/os/keyboard.h"
-#include "core/templates/hash_map.h"
+#include "../../../core/os/keyboard.h"
+#include "../../../core/templates/hash_map.h"
 
 #include <X11/XF86keysym.h>
 #include <X11/Xlib.h>

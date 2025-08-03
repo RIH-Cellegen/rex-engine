@@ -35,7 +35,7 @@
 #include "cubemap_filter.h"
 
 #include "../storage/texture_storage.h"
-#include "core/config/project_settings.h"
+#include "../../../core/config/project_settings.h"
 
 using namespace GLES3;
 

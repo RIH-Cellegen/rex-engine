@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/object/gdvirtual.gen.inc"
-#include "core/object/ref_counted.h"
+#include "../object/gdvirtual.gen.inc"
+#include "../object/ref_counted.h"
 
 class EngineProfiler : public RefCounted {
 	GDCLASS(EngineProfiler, RefCounted);

@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/typedefs.h"
+#include "../typedefs.h"
 
 template <typename T, typename Comparator = Comparator<T>>
 class SearchArray {

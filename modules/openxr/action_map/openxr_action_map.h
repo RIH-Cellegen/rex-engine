@@ -36,7 +36,7 @@
 #include "openxr_action_set.h"
 #include "openxr_interaction_profile.h"
 
-#include "core/io/resource.h"
+#include "../../../core/io/resource.h"
 
 class OpenXRActionMap : public Resource {
 	GDCLASS(OpenXRActionMap, Resource);

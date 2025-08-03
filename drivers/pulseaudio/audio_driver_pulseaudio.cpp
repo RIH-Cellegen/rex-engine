@@ -34,13 +34,13 @@
 
 #ifdef PULSEAUDIO_ENABLED
 
-#include "core/config/project_settings.h"
-#include "core/os/os.h"
-#include "core/version.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/os/os.h"
+#include "../../core/version.h"
 
 #ifdef ALSAMIDI_ENABLED
 #ifdef SOWRAP_ENABLED
-#include "drivers/alsa/asound-so_wrap.h"
+#include "../alsa/asound-so_wrap.h"
 #else
 #include <alsa/asoundlib.h>
 #endif

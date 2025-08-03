@@ -34,23 +34,23 @@
 
 #include "tiles_editor_plugin.h"
 
-#include "editor/editor_inspector.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/gui/editor_toaster.h"
-#include "editor/plugins/tiles/tile_set_editor.h"
-#include "editor/themes/editor_scale.h"
+#include "../../editor_inspector.h"
+#include "../../editor_node.h"
+#include "../../editor_settings.h"
+#include "../../editor_string_names.h"
+#include "../../editor_undo_redo_manager.h"
+#include "../../gui/editor_toaster.h"
+#include "tile_set_editor.h"
+#include "../../themes/editor_scale.h"
 
-#include "scene/gui/box_container.h"
-#include "scene/gui/button.h"
-#include "scene/gui/control.h"
+#include "../../../scene/gui/box_container.h"
+#include "../../../scene/gui/button.h"
+#include "../../../scene/gui/control.h"
 
-#include "core/math/geometry_2d.h"
-#include "core/os/keyboard.h"
+#include "../../../core/math/geometry_2d.h"
+#include "../../../core/os/keyboard.h"
 
-#include "servers/navigation_server_2d.h"
+#include "../../../servers/navigation_server_2d.h"
 
 void TileSetAtlasSourceEditor::TileSetAtlasSourceProxyObject::set_id(int p_id) {
 	ERR_FAIL_COND(p_id < 0);

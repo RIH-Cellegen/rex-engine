@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "editor/plugins/editor_plugin.h"
-#include "scene/gui/dialogs.h"
-#include "scene/gui/option_button.h"
-#include "scene/gui/tree.h"
+#include "plugins/editor_plugin.h"
+#include "../scene/gui/dialogs.h"
+#include "../scene/gui/option_button.h"
+#include "../scene/gui/tree.h"
 
 class EditorHelpSearch : public ConfirmationDialog {
 	GDCLASS(EditorHelpSearch, ConfirmationDialog);

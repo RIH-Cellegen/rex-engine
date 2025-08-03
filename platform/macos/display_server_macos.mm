@@ -45,28 +45,28 @@
 #import "os_macos.h"
 #import "tts_macos.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/marshalls.h"
-#include "core/math/geometry_2d.h"
-#include "core/os/keyboard.h"
-#include "drivers/png/png_driver_common.h"
-#include "main/main.h"
-#include "scene/resources/image_texture.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../core/io/marshalls.h"
+#include "../../../core/math/geometry_2d.h"
+#include "../../../core/os/keyboard.h"
+#include "../../../drivers/png/png_driver_common.h"
+#include "../../../main/main.h"
+#include "../../../scene/resources/image_texture.h"
 
 #include <AppKit/AppKit.h>
 
-#include "servers/rendering/dummy/rasterizer_dummy.h"
+#include "../../../servers/rendering/dummy/rasterizer_dummy.h"
 
 #if defined(GLES3_ENABLED)
-#include "drivers/gles3/rasterizer_gles3.h"
+#include "../../../drivers/gles3/rasterizer_gles3.h"
 #endif
 
 #if defined(RD_ENABLED)
-#include "servers/rendering/renderer_rd/renderer_compositor_rd.h"
+#include "../../../servers/rendering/renderer_rd/renderer_compositor_rd.h"
 #endif
 
 #if defined(ACCESSKIT_ENABLED)
-#include "drivers/accesskit/accessibility_driver_accesskit.h"
+#include "../../../drivers/accesskit/accessibility_driver_accesskit.h"
 #endif
 
 #import <Carbon/Carbon.h>

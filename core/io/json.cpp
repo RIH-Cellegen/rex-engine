@@ -32,9 +32,9 @@
 
 #include "json.h"
 
-#include "core/config/engine.h"
-#include "core/object/script_language.h"
-#include "core/variant/container_type_validate.h"
+#include "../config/engine.h"
+#include "../object/script_language.h"
+#include "../variant/container_type_validate.h"
 
 const char *JSON::tk_name[TK_MAX] = {
 	"'{'",

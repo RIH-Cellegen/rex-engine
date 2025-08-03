@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/resources/mesh.h"
-#include "servers/rendering_server.h"
+#include "mesh.h"
+#include "../../servers/rendering_server.h"
 
 class MultiMesh : public Resource {
 	GDCLASS(MultiMesh, Resource);

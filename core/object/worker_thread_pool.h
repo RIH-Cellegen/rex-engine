@@ -32,15 +32,15 @@
 
 #pragma once
 
-#include "core/os/condition_variable.h"
-#include "core/os/memory.h"
-#include "core/os/os.h"
-#include "core/os/semaphore.h"
-#include "core/os/thread.h"
-#include "core/templates/local_vector.h"
-#include "core/templates/paged_allocator.h"
-#include "core/templates/rid.h"
-#include "core/templates/safe_refcount.h"
+#include "../os/condition_variable.h"
+#include "../os/memory.h"
+#include "../os/os.h"
+#include "../os/semaphore.h"
+#include "../os/thread.h"
+#include "../templates/local_vector.h"
+#include "../templates/paged_allocator.h"
+#include "../templates/rid.h"
+#include "../templates/safe_refcount.h"
 
 class WorkerThreadPool : public Object {
 	GDCLASS(WorkerThreadPool, Object)

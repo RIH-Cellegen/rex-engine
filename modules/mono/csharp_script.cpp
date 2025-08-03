@@ -46,26 +46,26 @@
 #endif
 
 #ifdef TOOLS_ENABLED
-#include "editor/editor_internal_calls.h"
-#include "editor/script_templates/templates.gen.h"
+#include "../../editor/editor_internal_calls.h"
+#include "../../editor/script_templates/templates.gen.h"
 #endif
 
-#include "core/config/project_settings.h"
-#include "core/debugger/engine_debugger.h"
-#include "core/debugger/script_debugger.h"
-#include "core/io/file_access.h"
-#include "core/os/mutex.h"
-#include "core/os/os.h"
-#include "core/os/thread.h"
-#include "servers/text_server.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/debugger/engine_debugger.h"
+#include "../../core/debugger/script_debugger.h"
+#include "../../core/io/file_access.h"
+#include "../../core/os/mutex.h"
+#include "../../core/os/os.h"
+#include "../../core/os/thread.h"
+#include "../../servers/text_server.h"
 
 #ifdef TOOLS_ENABLED
-#include "core/os/keyboard.h"
-#include "editor/editor_file_system.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/inspector_dock.h"
-#include "editor/node_dock.h"
+#include "../../core/os/keyboard.h"
+#include "../../editor/editor_file_system.h"
+#include "../../editor/editor_node.h"
+#include "../../editor/editor_settings.h"
+#include "../../editor/inspector_dock.h"
+#include "../../editor/node_dock.h"
 #endif
 
 // Types that will be skipped over (in favor of their base types) when setting up instance bindings.

@@ -34,7 +34,7 @@
 
 #include "../gdscript.h"
 
-#include "core/config/project_settings.h"
+#include "../../../core/config/project_settings.h"
 
 HashMap<String, String> GDScriptDocGen::singletons;
 

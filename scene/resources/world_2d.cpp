@@ -32,12 +32,12 @@
 
 #include "world_2d.h"
 
-#include "core/config/project_settings.h"
-#include "scene/2d/visible_on_screen_notifier_2d.h"
-#include "servers/rendering_server.h"
+#include "../../core/config/project_settings.h"
+#include "../2d/visible_on_screen_notifier_2d.h"
+#include "../../servers/rendering_server.h"
 
 #ifndef NAVIGATION_2D_DISABLED
-#include "servers/navigation_server_2d.h"
+#include "../../servers/navigation_server_2d.h"
 #endif // NAVIGATION_2D_DISABLED
 
 RID World2D::get_canvas() const {

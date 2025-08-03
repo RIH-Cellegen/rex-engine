@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/object/class_db.h"
+#include "../object/class_db.h"
 
 template <typename T>
 class TypedArray;

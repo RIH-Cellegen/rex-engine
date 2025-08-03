@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/io/json.h"
+#include "../../../core/io/json.h"
 
-#include "thirdparty/doctest/doctest.h"
+#include "../../../thirdparty/doctest/doctest.h"
 
 namespace TestJSON {
 

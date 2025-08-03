@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/math/projection.h"
-#include "core/os/thread_safe.h"
-#include "servers/xr_server.h"
+#include "../../core/math/projection.h"
+#include "../../core/os/thread_safe.h"
+#include "../xr_server.h"
 #include "xr_vrs.h"
 
 // forward declaration

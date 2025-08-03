@@ -32,38 +32,38 @@
 
 #include "viewport.h"
 
-#include "core/config/project_settings.h"
-#include "core/debugger/engine_debugger.h"
-#include "core/templates/pair.h"
-#include "core/templates/sort_array.h"
-#include "scene/2d/audio_listener_2d.h"
-#include "scene/2d/camera_2d.h"
-#include "scene/gui/control.h"
-#include "scene/gui/label.h"
-#include "scene/gui/popup.h"
-#include "scene/gui/popup_menu.h"
-#include "scene/gui/subviewport_container.h"
-#include "scene/main/canvas_layer.h"
-#include "scene/main/window.h"
-#include "scene/resources/mesh.h"
-#include "scene/resources/svg_texture.h"
-#include "scene/resources/text_line.h"
-#include "scene/resources/world_2d.h"
-#include "servers/audio_server.h"
-#include "servers/rendering/rendering_server_globals.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/debugger/engine_debugger.h"
+#include "../../core/templates/pair.h"
+#include "../../core/templates/sort_array.h"
+#include "../2d/audio_listener_2d.h"
+#include "../2d/camera_2d.h"
+#include "../gui/control.h"
+#include "../gui/label.h"
+#include "../gui/popup.h"
+#include "../gui/popup_menu.h"
+#include "../gui/subviewport_container.h"
+#include "canvas_layer.h"
+#include "window.h"
+#include "../resources/mesh.h"
+#include "../resources/svg_texture.h"
+#include "../resources/text_line.h"
+#include "../resources/world_2d.h"
+#include "../../servers/audio_server.h"
+#include "../../servers/rendering/rendering_server_globals.h"
 
 #ifndef _3D_DISABLED
-#include "scene/3d/audio_listener_3d.h"
-#include "scene/3d/camera_3d.h"
-#include "scene/3d/world_environment.h"
+#include "../3d/audio_listener_3d.h"
+#include "../3d/camera_3d.h"
+#include "../3d/world_environment.h"
 #endif // _3D_DISABLED
 
 #ifndef PHYSICS_2D_DISABLED
-#include "scene/2d/physics/collision_object_2d.h"
+#include "../2d/physics/collision_object_2d.h"
 #endif // PHYSICS_2D_DISABLED
 
 #ifndef PHYSICS_3D_DISABLED
-#include "scene/3d/physics/collision_object_3d.h"
+#include "../3d/physics/collision_object_3d.h"
 #endif // PHYSICS_3D_DISABLED
 
 void ViewportTexture::setup_local_to_scene() {

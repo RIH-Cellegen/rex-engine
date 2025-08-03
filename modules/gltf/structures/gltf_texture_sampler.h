@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/resources/material.h"
+#include "../../../scene/resources/material.h"
 
 class GLTFTextureSampler : public Resource {
 	GDCLASS(GLTFTextureSampler, Resource);

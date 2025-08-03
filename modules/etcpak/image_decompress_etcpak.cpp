@@ -32,8 +32,8 @@
 
 #include "image_decompress_etcpak.h"
 
-#include "core/os/os.h"
-#include "core/string/print_string.h"
+#include "../../core/os/os.h"
+#include "../../core/string/print_string.h"
 
 #include <DecodeRGB.hpp>
 

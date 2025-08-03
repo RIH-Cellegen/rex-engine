@@ -42,16 +42,16 @@
 #include "editor/script_templates/templates.gen.h"
 #endif
 
-#include "core/config/engine.h"
-#include "core/core_constants.h"
-#include "core/io/file_access.h"
-#include "core/math/expression.h"
+#include "../../core/config/engine.h"
+#include "../../core/core_constants.h"
+#include "../../core/io/file_access.h"
+#include "../../core/math/expression.h"
 
 #ifdef TOOLS_ENABLED
-#include "core/config/project_settings.h"
-#include "editor/editor_file_system.h"
-#include "editor/editor_settings.h"
-#include "editor/plugins/script_editor_plugin.h"
+#include "../../core/config/project_settings.h"
+#include "../../editor/editor_file_system.h"
+#include "../../editor/editor_settings.h"
+#include "../../editor/plugins/script_editor_plugin.h"
 #endif
 
 void GDScriptLanguage::get_comment_delimiters(List<String> *p_delimiters) const {

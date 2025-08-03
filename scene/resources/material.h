@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/io/resource.h"
-#include "core/templates/self_list.h"
-#include "scene/resources/shader.h"
-#include "scene/resources/texture.h"
-#include "servers/rendering_server.h"
+#include "../../core/io/resource.h"
+#include "../../core/templates/self_list.h"
+#include "shader.h"
+#include "texture.h"
+#include "../../servers/rendering_server.h"
 
 class Material : public Resource {
 	GDCLASS(Material, Resource);

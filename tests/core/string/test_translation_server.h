@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/string/translation_server.h"
+#include "../../../core/string/translation_server.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestTranslationServer {
 TEST_CASE("[TranslationServer] Translation operations") {

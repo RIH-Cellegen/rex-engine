@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/gui/dialogs.h"
-#include "scene/gui/tab_container.h"
-#include "scene/resources/syntax_highlighter.h"
+#include "../scene/gui/dialogs.h"
+#include "../scene/gui/tab_container.h"
+#include "../scene/resources/syntax_highlighter.h"
 
 class EditorNativeShaderSourceVisualizer : public AcceptDialog {
 	GDCLASS(EditorNativeShaderSourceVisualizer, AcceptDialog)

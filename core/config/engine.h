@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/os/main_loop.h"
-#include "core/string/ustring.h"
-#include "core/templates/list.h"
+#include "../os/main_loop.h"
+#include "../string/ustring.h"
+#include "../templates/list.h"
 
 template <typename T>
 class TypedArray;

@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "editor/plugins/gizmos/gizmo_3d_helper.h"
-#include "editor/plugins/node_3d_editor_gizmos.h"
+#include "gizmo_3d_helper.h"
+#include "../node_3d_editor_gizmos.h"
 
 class Particles3DEmissionShapeGizmoPlugin : public EditorNode3DGizmoPlugin {
 	GDCLASS(Particles3DEmissionShapeGizmoPlugin, EditorNode3DGizmoPlugin);

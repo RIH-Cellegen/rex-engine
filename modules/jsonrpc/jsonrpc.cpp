@@ -33,7 +33,7 @@
 #include "jsonrpc.h"
 #include "jsonrpc.compat.inc"
 
-#include "core/io/json.h"
+#include "../../core/io/json.h"
 
 JSONRPC::JSONRPC() {
 }

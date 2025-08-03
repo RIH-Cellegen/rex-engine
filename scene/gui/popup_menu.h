@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/input/shortcut.h"
-#include "scene/gui/popup.h"
-#include "scene/gui/scroll_container.h"
-#include "scene/property_list_helper.h"
-#include "scene/resources/text_line.h"
+#include "../../core/input/shortcut.h"
+#include "popup.h"
+#include "scroll_container.h"
+#include "../property_list_helper.h"
+#include "../resources/text_line.h"
 
 class PanelContainer;
 

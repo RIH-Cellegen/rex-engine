@@ -32,21 +32,21 @@
 
 #include "tile_map_layer.h"
 
-#include "core/io/marshalls.h"
-#include "core/math/geometry_2d.h"
-#include "core/math/random_pcg.h"
-#include "core/templates/a_hash_map.h"
-#include "scene/2d/tile_map.h"
-#include "scene/gui/control.h"
-#include "scene/resources/2d/navigation_mesh_source_geometry_data_2d.h"
-#include "scene/resources/world_2d.h"
+#include "../../core/io/marshalls.h"
+#include "../../core/math/geometry_2d.h"
+#include "../../core/math/random_pcg.h"
+#include "../../core/templates/a_hash_map.h"
+#include "tile_map.h"
+#include "../gui/control.h"
+#include "../resources/2d/navigation_mesh_source_geometry_data_2d.h"
+#include "../resources/world_2d.h"
 
 #ifndef PHYSICS_2D_DISABLED
-#include "servers/physics_server_2d.h"
+#include "../../servers/physics_server_2d.h"
 #endif // PHYSICS_3D_DISABLED
 
 #ifndef NAVIGATION_2D_DISABLED
-#include "servers/navigation_server_2d.h"
+#include "../../servers/navigation_server_2d.h"
 Callable TileMapLayer::_navmesh_source_geometry_parsing_callback;
 RID TileMapLayer::_navmesh_source_geometry_parser;
 #endif // NAVIGATION_2D_DISABLED

@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "servers/xr/xr_interface.h"
-#include "servers/xr/xr_positional_tracker.h"
-#include "servers/xr/xr_vrs.h"
+#include "../../servers/xr/xr_interface.h"
+#include "../../servers/xr/xr_positional_tracker.h"
+#include "../../servers/xr/xr_vrs.h"
 
 /**
 	The mobile interface is a native VR interface that can be used on Android and iOS phones.

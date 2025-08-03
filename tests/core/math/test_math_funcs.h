@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestMath {
 

@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/string/string_builder.h"
-#include "core/templates/safe_refcount.h"
-#include "scene/gui/control.h"
-#include "scene/resources/shader.h"
+#include "../../core/string/string_builder.h"
+#include "../../core/templates/safe_refcount.h"
+#include "../gui/control.h"
+#include "shader.h"
 
 class VisualShaderNodeParameter;
 class VisualShaderNode;

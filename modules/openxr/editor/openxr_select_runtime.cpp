@@ -32,9 +32,9 @@
 
 #include "openxr_select_runtime.h"
 
-#include "core/io/dir_access.h"
-#include "core/os/os.h"
-#include "editor/editor_settings.h"
+#include "../../../core/io/dir_access.h"
+#include "../../../core/os/os.h"
+#include "../../../editor/editor_settings.h"
 
 void OpenXRSelectRuntime::_update_items() {
 	Ref<DirAccess> da = DirAccess::create(DirAccess::ACCESS_FILESYSTEM);

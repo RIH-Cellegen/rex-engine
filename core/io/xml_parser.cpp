@@ -32,7 +32,7 @@
 
 #include "xml_parser.h"
 
-#include "core/io/file_access.h"
+#include "file_access.h"
 
 //#define DEBUG_XML
 

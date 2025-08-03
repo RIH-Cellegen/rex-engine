@@ -34,7 +34,7 @@
 
 #include "../gltf_defines.h"
 
-#include "core/io/resource.h"
+#include "../../../core/io/resource.h"
 
 class GLTFBufferView : public Resource {
 	GDCLASS(GLTFBufferView, Resource);

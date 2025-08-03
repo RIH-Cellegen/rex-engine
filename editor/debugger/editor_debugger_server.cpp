@@ -32,11 +32,11 @@
 
 #include "editor_debugger_server.h"
 
-#include "core/io/tcp_server.h"
-#include "core/os/thread.h"
-#include "editor/editor_log.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
+#include "../../core/io/tcp_server.h"
+#include "../../core/os/thread.h"
+#include "../editor_log.h"
+#include "../editor_node.h"
+#include "../editor_settings.h"
 
 class EditorDebuggerServerTCP : public EditorDebuggerServer {
 private:

@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/templates/hashfuncs.h"
-#include "core/typedefs.h"
+#include "hashfuncs.h"
+#include "../typedefs.h"
 template <typename F, typename S>
 struct Pair {
 	F first;

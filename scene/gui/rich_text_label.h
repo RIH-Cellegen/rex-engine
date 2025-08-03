@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/object/worker_thread_pool.h"
-#include "core/templates/rid_owner.h"
-#include "scene/gui/popup_menu.h"
-#include "scene/gui/scroll_bar.h"
-#include "scene/resources/text_paragraph.h"
+#include "../../core/object/worker_thread_pool.h"
+#include "../../core/templates/rid_owner.h"
+#include "popup_menu.h"
+#include "scroll_bar.h"
+#include "../resources/text_paragraph.h"
 
 class CharFXTransform;
 class RichTextEffect;

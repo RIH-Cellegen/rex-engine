@@ -35,7 +35,7 @@
 #include "../nav_utils_2d.h"
 #include "nav_base_iteration_2d.h"
 
-#include "core/math/rect2.h"
+#include "../../../core/math/rect2.h"
 
 struct NavRegionIteration2D : NavBaseIteration2D {
 	Transform2D transform;

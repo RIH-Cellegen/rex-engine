@@ -35,10 +35,10 @@
 #include "dir_access_windows.h"
 #include "file_access_windows.h"
 
-#include "core/config/project_settings.h"
-#include "core/os/memory.h"
-#include "core/os/os.h"
-#include "core/string/print_string.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/os/memory.h"
+#include "../../core/os/os.h"
+#include "../../core/string/print_string.h"
 
 #include <stdio.h>
 #include <wchar.h>

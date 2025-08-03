@@ -32,11 +32,11 @@
 
 #include "material.h"
 
-#include "core/config/engine.h"
-#include "core/config/project_settings.h"
-#include "core/error/error_macros.h"
-#include "core/version.h"
-#include "scene/main/scene_tree.h"
+#include "../../core/config/engine.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/error/error_macros.h"
+#include "../../core/version.h"
+#include "../main/scene_tree.h"
 
 void Material::set_next_pass(const Ref<Material> &p_pass) {
 	for (Ref<Material> pass_child = p_pass; pass_child.is_valid(); pass_child = pass_child->get_next_pass()) {

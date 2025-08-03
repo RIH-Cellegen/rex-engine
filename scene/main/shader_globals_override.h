@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/main/node.h"
+#include "node.h"
 
 class ShaderGlobalsOverride : public Node {
 	GDCLASS(ShaderGlobalsOverride, Node);

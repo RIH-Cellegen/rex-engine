@@ -32,10 +32,10 @@
 
 #include "class_db.h"
 
-#include "core/config/engine.h"
-#include "core/io/resource_loader.h"
-#include "core/object/script_language.h"
-#include "core/version.h"
+#include "../config/engine.h"
+#include "../io/resource_loader.h"
+#include "script_language.h"
+#include "../version.h"
 
 #ifdef DEBUG_METHODS_ENABLED
 

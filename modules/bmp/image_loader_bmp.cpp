@@ -32,7 +32,7 @@
 
 #include "image_loader_bmp.h"
 
-#include "core/io/file_access_memory.h"
+#include "../../core/io/file_access_memory.h"
 
 static uint8_t get_mask_width(uint16_t mask) {
 	// Returns number of ones in the binary value of the parameter: mask.

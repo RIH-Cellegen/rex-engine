@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/extension/gdextension_interface.h"
-#include "core/extension/gdextension_loader.h"
-#include "core/io/config_file.h"
-#include "core/io/resource_loader.h"
-#include "core/object/ref_counted.h"
+#include "gdextension_interface.h"
+#include "gdextension_loader.h"
+#include "../io/config_file.h"
+#include "../io/resource_loader.h"
+#include "../object/ref_counted.h"
 
 class GDExtensionMethodBind;
 

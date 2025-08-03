@@ -32,7 +32,7 @@
 
 #include "gradient_texture.h"
 
-#include "core/math/geometry_2d.h"
+#include "../../core/math/geometry_2d.h"
 
 GradientTexture1D::GradientTexture1D() {
 	_queue_update();

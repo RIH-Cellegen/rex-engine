@@ -32,12 +32,12 @@
 
 #include "import_defaults_editor.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/resource_importer.h"
-#include "editor/action_map_editor.h"
-#include "editor/editor_inspector.h"
-#include "editor/editor_sectioned_inspector.h"
-#include "scene/gui/center_container.h"
+#include "../core/config/project_settings.h"
+#include "../core/io/resource_importer.h"
+#include "action_map_editor.h"
+#include "editor_inspector.h"
+#include "editor_sectioned_inspector.h"
+#include "../scene/gui/center_container.h"
 
 class ImportDefaultsEditorSettings : public Object {
 	GDCLASS(ImportDefaultsEditorSettings, Object)

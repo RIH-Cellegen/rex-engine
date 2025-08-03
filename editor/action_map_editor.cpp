@@ -30,16 +30,16 @@
 /* SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                 */
 /**************************************************************************/
 
-#include "editor/action_map_editor.h"
+#include "action_map_editor.h"
 
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/event_listener_line_edit.h"
-#include "editor/input_event_configuration_dialog.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/check_button.h"
-#include "scene/gui/separator.h"
-#include "scene/gui/tree.h"
+#include "editor_settings.h"
+#include "editor_string_names.h"
+#include "event_listener_line_edit.h"
+#include "input_event_configuration_dialog.h"
+#include "themes/editor_scale.h"
+#include "../scene/gui/check_button.h"
+#include "../scene/gui/separator.h"
+#include "../scene/gui/tree.h"
 
 static bool _is_action_name_valid(const String &p_name) {
 	const char32_t *cstr = p_name.get_data();

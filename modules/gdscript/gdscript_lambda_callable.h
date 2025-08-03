@@ -34,10 +34,10 @@
 
 #include "gdscript.h"
 
-#include "core/object/ref_counted.h"
-#include "core/templates/vector.h"
-#include "core/variant/callable.h"
-#include "core/variant/variant.h"
+#include "../../core/object/ref_counted.h"
+#include "../../core/templates/vector.h"
+#include "../../core/variant/callable.h"
+#include "../../core/variant/variant.h"
 
 class GDScriptFunction;
 class GDScriptInstance;

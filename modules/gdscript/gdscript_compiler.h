@@ -37,7 +37,7 @@
 #include "gdscript_function.h"
 #include "gdscript_parser.h"
 
-#include "core/templates/hash_set.h"
+#include "../../core/templates/hash_set.h"
 
 class GDScriptCompiler {
 	const GDScriptParser *parser = nullptr;

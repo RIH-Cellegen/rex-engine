@@ -32,16 +32,16 @@
 
 #include "plugin_config_dialog.h"
 
-#include "core/io/config_file.h"
-#include "core/io/dir_access.h"
-#include "core/object/script_language.h"
-#include "editor/editor_file_system.h"
-#include "editor/editor_node.h"
-#include "editor/gui/editor_validation_panel.h"
-#include "editor/plugins/editor_plugin.h"
-#include "editor/project_settings_editor.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/grid_container.h"
+#include "../../core/io/config_file.h"
+#include "../../core/io/dir_access.h"
+#include "../../core/object/script_language.h"
+#include "../editor_file_system.h"
+#include "../editor_node.h"
+#include "../gui/editor_validation_panel.h"
+#include "editor_plugin.h"
+#include "../project_settings_editor.h"
+#include "../themes/editor_scale.h"
+#include "../../scene/gui/grid_container.h"
 
 void PluginConfigDialog::_clear_fields() {
 	name_edit->set_text("");

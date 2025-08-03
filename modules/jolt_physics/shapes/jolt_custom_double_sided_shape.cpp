@@ -34,10 +34,10 @@
 
 #include "../jolt_project_settings.h"
 
-#include "core/error/error_macros.h"
+#include "../../../core/error/error_macros.h"
 
-#include "Jolt/Physics/Collision/CollisionDispatch.h"
-#include "Jolt/Physics/Collision/RayCast.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/CollisionDispatch.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/RayCast.h"
 
 namespace {
 

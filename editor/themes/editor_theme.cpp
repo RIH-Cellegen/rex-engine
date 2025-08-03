@@ -32,8 +32,8 @@
 
 #include "editor_theme.h"
 
-#include "editor/editor_string_names.h"
-#include "scene/theme/theme_db.h"
+#include "../editor_string_names.h"
+#include "../../scene/theme/theme_db.h"
 
 Vector<StringName> EditorTheme::editor_theme_types;
 

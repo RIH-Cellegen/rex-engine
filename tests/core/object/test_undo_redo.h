@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/object/undo_redo.h"
-#include "tests/test_macros.h"
+#include "../../../core/object/undo_redo.h"
+#include "../../test_macros.h"
 
 // Declared in global namespace because of GDCLASS macro warning (Windows):
 // "Unqualified friend declaration referring to type outside of the nearest enclosing namespace

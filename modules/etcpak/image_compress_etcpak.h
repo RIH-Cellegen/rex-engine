@@ -34,7 +34,7 @@
 
 #ifdef TOOLS_ENABLED
 
-#include "core/io/image.h"
+#include "../../core/io/image.h"
 
 enum class EtcpakType {
 	ETCPAK_TYPE_ETC1,

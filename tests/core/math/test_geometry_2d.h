@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/math/geometry_2d.h"
+#include "../../../core/math/geometry_2d.h"
 
-#include "thirdparty/doctest/doctest.h"
+#include "../../../thirdparty/doctest/doctest.h"
 
 namespace TestGeometry2D {
 

@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/variant/array.h"
-#include "tests/test_macros.h"
-#include "tests/test_tools.h"
+#include "../../../core/variant/array.h"
+#include "../../test_macros.h"
+#include "../../test_tools.h"
 
 namespace TestArray {
 

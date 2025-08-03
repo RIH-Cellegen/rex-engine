@@ -32,7 +32,7 @@
 
 #include "canvas_item_material.h"
 
-#include "core/version.h"
+#include "../../core/version.h"
 
 Mutex CanvasItemMaterial::material_mutex;
 SelfList<CanvasItemMaterial>::List CanvasItemMaterial::dirty_materials;

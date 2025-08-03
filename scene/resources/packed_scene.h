@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/io/resource.h"
-#include "scene/main/node.h"
+#include "../../core/io/resource.h"
+#include "../main/node.h"
 
 class SceneState : public RefCounted {
 	GDCLASS(SceneState, RefCounted);

@@ -34,8 +34,8 @@
 
 #include "jni_utils.h"
 
-#include "core/math/rect2i.h"
-#include "core/variant/typed_array.h"
+#include "../../core/math/rect2i.h"
+#include "../../core/variant/typed_array.h"
 
 #include <android/log.h>
 #include <jni.h>

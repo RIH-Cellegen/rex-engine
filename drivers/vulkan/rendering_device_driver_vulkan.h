@@ -32,19 +32,19 @@
 
 #pragma once
 
-#include "core/templates/hash_map.h"
-#include "core/templates/paged_allocator.h"
-#include "drivers/vulkan/rendering_context_driver_vulkan.h"
-#include "servers/rendering/rendering_device_driver.h"
+#include "../../core/templates/hash_map.h"
+#include "../../core/templates/paged_allocator.h"
+#include "rendering_context_driver_vulkan.h"
+#include "../../servers/rendering/rendering_device_driver.h"
 
 #ifdef DEBUG_ENABLED
 #ifndef _MSC_VER
 #define _DEBUG
 #endif
 #endif
-#include "thirdparty/vulkan/vk_mem_alloc.h"
+#include "../../thirdparty/vulkan/vk_mem_alloc.h"
 
-#include "drivers/vulkan/godot_vulkan.h"
+#include "godot_vulkan.h"
 
 // Design principles:
 // - Vulkan structs are zero-initialized and fields not requiring a non-zero value are omitted (except in cases where expresivity reasons apply).

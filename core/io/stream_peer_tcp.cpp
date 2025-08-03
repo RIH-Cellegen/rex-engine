@@ -32,7 +32,7 @@
 
 #include "stream_peer_tcp.h"
 
-#include "core/config/project_settings.h"
+#include "../config/project_settings.h"
 
 Error StreamPeerTCP::poll() {
 	if (status == STATUS_CONNECTED) {

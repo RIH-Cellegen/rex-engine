@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/variant/binder_common.h"
+#include "../variant/binder_common.h"
 
 VARIANT_BITFIELD_CAST(MethodFlags)
 

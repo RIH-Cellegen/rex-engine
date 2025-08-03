@@ -32,9 +32,9 @@
 
 #include "marker_3d_gizmo_plugin.h"
 
-#include "editor/editor_node.h"
-#include "editor/editor_string_names.h"
-#include "scene/3d/marker_3d.h"
+#include "../../editor_node.h"
+#include "../../editor_string_names.h"
+#include "../../../scene/3d/marker_3d.h"
 
 Marker3DGizmoPlugin::Marker3DGizmoPlugin() {
 	pos3d_mesh.instantiate();

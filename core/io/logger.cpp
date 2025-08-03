@@ -32,10 +32,10 @@
 
 #include "logger.h"
 
-#include "core/core_globals.h"
-#include "core/io/dir_access.h"
-#include "core/os/time.h"
-#include "core/templates/rb_set.h"
+#include "../core_globals.h"
+#include "dir_access.h"
+#include "../os/time.h"
+#include "../templates/rb_set.h"
 
 #include "modules/modules_enabled.gen.h" // For regex.
 

@@ -34,7 +34,7 @@
 
 #ifdef TOOLS_ENABLED
 
-#include "core/math/static_raycaster.h"
+#include "../../core/math/static_raycaster.h"
 
 #include <embree4/rtcore.h>
 

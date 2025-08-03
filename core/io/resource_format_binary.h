@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/io/file_access.h"
-#include "core/io/resource_loader.h"
-#include "core/io/resource_saver.h"
+#include "file_access.h"
+#include "resource_loader.h"
+#include "resource_saver.h"
 
 class ResourceLoaderBinary {
 	bool translation_remapped = false;

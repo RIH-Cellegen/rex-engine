@@ -37,24 +37,24 @@
 #include "key_mapping_windows.h"
 #include "tts_windows.h"
 
-#include "core/config/project_settings.h"
-#include "core/input/input.h"
-#include "core/io/image.h"
-#include "core/os/os.h"
-#include "drivers/wasapi/audio_driver_wasapi.h"
-#include "drivers/winmidi/midi_driver_winmidi.h"
-#include "servers/audio_server.h"
-#include "servers/display_server.h"
-#include "servers/rendering/renderer_compositor.h"
-#include "servers/rendering/renderer_rd/renderer_compositor_rd.h"
-#include "servers/rendering_server.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/input/input.h"
+#include "../../core/io/image.h"
+#include "../../core/os/os.h"
+#include "../../drivers/wasapi/audio_driver_wasapi.h"
+#include "../../drivers/winmidi/midi_driver_winmidi.h"
+#include "../../servers/audio_server.h"
+#include "../../servers/display_server.h"
+#include "../../servers/rendering/renderer_compositor.h"
+#include "../../servers/rendering/renderer_rd/renderer_compositor_rd.h"
+#include "../../servers/rendering_server.h"
 
 #ifdef XAUDIO2_ENABLED
-#include "drivers/xaudio2/audio_driver_xaudio2.h"
+#include "../../drivers/xaudio2/audio_driver_xaudio2.h"
 #endif
 
 #if defined(RD_ENABLED)
-#include "servers/rendering/rendering_device.h"
+#include "../../servers/rendering/rendering_device.h"
 #endif
 
 #if defined(GLES3_ENABLED)

@@ -36,18 +36,18 @@
 
 #include "joypad_linux.h"
 
-#include "core/input/input.h"
-#include "core/os/mutex.h"
-#include "core/os/thread.h"
-#include "core/templates/local_vector.h"
-#include "drivers/alsa/audio_driver_alsa.h"
-#include "drivers/alsamidi/midi_driver_alsamidi.h"
-#include "drivers/pulseaudio/audio_driver_pulseaudio.h"
-#include "drivers/unix/os_unix.h"
-#include "servers/audio_server.h"
-#include "servers/display_server.h"
-#include "servers/rendering/renderer_compositor.h"
-#include "servers/rendering_server.h"
+#include "../../../core/input/input.h"
+#include "../../../core/os/mutex.h"
+#include "../../../core/os/thread.h"
+#include "../../../core/templates/local_vector.h"
+#include "../../../drivers/alsa/audio_driver_alsa.h"
+#include "../../../drivers/alsamidi/midi_driver_alsamidi.h"
+#include "../../../drivers/pulseaudio/audio_driver_pulseaudio.h"
+#include "../../../drivers/unix/os_unix.h"
+#include "../../../servers/audio_server.h"
+#include "../../../servers/display_server.h"
+#include "../../../servers/rendering/renderer_compositor.h"
+#include "../../../servers/rendering_server.h"
 
 #if defined(SPEECHD_ENABLED)
 #include "tts_linux.h"
@@ -59,7 +59,7 @@
 #endif
 
 #if defined(RD_ENABLED)
-#include "servers/rendering/rendering_device.h"
+#include "../../../servers/rendering/rendering_device.h"
 
 #if defined(VULKAN_ENABLED)
 #include "x11/rendering_context_driver_vulkan_x11.h"

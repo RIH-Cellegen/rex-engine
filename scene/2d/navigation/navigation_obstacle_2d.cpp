@@ -32,11 +32,11 @@
 
 #include "navigation_obstacle_2d.h"
 
-#include "core/math/geometry_2d.h"
-#include "scene/resources/2d/navigation_mesh_source_geometry_data_2d.h"
-#include "scene/resources/2d/navigation_polygon.h"
-#include "scene/resources/world_2d.h"
-#include "servers/navigation_server_2d.h"
+#include "../../../core/math/geometry_2d.h"
+#include "../../resources/2d/navigation_mesh_source_geometry_data_2d.h"
+#include "../../resources/2d/navigation_polygon.h"
+#include "../../resources/world_2d.h"
+#include "../../../servers/navigation_server_2d.h"
 
 Callable NavigationObstacle2D::_navmesh_source_geometry_parsing_callback;
 RID NavigationObstacle2D::_navmesh_source_geometry_parser;

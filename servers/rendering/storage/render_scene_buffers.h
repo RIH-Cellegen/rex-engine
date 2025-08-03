@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/object/ref_counted.h"
-#include "servers/rendering_server.h"
+#include "../../../core/object/ref_counted.h"
+#include "../../rendering_server.h"
 
 class RenderSceneBuffersConfiguration : public RefCounted {
 	GDCLASS(RenderSceneBuffersConfiguration, RefCounted);

@@ -32,10 +32,10 @@
 
 #include "image_compress_basisu.h"
 
-#include "core/io/image.h"
-#include "core/os/os.h"
-#include "core/string/print_string.h"
-#include "servers/rendering_server.h"
+#include "../../core/io/image.h"
+#include "../../core/os/os.h"
+#include "../../core/string/print_string.h"
+#include "../../servers/rendering_server.h"
 
 #include <transcoder/basisu_transcoder.h>
 #ifdef TOOLS_ENABLED

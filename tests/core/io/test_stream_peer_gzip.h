@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/io/stream_peer_gzip.h"
-#include "tests/test_macros.h"
+#include "../../../core/io/stream_peer_gzip.h"
+#include "../../test_macros.h"
 
 namespace TestStreamPeerGZIP {
 

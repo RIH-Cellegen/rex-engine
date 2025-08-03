@@ -35,8 +35,8 @@
 #include "nav_base_2d.h"
 #include "nav_utils_2d.h"
 
-#include "core/os/rw_lock.h"
-#include "scene/resources/2d/navigation_polygon.h"
+#include "../../core/os/rw_lock.h"
+#include "../../scene/resources/2d/navigation_polygon.h"
 
 struct NavRegionIteration2D;
 

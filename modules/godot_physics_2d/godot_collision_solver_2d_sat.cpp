@@ -32,7 +32,7 @@
 
 #include "godot_collision_solver_2d_sat.h"
 
-#include "core/math/geometry_2d.h"
+#include "../../core/math/geometry_2d.h"
 
 struct _CollectorCallback2D {
 	GodotCollisionSolver2D::CallbackResult callback = nullptr;

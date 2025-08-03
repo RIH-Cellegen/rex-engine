@@ -34,7 +34,7 @@
 
 #include "../gdscript_parser.h"
 
-#include "core/doc_data.h"
+#include "../../../core/doc_data.h"
 
 class GDScriptDocGen {
 	using GDP = GDScriptParser;

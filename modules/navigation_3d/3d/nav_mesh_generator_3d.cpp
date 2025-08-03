@@ -32,11 +32,11 @@
 
 #include "nav_mesh_generator_3d.h"
 
-#include "core/config/project_settings.h"
-#include "core/os/thread.h"
-#include "scene/3d/node_3d.h"
-#include "scene/resources/3d/navigation_mesh_source_geometry_data_3d.h"
-#include "scene/resources/navigation_mesh.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../core/os/thread.h"
+#include "../../../scene/3d/node_3d.h"
+#include "../../../scene/resources/3d/navigation_mesh_source_geometry_data_3d.h"
+#include "../../../scene/resources/navigation_mesh.h"
 
 #include <Recast.h>
 

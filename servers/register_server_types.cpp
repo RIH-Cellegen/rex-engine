@@ -32,8 +32,8 @@
 
 #include "register_server_types.h"
 
-#include "core/config/engine.h"
-#include "core/config/project_settings.h"
+#include "../core/config/engine.h"
+#include "../core/config/project_settings.h"
 
 #include "audio/audio_effect.h"
 #include "audio/audio_stream.h"
@@ -76,7 +76,7 @@
 #include "rendering/storage/render_scene_buffers.h"
 #include "rendering/storage/render_scene_data.h"
 #include "rendering_server.h"
-#include "servers/rendering/shader_types.h"
+#include "rendering/shader_types.h"
 #include "text/text_server_dummy.h"
 #include "text/text_server_extension.h"
 #include "text_server.h"
@@ -88,7 +88,7 @@
 #ifndef PHYSICS_2D_DISABLED
 #include "physics_server_2d.h"
 #include "physics_server_2d_dummy.h"
-#include "servers/extensions/physics_server_2d_extension.h"
+#include "extensions/physics_server_2d_extension.h"
 #endif // PHYSICS_2D_DISABLED
 
 // 3D physics and navigation.
@@ -98,7 +98,7 @@
 #ifndef PHYSICS_3D_DISABLED
 #include "physics_server_3d.h"
 #include "physics_server_3d_dummy.h"
-#include "servers/extensions/physics_server_3d_extension.h"
+#include "extensions/physics_server_3d_extension.h"
 #endif // PHYSICS_3D_DISABLED
 #ifndef XR_DISABLED
 #include "xr/xr_body_tracker.h"

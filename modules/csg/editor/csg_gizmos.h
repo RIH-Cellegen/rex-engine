@@ -34,9 +34,9 @@
 
 #include "../csg_shape.h"
 
-#include "editor/plugins/editor_plugin.h"
-#include "editor/plugins/node_3d_editor_gizmos.h"
-#include "scene/gui/control.h"
+#include "../../../editor/plugins/editor_plugin.h"
+#include "../../../editor/plugins/node_3d_editor_gizmos.h"
+#include "../../../scene/gui/control.h"
 
 class AcceptDialog;
 class Gizmo3DHelper;

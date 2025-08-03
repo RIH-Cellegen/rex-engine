@@ -32,15 +32,15 @@
 
 #pragma once
 
-#include "core/io/config_file.h"
-#include "core/io/resource_importer.h"
-#include "editor/editor_file_system.h"
-#include "editor/editor_inspector.h"
-#include "scene/gui/box_container.h"
-#include "scene/gui/dialogs.h"
-#include "scene/gui/menu_button.h"
-#include "scene/gui/option_button.h"
-#include "scene/gui/popup_menu.h"
+#include "../core/io/config_file.h"
+#include "../core/io/resource_importer.h"
+#include "editor_file_system.h"
+#include "editor_inspector.h"
+#include "../scene/gui/box_container.h"
+#include "../scene/gui/dialogs.h"
+#include "../scene/gui/menu_button.h"
+#include "../scene/gui/option_button.h"
+#include "../scene/gui/popup_menu.h"
 
 class ImportDockParameters;
 class ImportDock : public VBoxContainer {

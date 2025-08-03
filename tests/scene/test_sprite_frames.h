@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/resources/sprite_frames.h"
+#include "../../scene/resources/sprite_frames.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestSpriteFrames {
 const String test_animation_name = "RedotTest";

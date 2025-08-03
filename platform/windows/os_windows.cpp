@@ -38,20 +38,20 @@
 #include "windows_terminal_logger.h"
 #include "windows_utils.h"
 
-#include "core/debugger/engine_debugger.h"
-#include "core/debugger/script_debugger.h"
-#include "core/io/marshalls.h"
-#include "core/version_generated.gen.h"
-#include "drivers/windows/dir_access_windows.h"
-#include "drivers/windows/file_access_windows.h"
-#include "drivers/windows/file_access_windows_pipe.h"
-#include "drivers/windows/ip_windows.h"
-#include "drivers/windows/net_socket_winsock.h"
-#include "drivers/windows/thread_windows.h"
-#include "main/main.h"
-#include "servers/audio_server.h"
-#include "servers/rendering/rendering_server_default.h"
-#include "servers/text_server.h"
+#include "../../core/debugger/engine_debugger.h"
+#include "../../core/debugger/script_debugger.h"
+#include "../../core/io/marshalls.h"
+#include "../../core/version_generated.gen.h"
+#include "../../drivers/windows/dir_access_windows.h"
+#include "../../drivers/windows/file_access_windows.h"
+#include "../../drivers/windows/file_access_windows_pipe.h"
+#include "../../drivers/windows/ip_windows.h"
+#include "../../drivers/windows/net_socket_winsock.h"
+#include "../../drivers/windows/thread_windows.h"
+#include "../../main/main.h"
+#include "../../servers/audio_server.h"
+#include "../../servers/rendering/rendering_server_default.h"
+#include "../../servers/text_server.h"
 
 #include <avrt.h>
 #include <bcrypt.h>
@@ -65,7 +65,7 @@
 #include <wincrypt.h>
 
 #if defined(RD_ENABLED)
-#include "servers/rendering/rendering_device.h"
+#include "../../servers/rendering/rendering_device.h"
 #endif
 
 #if defined(GLES3_ENABLED)
@@ -76,10 +76,10 @@
 #include "rendering_context_driver_vulkan_windows.h"
 #endif
 #if defined(D3D12_ENABLED)
-#include "drivers/d3d12/rendering_context_driver_d3d12.h"
+#include "../../drivers/d3d12/rendering_context_driver_d3d12.h"
 #endif
 #if defined(GLES3_ENABLED)
-#include "drivers/gles3/rasterizer_gles3.h"
+#include "../../drivers/gles3/rasterizer_gles3.h"
 #endif
 
 #ifdef DEBUG_ENABLED

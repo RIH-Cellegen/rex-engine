@@ -32,8 +32,8 @@
 
 #import "key_mapping_macos.h"
 
-#include "core/templates/hash_map.h"
-#include "core/templates/hash_set.h"
+#include "../../../core/templates/hash_map.h"
+#include "../../../core/templates/hash_set.h"
 
 #import <Carbon/Carbon.h>
 #import <Cocoa/Cocoa.h>

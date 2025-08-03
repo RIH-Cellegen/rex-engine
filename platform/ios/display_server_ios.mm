@@ -42,8 +42,8 @@
 #import "tts_ios.h"
 #import "view_controller.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/file_access_pack.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/io/file_access_pack.h"
 
 #import <sys/utsname.h>
 

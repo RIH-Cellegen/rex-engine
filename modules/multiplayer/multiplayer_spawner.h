@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/templates/local_vector.h"
-#include "scene/main/node.h"
-#include "scene/resources/packed_scene.h"
+#include "../../core/templates/local_vector.h"
+#include "../../scene/main/node.h"
+#include "../../scene/resources/packed_scene.h"
 
 class MultiplayerSpawner : public Node {
 	GDCLASS(MultiplayerSpawner, Node);

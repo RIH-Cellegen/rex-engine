@@ -32,9 +32,9 @@
 
 #include "shape_3d.h"
 
-#include "scene/main/scene_tree.h"
-#include "scene/resources/mesh.h"
-#include "servers/physics_server_3d.h"
+#include "../../main/scene_tree.h"
+#include "../mesh.h"
+#include "../../../servers/physics_server_3d.h"
 
 void Shape3D::add_vertices_to_array(Vector<Vector3> &array, const Transform3D &p_xform) {
 	Vector<Vector3> toadd = get_debug_mesh_lines();

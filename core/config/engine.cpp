@@ -32,14 +32,14 @@
 
 #include "engine.h"
 
-#include "core/authors.gen.h"
-#include "core/config/project_settings.h"
-#include "core/donors.gen.h"
-#include "core/license.gen.h"
-#include "core/redot_authors.gen.h"
-#include "core/variant/typed_array.h"
-#include "core/version.h"
-#include "servers/rendering/rendering_device.h"
+#include "../authors.gen.h"
+#include "project_settings.h"
+#include "../donors.gen.h"
+#include "../license.gen.h"
+#include "../redot_authors.gen.h"
+#include "../variant/typed_array.h"
+#include "../version.h"
+#include "../../servers/rendering/rendering_device.h"
 
 void Engine::set_physics_ticks_per_second(int p_ips) {
 	ERR_FAIL_COND_MSG(p_ips <= 0, "Engine iterations per second must be greater than 0.");

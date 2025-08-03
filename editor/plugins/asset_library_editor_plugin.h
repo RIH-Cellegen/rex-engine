@@ -32,21 +32,21 @@
 
 #pragma once
 
-#include "editor/editor_asset_installer.h"
-#include "editor/plugins/editor_plugin.h"
-#include "scene/gui/box_container.h"
-#include "scene/gui/grid_container.h"
-#include "scene/gui/line_edit.h"
-#include "scene/gui/link_button.h"
-#include "scene/gui/margin_container.h"
-#include "scene/gui/option_button.h"
-#include "scene/gui/panel_container.h"
-#include "scene/gui/progress_bar.h"
-#include "scene/gui/rich_text_label.h"
-#include "scene/gui/scroll_container.h"
-#include "scene/gui/texture_button.h"
-#include "scene/gui/texture_rect.h"
-#include "scene/main/http_request.h"
+#include "../editor_asset_installer.h"
+#include "editor_plugin.h"
+#include "../../scene/gui/box_container.h"
+#include "../../scene/gui/grid_container.h"
+#include "../../scene/gui/line_edit.h"
+#include "../../scene/gui/link_button.h"
+#include "../../scene/gui/margin_container.h"
+#include "../../scene/gui/option_button.h"
+#include "../../scene/gui/panel_container.h"
+#include "../../scene/gui/progress_bar.h"
+#include "../../scene/gui/rich_text_label.h"
+#include "../../scene/gui/scroll_container.h"
+#include "../../scene/gui/texture_button.h"
+#include "../../scene/gui/texture_rect.h"
+#include "../../scene/main/http_request.h"
 
 class EditorFileDialog;
 class MenuButton;

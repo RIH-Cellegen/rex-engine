@@ -32,8 +32,8 @@
 
 #include "websocket_multiplayer_peer.h"
 
-#include "core/io/stream_peer_tls.h"
-#include "core/os/os.h"
+#include "../../core/io/stream_peer_tls.h"
+#include "../../core/os/os.h"
 
 WebSocketMultiplayerPeer::WebSocketMultiplayerPeer() {
 	peer_config = Ref<WebSocketPeer>(WebSocketPeer::create());

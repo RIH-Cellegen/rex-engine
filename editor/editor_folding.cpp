@@ -32,10 +32,10 @@
 
 #include "editor_folding.h"
 
-#include "core/io/config_file.h"
-#include "core/io/file_access.h"
-#include "editor/editor_inspector.h"
-#include "editor/editor_paths.h"
+#include "../core/io/config_file.h"
+#include "../core/io/file_access.h"
+#include "editor_inspector.h"
+#include "editor_paths.h"
 
 Vector<String> EditorFolding::_get_unfolds(const Object *p_object) {
 	Vector<String> sections;

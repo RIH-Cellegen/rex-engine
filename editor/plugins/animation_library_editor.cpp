@@ -32,18 +32,18 @@
 
 #include "animation_library_editor.h"
 
-#include "core/string/print_string.h"
-#include "core/string/ustring.h"
-#include "core/templates/vector.h"
-#include "core/variant/variant.h"
-#include "editor/editor_node.h"
-#include "editor/editor_paths.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/gui/editor_file_dialog.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/animation/animation_mixer.h"
+#include "../../core/string/print_string.h"
+#include "../../core/string/ustring.h"
+#include "../../core/templates/vector.h"
+#include "../../core/variant/variant.h"
+#include "../editor_node.h"
+#include "../editor_paths.h"
+#include "../editor_settings.h"
+#include "../editor_string_names.h"
+#include "../editor_undo_redo_manager.h"
+#include "../gui/editor_file_dialog.h"
+#include "../themes/editor_scale.h"
+#include "../../scene/animation/animation_mixer.h"
 
 void AnimationLibraryEditor::set_animation_mixer(Object *p_mixer) {
 	mixer = Object::cast_to<AnimationMixer>(p_mixer);

@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/2d/path_2d.h"
+#include "../../scene/2d/path_2d.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestPath2D {
 

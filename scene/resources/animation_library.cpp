@@ -32,7 +32,7 @@
 
 #include "animation_library.h"
 
-#include "scene/scene_string_names.h"
+#include "../scene_string_names.h"
 
 bool AnimationLibrary::is_valid_animation_name(const String &p_name) {
 	return !(p_name.is_empty() || p_name.contains_char('/') || p_name.contains_char(':') || p_name.contains_char(',') || p_name.contains_char('['));

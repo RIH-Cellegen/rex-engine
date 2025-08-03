@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/math/aabb.h"
+#include "aabb.h"
 
 // special optimized version of axis aligned bounding box
 template <typename BOUNDS = AABB, typename POINT = Vector3>

@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/debugger/engine_profiler.h"
+#include "../../core/debugger/engine_profiler.h"
 
 class MultiplayerSynchronizer;
 

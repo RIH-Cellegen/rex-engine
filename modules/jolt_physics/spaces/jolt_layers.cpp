@@ -35,8 +35,8 @@
 #include "../jolt_project_settings.h"
 #include "jolt_broad_phase_layer.h"
 
-#include "core/error/error_macros.h"
-#include "core/variant/variant.h"
+#include "../../../core/error/error_macros.h"
+#include "../../../core/variant/variant.h"
 
 static_assert(sizeof(JPH::ObjectLayer) == 2, "Size of Jolt's object layer has changed.");
 static_assert(sizeof(JPH::BroadPhaseLayer::Type) == 1, "Size of Jolt's broadphase layer has changed.");

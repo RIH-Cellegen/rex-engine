@@ -32,9 +32,9 @@
 
 #include "camera_3d.h"
 
-#include "core/math/projection.h"
-#include "core/math/transform_interpolator.h"
-#include "scene/main/viewport.h"
+#include "../../core/math/projection.h"
+#include "../../core/math/transform_interpolator.h"
+#include "../main/viewport.h"
 
 void Camera3D::_update_audio_listener_state() {
 }

@@ -34,9 +34,9 @@
 
 #include "websocket_peer.h"
 
-#include "core/io/tcp_server.h"
-#include "core/templates/list.h"
-#include "scene/main/multiplayer_peer.h"
+#include "../../core/io/tcp_server.h"
+#include "../../core/templates/list.h"
+#include "../../scene/main/multiplayer_peer.h"
 
 class WebSocketMultiplayerPeer : public MultiplayerPeer {
 	GDCLASS(WebSocketMultiplayerPeer, MultiplayerPeer);

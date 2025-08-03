@@ -32,7 +32,7 @@
 
 #include "webp_common.h"
 
-#include "core/config/project_settings.h"
+#include "../../core/config/project_settings.h"
 
 #include <webp/decode.h>
 #include <webp/encode.h>

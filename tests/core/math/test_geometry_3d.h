@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/math/geometry_3d.h"
-#include "tests/test_macros.h"
+#include "../../../core/math/geometry_3d.h"
+#include "../../test_macros.h"
 
 namespace TestGeometry3D {
 TEST_CASE("[Geometry3D] Closest Points Between Segments") {

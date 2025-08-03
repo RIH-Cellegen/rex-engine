@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/os/os.h"
+#include "../../../core/os/os.h"
 
-#include "thirdparty/doctest/doctest.h"
+#include "../../../thirdparty/doctest/doctest.h"
 
 namespace TestOS {
 

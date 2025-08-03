@@ -32,10 +32,10 @@
 
 #include "voxel_gi.h"
 
-#include "core/config/project_settings.h"
+#include "../../core/config/project_settings.h"
 #include "mesh_instance_3d.h"
 #include "multimesh_instance_3d.h"
-#include "scene/resources/camera_attributes.h"
+#include "../resources/camera_attributes.h"
 #include "voxelizer.h"
 
 void VoxelGIData::_set_data(const Dictionary &p_data) {

@@ -34,12 +34,12 @@
 
 #include "crash_handler_macos.h"
 
-#include "core/input/input.h"
-#import "drivers/apple/joypad_apple.h"
-#import "drivers/coreaudio/audio_driver_coreaudio.h"
-#import "drivers/coremidi/midi_driver_coremidi.h"
-#include "drivers/unix/os_unix.h"
-#include "servers/audio_server.h"
+#include "../../../core/input/input.h"
+#import "..../drivers/apple/joypad_apple.h"
+#import "..../drivers/coreaudio/audio_driver_coreaudio.h"
+#import "..../drivers/coremidi/midi_driver_coremidi.h"
+#include "../../../drivers/unix/os_unix.h"
+#include "../../../servers/audio_server.h"
 
 class OS_MacOS : public OS_Unix {
 	const char *execpath = nullptr;

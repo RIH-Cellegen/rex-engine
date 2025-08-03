@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/object/ref_counted.h"
-#include "core/string/string_name.h"
-#include "core/templates/hash_map.h"
+#include "../object/ref_counted.h"
+#include "../string/string_name.h"
+#include "../templates/hash_map.h"
 
 class FileAccess;
 

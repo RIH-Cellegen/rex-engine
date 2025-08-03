@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/math/transform_2d.h"
-#include "core/object/gdvirtual.gen.inc"
-#include "scene/main/canvas_item.h"
-#include "scene/main/timer.h"
-#include "scene/resources/theme.h"
+#include "../../core/math/transform_2d.h"
+#include "../../core/object/gdvirtual.gen.inc"
+#include "../main/canvas_item.h"
+#include "../main/timer.h"
+#include "../resources/theme.h"
 
 class Viewport;
 class Label;

@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/math/vector2.h"
+#include "../../core/math/vector2.h"
 
 struct Triangle2 {
 	Vector2 vertex[3];

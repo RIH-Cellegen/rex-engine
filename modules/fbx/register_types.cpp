@@ -39,8 +39,8 @@
 #include "editor/editor_scene_importer_fbx2gltf.h"
 #include "editor/editor_scene_importer_ufbx.h"
 
-#include "core/config/project_settings.h"
-#include "editor/editor_node.h"
+#include "../../core/config/project_settings.h"
+#include "../../editor/editor_node.h"
 
 static void _editor_init() {
 	Ref<EditorSceneFormatImporterUFBX> import_fbx;

@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/io/ip.h"
-#include "core/object/ref_counted.h"
+#include "ip.h"
+#include "../object/ref_counted.h"
 
 class NetSocket : public RefCounted {
 protected:

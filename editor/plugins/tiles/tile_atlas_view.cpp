@@ -32,13 +32,13 @@
 
 #include "tile_atlas_view.h"
 
-#include "editor/editor_settings.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/2d/tile_map.h"
-#include "scene/gui/box_container.h"
-#include "scene/gui/label.h"
-#include "scene/gui/panel.h"
-#include "scene/gui/view_panner.h"
+#include "../../editor_settings.h"
+#include "../../themes/editor_scale.h"
+#include "../../../scene/2d/tile_map.h"
+#include "../../../scene/gui/box_container.h"
+#include "../../../scene/gui/label.h"
+#include "../../../scene/gui/panel.h"
+#include "../../../scene/gui/view_panner.h"
 
 void TileAtlasView::gui_input(const Ref<InputEvent> &p_event) {
 	if (panner->gui_input(p_event, get_global_rect())) {

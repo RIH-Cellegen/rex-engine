@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/main/node.h"
-#include "servers/audio_server.h"
+#include "../main/node.h"
+#include "../../servers/audio_server.h"
 
 struct AudioFrame;
 class AudioStream;

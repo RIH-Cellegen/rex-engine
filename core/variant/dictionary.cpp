@@ -32,15 +32,15 @@
 
 #include "dictionary.h"
 
-#include "core/templates/hash_map.h"
-#include "core/templates/safe_refcount.h"
-#include "core/variant/container_type_validate.h"
-#include "core/variant/variant.h"
+#include "../templates/hash_map.h"
+#include "../templates/safe_refcount.h"
+#include "container_type_validate.h"
+#include "variant.h"
 // required in this order by VariantInternal, do not remove this comment.
-#include "core/object/class_db.h"
-#include "core/object/object.h"
-#include "core/variant/type_info.h"
-#include "core/variant/variant_internal.h"
+#include "../object/class_db.h"
+#include "../object/object.h"
+#include "type_info.h"
+#include "variant_internal.h"
 
 struct DictionaryPrivate {
 	SafeRefCount refcount;

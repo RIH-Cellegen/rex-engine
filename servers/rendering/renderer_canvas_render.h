@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "servers/rendering/rendering_method.h"
-#include "servers/rendering_server.h"
+#include "rendering_method.h"
+#include "../rendering_server.h"
 
 class RendererCanvasRender {
 public:

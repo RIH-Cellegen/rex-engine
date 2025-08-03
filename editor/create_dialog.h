@@ -32,12 +32,12 @@
 
 #pragma once
 
-#include "editor/editor_help.h"
-#include "scene/gui/button.h"
-#include "scene/gui/dialogs.h"
-#include "scene/gui/item_list.h"
-#include "scene/gui/line_edit.h"
-#include "scene/gui/tree.h"
+#include "editor_help.h"
+#include "../scene/gui/button.h"
+#include "../scene/gui/dialogs.h"
+#include "../scene/gui/item_list.h"
+#include "../scene/gui/line_edit.h"
+#include "../scene/gui/tree.h"
 
 class CreateDialog : public ConfirmationDialog {
 	GDCLASS(CreateDialog, ConfirmationDialog);

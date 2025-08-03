@@ -32,7 +32,7 @@
 
 #include "openxr_dpad_binding_extension.h"
 #include "../openxr_api.h"
-#include "core/math/math_funcs.h"
+#include "../../../core/math/math_funcs.h"
 
 // Implementation for:
 // https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_EXT_dpad_binding

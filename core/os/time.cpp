@@ -32,7 +32,7 @@
 
 #include "time.h"
 
-#include "core/os/os.h"
+#include "os.h"
 
 #define UNIX_EPOCH_YEAR_AD 1970 // 1970
 #define SECONDS_PER_DAY (24 * 60 * 60) // 86400

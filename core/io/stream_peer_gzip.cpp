@@ -30,9 +30,9 @@
 /* SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                 */
 /**************************************************************************/
 
-#include "core/io/stream_peer_gzip.h"
+#include "stream_peer_gzip.h"
 
-#include "core/io/zip_io.h"
+#include "zip_io.h"
 #include <zlib.h>
 
 void StreamPeerGZIP::_bind_methods() {

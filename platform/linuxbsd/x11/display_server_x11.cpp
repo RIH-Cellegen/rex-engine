@@ -37,26 +37,26 @@
 #include "x11/detect_prime_x11.h"
 #include "x11/key_mapping_x11.h"
 
-#include "core/config/project_settings.h"
-#include "core/math/math_funcs.h"
-#include "core/string/print_string.h"
-#include "core/string/ustring.h"
-#include "core/version.h"
-#include "drivers/png/png_driver_common.h"
-#include "main/main.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../core/math/math_funcs.h"
+#include "../../../core/string/print_string.h"
+#include "../../../core/string/ustring.h"
+#include "../../../core/version.h"
+#include "../../../drivers/png/png_driver_common.h"
+#include "../../../main/main.h"
 
-#include "servers/rendering/dummy/rasterizer_dummy.h"
+#include "../../../servers/rendering/dummy/rasterizer_dummy.h"
 
 #if defined(VULKAN_ENABLED)
-#include "servers/rendering/renderer_rd/renderer_compositor_rd.h"
+#include "../../../servers/rendering/renderer_rd/renderer_compositor_rd.h"
 #endif
 
 #if defined(GLES3_ENABLED)
-#include "drivers/gles3/rasterizer_gles3.h"
+#include "../../../drivers/gles3/rasterizer_gles3.h"
 #endif
 
 #ifdef ACCESSKIT_ENABLED
-#include "drivers/accesskit/accessibility_driver_accesskit.h"
+#include "../../../drivers/accesskit/accessibility_driver_accesskit.h"
 #endif
 
 #include <dlfcn.h>

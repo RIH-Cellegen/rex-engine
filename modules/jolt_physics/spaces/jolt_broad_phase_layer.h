@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "Jolt/Jolt.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Jolt.h"
 
-#include "Jolt/Physics/Collision/BroadPhase/BroadPhaseLayer.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/BroadPhase/BroadPhaseLayer.h"
 
 #include <stdint.h>
 

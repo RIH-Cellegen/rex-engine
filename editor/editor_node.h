@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/object/script_language.h"
-#include "core/templates/safe_refcount.h"
-#include "editor/editor_data.h"
-#include "editor/editor_folding.h"
-#include "editor/plugins/editor_plugin.h"
+#include "../core/object/script_language.h"
+#include "../core/templates/safe_refcount.h"
+#include "editor_data.h"
+#include "editor_folding.h"
+#include "plugins/editor_plugin.h"
 
 typedef void (*EditorNodeInitCallback)();
 typedef void (*EditorPluginInitializeCallback)();

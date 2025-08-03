@@ -32,9 +32,9 @@
 
 #include "message_queue.h"
 
-#include "core/config/project_settings.h"
-#include "core/object/class_db.h"
-#include "core/object/script_language.h"
+#include "../config/project_settings.h"
+#include "class_db.h"
+#include "script_language.h"
 
 #include <stdio.h>
 

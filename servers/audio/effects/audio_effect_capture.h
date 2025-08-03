@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/math/audio_frame.h"
-#include "core/object/ref_counted.h"
-#include "core/templates/ring_buffer.h"
-#include "servers/audio/audio_effect.h"
+#include "../../../core/math/audio_frame.h"
+#include "../../../core/object/ref_counted.h"
+#include "../../../core/templates/ring_buffer.h"
+#include "../audio_effect.h"
 
 class AudioEffectCapture;
 

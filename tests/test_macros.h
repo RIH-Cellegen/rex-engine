@@ -34,14 +34,14 @@
 
 #include "display_server_mock.h"
 
-#include "core/core_globals.h"
-#include "core/input/input_map.h"
-#include "core/object/message_queue.h"
-#include "core/variant/variant.h"
+#include "../core/core_globals.h"
+#include "../core/input/input_map.h"
+#include "../core/object/message_queue.h"
+#include "../core/variant/variant.h"
 
 // See documentation for doctest at:
 // https://github.com/onqtam/doctest/blob/master/doc/markdown/readme.md#reference
-#include "thirdparty/doctest/doctest.h"
+#include "../thirdparty/doctest/doctest.h"
 
 // The test is skipped with this, run pending tests with `--test --no-skip`.
 #define TEST_CASE_PENDING(name) TEST_CASE(name *doctest::skip())

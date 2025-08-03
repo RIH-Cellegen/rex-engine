@@ -32,9 +32,9 @@
 
 #include "gltf_document_extension_physics.h"
 
-#include "scene/3d/physics/area_3d.h"
-#include "scene/3d/physics/rigid_body_3d.h"
-#include "scene/3d/physics/static_body_3d.h"
+#include "../../../scene/3d/physics/area_3d.h"
+#include "../../../scene/3d/physics/rigid_body_3d.h"
+#include "../../../scene/3d/physics/static_body_3d.h"
 
 using GLTFShapeIndex = int64_t;
 

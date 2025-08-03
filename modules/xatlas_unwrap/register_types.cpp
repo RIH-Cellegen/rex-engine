@@ -32,7 +32,7 @@
 
 #include "register_types.h"
 
-#include "core/crypto/crypto_core.h"
+#include "../../core/crypto/crypto_core.h"
 
 #include <xatlas.h>
 

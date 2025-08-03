@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/object/class_db.h"
-#include "core/object/object.h"
+#include "../../../core/object/class_db.h"
+#include "../../../core/object/object.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestCallable {
 

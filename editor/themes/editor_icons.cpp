@@ -32,14 +32,14 @@
 
 #include "editor_icons.h"
 
-#include "editor/editor_string_names.h"
-#include "editor/themes/editor_color_map.h"
-#include "editor/themes/editor_icons.gen.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/resources/image_texture.h"
-#include "scene/resources/svg_texture.h"
+#include "../editor_string_names.h"
+#include "editor_color_map.h"
+#include "editor_icons.gen.h"
+#include "editor_scale.h"
+#include "../../scene/resources/image_texture.h"
+#include "../../scene/resources/svg_texture.h"
 
-#include "modules/svg/image_loader_svg.h"
+#include "../../modules/svg/image_loader_svg.h"
 
 void editor_configure_icons(bool p_dark_theme) {
 	if (p_dark_theme) {

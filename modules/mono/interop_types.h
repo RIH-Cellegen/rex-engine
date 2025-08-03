@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/math/math_defs.h"
+#include "../../core/math/math_defs.h"
 
 #ifdef __cplusplus
 extern "C" {

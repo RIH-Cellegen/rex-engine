@@ -37,8 +37,8 @@
 #include "packet_buffer.h"
 #include "websocket_peer.h"
 
-#include "core/io/packet_peer.h"
-#include "core/templates/ring_buffer.h"
+#include "../../core/io/packet_peer.h"
+#include "../../core/templates/ring_buffer.h"
 
 #include <emscripten.h>
 

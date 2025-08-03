@@ -31,8 +31,8 @@
 /**************************************************************************/
 
 #include "cluster_builder_rd.h"
-#include "servers/rendering/rendering_device.h"
-#include "servers/rendering/rendering_server_globals.h"
+#include "../rendering_device.h"
+#include "../rendering_server_globals.h"
 
 ClusterBuilderSharedDataRD::ClusterBuilderSharedDataRD() {
 	RD::VertexFormatID vertex_format;

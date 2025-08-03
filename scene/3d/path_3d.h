@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/3d/node_3d.h"
-#include "scene/resources/curve.h"
+#include "node_3d.h"
+#include "../resources/curve.h"
 
 class Path3D : public Node3D {
 	GDCLASS(Path3D, Node3D);

@@ -43,7 +43,7 @@
 #include "environment/gi.h"
 #include "rasterizer_canvas_gles3.h"
 #include "rasterizer_scene_gles3.h"
-#include "servers/rendering/renderer_compositor.h"
+#include "../../servers/rendering/renderer_compositor.h"
 #include "storage/config.h"
 #include "storage/light_storage.h"
 #include "storage/material_storage.h"

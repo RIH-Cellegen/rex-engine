@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/gui/box_container.h"
-#include "scene/gui/button.h"
-#include "scene/gui/option_button.h"
+#include "../scene/gui/box_container.h"
+#include "../scene/gui/button.h"
+#include "../scene/gui/option_button.h"
 
 class ImportDefaultsEditorSettings;
 class EditorInspector;

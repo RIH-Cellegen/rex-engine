@@ -37,11 +37,11 @@
 #include "os_android.h"
 #include "tts_android.h"
 
-#include "core/config/project_settings.h"
+#include "../../core/config/project_settings.h"
 
 #if defined(RD_ENABLED)
-#include "servers/rendering/renderer_rd/renderer_compositor_rd.h"
-#include "servers/rendering/rendering_device.h"
+#include "../../servers/rendering/renderer_rd/renderer_compositor_rd.h"
+#include "../../servers/rendering/rendering_device.h"
 
 #if defined(VULKAN_ENABLED)
 #include "rendering_context_driver_vulkan_android.h"
@@ -49,7 +49,7 @@
 #endif
 
 #ifdef GLES3_ENABLED
-#include "drivers/gles3/rasterizer_gles3.h"
+#include "../../drivers/gles3/rasterizer_gles3.h"
 
 #include <EGL/egl.h>
 #endif

@@ -33,19 +33,19 @@
 #include "rich_text_label.h"
 #include "rich_text_label.compat.inc"
 
-#include "core/input/input_map.h"
-#include "core/math/math_defs.h"
-#include "core/os/keyboard.h"
-#include "core/os/os.h"
-#include "scene/gui/label.h"
-#include "scene/gui/rich_text_effect.h"
-#include "scene/resources/atlas_texture.h"
-#include "scene/theme/theme_db.h"
-#include "servers/display_server.h"
+#include "../../core/input/input_map.h"
+#include "../../core/math/math_defs.h"
+#include "../../core/os/keyboard.h"
+#include "../../core/os/os.h"
+#include "label.h"
+#include "rich_text_effect.h"
+#include "../resources/atlas_texture.h"
+#include "../theme/theme_db.h"
+#include "../../servers/display_server.h"
 
-#include "modules/modules_enabled.gen.h" // For regex.
+#include "../../modules/modules_enabled.gen.h" // For regex.
 #ifdef MODULE_REGEX_ENABLED
-#include "modules/regex/regex.h"
+#include "../../modules/regex/regex.h"
 #endif
 
 RichTextLabel::ItemCustomFX::ItemCustomFX() {

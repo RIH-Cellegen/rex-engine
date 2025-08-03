@@ -32,7 +32,7 @@
 
 #include "multiplayer_spawner.h"
 
-#include "scene/main/multiplayer_api.h"
+#include "../../scene/main/multiplayer_api.h"
 
 #ifdef TOOLS_ENABLED
 /* This is editor only */

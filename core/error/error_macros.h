@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/typedefs.h"
+#include "../typedefs.h"
 
 #include <atomic> // IWYU pragma: keep // Used in macro. We'd normally use `safe_refcount.h`, but that would cause circular includes.
 

@@ -32,8 +32,8 @@
 
 #include "tts_linux.h"
 
-#include "core/config/project_settings.h"
-#include "servers/text_server.h"
+#include "../../core/config/project_settings.h"
+#include "../../servers/text_server.h"
 
 TTS_Linux *TTS_Linux::singleton = nullptr;
 

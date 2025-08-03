@@ -38,10 +38,10 @@
 
 #include "gradle_export_util.h"
 
-#include "core/io/image.h"
-#include "core/io/zip_io.h"
-#include "core/os/os.h"
-#include "editor/export/editor_export_platform.h"
+#include "../../../core/io/image.h"
+#include "../../../core/io/zip_io.h"
+#include "../../../core/os/os.h"
+#include "../../../editor/export/editor_export_platform.h"
 
 // Optional environment variables for defining confidential information. If any
 // of these is set, they will override the values set in the credentials file.

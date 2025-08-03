@@ -32,7 +32,7 @@
 
 #include "reference_rect.h"
 
-#include "core/config/engine.h"
+#include "../../core/config/engine.h"
 
 void ReferenceRect::_notification(int p_what) {
 	switch (p_what) {

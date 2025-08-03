@@ -32,10 +32,10 @@
 
 #include "spring_bone_3d_gizmo_plugin.h"
 
-#include "editor/editor_settings.h"
-#include "scene/3d/spring_bone_collision_capsule_3d.h"
-#include "scene/3d/spring_bone_collision_plane_3d.h"
-#include "scene/3d/spring_bone_collision_sphere_3d.h"
+#include "../../editor_settings.h"
+#include "../../../scene/3d/spring_bone_collision_capsule_3d.h"
+#include "../../../scene/3d/spring_bone_collision_plane_3d.h"
+#include "../../../scene/3d/spring_bone_collision_sphere_3d.h"
 
 // SpringBoneSimulator3D
 

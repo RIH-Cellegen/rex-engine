@@ -32,21 +32,21 @@
 
 #include "doc_tools.h"
 
-#include "core/config/engine.h"
-#include "core/config/project_settings.h"
-#include "core/core_constants.h"
-#include "core/io/compression.h"
-#include "core/io/dir_access.h"
-#include "core/io/resource_importer.h"
-#include "core/object/script_language.h"
-#include "core/string/translation_server.h"
-#include "editor/editor_settings.h"
-#include "editor/export/editor_export_platform.h"
-#include "scene/resources/theme.h"
-#include "scene/theme/theme_db.h"
+#include "../core/config/engine.h"
+#include "../core/config/project_settings.h"
+#include "../core/core_constants.h"
+#include "../core/io/compression.h"
+#include "../core/io/dir_access.h"
+#include "../core/io/resource_importer.h"
+#include "../core/object/script_language.h"
+#include "../core/string/translation_server.h"
+#include "editor_settings.h"
+#include "export/editor_export_platform.h"
+#include "../scene/resources/theme.h"
+#include "../scene/theme/theme_db.h"
 
 // Used for a hack preserving Mono properties on non-Mono builds.
-#include "modules/modules_enabled.gen.h" // For mono.
+#include "../modules/modules_enabled.gen.h" // For mono.
 
 static String _get_indent(const String &p_text) {
 	String indent;

@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/input/shortcut.h"
-#include "core/io/config_file.h"
-#include "core/io/resource.h"
-#include "core/os/thread_safe.h"
+#include "../core/input/shortcut.h"
+#include "../core/io/config_file.h"
+#include "../core/io/resource.h"
+#include "../core/os/thread_safe.h"
 
 class EditorPlugin;
 

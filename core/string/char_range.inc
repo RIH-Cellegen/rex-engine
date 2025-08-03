@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/typedefs.h"
+#include "../typedefs.h"
 
 // Unicode Derived Core Properties
 // Source: https://www.unicode.org/Public/16.0.0/ucd/DerivedCoreProperties.txt

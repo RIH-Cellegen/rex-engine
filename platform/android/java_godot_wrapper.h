@@ -34,8 +34,8 @@
 
 #include "java_godot_view_wrapper.h"
 
-#include "core/math/color.h"
-#include "core/templates/list.h"
+#include "../../core/math/color.h"
+#include "../../core/templates/list.h"
 
 #include <android/log.h>
 #include <jni.h>

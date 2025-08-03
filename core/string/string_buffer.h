@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/string/ustring.h"
+#include "ustring.h"
 
 template <int SHORT_BUFFER_SIZE = 64>
 class StringBuffer {

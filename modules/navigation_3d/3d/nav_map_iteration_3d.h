@@ -36,8 +36,8 @@
 #include "../nav_utils_3d.h"
 #include "nav_mesh_queries_3d.h"
 
-#include "core/math/math_defs.h"
-#include "core/os/semaphore.h"
+#include "../../../core/math/math_defs.h"
+#include "../../../core/os/semaphore.h"
 
 struct NavLinkIteration3D;
 class NavRegion3D;

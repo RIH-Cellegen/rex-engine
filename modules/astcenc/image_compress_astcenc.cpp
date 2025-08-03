@@ -32,8 +32,8 @@
 
 #include "image_compress_astcenc.h"
 
-#include "core/os/os.h"
-#include "core/string/print_string.h"
+#include "../../core/os/os.h"
+#include "../../core/string/print_string.h"
 
 #include <astcenc.h>
 

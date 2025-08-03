@@ -37,9 +37,9 @@
 #include "key_mapping_xkb.h"
 
 #ifdef SOWRAP_ENABLED
-#include "wayland/dynwrappers/wayland-client-core-so_wrap.h"
-#include "wayland/dynwrappers/wayland-cursor-so_wrap.h"
-#include "wayland/dynwrappers/wayland-egl-core-so_wrap.h"
+#include "wayland-client-core-so_wrap.h"
+#include "wayland-cursor-so_wrap.h"
+#include "wayland-egl-core-so_wrap.h"
 #include "xkbcommon-so_wrap.h"
 #else
 #include <wayland-client-core.h>
@@ -51,29 +51,29 @@
 #endif // SOWRAP_ENABLED
 
 // These must go after the Wayland client include to work properly.
-#include "wayland/protocol/idle_inhibit.gen.h"
-#include "wayland/protocol/primary_selection.gen.h"
+#include "../../../thirdparty/wayland/protocol/idle_inhibit.gen.h"
+#include "../../../thirdparty/wayland/protocol/primary_selection.gen.h"
 // These three protocol headers name wl_pointer method arguments as `pointer`,
 // which is the same name as X11's pointer typedef. This trips some very
 // annoying shadowing warnings. A `#define` works around this issue.
 #define pointer wl_pointer
-#include "wayland/protocol/pointer_constraints.gen.h"
-#include "wayland/protocol/pointer_gestures.gen.h"
-#include "wayland/protocol/relative_pointer.gen.h"
+#include "../../../thirdparty/wayland/protocol/pointer_constraints.gen.h"
+#include "../../../thirdparty/wayland/protocol/pointer_gestures.gen.h"
+#include "../../../thirdparty/wayland/protocol/relative_pointer.gen.h"
 #undef pointer
-#include "wayland/protocol/fractional_scale.gen.h"
-#include "wayland/protocol/tablet.gen.h"
-#include "wayland/protocol/text_input.gen.h"
-#include "wayland/protocol/viewporter.gen.h"
-#include "wayland/protocol/wayland.gen.h"
-#include "wayland/protocol/xdg_activation.gen.h"
-#include "wayland/protocol/xdg_decoration.gen.h"
-#include "wayland/protocol/xdg_foreign_v2.gen.h"
-#include "wayland/protocol/xdg_shell.gen.h"
-#include "wayland/protocol/xdg_system_bell.gen.h"
+#include "../../../thirdparty/wayland/protocol/fractional_scale.gen.h"
+#include "../../../thirdparty/wayland/protocol/tablet.gen.h"
+#include "../../../thirdparty/wayland/protocol/text_input.gen.h"
+#include "../../../thirdparty/wayland/protocol/viewporter.gen.h"
+#include "../../../thirdparty/wayland/protocol/wayland.gen.h"
+#include "../../../thirdparty/wayland/protocol/xdg_activation.gen.h"
+#include "../../../thirdparty/wayland/protocol/xdg_decoration.gen.h"
+#include "../../../thirdparty/wayland/protocol/xdg_foreign_v2.gen.h"
+#include "../../../thirdparty/wayland/protocol/xdg_shell.gen.h"
+#include "../../../thirdparty/wayland/protocol/xdg_system_bell.gen.h"
 
 // NOTE: Deprecated.
-#include "wayland/protocol/xdg_foreign_v1.gen.h"
+#include "../../../thirdparty/wayland/protocol/xdg_foreign_v1.gen.h"
 
 #ifdef LIBDECOR_ENABLED
 #ifdef SOWRAP_ENABLED
@@ -83,8 +83,8 @@
 #endif // SOWRAP_ENABLED
 #endif // LIBDECOR_ENABLED
 
-#include "core/os/thread.h"
-#include "servers/display_server.h"
+#include "../../../core/os/thread.h"
+#include "../../../servers/display_server.h"
 
 class WaylandThread {
 public:

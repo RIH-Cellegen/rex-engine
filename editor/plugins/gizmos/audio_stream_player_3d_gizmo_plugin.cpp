@@ -32,11 +32,11 @@
 
 #include "audio_stream_player_3d_gizmo_plugin.h"
 
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "scene/3d/audio_stream_player_3d.h"
+#include "../..//editor_node.h"
+#include "../..//editor_settings.h"
+#include "../..//editor_string_names.h"
+#include "../..//editor_undo_redo_manager.h"
+#include "../../../scene/3d/audio_stream_player_3d.h"
 
 AudioStreamPlayer3DGizmoPlugin::AudioStreamPlayer3DGizmoPlugin() {
 	Color gizmo_color = EDITOR_GET("editors/3d_gizmos/gizmo_colors/stream_player_3d");

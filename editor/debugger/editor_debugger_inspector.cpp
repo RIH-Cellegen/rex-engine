@@ -32,12 +32,12 @@
 
 #include "editor_debugger_inspector.h"
 
-#include "core/debugger/debugger_marshalls.h"
-#include "core/io/marshalls.h"
-#include "editor/editor_node.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/inspector_dock.h"
-#include "scene/debugger/scene_debugger.h"
+#include "../../core/debugger/debugger_marshalls.h"
+#include "../../core/io/marshalls.h"
+#include "../editor_node.h"
+#include "../editor_undo_redo_manager.h"
+#include "../inspector_dock.h"
+#include "../../scene/debugger/scene_debugger.h"
 
 bool EditorDebuggerRemoteObjects::_set(const StringName &p_name, const Variant &p_value) {
 	return _set_impl(p_name, p_value, "");

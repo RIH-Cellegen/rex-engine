@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "editor/gui/scene_tree_editor.h"
-#include "editor/script_create_dialog.h"
-#include "scene/gui/box_container.h"
-#include "scene/resources/animation.h"
+#include "gui/scene_tree_editor.h"
+#include "script_create_dialog.h"
+#include "../scene/gui/box_container.h"
+#include "../scene/resources/animation.h"
 
 class CheckBox;
 class EditorData;

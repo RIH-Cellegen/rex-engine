@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/io/resource.h"
-#include "core/object/gdvirtual.gen.inc"
+#include "../io/resource.h"
+#include "../object/gdvirtual.gen.inc"
 
 class Translation : public Resource {
 	GDCLASS(Translation, Resource);

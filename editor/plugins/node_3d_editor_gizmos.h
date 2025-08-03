@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/math/dynamic_bvh.h"
-#include "core/templates/hash_map.h"
-#include "scene/3d/camera_3d.h"
-#include "scene/3d/node_3d.h"
-#include "scene/3d/skeleton_3d.h"
+#include "../../core/math/dynamic_bvh.h"
+#include "../../core/templates/hash_map.h"
+#include "../../scene/3d/camera_3d.h"
+#include "../../scene/3d/node_3d.h"
+#include "../../scene/3d/skeleton_3d.h"
 
 class Timer;
 class EditorNode3DGizmoPlugin;

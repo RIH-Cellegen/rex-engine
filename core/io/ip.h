@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/io/ip_address.h"
-#include "core/os/os.h"
+#include "ip_address.h"
+#include "../os/os.h"
 
 template <typename T>
 class TypedArray;

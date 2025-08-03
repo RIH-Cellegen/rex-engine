@@ -36,9 +36,9 @@
 #import <Foundation/Foundation.h>
 #import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
 
-#include "core/templates/hash_map.h"
-#include "core/variant/typed_array.h"
-#include "core/variant/variant.h"
+#include "../../../core/templates/hash_map.h"
+#include "../../../core/variant/typed_array.h"
+#include "../../../core/variant/variant.h"
 
 @interface GodotOpenSaveDelegate : NSObject <NSOpenSavePanelDelegate> {
 	NSSavePanel *dialog;

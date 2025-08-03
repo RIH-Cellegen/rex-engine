@@ -32,10 +32,10 @@
 
 #include "gdscript_language_server.h"
 
-#include "core/os/os.h"
-#include "editor/editor_log.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
+#include "../../../core/os/os.h"
+#include "../../../editor/editor_log.h"
+#include "../../../editor/editor_node.h"
+#include "../../../editor/editor_settings.h"
 
 int GDScriptLanguageServer::port_override = -1;
 

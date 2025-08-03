@@ -32,16 +32,16 @@
 
 #include "window_wrapper.h"
 
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/progress_dialog.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/box_container.h"
-#include "scene/gui/label.h"
-#include "scene/gui/panel.h"
-#include "scene/gui/popup.h"
-#include "scene/main/window.h"
+#include "editor_node.h"
+#include "editor_settings.h"
+#include "editor_string_names.h"
+#include "progress_dialog.h"
+#include "themes/editor_scale.h"
+#include "../scene/gui/box_container.h"
+#include "../scene/gui/label.h"
+#include "../scene/gui/panel.h"
+#include "../scene/gui/popup.h"
+#include "../scene/main/window.h"
 
 // WindowWrapper
 

@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/io/file_access.h"
-#include "core/object/script_backtrace.h"
-#include "core/string/ustring.h"
-#include "core/templates/vector.h"
+#include "file_access.h"
+#include "../object/script_backtrace.h"
+#include "../string/ustring.h"
+#include "../templates/vector.h"
 
 #include <stdarg.h>
 

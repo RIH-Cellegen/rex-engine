@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/gui/box_container.h"
-#include "scene/gui/button.h"
+#include "../../scene/gui/box_container.h"
+#include "../../scene/gui/button.h"
 
 class EditorZoomWidget : public HBoxContainer {
 	GDCLASS(EditorZoomWidget, HBoxContainer);

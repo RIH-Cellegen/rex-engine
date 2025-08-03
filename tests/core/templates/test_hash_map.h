@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/templates/hash_map.h"
+#include "../../../core/templates/hash_map.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestHashMap {
 

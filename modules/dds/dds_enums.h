@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/io/image.h"
+#include "../../core/io/image.h"
 
 #define PF_FOURCC(m_s) ((uint32_t)(((m_s)[3] << 24U) | ((m_s)[2] << 16U) | ((m_s)[1] << 8U) | ((m_s)[0])))
 

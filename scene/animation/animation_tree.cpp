@@ -34,7 +34,7 @@
 #include "animation_tree.compat.inc"
 
 #include "animation_blend_tree.h"
-#include "scene/animation/animation_player.h"
+#include "animation_player.h"
 
 void AnimationNode::get_parameter_list(List<PropertyInfo> *r_list) const {
 	Array parameters;

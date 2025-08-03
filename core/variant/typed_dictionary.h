@@ -32,12 +32,12 @@
 
 #pragma once
 
-#include "core/object/object.h"
-#include "core/variant/binder_common.h"
-#include "core/variant/dictionary.h"
-#include "core/variant/method_ptrcall.h"
-#include "core/variant/type_info.h"
-#include "core/variant/variant.h"
+#include "../object/object.h"
+#include "binder_common.h"
+#include "dictionary.h"
+#include "method_ptrcall.h"
+#include "type_info.h"
+#include "variant.h"
 
 template <typename K, typename V>
 class TypedDictionary : public Dictionary {

@@ -34,7 +34,7 @@
 
 #include "gjk_epa.h"
 
-#include "core/math/geometry_3d.h"
+#include "../../core/math/geometry_3d.h"
 
 #define fallback_collision_solver gjk_epa_calculate_penetration
 

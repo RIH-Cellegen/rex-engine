@@ -32,16 +32,16 @@
 
 #include "csg_gizmos.h"
 
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/plugins/gizmos/gizmo_3d_helper.h"
-#include "editor/plugins/node_3d_editor_plugin.h"
-#include "scene/3d/camera_3d.h"
-#include "scene/3d/mesh_instance_3d.h"
-#include "scene/3d/physics/collision_shape_3d.h"
-#include "scene/gui/dialogs.h"
-#include "scene/gui/menu_button.h"
+#include "../../../editor/editor_node.h"
+#include "../../../editor/editor_settings.h"
+#include "../../../editor/editor_undo_redo_manager.h"
+#include "../../../editor/plugins/gizmos/gizmo_3d_helper.h"
+#include "../../../editor/plugins/node_3d_editor_plugin.h"
+#include "../../../scene/3d/camera_3d.h"
+#include "../../../scene/3d/mesh_instance_3d.h"
+#include "../../../scene/3d/physics/collision_shape_3d.h"
+#include "../../../scene/gui/dialogs.h"
+#include "../../../scene/gui/menu_button.h"
 
 void CSGShapeEditor::_node_removed(Node *p_node) {
 	if (p_node == node) {

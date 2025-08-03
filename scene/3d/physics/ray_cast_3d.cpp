@@ -32,7 +32,7 @@
 
 #include "ray_cast_3d.h"
 
-#include "scene/3d/physics/collision_object_3d.h"
+#include "collision_object_3d.h"
 
 void RayCast3D::set_target_position(const Vector3 &p_point) {
 	target_position = p_point;

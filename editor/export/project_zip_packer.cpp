@@ -32,11 +32,11 @@
 
 #include "project_zip_packer.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/dir_access.h"
-#include "core/io/file_access.h"
-#include "core/os/os.h"
-#include "core/os/time.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/io/dir_access.h"
+#include "../../core/io/file_access.h"
+#include "../../core/os/os.h"
+#include "../../core/os/time.h"
 
 String ProjectZIPPacker::get_project_zip_safe_name() {
 	// Name the downloaded ZIP file to contain the project name and download date for easier organization.

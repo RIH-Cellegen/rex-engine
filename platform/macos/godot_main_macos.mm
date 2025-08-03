@@ -32,7 +32,7 @@
 
 #import "os_macos.h"
 
-#include "main/main.h"
+#include "../../../main/main.h"
 
 #include <string.h>
 #include <unistd.h>

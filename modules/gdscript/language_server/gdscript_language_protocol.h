@@ -35,10 +35,10 @@
 #include "gdscript_text_document.h"
 #include "gdscript_workspace.h"
 
-#include "core/io/stream_peer_tcp.h"
-#include "core/io/tcp_server.h"
+#include "../../../core/io/stream_peer_tcp.h"
+#include "../../../core/io/tcp_server.h"
 
-#include "modules/jsonrpc/jsonrpc.h"
+#include "../../jsonrpc/jsonrpc.h"
 
 #define LSP_MAX_BUFFER_SIZE 4194304
 #define LSP_MAX_CLIENTS 8

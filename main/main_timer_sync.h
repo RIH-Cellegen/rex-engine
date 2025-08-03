@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/config/engine.h"
+#include "../core/config/engine.h"
 
 // Uncomment this define to get more debugging logs for the delta smoothing.
 // #define GODOT_DEBUG_DELTA_SMOOTHER

@@ -33,12 +33,12 @@
 #pragma once
 
 #include "box_container.h"
-#include "scene/gui/button.h"
-#include "scene/gui/label.h"
-#include "scene/gui/panel.h"
-#include "scene/gui/popup.h"
-#include "scene/gui/texture_button.h"
-#include "scene/main/window.h"
+#include "button.h"
+#include "label.h"
+#include "panel.h"
+#include "popup.h"
+#include "texture_button.h"
+#include "../main/window.h"
 
 class LineEdit;
 

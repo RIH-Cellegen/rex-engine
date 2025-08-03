@@ -32,12 +32,12 @@
 
 #include "editor_resource_tooltip_plugins.h"
 
-#include "editor/editor_file_system.h"
-#include "editor/editor_resource_preview.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/box_container.h"
-#include "scene/gui/label.h"
-#include "scene/gui/texture_rect.h"
+#include "../editor_file_system.h"
+#include "../editor_resource_preview.h"
+#include "../themes/editor_scale.h"
+#include "../../scene/gui/box_container.h"
+#include "../../scene/gui/label.h"
+#include "../../scene/gui/texture_rect.h"
 
 void EditorResourceTooltipPlugin::_thumbnail_ready(const String &p_path, const Ref<Texture2D> &p_preview, const Ref<Texture2D> &p_small_preview, const Variant &p_udata) {
 	ObjectID trid = p_udata;

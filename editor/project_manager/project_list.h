@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/io/config_file.h"
-#include "scene/gui/box_container.h"
-#include "scene/gui/scroll_container.h"
+#include "../../core/io/config_file.h"
+#include "../../scene/gui/box_container.h"
+#include "../../scene/gui/scroll_container.h"
 
 class AcceptDialog;
 class Button;

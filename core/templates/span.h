@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/typedefs.h"
+#include "../typedefs.h"
 
 // Equivalent of std::span.
 // Represents a view into a contiguous memory space.

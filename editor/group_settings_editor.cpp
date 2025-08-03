@@ -32,14 +32,14 @@
 
 #include "group_settings_editor.h"
 
-#include "core/config/project_settings.h"
-#include "editor/editor_node.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/filesystem_dock.h"
-#include "editor/gui/editor_validation_panel.h"
-#include "editor/scene_tree_dock.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/resources/packed_scene.h"
+#include "../core/config/project_settings.h"
+#include "editor_node.h"
+#include "editor_undo_redo_manager.h"
+#include "filesystem_dock.h"
+#include "gui/editor_validation_panel.h"
+#include "scene_tree_dock.h"
+#include "themes/editor_scale.h"
+#include "../scene/resources/packed_scene.h"
 
 void GroupSettingsEditor::_notification(int p_what) {
 	switch (p_what) {

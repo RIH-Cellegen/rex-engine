@@ -32,18 +32,18 @@
 
 #include "credits_roll.h"
 
-#include "core/authors.gen.h"
-#include "core/donors.gen.h"
-#include "core/input/input.h"
-#include "core/license.gen.h"
-#include "core/redot_authors.gen.h"
-#include "core/string/string_builder.h"
-#include "editor/editor_string_names.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/box_container.h"
-#include "scene/gui/color_rect.h"
-#include "scene/gui/label.h"
-#include "scene/gui/texture_rect.h"
+#include "../core/authors.gen.h"
+#include "../core/donors.gen.h"
+#include "../core/input/input.h"
+#include "../core/license.gen.h"
+#include "../core/redot_authors.gen.h"
+#include "../core/string/string_builder.h"
+#include "editor_string_names.h"
+#include "themes/editor_scale.h"
+#include "../scene/gui/box_container.h"
+#include "../scene/gui/color_rect.h"
+#include "../scene/gui/label.h"
+#include "../scene/gui/texture_rect.h"
 
 Label *CreditsRoll::_create_label(const String &p_with_text, LabelSize p_size) {
 	Label *label = memnew(Label);

@@ -32,8 +32,8 @@
 
 #include "graph_element.h"
 
-#include "scene/gui/graph_edit.h"
-#include "scene/theme/theme_db.h"
+#include "graph_edit.h"
+#include "../theme/theme_db.h"
 
 #ifdef TOOLS_ENABLED
 void GraphElement::_edit_set_position(const Point2 &p_position) {

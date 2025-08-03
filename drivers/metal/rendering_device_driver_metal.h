@@ -34,7 +34,7 @@
 
 #import "metal_objects.h"
 
-#include "servers/rendering/rendering_device_driver.h"
+#include "../../servers/rendering/rendering_device_driver.h"
 
 #import <Metal/Metal.h>
 #import <variant>

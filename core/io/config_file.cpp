@@ -32,9 +32,9 @@
 
 #include "config_file.h"
 
-#include "core/io/file_access_encrypted.h"
-#include "core/string/string_builder.h"
-#include "core/variant/variant_parser.h"
+#include "file_access_encrypted.h"
+#include "../string/string_builder.h"
+#include "../variant/variant_parser.h"
 
 void ConfigFile::set_value(const String &p_section, const String &p_key, const Variant &p_value) {
 	if (p_value.get_type() == Variant::NIL) { // Erase key.

@@ -35,11 +35,11 @@
 #include "../openxr_api.h"
 #include "../openxr_interface.h"
 
-#include "scene/3d/mesh_instance_3d.h"
-#include "scene/3d/xr/xr_nodes.h"
-#include "scene/main/viewport.h"
+#include "../../../scene/3d/mesh_instance_3d.h"
+#include "../../../scene/3d/xr/xr_nodes.h"
+#include "../../../scene/main/viewport.h"
 
-#include "platform/android/api/java_class_wrapper.h"
+#include "../../../platform/android/api/java_class_wrapper.h"
 
 Vector<OpenXRCompositionLayer *> OpenXRCompositionLayer::composition_layer_nodes;
 

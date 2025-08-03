@@ -32,7 +32,7 @@
 
 #include "gltf_spec_gloss.h"
 
-#include "core/io/image.h"
+#include "../../../core/io/image.h"
 
 void GLTFSpecGloss::_bind_methods() {
 	ClassDB::bind_method(D_METHOD("get_diffuse_img"), &GLTFSpecGloss::get_diffuse_img);

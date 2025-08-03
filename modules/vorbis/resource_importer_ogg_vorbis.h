@@ -34,7 +34,7 @@
 
 #include "audio_stream_ogg_vorbis.h"
 
-#include "core/io/resource_importer.h"
+#include "../../core/io/resource_importer.h"
 
 class ResourceImporterOggVorbis : public ResourceImporter {
 	GDCLASS(ResourceImporterOggVorbis, ResourceImporter);

@@ -34,8 +34,8 @@
 
 #ifdef WINDOWS_ENABLED
 
-#include "core/io/file_access.h"
-#include "core/os/memory.h"
+#include "../../core/io/file_access.h"
+#include "../../core/os/memory.h"
 
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>

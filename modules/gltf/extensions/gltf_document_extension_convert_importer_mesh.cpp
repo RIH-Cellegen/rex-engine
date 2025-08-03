@@ -32,9 +32,9 @@
 
 #include "gltf_document_extension_convert_importer_mesh.h"
 
-#include "scene/3d/importer_mesh_instance_3d.h"
-#include "scene/3d/mesh_instance_3d.h"
-#include "scene/resources/3d/importer_mesh.h"
+#include "../../../scene/3d/importer_mesh_instance_3d.h"
+#include "../../../scene/3d/mesh_instance_3d.h"
+#include "../../../scene/resources/3d/importer_mesh.h"
 
 void GLTFDocumentExtensionConvertImporterMesh::_copy_meta(Object *p_src_object, Object *p_dst_object) {
 	List<StringName> meta_list;

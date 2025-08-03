@@ -32,14 +32,14 @@
 
 #pragma once
 
-#include "core/string/ustring.h"
-#include "core/templates/list.h"
-#include "core/templates/local_vector.h"
-#include "core/templates/rb_map.h"
-#include "core/templates/rb_set.h"
+#include "../../core/string/ustring.h"
+#include "../../core/templates/list.h"
+#include "../../core/templates/local_vector.h"
+#include "../../core/templates/rb_map.h"
+#include "../../core/templates/rb_set.h"
 
-#include "core/object/script_language.h"
-#include "scene/resources/shader_include.h"
+#include "../../core/object/script_language.h"
+#include "../../scene/resources/shader_include.h"
 
 class ShaderPreprocessor {
 public:

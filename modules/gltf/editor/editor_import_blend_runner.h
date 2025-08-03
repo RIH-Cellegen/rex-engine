@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/io/http_client.h"
-#include "core/os/os.h"
-#include "scene/main/node.h"
-#include "scene/main/timer.h"
+#include "../../../core/io/http_client.h"
+#include "../../../core/os/os.h"
+#include "../../../scene/main/node.h"
+#include "../../../scene/main/timer.h"
 
 class EditorImportBlendRunner : public Node {
 	GDCLASS(EditorImportBlendRunner, Node);

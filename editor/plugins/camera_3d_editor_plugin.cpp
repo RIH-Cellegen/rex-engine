@@ -32,11 +32,11 @@
 
 #include "camera_3d_editor_plugin.h"
 
-#include "core/config/project_settings.h"
-#include "editor/editor_node.h"
+#include "../../core/config/project_settings.h"
+#include "../editor_node.h"
 #include "node_3d_editor_plugin.h"
-#include "scene/gui/texture_rect.h"
-#include "scene/main/viewport.h"
+#include "../../scene/gui/texture_rect.h"
+#include "../../scene/main/viewport.h"
 
 void Camera3DEditor::_node_removed(Node *p_node) {
 	if (p_node == node) {

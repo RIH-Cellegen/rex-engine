@@ -32,10 +32,10 @@
 
 #include "resource_format_text.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/dir_access.h"
-#include "core/io/missing_resource.h"
-#include "core/object/script_language.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/io/dir_access.h"
+#include "../../core/io/missing_resource.h"
+#include "../../core/object/script_language.h"
 
 void ResourceLoaderText::_printerr() {
 	ERR_PRINT(vformat("%s:%d - Parse Error: %s.", res_path, lines, error_text));

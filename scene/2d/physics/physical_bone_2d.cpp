@@ -32,7 +32,7 @@
 
 #include "physical_bone_2d.h"
 
-#include "scene/2d/physics/joints/joint_2d.h"
+#include "joints/joint_2d.h"
 
 void PhysicalBone2D::_notification(int p_what) {
 	switch (p_what) {

@@ -83,14 +83,14 @@ using namespace godot;
 #elif defined(GODOT_MODULE)
 // Headers for building as built-in module.
 
-#include "core/extension/ext_wrappers.gen.inc"
-#include "core/templates/hash_map.h"
-#include "core/templates/rid_owner.h"
-#include "core/templates/safe_refcount.h"
-#include "scene/resources/image_texture.h"
-#include "servers/text/text_server_extension.h"
+#include "../../core/extension/ext_wrappers.gen.inc"
+#include "../../core/templates/hash_map.h"
+#include "../../core/templates/rid_owner.h"
+#include "../../core/templates/safe_refcount.h"
+#include "../../scene/resources/image_texture.h"
+#include "../../servers/text/text_server_extension.h"
 
-#include "modules/modules_enabled.gen.h" // For freetype, msdfgen, svg.
+#include "../modules_enabled.gen.h" // For freetype, msdfgen, svg.
 
 #endif
 

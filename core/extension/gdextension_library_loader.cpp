@@ -32,9 +32,9 @@
 
 #include "gdextension_library_loader.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/dir_access.h"
-#include "core/version.h"
+#include "../config/project_settings.h"
+#include "../io/dir_access.h"
+#include "../version.h"
 #include "gdextension.h"
 
 Vector<SharedObject> GDExtensionLibraryLoader::find_extension_dependencies(const String &p_path, Ref<ConfigFile> p_config, std::function<bool(String)> p_has_feature) {

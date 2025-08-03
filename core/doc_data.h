@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/io/xml_parser.h"
-#include "core/variant/variant.h"
+#include "io/xml_parser.h"
+#include "variant/variant.h"
 
 class DocData {
 public:

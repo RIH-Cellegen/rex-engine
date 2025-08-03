@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "scene/2d/node_2d.h"
-#include "scene/main/viewport.h"
-#include "scene/resources/2d/shape_2d.h"
-#include "servers/physics_server_2d.h"
+#include "../node_2d.h"
+#include "../../main/viewport.h"
+#include "../../resources/2d/shape_2d.h"
+#include "../../../servers/physics_server_2d.h"
 
 class CollisionObject2D : public Node2D {
 	GDCLASS(CollisionObject2D, Node2D);

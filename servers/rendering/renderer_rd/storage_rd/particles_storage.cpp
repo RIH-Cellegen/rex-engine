@@ -32,8 +32,8 @@
 
 #include "particles_storage.h"
 
-#include "servers/rendering/renderer_rd/renderer_compositor_rd.h"
-#include "servers/rendering/rendering_server_globals.h"
+#include "../renderer_compositor_rd.h"
+#include "../../rendering_server_globals.h"
 #include "texture_storage.h"
 
 using namespace RendererRD;

@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/resources/sky.h"
+#include "../../scene/resources/sky.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestSky {
 

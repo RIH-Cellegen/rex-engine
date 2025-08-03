@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "editor/export/editor_export_plugin.h"
+#include "../export/editor_export_plugin.h"
 
 class DedicatedServerExportPlugin : public EditorExportPlugin {
 private:

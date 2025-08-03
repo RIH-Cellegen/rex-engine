@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/2d/skeleton_2d.h"
-#include "scene/resources/2d/skeleton/skeleton_modification_2d.h"
+#include "../../../2d/skeleton_2d.h"
+#include "skeleton_modification_2d.h"
 
 ///////////////////////////////////////
 // SkeletonModification2DFABRIK

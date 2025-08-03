@@ -34,17 +34,17 @@
 
 #ifdef GLES3_ENABLED
 
-#include "core/templates/rid_owner.h"
-#include "core/templates/self_list.h"
-#include "servers/rendering/shader_compiler.h"
-#include "servers/rendering/shader_language.h"
-#include "servers/rendering/storage/material_storage.h"
-#include "servers/rendering/storage/utilities.h"
+#include "../../../core/templates/rid_owner.h"
+#include "../../../core/templates/self_list.h"
+#include "../../../servers/rendering/shader_compiler.h"
+#include "../../../servers/rendering/shader_language.h"
+#include "../../../servers/rendering/storage/material_storage.h"
+#include "../../../servers/rendering/storage/utilities.h"
 
-#include "drivers/gles3/shaders/canvas.glsl.gen.h"
-#include "drivers/gles3/shaders/particles.glsl.gen.h"
-#include "drivers/gles3/shaders/scene.glsl.gen.h"
-#include "drivers/gles3/shaders/sky.glsl.gen.h"
+#include "../shaders/canvas.glsl.gen.h"
+#include "../shaders/particles.glsl.gen.h"
+#include "../shaders/scene.glsl.gen.h"
+#include "../shaders/sky.glsl.gen.h"
 
 namespace GLES3 {
 

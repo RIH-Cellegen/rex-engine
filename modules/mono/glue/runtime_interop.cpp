@@ -39,18 +39,18 @@
 #include "../signal_awaiter_utils.h"
 #include "../utils/path_utils.h"
 
-#include "core/config/engine.h"
-#include "core/config/project_settings.h"
-#include "core/debugger/engine_debugger.h"
-#include "core/debugger/script_debugger.h"
-#include "core/io/marshalls.h"
-#include "core/object/class_db.h"
-#include "core/object/method_bind.h"
-#include "core/os/os.h"
-#include "core/string/string_name.h"
+#include "../../../core/config/engine.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../core/debugger/engine_debugger.h"
+#include "../../../core/debugger/script_debugger.h"
+#include "../../../core/io/marshalls.h"
+#include "../../../core/object/class_db.h"
+#include "../../../core/object/method_bind.h"
+#include "../../../core/os/os.h"
+#include "../../../core/string/string_name.h"
 
 #ifdef TOOLS_ENABLED
-#include "editor/editor_file_system.h"
+#include "../../../editor/editor_file_system.h"
 #endif
 
 #ifdef __cplusplus

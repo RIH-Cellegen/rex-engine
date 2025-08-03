@@ -34,8 +34,8 @@
 
 #include "noise.h"
 
-#include "core/object/ref_counted.h"
-#include "scene/resources/texture.h"
+#include "../../core/object/ref_counted.h"
+#include "../../scene/resources/texture.h"
 
 class NoiseTexture2D : public Texture2D {
 	GDCLASS(NoiseTexture2D, Texture2D);

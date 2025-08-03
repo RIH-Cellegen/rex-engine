@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/error/error_macros.h"
-#include "core/os/memory.h"
-#include "core/templates/safe_refcount.h"
-#include "core/templates/span.h"
+#include "../error/error_macros.h"
+#include "../os/memory.h"
+#include "safe_refcount.h"
+#include "span.h"
 
 #include <string.h>
 #include <initializer_list>

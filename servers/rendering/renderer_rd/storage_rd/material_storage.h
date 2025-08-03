@@ -34,14 +34,14 @@
 
 #include "texture_storage.h"
 
-#include "core/math/projection.h"
-#include "core/templates/local_vector.h"
-#include "core/templates/rid_owner.h"
-#include "core/templates/self_list.h"
-#include "servers/rendering/shader_compiler.h"
-#include "servers/rendering/shader_language.h"
-#include "servers/rendering/storage/material_storage.h"
-#include "servers/rendering/storage/utilities.h"
+#include "../../../../core/math/projection.h"
+#include "../../../../core/templates/local_vector.h"
+#include "../../../../core/templates/rid_owner.h"
+#include "../../../../core/templates/self_list.h"
+#include "../../shader_compiler.h"
+#include "../../shader_language.h"
+#include "../../storage/material_storage.h"
+#include "../../storage/utilities.h"
 
 namespace RendererRD {
 

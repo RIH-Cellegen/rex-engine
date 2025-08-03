@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "servers/rendering/environment/renderer_gi.h"
+#include "../../environment/renderer_gi.h"
 
 namespace RendererDummy {
 

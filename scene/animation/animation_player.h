@@ -33,7 +33,7 @@
 #pragma once
 
 #include "animation_mixer.h"
-#include "scene/resources/animation.h"
+#include "../resources/animation.h"
 
 class AnimationPlayer : public AnimationMixer {
 	GDCLASS(AnimationPlayer, AnimationMixer);

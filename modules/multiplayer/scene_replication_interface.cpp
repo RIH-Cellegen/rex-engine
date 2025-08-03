@@ -34,9 +34,9 @@
 
 #include "scene_multiplayer.h"
 
-#include "core/debugger/engine_debugger.h"
-#include "core/io/marshalls.h"
-#include "scene/main/node.h"
+#include "../../core/debugger/engine_debugger.h"
+#include "../../core/io/marshalls.h"
+#include "../../scene/main/node.h"
 
 #define MAKE_ROOM(m_amount)             \
 	if (packet_cache.size() < m_amount) \

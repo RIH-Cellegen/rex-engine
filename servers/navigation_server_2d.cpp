@@ -33,10 +33,10 @@
 #include "navigation_server_2d.h"
 #include "navigation_server_2d.compat.inc"
 
-#include "core/config/project_settings.h"
-#include "scene/main/node.h"
-#include "servers/navigation/navigation_globals.h"
-#include "servers/navigation_server_2d_dummy.h"
+#include "../core/config/project_settings.h"
+#include "../scene/main/node.h"
+#include "navigation/navigation_globals.h"
+#include "navigation_server_2d_dummy.h"
 
 NavigationServer2D *NavigationServer2D::singleton = nullptr;
 

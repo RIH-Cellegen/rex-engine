@@ -32,11 +32,11 @@
 
 #include "openxr_action_map_editor.h"
 
-#include "core/config/project_settings.h"
-#include "editor/editor_node.h"
-#include "editor/gui/editor_bottom_panel.h"
-#include "editor/gui/editor_file_dialog.h"
-#include "editor/themes/editor_scale.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../editor/editor_node.h"
+#include "../../../editor/gui/editor_bottom_panel.h"
+#include "../../../editor/gui/editor_file_dialog.h"
+#include "../../../editor/themes/editor_scale.h"
 
 HashMap<String, String> OpenXRActionMapEditor::interaction_profile_editors;
 HashMap<String, String> OpenXRActionMapEditor::binding_modifier_editors;

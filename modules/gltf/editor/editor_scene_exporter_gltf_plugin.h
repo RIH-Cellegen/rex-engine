@@ -35,7 +35,7 @@
 #include "../gltf_document.h"
 #include "editor_scene_exporter_gltf_settings.h"
 
-#include "editor/plugins/editor_plugin.h"
+#include "../../../editor/plugins/editor_plugin.h"
 
 class EditorFileDialog;
 class EditorInspector;

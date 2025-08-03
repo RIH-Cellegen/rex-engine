@@ -32,21 +32,21 @@
 
 #pragma once
 
-#include "core/math/aabb.h"
-#include "core/math/color.h"
-#include "core/math/plane.h"
-#include "core/math/quaternion.h"
-#include "core/math/transform_3d.h"
-#include "core/string/ustring.h"
+#include "../../../core/math/aabb.h"
+#include "../../../core/math/color.h"
+#include "../../../core/math/plane.h"
+#include "../../../core/math/quaternion.h"
+#include "../../../core/math/transform_3d.h"
+#include "../../../core/string/ustring.h"
 
-#include "Jolt/Jolt.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Jolt.h"
 
-#include "Jolt/Core/Color.h"
-#include "Jolt/Geometry/AABox.h"
-#include "Jolt/Geometry/Plane.h"
-#include "Jolt/Math/Mat44.h"
-#include "Jolt/Math/Quat.h"
-#include "Jolt/Math/Vec3.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Core/Color.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Geometry/AABox.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Geometry/Plane.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Math/Mat44.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Math/Quat.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Math/Vec3.h"
 
 _FORCE_INLINE_ Vector3 to_godot(const JPH::Vec3 &p_vec) {
 	return Vector3((real_t)p_vec.GetX(), (real_t)p_vec.GetY(), (real_t)p_vec.GetZ());

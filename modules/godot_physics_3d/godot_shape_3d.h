@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/math/geometry_3d.h"
-#include "core/templates/local_vector.h"
-#include "servers/physics_server_3d.h"
+#include "../../core/math/geometry_3d.h"
+#include "../../core/templates/local_vector.h"
+#include "../../servers/physics_server_3d.h"
 
 class GodotShape3D;
 

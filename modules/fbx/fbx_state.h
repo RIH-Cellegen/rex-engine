@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "modules/gltf/gltf_defines.h"
-#include "modules/gltf/gltf_state.h"
-#include "modules/gltf/structures/gltf_skeleton.h"
-#include "modules/gltf/structures/gltf_skin.h"
-#include "modules/gltf/structures/gltf_texture.h"
+#include "../gltf/gltf_defines.h"
+#include "../gltf/gltf_state.h"
+#include "../gltf/structures/gltf_skeleton.h"
+#include "../gltf/structures/gltf_skin.h"
+#include "../gltf/structures/gltf_texture.h"
 
 #include <ufbx.h>
 

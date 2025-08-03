@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/string/ustring.h"
+#include "../../../core/string/ustring.h"
 
 String pascal_to_pascal_case(const String &p_identifier);
 

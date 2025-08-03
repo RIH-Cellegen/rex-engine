@@ -32,10 +32,10 @@
 
 #include "lightmap_probe_gizmo_plugin.h"
 
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "scene/3d/lightmap_probe.h"
+#include "../../editor_node.h"
+#include "../../editor_settings.h"
+#include "../../editor_string_names.h"
+#include "../../../scene/3d/lightmap_probe.h"
 
 LightmapProbeGizmoPlugin::LightmapProbeGizmoPlugin() {
 	create_icon_material("lightmap_probe_icon", EditorNode::get_singleton()->get_editor_theme()->get_icon(SNAME("GizmoLightmapProbe"), EditorStringName(EditorIcons)));

@@ -35,11 +35,11 @@
 #include "../jolt_project_settings.h"
 #include "jolt_space_3d.h"
 
-#include "Jolt/Jolt.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Jolt.h"
 
-#include "Jolt/Core/STLLocalAllocator.h"
-#include "Jolt/Physics/Collision/InternalEdgeRemovingCollector.h"
-#include "Jolt/Physics/Collision/Shape/Shape.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Core/STLLocalAllocator.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/InternalEdgeRemovingCollector.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/Shape/Shape.h"
 
 template <typename TBase, int TDefaultCapacity>
 class JoltQueryCollectorAll final : public TBase {

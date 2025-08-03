@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/gui/control.h"
+#include "control.h"
 
 class ColorRect : public Control {
 	GDCLASS(ColorRect, Control);

@@ -34,8 +34,8 @@
 
 #ifdef WINMIDI_ENABLED
 
-#include "core/os/midi_driver.h"
-#include "core/templates/vector.h"
+#include "../../core/os/midi_driver.h"
+#include "../../core/templates/vector.h"
 
 #include <stdio.h>
 #define WIN32_LEAN_AND_MEAN

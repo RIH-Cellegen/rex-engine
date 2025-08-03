@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/main/window.h"
+#include "../main/window.h"
 
-#include "core/templates/local_vector.h"
+#include "../../core/templates/local_vector.h"
 
 class Panel;
 

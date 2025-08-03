@@ -34,9 +34,9 @@
 
 #include "enet_packet_peer.h"
 
-#include "core/io/compression.h"
-#include "core/io/ip.h"
-#include "core/variant/typed_array.h"
+#include "../../core/io/compression.h"
+#include "../../core/io/ip.h"
+#include "../../core/variant/typed_array.h"
 
 void ENetConnection::broadcast(enet_uint8 p_channel, ENetPacket *p_packet) {
 	ERR_FAIL_NULL_MSG(host, "The ENetConnection instance isn't currently active.");

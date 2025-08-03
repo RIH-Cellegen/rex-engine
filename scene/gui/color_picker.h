@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/gui/box_container.h"
-#include "scene/gui/button.h"
-#include "scene/gui/popup.h"
+#include "box_container.h"
+#include "button.h"
+#include "popup.h"
 
 class AspectRatioContainer;
 class ColorMode;

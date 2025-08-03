@@ -34,7 +34,7 @@
 #include "gdscript_function.h"
 #include "gdscript_lambda_callable.h"
 
-#include "core/os/os.h"
+#include "../../core/os/os.h"
 
 #ifdef DEBUG_ENABLED
 

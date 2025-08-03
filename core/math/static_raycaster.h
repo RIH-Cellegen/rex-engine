@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/object/ref_counted.h"
+#include "../object/ref_counted.h"
 
 class StaticRaycaster : public RefCounted {
 	GDCLASS(StaticRaycaster, RefCounted)

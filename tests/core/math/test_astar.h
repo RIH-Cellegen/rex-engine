@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/math/a_star.h"
+#include "../../../core/math/a_star.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestAStar {
 

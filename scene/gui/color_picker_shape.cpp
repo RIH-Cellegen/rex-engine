@@ -32,7 +32,7 @@
 
 #include "color_picker_shape.h"
 
-#include "scene/gui/margin_container.h"
+#include "margin_container.h"
 
 void ColorPickerShape::_emit_color_changed() {
 	color_picker->emit_signal(SNAME("color_changed"), color_picker->color);

@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/object/class_db.h"
+#include "../../../ore/object/class_db.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestMethodBind {
 

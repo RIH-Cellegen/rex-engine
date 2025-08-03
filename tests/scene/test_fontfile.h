@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "modules/modules_enabled.gen.h"
+#include "../../modules/modules_enabled.gen.h"
 
-#include "scene/resources/font.h"
-#include "tests/test_macros.h"
+#include "../../scene/resources/font.h"
+#include "../test_macros.h"
 
 namespace TestFontfile {
 

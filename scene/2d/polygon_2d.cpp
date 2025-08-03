@@ -32,11 +32,11 @@
 
 #include "polygon_2d.h"
 
-#include "core/math/geometry_2d.h"
+#include "../../core/math/geometry_2d.h"
 #ifndef NAVIGATION_2D_DISABLED
-#include "scene/resources/2d/navigation_mesh_source_geometry_data_2d.h"
-#include "scene/resources/2d/navigation_polygon.h"
-#include "servers/navigation_server_2d.h"
+#include "../resources/2d/navigation_mesh_source_geometry_data_2d.h"
+#include "../resources/2d/navigation_polygon.h"
+#include "../../servers/navigation_server_2d.h"
 #endif // NAVIGATION_2D_DISABLED
 #include "skeleton_2d.h"
 

@@ -36,7 +36,7 @@
 #include "../objects/jolt_body_3d.h"
 #include "../spaces/jolt_space_3d.h"
 
-#include "Jolt/Physics/Constraints/PointConstraint.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Constraints/PointConstraint.h"
 
 namespace {
 

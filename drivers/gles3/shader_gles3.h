@@ -32,13 +32,13 @@
 
 #pragma once
 
-#include "core/math/projection.h"
-#include "core/os/mutex.h"
-#include "core/string/string_builder.h"
-#include "core/templates/hash_map.h"
-#include "core/templates/local_vector.h"
-#include "core/templates/rid_owner.h"
-#include "servers/rendering_server.h"
+#include "../../core/math/projection.h"
+#include "../../core/os/mutex.h"
+#include "../../core/string/string_builder.h"
+#include "../../core/templates/hash_map.h"
+#include "../../core/templates/local_vector.h"
+#include "../../core/templates/rid_owner.h"
+#include "../../servers/rendering_server.h"
 
 #ifdef GLES3_ENABLED
 

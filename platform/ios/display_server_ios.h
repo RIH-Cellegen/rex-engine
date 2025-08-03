@@ -32,26 +32,26 @@
 
 #pragma once
 
-#include "core/input/input.h"
-#include "servers/display_server.h"
+#include "../../core/input/input.h"
+#include "../../servers/display_server.h"
 
 #if defined(RD_ENABLED)
-#include "servers/rendering/renderer_rd/renderer_compositor_rd.h"
-#include "servers/rendering/rendering_device.h"
+#include "../../servers/rendering/renderer_rd/renderer_compositor_rd.h"
+#include "../../servers/rendering/rendering_device.h"
 
 #if defined(VULKAN_ENABLED)
 #import "rendering_context_driver_vulkan_ios.h"
 
-#include "drivers/vulkan/godot_vulkan.h"
+#include "../../drivers/vulkan/godot_vulkan.h"
 #endif // VULKAN_ENABLED
 
 #if defined(METAL_ENABLED)
-#import "drivers/metal/rendering_context_driver_metal.h"
+#import ".../drivers/metal/rendering_context_driver_metal.h"
 #endif // METAL_ENABLED
 #endif // RD_ENABLED
 
 #if defined(GLES3_ENABLED)
-#include "drivers/gles3/rasterizer_gles3.h"
+#include "../../drivers/gles3/rasterizer_gles3.h"
 #endif // GLES3_ENABLED
 
 #import <Foundation/Foundation.h>

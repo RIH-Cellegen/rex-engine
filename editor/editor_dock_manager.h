@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/gui/popup.h"
-#include "scene/gui/split_container.h"
+#include "../scene/gui/popup.h"
+#include "../scene/gui/split_container.h"
 
 class Button;
 class ConfigFile;

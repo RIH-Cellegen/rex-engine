@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/variant/variant.h"
+#include "../variant/variant.h"
 
 extern void (*_print_func)(String);
 

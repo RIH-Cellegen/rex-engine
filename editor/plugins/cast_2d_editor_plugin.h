@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "editor/plugins/editor_plugin.h"
-#include "scene/2d/node_2d.h"
+#include "editor_plugin.h"
+#include "../../scene/2d/node_2d.h"
 
 class CanvasItemEditor;
 

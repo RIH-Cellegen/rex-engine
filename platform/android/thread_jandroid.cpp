@@ -32,7 +32,7 @@
 
 #include "thread_jandroid.h"
 
-#include "core/os/thread.h"
+#include "../../core/os/thread.h"
 
 #include <android/log.h>
 

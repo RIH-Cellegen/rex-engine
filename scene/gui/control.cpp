@@ -33,21 +33,21 @@
 #include "control.h"
 
 #include "container.h"
-#include "core/config/project_settings.h"
-#include "core/input/input_map.h"
-#include "core/os/os.h"
-#include "core/string/string_builder.h"
-#include "core/string/translation_server.h"
-#include "scene/gui/scroll_container.h"
-#include "scene/main/canvas_layer.h"
-#include "scene/main/window.h"
-#include "scene/theme/theme_db.h"
-#include "scene/theme/theme_owner.h"
-#include "servers/rendering_server.h"
-#include "servers/text_server.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/input/input_map.h"
+#include "../../core/os/os.h"
+#include "../../core/string/string_builder.h"
+#include "../../core/string/translation_server.h"
+#include "scroll_container.h"
+#include "../main/canvas_layer.h"
+#include "../main/window.h"
+#include "../theme/theme_db.h"
+#include "../theme/theme_owner.h"
+#include "../../servers/rendering_server.h"
+#include "../../servers/text_server.h"
 
 #ifdef TOOLS_ENABLED
-#include "editor/plugins/control_editor_plugin.h"
+#include "../../editor/plugins/control_editor_plugin.h"
 #endif // TOOLS_ENABLED
 
 // Editor plugin interoperability.

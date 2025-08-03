@@ -36,8 +36,8 @@
 #include "../../util.h"
 #include "../openxr_extension_wrapper.h"
 
-#include "core/templates/vector.h"
-#include "drivers/vulkan/vulkan_hooks.h"
+#include "../../../../core/templates/vector.h"
+#include "../../../../drivers/vulkan/vulkan_hooks.h"
 
 // Always include this as late as possible.
 #include "../../openxr_platform_inc.h"

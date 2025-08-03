@@ -32,9 +32,9 @@
 
 #include "camera_2d.h"
 
-#include "core/config/project_settings.h"
-#include "core/input/input.h"
-#include "scene/main/viewport.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/input/input.h"
+#include "../main/viewport.h"
 
 #ifdef TOOLS_ENABLED
 Dictionary Camera2D::_edit_get_state() const {

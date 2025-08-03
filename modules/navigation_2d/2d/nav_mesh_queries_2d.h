@@ -34,9 +34,9 @@
 
 #include "../nav_utils_2d.h"
 
-#include "servers/navigation/navigation_path_query_parameters_2d.h"
-#include "servers/navigation/navigation_path_query_result_2d.h"
-#include "servers/navigation/navigation_utilities.h"
+#include "../../../servers/navigation/navigation_path_query_parameters_2d.h"
+#include "../../../servers/navigation/navigation_path_query_result_2d.h"
+#include "../../../servers/navigation/navigation_utilities.h"
 
 using namespace NavigationUtilities;
 

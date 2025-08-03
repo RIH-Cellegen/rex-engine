@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/gui/line_edit.h"
+#include "../scene/gui/line_edit.h"
 
 enum InputType {
 	INPUT_KEY = 1,

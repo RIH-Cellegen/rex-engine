@@ -32,12 +32,12 @@
 
 #pragma once
 
-#include "core/io/resource_uid.h"
-#include "core/object/class_db.h"
-#include "core/object/gdvirtual.gen.inc"
-#include "core/object/ref_counted.h"
-#include "core/templates/safe_refcount.h"
-#include "core/templates/self_list.h"
+#include "resource_uid.h"
+#include "../object/class_db.h"
+#include "../object/gdvirtual.gen.inc"
+#include "../object/ref_counted.h"
+#include "../templates/safe_refcount.h"
+#include "../templates/self_list.h"
 
 class Node;
 

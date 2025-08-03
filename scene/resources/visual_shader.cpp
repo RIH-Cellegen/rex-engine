@@ -32,10 +32,10 @@
 
 #include "visual_shader.h"
 
-#include "core/templates/rb_map.h"
-#include "core/templates/vmap.h"
-#include "core/variant/variant_utility.h"
-#include "servers/rendering/shader_types.h"
+#include "../../core/templates/rb_map.h"
+#include "../../core/templates/vmap.h"
+#include "../../core/variant/variant_utility.h"
+#include "../../servers/rendering/shader_types.h"
 #include "visual_shader_nodes.h"
 #include "visual_shader_particle_nodes.h"
 

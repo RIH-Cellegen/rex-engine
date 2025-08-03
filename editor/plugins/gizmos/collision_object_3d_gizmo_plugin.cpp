@@ -32,10 +32,10 @@
 
 #include "collision_object_3d_gizmo_plugin.h"
 
-#include "scene/3d/physics/collision_object_3d.h"
-#include "scene/3d/physics/collision_polygon_3d.h"
-#include "scene/3d/physics/collision_shape_3d.h"
-#include "scene/resources/surface_tool.h"
+#include "../../../scene/3d/physics/collision_object_3d.h"
+#include "../../../scene/3d/physics/collision_polygon_3d.h"
+#include "../../../scene/3d/physics/collision_shape_3d.h"
+#include "../../../scene/resources/surface_tool.h"
 
 CollisionObject3DGizmoPlugin::CollisionObject3DGizmoPlugin() {
 	const Color gizmo_color = SceneTree::get_singleton()->get_debug_collisions_color();

@@ -34,19 +34,19 @@
 
 #ifdef WAYLAND_ENABLED
 
-#include "wayland/wayland_thread.h"
+#include "wayland_thread.h"
 
 #ifdef RD_ENABLED
-#include "servers/rendering/rendering_device.h"
+#include "../../../servers/rendering/rendering_device.h"
 
 #ifdef VULKAN_ENABLED
-#include "wayland/rendering_context_driver_vulkan_wayland.h"
+#include "rendering_context_driver_vulkan_wayland.h"
 #endif
 
 #endif //RD_ENABLED
 
 #ifdef GLES3_ENABLED
-#include "drivers/egl/egl_manager.h"
+#include "../../../drivers/egl/egl_manager.h"
 #endif
 
 #if defined(SPEECHD_ENABLED)
@@ -59,9 +59,9 @@
 #include "freedesktop_screensaver.h"
 #endif
 
-#include "core/config/project_settings.h"
-#include "core/input/input.h"
-#include "servers/display_server.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../core/input/input.h"
+#include "../../../servers/display_server.h"
 
 #include <limits.h>
 #include <stdio.h>

@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/templates/vector.h"
+#include "../../../core/templates/vector.h"
 
 class EQ {
 public:

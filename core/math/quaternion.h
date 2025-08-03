@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/math/math_funcs.h"
-#include "core/math/vector3.h"
-#include "core/string/ustring.h"
+#include "math_funcs.h"
+#include "vector3.h"
+#include "../string/ustring.h"
 
 struct [[nodiscard]] Quaternion {
 	union {

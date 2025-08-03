@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/gui/container.h"
+#include "container.h"
 
 class BoxContainer : public Container {
 	GDCLASS(BoxContainer, Container);

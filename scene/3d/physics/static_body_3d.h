@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/3d/physics/physics_body_3d.h"
+#include "physics_body_3d.h"
 
 #ifndef NAVIGATION_3D_DISABLED
 class NavigationMesh;

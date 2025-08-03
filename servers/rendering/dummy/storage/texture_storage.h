@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "servers/rendering/storage/texture_storage.h"
+#include "../../storage/texture_storage.h"
 
 namespace RendererDummy {
 

@@ -37,7 +37,7 @@
 #include "godot_broad_phase_2d.h"
 #include "godot_collision_object_2d.h"
 
-#include "core/typedefs.h"
+#include "../../core/typedefs.h"
 
 class GodotPhysicsDirectSpaceState2D : public PhysicsDirectSpaceState2D {
 	GDCLASS(GodotPhysicsDirectSpaceState2D, PhysicsDirectSpaceState2D);

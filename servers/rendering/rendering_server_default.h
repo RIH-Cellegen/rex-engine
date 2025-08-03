@@ -32,16 +32,19 @@
 
 #pragma once
 
-#include "core/object/worker_thread_pool.h"
-#include "core/os/thread.h"
-#include "core/templates/command_queue_mt.h"
-#include "core/templates/hash_map.h"
+#include "../../core/object/worker_thread_pool.h"
+#include "../../core/os/thread.h"
+#include "../../core/templates/command_queue_mt.h"
+#include "../../core/templates/hash_map.h"
 #include "renderer_canvas_cull.h"
 #include "renderer_viewport.h"
 #include "rendering_server_globals.h"
-#include "servers/rendering/renderer_compositor.h"
-#include "servers/rendering_server.h"
-#include "servers/server_wrap_mt_common.h"
+#include "renderer_compositor.h"
+#include "../rendering_server.h"
+#include "../server_wrap_mt_common.h"
+
+/* TEXTURE API */
+#include "../server_wrap_mt_common.h"
 
 class RenderingServerDefault : public RenderingServer {
 	enum {
@@ -121,10 +124,6 @@ public:
 #ifdef DEBUG_ENABLED
 #define MAIN_THREAD_SYNC_WARN WARN_PRINT("Call to " + String(__FUNCTION__) + " causing RenderingServer synchronizations on every frame. This significantly affects performance.");
 #endif
-
-#include "servers/server_wrap_mt_common.h"
-
-	/* TEXTURE API */
 
 #define ServerName RendererTextureStorage
 #define server_name RSG::texture_storage

@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/templates/list.h"
-#include "scene/resources/texture.h"
+#include "../core/templates/list.h"
+#include "../scene/resources/texture.h"
 
 class ConfigFile;
 class EditorPlugin;

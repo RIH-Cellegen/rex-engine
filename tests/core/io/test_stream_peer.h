@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/io/stream_peer.h"
-#include "tests/test_macros.h"
+#include "../../../core/io/stream_peer.h"
+#include "../../test_macros.h"
 
 namespace TestStreamPeer {
 

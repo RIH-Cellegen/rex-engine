@@ -32,7 +32,7 @@
 
 #include "check_button.h"
 
-#include "scene/theme/theme_db.h"
+#include "../theme/theme_db.h"
 
 Size2 CheckButton::get_icon_size() const {
 	Ref<Texture2D> on_tex;

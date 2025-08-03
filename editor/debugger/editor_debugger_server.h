@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/debugger/remote_debugger_peer.h"
-#include "core/object/ref_counted.h"
+#include "../../core/debugger/remote_debugger_peer.h"
+#include "../../core/object/ref_counted.h"
 
 class EditorDebuggerServer : public RefCounted {
 public:

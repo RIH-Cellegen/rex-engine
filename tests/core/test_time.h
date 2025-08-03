@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/os/time.h"
+#include "../../core/os/time.h"
 
-#include "thirdparty/doctest/doctest.h"
+#include "../../thirdparty/doctest/doctest.h"
 
 #define YEAR_KEY "year"
 #define MONTH_KEY "month"

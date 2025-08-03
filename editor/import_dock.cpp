@@ -32,14 +32,14 @@
 
 #include "import_dock.h"
 
-#include "core/config/project_settings.h"
-#include "editor/editor_node.h"
-#include "editor/editor_resource_preview.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/themes/editor_scale.h"
-#include "editor/themes/editor_theme_manager.h"
+#include "../core/config/project_settings.h"
+#include "editor_node.h"
+#include "editor_resource_preview.h"
+#include "editor_settings.h"
+#include "editor_string_names.h"
+#include "editor_undo_redo_manager.h"
+#include "themes/editor_scale.h"
+#include "themes/editor_theme_manager.h"
 
 class ImportDockParameters : public Object {
 	GDCLASS(ImportDockParameters, Object);

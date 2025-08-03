@@ -32,8 +32,8 @@
 
 #import "os_ios.h"
 
-#include "core/string/ustring.h"
-#include "main/main.h"
+#include "../../core/string/ustring.h"
+#include "../../main/main.h"
 
 #include <stdio.h>
 #include <string.h>

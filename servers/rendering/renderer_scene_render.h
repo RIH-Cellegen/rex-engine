@@ -32,12 +32,12 @@
 
 #pragma once
 
-#include "core/math/projection.h"
-#include "core/templates/paged_array.h"
-#include "servers/rendering/renderer_geometry_instance.h"
-#include "servers/rendering/rendering_method.h"
-#include "servers/rendering/storage/compositor_storage.h"
-#include "servers/rendering/storage/environment_storage.h"
+#include "../../core/math/projection.h"
+#include "../../core/templates/paged_array.h"
+#include "renderer_geometry_instance.h"
+#include "rendering_method.h"
+#include "storage/compositor_storage.h"
+#include "storage/environment_storage.h"
 #include "storage/render_scene_buffers.h"
 
 class RendererSceneRender {

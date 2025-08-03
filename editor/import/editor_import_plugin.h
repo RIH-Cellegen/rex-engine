@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/io/resource_importer.h"
-#include "core/variant/typed_array.h"
+#include "../../core/io/resource_importer.h"
+#include "../../core/variant/typed_array.h"
 
 class EditorImportPlugin : public ResourceImporter {
 	GDCLASS(EditorImportPlugin, ResourceImporter);

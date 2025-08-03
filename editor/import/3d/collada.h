@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/io/xml_parser.h"
+#include "../../../core/io/xml_parser.h"
 
 class Collada {
 public:

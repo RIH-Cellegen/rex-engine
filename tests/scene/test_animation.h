@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/resources/animation.h"
+#include "../../scene/resources/animation.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestAnimation {
 

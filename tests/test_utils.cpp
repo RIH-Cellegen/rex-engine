@@ -30,10 +30,10 @@
 /* SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                 */
 /**************************************************************************/
 
-#include "tests/test_utils.h"
+#include "test_utils.h"
 
-#include "core/io/dir_access.h"
-#include "core/os/os.h"
+#include "../core/io/dir_access.h"
+#include "../core/os/os.h"
 
 String TestUtils::get_data_path(const String &p_file) {
 	String data_path = "../tests/data";

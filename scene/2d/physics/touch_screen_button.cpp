@@ -32,7 +32,7 @@
 
 #include "touch_screen_button.h"
 
-#include "scene/main/viewport.h"
+#include "../../main/viewport.h"
 
 void TouchScreenButton::set_texture_normal(const Ref<Texture2D> &p_texture) {
 	if (texture_normal == p_texture) {

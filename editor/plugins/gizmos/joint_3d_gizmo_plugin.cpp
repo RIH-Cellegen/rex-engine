@@ -32,13 +32,13 @@
 
 #include "joint_3d_gizmo_plugin.h"
 
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "scene/3d/physics/joints/cone_twist_joint_3d.h"
-#include "scene/3d/physics/joints/generic_6dof_joint_3d.h"
-#include "scene/3d/physics/joints/hinge_joint_3d.h"
-#include "scene/3d/physics/joints/pin_joint_3d.h"
-#include "scene/3d/physics/joints/slider_joint_3d.h"
+#include "../../editor_node.h"
+#include "../../editor_settings.h"
+#include "../../../scene/3d/physics/joints/cone_twist_joint_3d.h"
+#include "../../../scene/3d/physics/joints/generic_6dof_joint_3d.h"
+#include "../../../scene/3d/physics/joints/hinge_joint_3d.h"
+#include "../../../scene/3d/physics/joints/pin_joint_3d.h"
+#include "../../../scene/3d/physics/joints/slider_joint_3d.h"
 
 #define BODY_A_RADIUS 0.25
 #define BODY_B_RADIUS 0.27

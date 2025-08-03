@@ -39,7 +39,7 @@
 #import "keyboard_input_view.h"
 #import "os_ios.h"
 
-#include "core/config/project_settings.h"
+#include "../../core/config/project_settings.h"
 
 #import <AVFoundation/AVFoundation.h>
 #import <GameController/GameController.h>

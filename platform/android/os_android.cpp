@@ -40,18 +40,18 @@
 #include "java_godot_wrapper.h"
 #include "net_socket_android.h"
 
-#include "core/config/project_settings.h"
-#include "core/extension/gdextension_manager.h"
-#include "core/io/xml_parser.h"
-#include "drivers/unix/dir_access_unix.h"
-#include "drivers/unix/file_access_unix.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/extension/gdextension_manager.h"
+#include "../../core/io/xml_parser.h"
+#include "../../drivers/unix/dir_access_unix.h"
+#include "../../drivers/unix/file_access_unix.h"
 #ifdef TOOLS_ENABLED
-#include "editor/editor_node.h"
-#include "editor/plugins/game_view_plugin.h"
+#include "../../editor/editor_node.h"
+#include "../../editor/plugins/game_view_plugin.h"
 #endif
-#include "main/main.h"
-#include "scene/main/scene_tree.h"
-#include "servers/rendering_server.h"
+#include "../../main/main.h"
+#include "../../scene/main/scene_tree.h"
+#include "../../servers/rendering_server.h"
 
 #include <dlfcn.h>
 #include <sys/system_properties.h>

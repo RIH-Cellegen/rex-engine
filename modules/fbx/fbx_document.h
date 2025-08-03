@@ -34,8 +34,8 @@
 
 #include "fbx_state.h"
 
-#include "modules/gltf/gltf_defines.h"
-#include "modules/gltf/gltf_document.h"
+#include "../gltf/gltf_defines.h"
+#include "../gltf/gltf_document.h"
 
 #include <ufbx.h>
 

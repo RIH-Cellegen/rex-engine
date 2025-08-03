@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/io/image.h"
-#include "core/templates/local_vector.h"
-#include "servers/audio_server.h"
+#include "../../core/io/image.h"
+#include "../../core/templates/local_vector.h"
+#include "../audio_server.h"
 
 class MovieWriter : public Object {
 	GDCLASS(MovieWriter, Object);

@@ -32,17 +32,17 @@
 
 #include "editor_plugin_settings.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/config_file.h"
-#include "core/io/dir_access.h"
-#include "core/io/file_access.h"
-#include "editor/editor_node.h"
-#include "editor/editor_string_names.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/margin_container.h"
-#include "scene/gui/separator.h"
-#include "scene/gui/texture_rect.h"
-#include "scene/gui/tree.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/io/config_file.h"
+#include "../../core/io/dir_access.h"
+#include "../../core/io/file_access.h"
+#include "../editor_node.h"
+#include "../editor_string_names.h"
+#include "../themes/editor_scale.h"
+#include "../../scene/gui/margin_container.h"
+#include "../../scene/gui/separator.h"
+#include "../../scene/gui/texture_rect.h"
+#include "../../scene/gui/tree.h"
 
 void EditorPluginSettings::_notification(int p_what) {
 	switch (p_what) {

@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/object/object.h"
+#include "../../../core/object/object.h"
 #include "render_scene_buffers.h"
 #include "render_scene_data.h"
 

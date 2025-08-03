@@ -32,16 +32,16 @@
 
 #include "navigation_obstacle_3d_editor_plugin.h"
 
-#include "core/math/geometry_2d.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/plugins/node_3d_editor_plugin.h"
-#include "scene/3d/navigation/navigation_obstacle_3d.h"
-#include "scene/gui/button.h"
-#include "scene/gui/dialogs.h"
-#include "servers/navigation_server_3d.h"
+#include "../../core/math/geometry_2d.h"
+#include "../editor_node.h"
+#include "../editor_settings.h"
+#include "../editor_string_names.h"
+#include "../editor_undo_redo_manager.h"
+#include "node_3d_editor_plugin.h"
+#include "../../scene/3d/navigation/navigation_obstacle_3d.h"
+#include "../../scene/gui/button.h"
+#include "../../scene/gui/dialogs.h"
+#include "../../servers/navigation_server_3d.h"
 
 bool NavigationObstacle3DGizmoPlugin::has_gizmo(Node3D *p_spatial) {
 	return Object::cast_to<NavigationObstacle3D>(p_spatial) != nullptr;

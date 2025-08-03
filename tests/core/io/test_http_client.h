@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/io/http_client.h"
+#include "../../../core/io/http_client.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
-#include "modules/modules_enabled.gen.h"
+#include "../../../modules/modules_enabled.gen.h"
 
 namespace TestHTTPClient {
 

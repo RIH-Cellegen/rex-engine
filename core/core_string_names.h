@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/string/string_name.h"
+#include "string/string_name.h"
 
 class CoreStringNames {
 	inline static CoreStringNames *singleton = nullptr;

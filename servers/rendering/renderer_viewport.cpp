@@ -32,16 +32,16 @@
 
 #include "renderer_viewport.h"
 
-#include "core/config/project_settings.h"
-#include "core/math/transform_interpolator.h"
-#include "core/object/worker_thread_pool.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/math/transform_interpolator.h"
+#include "../../core/object/worker_thread_pool.h"
 #include "renderer_canvas_cull.h"
 #include "renderer_scene_cull.h"
 #include "rendering_server_globals.h"
 #include "storage/texture_storage.h"
 
 #ifndef XR_DISABLED
-#include "servers/xr/xr_interface.h"
+#include "../xr/xr_interface.h"
 #endif // XR_DISABLED
 
 static Transform2D _canvas_get_transform(RendererViewport::Viewport *p_viewport, RendererCanvasCull::Canvas *p_canvas, RendererViewport::Viewport::CanvasData *p_canvas_data, const Vector2 &p_vp_size) {

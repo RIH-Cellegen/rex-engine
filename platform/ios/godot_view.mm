@@ -36,9 +36,9 @@
 #import "display_server_ios.h"
 #import "godot_view_renderer.h"
 
-#include "core/config/project_settings.h"
-#include "core/os/keyboard.h"
-#include "core/string/ustring.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/os/keyboard.h"
+#include "../../core/string/ustring.h"
 
 #import <CoreMotion/CoreMotion.h>
 

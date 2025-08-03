@@ -32,13 +32,13 @@
 
 #include "editor_toaster.h"
 
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/button.h"
-#include "scene/gui/label.h"
-#include "scene/gui/panel_container.h"
-#include "scene/resources/style_box_flat.h"
+#include "../editor_settings.h"
+#include "../editor_string_names.h"
+#include "../themes/editor_scale.h"
+#include "../../scene/gui/button.h"
+#include "../../scene/gui/label.h"
+#include "../../scene/gui/panel_container.h"
+#include "../../scene/resources/style_box_flat.h"
 
 EditorToaster *EditorToaster::singleton = nullptr;
 

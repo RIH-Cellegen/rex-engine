@@ -32,19 +32,19 @@
 
 #include "mesh_library_editor_plugin.h"
 
-#include "editor/editor_interface.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/gui/editor_file_dialog.h"
-#include "editor/inspector_dock.h"
-#include "editor/plugins/node_3d_editor_plugin.h"
-#include "main/main.h"
-#include "scene/3d/mesh_instance_3d.h"
-#include "scene/3d/navigation/navigation_region_3d.h"
-#include "scene/3d/physics/static_body_3d.h"
-#include "scene/gui/menu_button.h"
-#include "scene/resources/packed_scene.h"
+#include "../editor_interface.h"
+#include "../editor_node.h"
+#include "../editor_settings.h"
+#include "../editor_string_names.h"
+#include "../gui/editor_file_dialog.h"
+#include "../inspector_dock.h"
+#include "node_3d_editor_plugin.h"
+#include "../../main/main.h"
+#include "../../scene/3d/mesh_instance_3d.h"
+#include "../../scene/3d/navigation/navigation_region_3d.h"
+#include "../../scene/3d/physics/static_body_3d.h"
+#include "../../scene/gui/menu_button.h"
+#include "../../scene/resources/packed_scene.h"
 
 void MeshLibraryEditor::edit(const Ref<MeshLibrary> &p_mesh_library) {
 	mesh_library = p_mesh_library;

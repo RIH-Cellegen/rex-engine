@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/gui/box_container.h"
-#include "scene/resources/theme.h"
+#include "../../scene/gui/box_container.h"
+#include "../../scene/resources/theme.h"
 
 class Button;
 class ColorPickerButton;

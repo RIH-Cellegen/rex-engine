@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/object/class_db.h"
-#include "core/object/object.h"
-#include "core/object/script_language.h"
+#include "../../../core/object/class_db.h"
+#include "../../../core/object/object.h"
+#include "../../../core/object/script_language.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 #ifdef SANITIZERS_ENABLED
 #ifdef __has_feature

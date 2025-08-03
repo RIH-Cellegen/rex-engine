@@ -31,7 +31,7 @@
 /**************************************************************************/
 
 #include "panel.h"
-#include "scene/theme/theme_db.h"
+#include "../theme/theme_db.h"
 
 void Panel::_notification(int p_what) {
 	switch (p_what) {

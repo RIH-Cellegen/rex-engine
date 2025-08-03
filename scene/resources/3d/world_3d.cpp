@@ -32,11 +32,11 @@
 
 #include "world_3d.h"
 
-#include "core/config/project_settings.h"
-#include "scene/3d/camera_3d.h"
-#include "scene/resources/camera_attributes.h"
-#include "scene/resources/environment.h"
-#include "servers/navigation_server_3d.h"
+#include "../../../core/config/project_settings.h"
+#include "../../3d/camera_3d.h"
+#include "../camera_attributes.h"
+#include "../environment.h"
+#include "../../../servers/navigation_server_3d.h"
 
 void World3D::_register_camera(Camera3D *p_camera) {
 	cameras.insert(p_camera);

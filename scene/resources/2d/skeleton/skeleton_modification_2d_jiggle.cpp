@@ -32,8 +32,8 @@
 
 #include "skeleton_modification_2d_jiggle.h"
 
-#include "scene/2d/skeleton_2d.h"
-#include "scene/resources/world_2d.h"
+#include "../../../2d/skeleton_2d.h"
+#include "../../world_2d.h"
 
 bool SkeletonModification2DJiggle::_set(const StringName &p_path, const Variant &p_value) {
 	String path = p_path;

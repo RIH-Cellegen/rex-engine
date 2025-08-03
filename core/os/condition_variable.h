@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/os/mutex.h"
-#include "core/os/safe_binary_mutex.h"
+#include "mutex.h"
+#include "safe_binary_mutex.h"
 
 #ifdef THREADS_ENABLED
 

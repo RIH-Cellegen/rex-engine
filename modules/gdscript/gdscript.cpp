@@ -45,20 +45,20 @@
 #endif
 
 #ifdef TESTS_ENABLED
-#include "tests/gdscript_test_runner.h"
+#include "../../tests/gdscript_test_runner.h"
 #endif
 
-#include "core/config/engine.h"
-#include "core/config/project_settings.h"
-#include "core/core_constants.h"
-#include "core/io/file_access.h"
+#include "../../core/config/engine.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/core_constants.h"
+#include "../../core/io/file_access.h"
 
-#include "scene/resources/packed_scene.h"
-#include "scene/scene_string_names.h"
+#include "../../scene/resources/packed_scene.h"
+#include "../../scene/scene_string_names.h"
 
 #ifdef TOOLS_ENABLED
-#include "core/extension/gdextension_manager.h"
-#include "editor/editor_paths.h"
+#include "../../core/extension/gdextension_manager.h"
+#include "../../editor/editor_paths.h"
 #endif
 
 ///////////////////////////

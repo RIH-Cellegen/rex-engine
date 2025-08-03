@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/string/string_name.h"
-#include "core/templates/hash_map.h"
+#include "string/string_name.h"
+#include "templates/hash_map.h"
 
 class CoreConstants {
 public:

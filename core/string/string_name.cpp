@@ -32,9 +32,9 @@
 
 #include "string_name.h"
 
-#include "core/os/mutex.h"
-#include "core/os/os.h"
-#include "core/string/print_string.h"
+#include "../os/mutex.h"
+#include "../os/os.h"
+#include "print_string.h"
 
 struct StringName::Table {
 	constexpr static uint32_t TABLE_BITS = 16;

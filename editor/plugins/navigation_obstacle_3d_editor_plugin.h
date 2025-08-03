@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "editor/plugins/editor_plugin.h"
-#include "editor/plugins/node_3d_editor_gizmos.h"
-#include "scene/gui/box_container.h"
+#include "editor_plugin.h"
+#include "node_3d_editor_gizmos.h"
+#include "../../scene/gui/box_container.h"
 
 class Button;
 class ConfirmationDialog;

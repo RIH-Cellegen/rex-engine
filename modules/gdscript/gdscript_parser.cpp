@@ -35,18 +35,18 @@
 #include "gdscript.h"
 #include "gdscript_tokenizer_buffer.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/resource_loader.h"
-#include "core/math/math_defs.h"
-#include "scene/main/multiplayer_api.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/io/resource_loader.h"
+#include "../../core/math/math_defs.h"
+#include "../../scene/main/multiplayer_api.h"
 
 #ifdef DEBUG_ENABLED
-#include "core/string/string_builder.h"
-#include "servers/text_server.h"
+#include "../../core/string/string_builder.h"
+#include "../../servers/text_server.h"
 #endif
 
 #ifdef TOOLS_ENABLED
-#include "editor/editor_settings.h"
+#include "../../editor/editor_settings.h"
 #endif
 
 // This function is used to determine that a type is "built-in" as opposed to native

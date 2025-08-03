@@ -32,7 +32,7 @@
 
 #include "rendering_server_default.h"
 
-#include "core/os/os.h"
+#include "../../core/os/os.h"
 #include "renderer_canvas_cull.h"
 #include "renderer_scene_cull.h"
 #include "rendering_server_globals.h"

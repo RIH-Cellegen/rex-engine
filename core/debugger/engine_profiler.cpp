@@ -32,7 +32,7 @@
 
 #include "engine_profiler.h"
 
-#include "core/debugger/engine_debugger.h"
+#include "engine_debugger.h"
 
 void EngineProfiler::_bind_methods() {
 	GDVIRTUAL_BIND(_toggle, "enable", "options");

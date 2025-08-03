@@ -33,12 +33,12 @@
 #pragma once
 
 #include "../../rendering_server_globals.h"
-#include "core/templates/local_vector.h"
-#include "core/templates/rid_owner.h"
-#include "core/templates/self_list.h"
-#include "servers/rendering/renderer_rd/shaders/skeleton.glsl.gen.h"
-#include "servers/rendering/storage/mesh_storage.h"
-#include "servers/rendering/storage/utilities.h"
+#include "../../../../core/templates/local_vector.h"
+#include "../../../../core/templates/rid_owner.h"
+#include "../../../../core/templates/self_list.h"
+#include "../shaders/skeleton.glsl.gen.h"
+#include "../../storage/mesh_storage.h"
+#include "../../storage/utilities.h"
 
 namespace RendererRD {
 

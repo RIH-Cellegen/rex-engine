@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/math/color.h"
-#include "core/string/string_name.h"
-#include "core/templates/hash_map.h"
-#include "core/templates/hash_set.h"
+#include "../../core/math/color.h"
+#include "../../core/string/string_name.h"
+#include "../../core/templates/hash_map.h"
+#include "../../core/templates/hash_set.h"
 
 // The default icon theme is designed to be used for a dark theme. This map stores
 // Color values to convert to other colors for better readability on a light theme.

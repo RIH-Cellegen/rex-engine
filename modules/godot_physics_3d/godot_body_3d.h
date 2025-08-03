@@ -35,7 +35,7 @@
 #include "godot_area_3d.h"
 #include "godot_collision_object_3d.h"
 
-#include "core/templates/vset.h"
+#include "../../core/templates/vset.h"
 
 class GodotConstraint3D;
 class GodotPhysicsDirectBodyState3D;

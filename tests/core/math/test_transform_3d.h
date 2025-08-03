@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/math/transform_3d.h"
+#include "../../../core/math/transform_3d.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestTransform3D {
 

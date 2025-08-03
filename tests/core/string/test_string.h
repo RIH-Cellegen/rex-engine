@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/string/ustring.h"
+#include "../../../core/string/ustring.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestString {
 

@@ -34,7 +34,7 @@
 
 #include <zlib.h> // Should come before including tinyexr.
 
-#include "thirdparty/tinyexr/tinyexr.h"
+#include "../../thirdparty/tinyexr/tinyexr.h"
 
 Error ImageLoaderTinyEXR::load_image(Ref<Image> p_image, Ref<FileAccess> f, BitField<ImageFormatLoader::LoaderFlags> p_flags, float p_scale) {
 	Vector<uint8_t> src_image;

@@ -32,11 +32,11 @@
 
 #include "editor_object_selector.h"
 
-#include "editor/editor_data.h"
-#include "editor/editor_node.h"
-#include "editor/editor_string_names.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/margin_container.h"
+#include "../editor_data.h"
+#include "../editor_node.h"
+#include "../editor_string_names.h"
+#include "../themes/editor_scale.h"
+#include "../../scene/gui/margin_container.h"
 
 Size2 EditorObjectSelector::get_minimum_size() const {
 	Ref<Font> font = get_theme_font(SceneStringName(font));

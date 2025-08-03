@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "editor/plugins/editor_plugin.h"
-#include "scene/3d/mesh_instance_3d.h"
-#include "scene/3d/physics/collision_polygon_3d.h"
-#include "scene/gui/box_container.h"
-#include "scene/resources/immediate_mesh.h"
+#include "editor_plugin.h"
+#include "../../scene/3d/mesh_instance_3d.h"
+#include "../../scene/3d/physics/collision_polygon_3d.h"
+#include "../../scene/gui/box_container.h"
+#include "../../scene/resources/immediate_mesh.h"
 
 class CanvasItemEditor;
 class MenuButton;

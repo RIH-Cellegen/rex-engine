@@ -34,8 +34,8 @@
 
 #include "godot_collision_object_2d.h"
 
-#include "core/templates/self_list.h"
-#include "servers/physics_server_2d.h"
+#include "../../core/templates/self_list.h"
+#include "../../servers/physics_server_2d.h"
 
 class GodotSpace2D;
 class GodotBody2D;

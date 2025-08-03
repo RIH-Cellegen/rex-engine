@@ -32,8 +32,8 @@
 
 #include "rect2i.h"
 
-#include "core/math/rect2.h"
-#include "core/string/ustring.h"
+#include "rect2.h"
+#include "../string/ustring.h"
 
 Rect2i::operator String() const {
 	return "[P: " + position.operator String() + ", S: " + size + "]";

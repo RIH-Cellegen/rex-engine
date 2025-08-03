@@ -34,8 +34,8 @@
 
 #include "variant.h"
 
-#include "core/debugger/engine_debugger.h"
-#include "core/object/class_db.h"
+#include "../debugger/engine_debugger.h"
+#include "../object/class_db.h"
 
 template <typename R, typename A, typename B>
 class OperatorEvaluatorAdd {

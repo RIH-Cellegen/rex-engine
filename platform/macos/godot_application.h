@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/os/os.h"
+#include "../../../core/os/os.h"
 
 #import <AppKit/AppKit.h>
 #import <Foundation/Foundation.h>

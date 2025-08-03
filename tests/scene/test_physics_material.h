@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/resources/physics_material.h"
-#include "tests/test_macros.h"
+#include "../../scene/resources/physics_material.h"
+#include "../test_macros.h"
 
 namespace TestPhysics_material {
 

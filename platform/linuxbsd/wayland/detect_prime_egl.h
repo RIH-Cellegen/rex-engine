@@ -36,8 +36,8 @@
 #ifdef EGL_ENABLED
 
 #ifdef GLAD_ENABLED
-#include "thirdparty/glad/glad/egl.h"
-#include "thirdparty/glad/glad/gl.h"
+#include "../../../thirdparty/glad/glad/egl.h"
+#include "../../../thirdparty/glad/glad/gl.h"
 #else
 #include <EGL/egl.h>
 #include <EGL/eglext.h>

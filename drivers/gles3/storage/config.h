@@ -34,9 +34,9 @@
 
 #ifdef GLES3_ENABLED
 
-#include "core/config/project_settings.h"
-#include "core/string/ustring.h"
-#include "core/templates/hash_set.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../core/string/ustring.h"
+#include "../../../core/templates/hash_set.h"
 
 #include "platform_gl.h"
 

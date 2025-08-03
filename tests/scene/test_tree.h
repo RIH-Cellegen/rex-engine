@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/gui/tree.h"
+#include "../../scene/gui/tree.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestTree {
 

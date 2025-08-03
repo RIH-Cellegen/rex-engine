@@ -32,7 +32,7 @@
 
 #include "rendering_device_driver.h"
 
-#include "thirdparty/spirv-reflect/spirv_reflect.h"
+#include "../../thirdparty/spirv-reflect/spirv_reflect.h"
 
 /****************/
 /**** SHADER ****/

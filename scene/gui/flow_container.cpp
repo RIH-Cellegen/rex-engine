@@ -32,8 +32,8 @@
 
 #include "flow_container.h"
 
-#include "scene/gui/texture_rect.h"
-#include "scene/theme/theme_db.h"
+#include "texture_rect.h"
+#include "../theme/theme_db.h"
 
 struct _LineData {
 	int child_count = 0;

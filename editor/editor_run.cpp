@@ -32,13 +32,13 @@
 
 #include "editor_run.h"
 
-#include "core/config/project_settings.h"
-#include "editor/debugger/editor_debugger_node.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/run_instances_dialog.h"
-#include "main/main.h"
-#include "servers/display_server.h"
+#include "../core/config/project_settings.h"
+#include "debugger/editor_debugger_node.h"
+#include "editor_node.h"
+#include "editor_settings.h"
+#include "run_instances_dialog.h"
+#include "../main/main.h"
+#include "../servers/display_server.h"
 
 EditorRun::Status EditorRun::get_status() const {
 	return status;

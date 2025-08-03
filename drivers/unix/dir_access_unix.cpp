@@ -34,10 +34,10 @@
 
 #if defined(UNIX_ENABLED)
 
-#include "core/os/memory.h"
-#include "core/os/os.h"
-#include "core/string/print_string.h"
-#include "core/templates/list.h"
+#include "../../core/os/memory.h"
+#include "../../core/os/os.h"
+#include "../../core/string/print_string.h"
+#include "../../core/templates/list.h"
 
 #include <errno.h>
 #include <fcntl.h>

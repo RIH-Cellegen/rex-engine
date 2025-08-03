@@ -32,11 +32,11 @@
 
 #include "tab_bar.h"
 
-#include "scene/gui/box_container.h"
-#include "scene/gui/label.h"
-#include "scene/gui/texture_rect.h"
-#include "scene/main/viewport.h"
-#include "scene/theme/theme_db.h"
+#include "box_container.h"
+#include "label.h"
+#include "texture_rect.h"
+#include "../main/viewport.h"
+#include "../theme/theme_db.h"
 
 Size2 TabBar::get_minimum_size() const {
 	Size2 ms;

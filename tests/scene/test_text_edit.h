@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/gui/text_edit.h"
+#include "../../scene/gui/text_edit.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestTextEdit {
 static inline Array build_array() {

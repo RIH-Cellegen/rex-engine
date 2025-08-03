@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/object/class_db.h"
-#include "core/object/ref_counted.h"
+#include "class_db.h"
+#include "ref_counted.h"
 
 class UndoRedo : public Object {
 	GDCLASS(UndoRedo, Object);

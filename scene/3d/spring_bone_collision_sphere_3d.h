@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/3d/spring_bone_collision_3d.h"
+#include "spring_bone_collision_3d.h"
 
 class SpringBoneCollisionCapsule3D;
 

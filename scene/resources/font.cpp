@@ -33,14 +33,14 @@
 #include "font.h"
 #include "font.compat.inc"
 
-#include "core/io/image_loader.h"
-#include "core/templates/hash_map.h"
-#include "core/templates/hashfuncs.h"
-#include "scene/resources/image_texture.h"
-#include "scene/resources/text_line.h"
-#include "scene/resources/text_paragraph.h"
-#include "scene/resources/theme.h"
-#include "scene/theme/theme_db.h"
+#include "../../core/io/image_loader.h"
+#include "../../core/templates/hash_map.h"
+#include "../../core/templates/hashfuncs.h"
+#include "image_texture.h"
+#include "text_line.h"
+#include "text_paragraph.h"
+#include "theme.h"
+#include "../theme/theme_db.h"
 
 /*************************************************************************/
 /*  Font                                                                 */

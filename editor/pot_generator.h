@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/io/file_access.h"
-#include "core/templates/hash_map.h"
-#include "core/templates/hash_set.h"
+#include "../core/io/file_access.h"
+#include "../core/templates/hash_map.h"
+#include "../core/templates/hash_set.h"
 
 //#define DEBUG_POT
 

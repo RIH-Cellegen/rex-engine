@@ -32,12 +32,12 @@
 
 #include "editor_sectioned_inspector.h"
 
-#include "editor/editor_inspector.h"
-#include "editor/editor_property_name_processor.h"
-#include "editor/editor_string_names.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/check_button.h"
-#include "scene/gui/tree.h"
+#include "editor_inspector.h"
+#include "editor_property_name_processor.h"
+#include "editor_string_names.h"
+#include "themes/editor_scale.h"
+#include "../scene/gui/check_button.h"
+#include "../scene/gui/tree.h"
 
 static bool _property_path_matches(const String &p_property_path, const String &p_filter, EditorPropertyNameProcessor::Style p_style) {
 	if (p_property_path.containsn(p_filter)) {

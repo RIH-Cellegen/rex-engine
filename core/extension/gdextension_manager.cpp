@@ -32,11 +32,11 @@
 
 #include "gdextension_manager.h"
 
-#include "core/extension/gdextension_library_loader.h"
-#include "core/extension/gdextension_special_compat_hashes.h"
-#include "core/io/dir_access.h"
-#include "core/io/file_access.h"
-#include "core/object/script_language.h"
+#include "gdextension_library_loader.h"
+#include "gdextension_special_compat_hashes.h"
+#include "../io/dir_access.h"
+#include "../io/file_access.h"
+#include "../object/script_language.h"
 
 GDExtensionManager::LoadStatus GDExtensionManager::_load_extension_internal(const Ref<GDExtension> &p_extension, bool p_first_load) {
 	if (level >= 0) { // Already initialized up to some level.

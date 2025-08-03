@@ -32,9 +32,9 @@
 
 #include "item_list.h"
 
-#include "core/config/project_settings.h"
-#include "core/os/os.h"
-#include "scene/theme/theme_db.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/os/os.h"
+#include "../theme/theme_db.h"
 
 void ItemList::_shape_text(int p_idx) {
 	Item &item = items.write[p_idx];

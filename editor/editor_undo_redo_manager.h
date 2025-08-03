@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/object/object.h"
-#include "core/object/undo_redo.h"
+#include "../core/object/object.h"
+#include "../core/object/undo_redo.h"
 
 class EditorUndoRedoManager : public Object {
 	GDCLASS(EditorUndoRedoManager, Object);

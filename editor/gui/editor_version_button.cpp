@@ -32,8 +32,8 @@
 
 #include "editor_version_button.h"
 
-#include "core/os/time.h"
-#include "core/version.h"
+#include "../../core/os/time.h"
+#include "../../core/version.h"
 
 String _get_version_string(EditorVersionButton::VersionFormat p_format) {
 	String main;

@@ -34,9 +34,9 @@
 
 #include "dds_enums.h"
 
-#include "core/io/file_access.h"
-#include "core/io/file_access_memory.h"
-#include "scene/resources/image_texture.h"
+#include "../../core/io/file_access.h"
+#include "../../core/io/file_access_memory.h"
+#include "../../scene/resources/image_texture.h"
 
 DDSFormat _dxgi_to_dds_format(uint32_t p_dxgi_format) {
 	switch (p_dxgi_format) {

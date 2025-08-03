@@ -34,7 +34,7 @@
 
 #include "texture_loader_ktx.h"
 
-#include "scene/resources/image_texture.h"
+#include "../../scene/resources/image_texture.h"
 
 static Ref<ResourceFormatKTX> resource_loader_ktx;
 

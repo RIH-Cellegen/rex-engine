@@ -32,9 +32,9 @@
 
 #include "image_texture.h"
 
-#include "core/io/image_loader.h"
-#include "scene/resources/bit_map.h"
-#include "scene/resources/placeholder_textures.h"
+#include "../../core/io/image_loader.h"
+#include "bit_map.h"
+#include "placeholder_textures.h"
 
 void ImageTexture::reload_from_file() {
 	String path = ResourceLoader::path_remap(get_path());

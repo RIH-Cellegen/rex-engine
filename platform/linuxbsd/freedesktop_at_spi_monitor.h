@@ -34,8 +34,8 @@
 
 #ifdef DBUS_ENABLED
 
-#include "core/os/thread.h"
-#include "core/os/thread_safe.h"
+#include "../../core/os/thread.h"
+#include "../../core/os/thread_safe.h"
 
 class FreeDesktopAtSPIMonitor {
 private:

@@ -33,15 +33,15 @@
 #include "tile_set.h"
 #include "tile_set.compat.inc"
 
-#include "core/io/marshalls.h"
-#include "core/math/geometry_2d.h"
-#include "core/templates/local_vector.h"
-#include "core/templates/rb_set.h"
-#include "scene/gui/control.h"
-#include "scene/resources/image_texture.h"
+#include "../../../core/io/marshalls.h"
+#include "../../../core/math/geometry_2d.h"
+#include "../../../core/templates/local_vector.h"
+#include "../../../core/templates/rb_set.h"
+#include "../../gui/control.h"
+#include "../image_texture.h"
 
 #ifndef NAVIGATION_2D_DISABLED
-#include "servers/navigation_server_2d.h"
+#include "../../../servers/navigation_server_2d.h"
 #endif // NAVIGATION_2D_DISABLED
 
 /////////////////////////////// TileMapPattern //////////////////////////////////////

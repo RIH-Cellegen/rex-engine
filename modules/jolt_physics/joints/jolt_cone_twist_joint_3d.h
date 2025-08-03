@@ -35,9 +35,9 @@
 #include "../jolt_physics_server_3d.h"
 #include "jolt_joint_3d.h"
 
-#include "Jolt/Jolt.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Jolt.h"
 
-#include "Jolt/Physics/Body/Body.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Body/Body.h"
 
 class JoltConeTwistJoint3D final : public JoltJoint3D {
 	typedef PhysicsServer3D::ConeTwistJointParam Parameter;

@@ -35,7 +35,7 @@
 #include <openxr/openxr.h>
 
 #include "../extensions/openxr_composition_layer_extension.h"
-#include "scene/3d/node_3d.h"
+#include "../../../scene/3d/node_3d.h"
 
 class JavaObject;
 class MeshInstance3D;

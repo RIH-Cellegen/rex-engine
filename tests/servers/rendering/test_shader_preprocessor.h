@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "servers/rendering/shader_preprocessor.h"
+#include "../../../servers/rendering/shader_preprocessor.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 #include <cctype>
 

@@ -32,12 +32,12 @@
 
 #pragma once
 
-#include "scene/3d/mesh_instance_3d.h"
-#include "scene/3d/navigation/navigation_region_3d.h"
-#include "scene/main/window.h"
-#include "scene/resources/3d/primitive_meshes.h"
+#include "../../scene/3d/mesh_instance_3d.h"
+#include "../../scene/3d/navigation/navigation_region_3d.h"
+#include "../../scene/main/window.h"
+#include "../../scene/resources/3d/primitive_meshes.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestNavigationRegion3D {
 

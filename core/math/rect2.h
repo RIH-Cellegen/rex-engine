@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/error/error_macros.h"
-#include "core/math/vector2.h"
+#include "../error/error_macros.h"
+#include "vector2.h"
 
 class String;
 struct Rect2i;

@@ -32,14 +32,14 @@
 
 #pragma once
 
-#include "core/io/resource.h"
-#include "core/io/resource_loader.h"
-#include "core/io/resource_saver.h"
-#include "core/os/os.h"
+#include "../../../core/io/resource.h"
+#include "../../../core/io/resource_loader.h"
+#include "../../../core/io/resource_saver.h"
+#include "../../../core/os/os.h"
 
-#include "thirdparty/doctest/doctest.h"
+#include "../../../thirdparty/doctest/doctest.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestResource {
 

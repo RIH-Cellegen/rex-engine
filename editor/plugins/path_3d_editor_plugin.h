@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "editor/plugins/editor_plugin.h"
-#include "editor/plugins/node_3d_editor_gizmos.h"
-#include "scene/3d/camera_3d.h"
-#include "scene/3d/path_3d.h"
+#include "editor_plugin.h"
+#include "node_3d_editor_gizmos.h"
+#include "../../scene/3d/camera_3d.h"
+#include "../../scene/3d/path_3d.h"
 
 class HBoxContainer;
 class MenuButton;

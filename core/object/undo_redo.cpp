@@ -32,9 +32,9 @@
 
 #include "undo_redo.h"
 
-#include "core/io/resource.h"
-#include "core/os/os.h"
-#include "core/templates/local_vector.h"
+#include "../io/resource.h"
+#include "../os/os.h"
+#include "../templates/local_vector.h"
 
 void UndoRedo::Operation::delete_reference() {
 	if (type != Operation::TYPE_REFERENCE) {

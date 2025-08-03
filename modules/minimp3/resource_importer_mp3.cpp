@@ -32,11 +32,11 @@
 
 #include "resource_importer_mp3.h"
 
-#include "core/io/file_access.h"
-#include "core/io/resource_saver.h"
+#include "../../core/io/file_access.h"
+#include "../../core/io/resource_saver.h"
 
 #ifdef TOOLS_ENABLED
-#include "editor/import/audio_stream_import_settings.h"
+#include "../../editor/import/audio_stream_import_settings.h"
 #endif
 
 String ResourceImporterMP3::get_importer_name() const {

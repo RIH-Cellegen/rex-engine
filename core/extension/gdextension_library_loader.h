@@ -34,9 +34,9 @@
 
 #include <functional>
 
-#include "core/extension/gdextension_loader.h"
-#include "core/io/config_file.h"
-#include "core/os/shared_object.h"
+#include "gdextension_loader.h"
+#include "../io/config_file.h"
+#include "../os/shared_object.h"
 
 class GDExtensionLibraryLoader : public GDExtensionLoader {
 	GDSOFTCLASS(GDExtensionLibraryLoader, GDExtensionLoader);

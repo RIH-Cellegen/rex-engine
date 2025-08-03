@@ -35,17 +35,17 @@
 #include "tile_data_editors.h"
 #include "tiles_editor_plugin.h"
 
-#include "editor/editor_file_system.h"
-#include "editor/editor_inspector.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/gui/editor_file_dialog.h"
-#include "editor/themes/editor_scale.h"
+#include "../../editor_file_system.h"
+#include "../../editor_inspector.h"
+#include "../../editor_node.h"
+#include "../../editor_settings.h"
+#include "../../editor_undo_redo_manager.h"
+#include "../../gui/editor_file_dialog.h"
+#include "../../themes/editor_scale.h"
 
-#include "scene/gui/box_container.h"
-#include "scene/gui/control.h"
-#include "scene/gui/dialogs.h"
+#include "../../../scene/gui/box_container.h"
+#include "../../../scene/gui/control.h"
+#include "../../../scene/gui/dialogs.h"
 
 TileSetEditor *TileSetEditor::singleton = nullptr;
 

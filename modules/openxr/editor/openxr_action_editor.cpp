@@ -32,8 +32,8 @@
 
 #include "openxr_action_editor.h"
 
-#include "editor/editor_string_names.h"
-#include "editor/themes/editor_scale.h"
+#include "../../../editor/editor_string_names.h"
+#include "../../../editor/themes/editor_scale.h"
 
 void OpenXRActionEditor::_bind_methods() {
 	ClassDB::bind_method(D_METHOD("_do_set_name", "name"), &OpenXRActionEditor::_do_set_name);

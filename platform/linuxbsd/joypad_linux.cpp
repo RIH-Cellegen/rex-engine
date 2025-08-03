@@ -34,7 +34,7 @@
 
 #include "joypad_linux.h"
 
-#include "core/os/os.h"
+#include "../../core/os/os.h"
 
 #include <dirent.h>
 #include <errno.h>

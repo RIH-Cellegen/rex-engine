@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/2d/parallax_2d.h"
-#include "tests/test_macros.h"
+#include "../../scene/2d/parallax_2d.h"
+#include "../test_macros.h"
 
 namespace TestParallax2D {
 

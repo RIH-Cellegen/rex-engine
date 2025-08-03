@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "servers/rendering/shader_compiler.h"
-#include "servers/rendering/shader_language.h"
-#include "servers/rendering/storage/material_storage.h"
-#include "servers/rendering/storage/utilities.h"
+#include "../../shader_compiler.h"
+#include "../../shader_language.h"
+#include "../../storage/material_storage.h"
+#include "../../storage/utilities.h"
 
 namespace RendererDummy {
 

@@ -34,8 +34,8 @@
 
 #ifdef TOOLS_ENABLED
 
-#include "core/os/os.h"
-#include "core/string/print_string.h"
+#include "../../core/os/os.h"
+#include "../../core/string/print_string.h"
 
 #include <ProcessDxtc.hpp>
 #include <ProcessRGB.hpp>

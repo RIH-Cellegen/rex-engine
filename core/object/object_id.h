@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/typedefs.h"
+#include "../typedefs.h"
 
 // Class to store an object ID (int64)
 // needs to be compatile with int64 because this is what Variant uses

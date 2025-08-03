@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/os/midi_driver.h"
+#include "../../core/os/midi_driver.h"
 
 #include "godot_js.h"
 #include "godot_midi.h"

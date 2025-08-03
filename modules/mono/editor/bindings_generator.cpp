@@ -39,13 +39,13 @@
 #include "../utils/path_utils.h"
 #include "../utils/string_utils.h"
 
-#include "core/config/engine.h"
-#include "core/core_constants.h"
-#include "core/io/compression.h"
-#include "core/io/dir_access.h"
-#include "core/io/file_access.h"
-#include "core/os/os.h"
-#include "main/main.h"
+#include "../../../core/config/engine.h"
+#include "../../../core/core_constants.h"
+#include "../../../core/io/compression.h"
+#include "../../../core/io/dir_access.h"
+#include "../../../core/io/file_access.h"
+#include "../../../core/os/os.h"
+#include "../../../main/main.h"
 
 StringBuilder &operator<<(StringBuilder &r_sb, const String &p_string) {
 	r_sb.append(p_string);

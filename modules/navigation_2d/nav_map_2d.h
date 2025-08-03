@@ -37,9 +37,9 @@
 #include "nav_rid_2d.h"
 #include "nav_utils_2d.h"
 
-#include "core/math/math_defs.h"
-#include "core/object/worker_thread_pool.h"
-#include "servers/navigation/navigation_globals.h"
+#include "../../core/math/math_defs.h"
+#include "../../core/object/worker_thread_pool.h"
+#include "../../servers/navigation/navigation_globals.h"
 
 #include <KdTree2d.h>
 #include <RVOSimulator2d.h>

@@ -32,16 +32,16 @@
 
 #include "resource_importer_texture.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/config_file.h"
-#include "core/io/image_loader.h"
-#include "core/version.h"
-#include "editor/editor_file_system.h"
-#include "editor/gui/editor_toaster.h"
-#include "editor/import/resource_importer_texture_settings.h"
-#include "editor/themes/editor_scale.h"
-#include "editor/themes/editor_theme_manager.h"
-#include "scene/resources/compressed_texture.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/io/config_file.h"
+#include "../../core/io/image_loader.h"
+#include "../../core/version.h"
+#include "../editor_file_system.h"
+#include "../gui/editor_toaster.h"
+#include "resource_importer_texture_settings.h"
+#include "../themes/editor_scale.h"
+#include "../themes/editor_theme_manager.h"
+#include "../../scene/resources/compressed_texture.h"
 
 void ResourceImporterTexture::_texture_reimport_roughness(const Ref<CompressedTexture2D> &p_tex, const String &p_normal_path, RS::TextureDetectRoughnessChannel p_channel) {
 	ERR_FAIL_COND(p_tex.is_null());

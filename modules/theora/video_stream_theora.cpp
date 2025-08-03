@@ -32,11 +32,11 @@
 
 #include "video_stream_theora.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/image.h"
-#include "scene/resources/image_texture.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/io/image.h"
+#include "../../scene/resources/image_texture.h"
 
-#include "thirdparty/misc/yuv2rgb.h"
+#include "../../thirdparty/misc/yuv2rgb.h"
 
 int VideoStreamPlaybackTheora::buffer_data() {
 	char *buffer = ogg_sync_buffer(&oy, 4096);

@@ -32,9 +32,9 @@
 
 #include "multi_node_edit.h"
 
-#include "core/math/math_fieldwise.h"
-#include "editor/editor_node.h"
-#include "editor/editor_undo_redo_manager.h"
+#include "../core/math/math_fieldwise.h"
+#include "editor_node.h"
+#include "editor_undo_redo_manager.h"
 
 bool MultiNodeEdit::_set(const StringName &p_name, const Variant &p_value) {
 	return _set_impl(p_name, p_value, "");

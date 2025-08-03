@@ -45,12 +45,12 @@
 #include "jolt_physics_direct_space_state_3d.h"
 #include "jolt_temp_allocator.h"
 
-#include "core/io/file_access.h"
-#include "core/os/time.h"
-#include "core/string/print_string.h"
-#include "core/variant/variant_utility.h"
+#include "../../../core/io/file_access.h"
+#include "../../../core/os/time.h"
+#include "../../../core/string/print_string.h"
+#include "../../../core/variant/variant_utility.h"
 
-#include "Jolt/Physics/PhysicsScene.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/PhysicsScene.h"
 
 namespace {
 

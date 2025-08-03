@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/templates/rid.h"
-#include "scene/resources/material.h"
+#include "../../../core/templates/rid.h"
+#include "../material.h"
 
 class ProceduralSkyMaterial : public Material {
 	GDCLASS(ProceduralSkyMaterial, Material);

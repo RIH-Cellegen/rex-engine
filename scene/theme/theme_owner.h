@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/object/object.h"
-#include "scene/resources/theme.h"
+#include "../../core/object/object.h"
+#include "../../scene/resources/theme.h"
 
 class Control;
 class Node;

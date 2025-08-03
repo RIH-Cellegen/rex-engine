@@ -32,15 +32,15 @@
 
 #pragma once
 
-#include "core/math/aabb.h"
-#include "core/math/projection.h"
-#include "core/math/vector3.h"
-#include "core/templates/list.h"
-#include "core/templates/local_vector.h"
-#include "core/templates/oa_hash_map.h"
-#include "core/templates/vector.h"
+#include "aabb.h"
+#include "projection.h"
+#include "vector3.h"
+#include "../templates/list.h"
+#include "../templates/local_vector.h"
+#include "../templates/oa_hash_map.h"
+#include "../templates/vector.h"
 
-#include "thirdparty/misc/r128.h"
+#include "../../thirdparty/misc/r128.h"
 
 class Delaunay3D {
 	struct Simplex;

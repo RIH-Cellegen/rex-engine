@@ -34,9 +34,9 @@
 
 #ifdef COREMIDI_ENABLED
 
-#include "core/os/midi_driver.h"
-#include "core/os/mutex.h"
-#include "core/templates/vector.h"
+#include "../../core/os/midi_driver.h"
+#include "../../core/os/mutex.h"
+#include "../../core/templates/vector.h"
 
 #import <CoreMIDI/CoreMIDI.h>
 #include <stdio.h>

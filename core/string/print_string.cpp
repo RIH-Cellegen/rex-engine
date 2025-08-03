@@ -32,8 +32,8 @@
 
 #include "print_string.h"
 
-#include "core/core_globals.h"
-#include "core/os/os.h"
+#include "../core_globals.h"
+#include "../os/os.h"
 
 static PrintHandlerList *print_handler_list = nullptr;
 

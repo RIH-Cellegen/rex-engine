@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/error/error_macros.h"
-#include "core/variant/array.h"
-#include "core/variant/variant.h"
+#include "../../../core/error/error_macros.h"
+#include "../../../core/variant/array.h"
+#include "../../../core/variant/variant.h"
 
 #include <initializer_list>
 #include <type_traits>

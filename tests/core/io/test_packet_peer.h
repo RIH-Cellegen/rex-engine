@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/io/packet_peer.h"
-#include "tests/test_macros.h"
+#include "../../../core/io/packet_peer.h"
+#include "../../test_macros.h"
 
 namespace TestPacketPeer {
 

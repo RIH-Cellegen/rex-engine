@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/resources/2d/tile_set.h"
+#include "../resources/2d/tile_set.h"
 
 #ifndef NAVIGATION_2D_DISABLED
 class NavigationMeshSourceGeometryData2D;

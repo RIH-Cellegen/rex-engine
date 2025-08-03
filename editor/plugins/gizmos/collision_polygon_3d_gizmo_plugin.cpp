@@ -32,8 +32,8 @@
 
 #include "collision_polygon_3d_gizmo_plugin.h"
 
-#include "core/math/geometry_2d.h"
-#include "scene/3d/physics/collision_polygon_3d.h"
+#include "../../../core/math/geometry_2d.h"
+#include "../../../scene/3d/physics/collision_polygon_3d.h"
 
 CollisionPolygon3DGizmoPlugin::CollisionPolygon3DGizmoPlugin() {
 	create_collision_material("shape_material", 2.0);

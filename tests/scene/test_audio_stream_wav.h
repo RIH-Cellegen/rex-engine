@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/math/math_defs.h"
-#include "core/math/math_funcs.h"
-#include "scene/resources/audio_stream_wav.h"
+#include "../../core/math/math_defs.h"
+#include "../../core/math/math_funcs.h"
+#include "../../scene/resources/audio_stream_wav.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestAudioStreamWAV {
 

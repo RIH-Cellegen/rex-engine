@@ -97,7 +97,7 @@
 #define udev_hwdb_unref udev_hwdb_unref_dylibloader_orig_libudev
 #define udev_hwdb_get_properties_list_entry udev_hwdb_get_properties_list_entry_dylibloader_orig_libudev
 #define udev_util_encode_string udev_util_encode_string_dylibloader_orig_libudev
-#include "thirdparty/linuxbsd_headers/udev/libudev.h"
+#include "../../thirdparty/linuxbsd_headers/udev/libudev.h"
 #undef udev_ref
 #undef udev_unref
 #undef udev_new

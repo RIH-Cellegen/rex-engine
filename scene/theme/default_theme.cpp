@@ -32,19 +32,19 @@
 
 #include "default_theme.h"
 
-#include "core/io/image.h"
+#include "../../core/io/image.h"
 #include "default_font.gen.h"
 #include "default_theme_icons.gen.h"
-#include "scene/resources/font.h"
-#include "scene/resources/gradient_texture.h"
-#include "scene/resources/image_texture.h"
-#include "scene/resources/style_box_flat.h"
-#include "scene/resources/style_box_line.h"
-#include "scene/resources/svg_texture.h"
-#include "scene/resources/theme.h"
-#include "scene/scene_string_names.h"
-#include "scene/theme/theme_db.h"
-#include "servers/text_server.h"
+#include "../resources/font.h"
+#include "../resources/gradient_texture.h"
+#include "../resources/image_texture.h"
+#include "../resources/style_box_flat.h"
+#include "../resources/style_box_line.h"
+#include "../resources/svg_texture.h"
+#include "../resources/theme.h"
+#include "../scene_string_names.h"
+#include "theme_db.h"
+#include "../../servers/text_server.h"
 
 static const int default_font_size = 16;
 

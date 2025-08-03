@@ -44,11 +44,11 @@ using namespace godot;
 #elif defined(GODOT_MODULE)
 // Headers for building as built-in module.
 
-#include "core/os/mutex.h"
-#include "core/templates/hash_map.h"
-#include "core/typedefs.h"
+#include "../../core/os/mutex.h"
+#include "../../core/templates/hash_map.h"
+#include "../../core/typedefs.h"
 
-#include "modules/modules_enabled.gen.h" // For svg, freetype.
+#include "../modules_enabled.gen.h" // For svg, freetype.
 #endif
 
 #ifdef MODULE_SVG_ENABLED

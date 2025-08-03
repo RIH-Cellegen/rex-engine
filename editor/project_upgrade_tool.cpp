@@ -32,13 +32,13 @@
 
 #include "project_upgrade_tool.h"
 
-#include "core/io/dir_access.h"
-#include "editor/editor_file_system.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/gui/editor_scene_tabs.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/dialogs.h"
+#include "../core/io/dir_access.h"
+#include "editor_file_system.h"
+#include "editor_node.h"
+#include "editor_settings.h"
+#include "gui/editor_scene_tabs.h"
+#include "themes/editor_scale.h"
+#include "../scene/gui/dialogs.h"
 
 void ProjectUpgradeTool::_add_files(EditorFileSystemDirectory *p_dir, Vector<String> &r_reimport_paths, Vector<String> &r_resave_scenes, Vector<String> &r_resave_resources) {
 	Ref<DirAccess> da = DirAccess::create(DirAccess::ACCESS_RESOURCES);

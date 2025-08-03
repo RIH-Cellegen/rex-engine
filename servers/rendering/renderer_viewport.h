@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/templates/rid_owner.h"
-#include "servers/rendering/renderer_scene_render.h"
-#include "servers/rendering/rendering_method.h"
-#include "servers/rendering_server.h"
+#include "../../core/templates/rid_owner.h"
+#include "renderer_scene_render.h"
+#include "rendering_method.h"
+#include "../rendering_server.h"
 #include "storage/render_scene_buffers.h"
 
 class RendererViewport {

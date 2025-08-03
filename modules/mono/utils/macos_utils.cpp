@@ -34,7 +34,7 @@
 
 #import "macos_utils.h"
 
-#include "core/string/print_string.h"
+#include "../../../core/string/print_string.h"
 
 #import <CoreFoundation/CoreFoundation.h>
 #import <CoreServices/CoreServices.h>

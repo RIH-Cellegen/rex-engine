@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/input/input_event.h"
-#include "tests/test_macros.h"
+#include "../../../core/input/input_event.h"
+#include "../../test_macros.h"
 
 namespace TestInputEventMouse {
 

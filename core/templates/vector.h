@@ -40,10 +40,10 @@
  * required.
  */
 
-#include "core/error/error_macros.h"
-#include "core/templates/cowdata.h"
-#include "core/templates/search_array.h"
-#include "core/templates/sort_array.h"
+#include "../error/error_macros.h"
+#include "cowdata.h"
+#include "search_array.h"
+#include "sort_array.h"
 
 #include <initializer_list>
 

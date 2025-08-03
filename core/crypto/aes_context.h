@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/crypto/crypto_core.h"
-#include "core/object/ref_counted.h"
+#include "crypto_core.h"
+#include "../object/ref_counted.h"
 
 class AESContext : public RefCounted {
 	GDCLASS(AESContext, RefCounted);

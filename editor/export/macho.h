@@ -34,8 +34,8 @@
 
 // Mach-O binary object file format parser and editor.
 
-#include "core/io/file_access.h"
-#include "core/object/ref_counted.h"
+#include "../../core/io/file_access.h"
+#include "../../core/object/ref_counted.h"
 
 class MachO : public RefCounted {
 public:

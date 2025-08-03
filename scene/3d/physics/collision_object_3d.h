@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/3d/camera_3d.h"
-#include "scene/3d/node_3d.h"
+#include "../camera_3d.h"
+#include "../node_3d.h"
 
 class CollisionObject3D : public Node3D {
 	GDCLASS(CollisionObject3D, Node3D);

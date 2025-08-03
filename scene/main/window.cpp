@@ -32,13 +32,13 @@
 
 #include "window.h"
 
-#include "core/config/project_settings.h"
-#include "core/debugger/engine_debugger.h"
-#include "core/input/shortcut.h"
-#include "core/string/translation_server.h"
-#include "scene/gui/control.h"
-#include "scene/theme/theme_db.h"
-#include "scene/theme/theme_owner.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/debugger/engine_debugger.h"
+#include "../../core/input/shortcut.h"
+#include "../../core/string/translation_server.h"
+#include "../gui/control.h"
+#include "../theme/theme_db.h"
+#include "../theme/theme_owner.h"
 
 // Editor integration.
 

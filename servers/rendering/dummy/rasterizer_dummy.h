@@ -32,21 +32,21 @@
 
 #pragma once
 
-#include "core/templates/rid_owner.h"
-#include "core/templates/self_list.h"
-#include "scene/resources/mesh.h"
-#include "servers/rendering/dummy/environment/fog.h"
-#include "servers/rendering/dummy/environment/gi.h"
-#include "servers/rendering/dummy/rasterizer_canvas_dummy.h"
-#include "servers/rendering/dummy/rasterizer_scene_dummy.h"
-#include "servers/rendering/dummy/storage/light_storage.h"
-#include "servers/rendering/dummy/storage/material_storage.h"
-#include "servers/rendering/dummy/storage/mesh_storage.h"
-#include "servers/rendering/dummy/storage/particles_storage.h"
-#include "servers/rendering/dummy/storage/texture_storage.h"
-#include "servers/rendering/dummy/storage/utilities.h"
-#include "servers/rendering/renderer_compositor.h"
-#include "servers/rendering_server.h"
+#include "../../../core/templates/rid_owner.h"
+#include "../../../core/templates/self_list.h"
+#include "../../../scene/resources/mesh.h"
+#include "environment/fog.h"
+#include "environment/gi.h"
+#include "rasterizer_canvas_dummy.h"
+#include "rasterizer_scene_dummy.h"
+#include "storage/light_storage.h"
+#include "storage/material_storage.h"
+#include "storage/mesh_storage.h"
+#include "storage/particles_storage.h"
+#include "storage/texture_storage.h"
+#include "storage/utilities.h"
+#include "../renderer_compositor.h"
+#include "../../rendering_server.h"
 
 class RasterizerDummy : public RendererCompositor {
 private:

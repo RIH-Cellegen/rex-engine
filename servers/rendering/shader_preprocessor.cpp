@@ -31,7 +31,7 @@
 /**************************************************************************/
 
 #include "shader_preprocessor.h"
-#include "core/math/expression.h"
+#include "../../core/math/expression.h"
 
 const char32_t CURSOR = 0xFFFF;
 

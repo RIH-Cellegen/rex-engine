@@ -32,12 +32,12 @@
 
 #include "debug_adapter_parser.h"
 
-#include "editor/debugger/debug_adapter/debug_adapter_types.h"
-#include "editor/debugger/editor_debugger_node.h"
-#include "editor/debugger/script_editor_debugger.h"
-#include "editor/export/editor_export_platform.h"
-#include "editor/gui/editor_run_bar.h"
-#include "editor/plugins/script_editor_plugin.h"
+#include "../debug_adapter/debug_adapter_types.h"
+#include "../editor_debugger_node.h"
+#include "../script_editor_debugger.h"
+#include "../../export/editor_export_platform.h"
+#include "../../gui/editor_run_bar.h"
+#include "../../plugins/script_editor_plugin.h"
 
 void DebugAdapterParser::_bind_methods() {
 	// Requests

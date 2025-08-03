@@ -32,7 +32,7 @@
 
 #include "mesh_texture.h"
 
-#include "scene/resources/mesh.h"
+#include "mesh.h"
 
 int MeshTexture::get_width() const {
 	return size.width;

@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/string/fuzzy_search.h"
-#include "tests/test_macros.h"
+#include "../../../core/string/fuzzy_search.h"
+#include "../../test_macros.h"
 
 namespace TestFuzzySearch {
 

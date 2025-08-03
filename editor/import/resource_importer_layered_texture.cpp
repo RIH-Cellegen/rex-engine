@@ -32,14 +32,14 @@
 
 #include "resource_importer_layered_texture.h"
 
-#include "core/config/project_settings.h"
-#include "core/error/error_macros.h"
-#include "core/io/image_loader.h"
-#include "core/object/ref_counted.h"
-#include "editor/editor_file_system.h"
-#include "editor/import/resource_importer_texture.h"
-#include "editor/import/resource_importer_texture_settings.h"
-#include "scene/resources/compressed_texture.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/error/error_macros.h"
+#include "../../core/io/image_loader.h"
+#include "../../core/object/ref_counted.h"
+#include "../editor_file_system.h"
+#include "resource_importer_texture.h"
+#include "resource_importer_texture_settings.h"
+#include "../../scene/resources/compressed_texture.h"
 
 String ResourceImporterLayeredTexture::get_importer_name() const {
 	switch (mode) {

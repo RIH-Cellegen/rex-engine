@@ -45,10 +45,18 @@ static_assert(__cplusplus >= 201703L, "Minimum of C++17 required.");
 // IWYU pragma: begin_exports
 
 // Include first in case the platform needs to pre-define/include some things.
-#include "platform_config.h"
+#ifdef WINDOWS_ENABLED
+#include "../platform/windows/platform_config.h"
+#endif
+#ifdef MACOS_ENABLED
+#include "../platform/macos/platform_config.h"
+#endif
+#ifdef LINUXBSD_ENABLED
+#include "../platform/linuxbsd/platform_config.h"
+#endif
 
 // Should be available everywhere.
-#include "core/error/error_list.h"
+#include "error/error_list.h"
 
 #include <cstddef>
 #include <cstdint>

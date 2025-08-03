@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/templates/hash_map.h"
+#include "hash_map.h"
 
 struct HashMapData {
 	union {

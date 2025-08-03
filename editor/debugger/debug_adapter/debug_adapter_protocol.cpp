@@ -32,15 +32,15 @@
 
 #include "debug_adapter_protocol.h"
 
-#include "core/config/project_settings.h"
-#include "core/debugger/debugger_marshalls.h"
-#include "core/io/json.h"
-#include "core/io/marshalls.h"
-#include "editor/debugger/script_editor_debugger.h"
-#include "editor/editor_log.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/gui/editor_run_bar.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../core/debugger/debugger_marshalls.h"
+#include "../../../core/io/json.h"
+#include "../../../core/io/marshalls.h"
+#include "../script_editor_debugger.h"
+#include "../../editor_log.h"
+#include "../../editor_node.h"
+#include "../../editor_settings.h"
+#include "../../gui/editor_run_bar.h"
 
 DebugAdapterProtocol *DebugAdapterProtocol::singleton = nullptr;
 

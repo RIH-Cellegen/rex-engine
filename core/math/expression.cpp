@@ -32,7 +32,7 @@
 
 #include "expression.h"
 
-#include "core/object/class_db.h"
+#include "../object/class_db.h"
 
 Error Expression::_get_token(Token &r_token) {
 	while (true) {

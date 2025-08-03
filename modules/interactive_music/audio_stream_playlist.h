@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "servers/audio/audio_stream.h"
+#include "../../servers/audio/audio_stream.h"
 
 class AudioStreamPlaybackPlaylist;
 

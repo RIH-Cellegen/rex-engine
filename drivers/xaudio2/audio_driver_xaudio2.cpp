@@ -32,8 +32,8 @@
 
 #include "audio_driver_xaudio2.h"
 
-#include "core/config/project_settings.h"
-#include "core/os/os.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/os/os.h"
 
 Error AudioDriverXAudio2::init() {
 	active.clear();

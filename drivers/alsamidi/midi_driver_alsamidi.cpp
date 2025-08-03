@@ -34,7 +34,7 @@
 
 #include "midi_driver_alsamidi.h"
 
-#include "core/os/os.h"
+#include "../../core/os/os.h"
 
 #include <errno.h>
 

@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/resources/visual_shader.h"
+#include "visual_shader.h"
 
 class VisualShaderNodeSDFToScreenUV : public VisualShaderNode {
 	GDCLASS(VisualShaderNodeSDFToScreenUV, VisualShaderNode);

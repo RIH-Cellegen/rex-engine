@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/object/object_id.h"
-#include "core/templates/simple_type.h"
-#include "core/typedefs.h"
-#include "core/variant/variant.h"
+#include "../object/object_id.h"
+#include "../templates/simple_type.h"
+#include "../typedefs.h"
+#include "variant.h"
 
 template <typename T, typename = void>
 struct PtrToArg;

@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/os/mutex.h"
-#include "core/os/thread.h"
-#include "servers/camera_server.h"
+#include "../../core/os/mutex.h"
+#include "../../core/os/thread.h"
+#include "../../servers/camera_server.h"
 
 class CameraLinux : public CameraServer {
 private:

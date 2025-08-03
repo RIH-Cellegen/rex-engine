@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/math/delaunay_3d.h"
-#include "core/math/face3.h"
-#include "core/templates/local_vector.h"
-#include "core/templates/vector.h"
+#include "delaunay_3d.h"
+#include "face3.h"
+#include "../templates/local_vector.h"
+#include "../templates/vector.h"
 
 class Geometry3D {
 public:

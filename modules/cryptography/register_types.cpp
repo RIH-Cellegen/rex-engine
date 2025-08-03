@@ -31,7 +31,7 @@
 /**************************************************************************/
 
 #include "register_types.h"
-#include "core/object/class_db.h"
+#include "../../core/object/class_db.h"
 #include "module_AES.h"
 #include "module_RSA.h"
 

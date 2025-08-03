@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/resources/animation.h"
+#include "../../../scene/resources/animation.h"
 
 class GLTFAnimation : public Resource {
 	GDCLASS(GLTFAnimation, Resource);

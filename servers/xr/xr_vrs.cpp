@@ -32,8 +32,8 @@
 
 #include "xr_vrs.h"
 
-#include "servers/rendering/renderer_scene_render.h"
-#include "servers/rendering_server.h"
+#include "../rendering/renderer_scene_render.h"
+#include "../rendering_server.h"
 
 void XRVRS::_bind_methods() {
 	ClassDB::bind_method(D_METHOD("get_vrs_min_radius"), &XRVRS::get_vrs_min_radius);

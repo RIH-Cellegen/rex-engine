@@ -49,13 +49,13 @@ using namespace godot;
 #elif defined(GODOT_MODULE)
 // Headers for building as built-in module.
 
-#include "core/config/project_settings.h"
-#include "core/error/error_macros.h"
-#include "core/object/worker_thread_pool.h"
-#include "core/string/translation_server.h"
-#include "scene/resources/image_texture.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/error/error_macros.h"
+#include "../../core/object/worker_thread_pool.h"
+#include "../../core/string/translation_server.h"
+#include "../../scene/resources/image_texture.h"
 
-#include "modules/modules_enabled.gen.h" // For freetype, msdfgen, svg.
+#include "../modules_enabled.gen.h" // For freetype, msdfgen, svg.
 
 #endif
 

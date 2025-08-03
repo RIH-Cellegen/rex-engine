@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/templates/cowdata.h"
-#include "core/typedefs.h"
+#include "cowdata.h"
+#include "../typedefs.h"
 
 template <typename T, typename V>
 class VMap {

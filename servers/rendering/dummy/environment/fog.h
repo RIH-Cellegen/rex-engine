@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "servers/rendering/environment/renderer_fog.h"
+#include "../../environment/renderer_fog.h"
 
 namespace RendererDummy {
 

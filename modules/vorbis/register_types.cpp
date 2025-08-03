@@ -35,7 +35,7 @@
 #include "audio_stream_ogg_vorbis.h"
 
 #ifdef TOOLS_ENABLED
-#include "editor/editor_node.h"
+#include "../../editor/editor_node.h"
 #include "resource_importer_ogg_vorbis.h"
 
 static void _editor_init() {

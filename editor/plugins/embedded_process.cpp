@@ -32,10 +32,10 @@
 
 #include "embedded_process.h"
 
-#include "editor/editor_string_names.h"
-#include "scene/main/window.h"
-#include "scene/resources/style_box_flat.h"
-#include "scene/theme/theme_db.h"
+#include "../editor_string_names.h"
+#include "../../scene/main/window.h"
+#include "../../scene/resources/style_box_flat.h"
+#include "../../scene/theme/theme_db.h"
 
 void EmbeddedProcess::_notification(int p_what) {
 	switch (p_what) {

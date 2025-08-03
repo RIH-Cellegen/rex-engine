@@ -32,15 +32,15 @@
 
 #include "variant_utility.h"
 
-#include "core/io/marshalls.h"
-#include "core/object/ref_counted.h"
-#include "core/object/script_language.h"
-#include "core/os/os.h"
-#include "core/templates/oa_hash_map.h"
-#include "core/templates/rid.h"
-#include "core/templates/rid_owner.h"
-#include "core/variant/binder_common.h"
-#include "core/variant/variant_parser.h"
+#include "../io/marshalls.h"
+#include "../object/ref_counted.h"
+#include "../object/script_language.h"
+#include "../os/os.h"
+#include "../templates/oa_hash_map.h"
+#include "../templates/rid.h"
+#include "../templates/rid_owner.h"
+#include "binder_common.h"
+#include "variant_parser.h"
 
 // Math
 double VariantUtilityFunctions::sin(double arg) {

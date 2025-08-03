@@ -34,9 +34,9 @@
 
 #include "godot_broad_phase_2d.h"
 
-#include "core/math/bvh.h"
-#include "core/math/rect2.h"
-#include "core/math/vector2.h"
+#include "../../core/math/bvh.h"
+#include "../../core/math/rect2.h"
+#include "../../core/math/vector2.h"
 
 class GodotBroadPhase2DBVH : public GodotBroadPhase2D {
 	template <typename T>

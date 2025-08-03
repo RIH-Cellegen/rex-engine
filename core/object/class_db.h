@@ -32,14 +32,14 @@
 
 #pragma once
 
-#include "core/object/method_bind.h"
-#include "core/object/object.h"
-#include "core/string/print_string.h"
+#include "method_bind.h"
+#include "object.h"
+#include "../string/print_string.h"
 
 // Makes callable_mp readily available in all classes connecting signals.
 // Needs to come after method_bind and object have been included.
-#include "core/object/callable_method_pointer.h"
-#include "core/templates/hash_set.h"
+#include "callable_method_pointer.h"
+#include "../templates/hash_set.h"
 
 #include <type_traits>
 

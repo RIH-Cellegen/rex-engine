@@ -34,12 +34,12 @@
 
 #ifdef DEBUG_ENABLED
 
-#include "core/io/file_access.h"
+#include "../../../core/io/file_access.h"
 
-#include "Jolt/Jolt.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Jolt.h"
 
-#include "Jolt/Core/StreamIn.h"
-#include "Jolt/Core/StreamOut.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Core/StreamIn.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Core/StreamOut.h"
 
 class JoltStreamOutputWrapper final : public JPH::StreamOut {
 	Ref<FileAccess> file_access;

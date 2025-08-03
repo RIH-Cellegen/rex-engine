@@ -34,14 +34,14 @@
 
 #ifdef VULKAN_ENABLED
 
-#include "servers/rendering/rendering_context_driver.h"
+#include "../../servers/rendering/rendering_context_driver.h"
 
 #if defined(DEBUG_ENABLED) || defined(DEV_ENABLED)
 #define VK_TRACK_DRIVER_MEMORY
 #define VK_TRACK_DEVICE_MEMORY
 #endif
 
-#include "drivers/vulkan/godot_vulkan.h"
+#include "godot_vulkan.h"
 
 class RenderingContextDriverVulkan : public RenderingContextDriver {
 public:

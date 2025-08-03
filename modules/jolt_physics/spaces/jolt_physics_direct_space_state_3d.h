@@ -34,15 +34,15 @@
 
 #include "servers/physics_server_3d.h"
 
-#include "Jolt/Jolt.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Jolt.h"
 
-#include "Jolt/Physics/Body/Body.h"
-#include "Jolt/Physics/Body/BodyFilter.h"
-#include "Jolt/Physics/Collision/BroadPhase/BroadPhaseLayer.h"
-#include "Jolt/Physics/Collision/ContactListener.h"
-#include "Jolt/Physics/Collision/ObjectLayer.h"
-#include "Jolt/Physics/Collision/Shape/Shape.h"
-#include "Jolt/Physics/Collision/ShapeFilter.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Body/Body.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Body/BodyFilter.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/BroadPhase/BroadPhaseLayer.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/ContactListener.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/ObjectLayer.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/Shape/Shape.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/ShapeFilter.h"
 
 class JoltBody3D;
 class JoltShape3D;

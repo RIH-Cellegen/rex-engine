@@ -32,16 +32,16 @@
 
 #include "polygon_3d_editor_plugin.h"
 
-#include "core/input/input.h"
-#include "core/math/geometry_2d.h"
-#include "core/os/keyboard.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/plugins/canvas_item_editor_plugin.h"
-#include "editor/plugins/node_3d_editor_plugin.h"
-#include "scene/3d/camera_3d.h"
+#include "../../core/input/input.h"
+#include "../../core/math/geometry_2d.h"
+#include "../../core/os/keyboard.h"
+#include "../editor_node.h"
+#include "../editor_settings.h"
+#include "../editor_string_names.h"
+#include "../editor_undo_redo_manager.h"
+#include "canvas_item_editor_plugin.h"
+#include "node_3d_editor_plugin.h"
+#include "../../scene/3d/camera_3d.h"
 
 void Polygon3DEditor::_notification(int p_what) {
 	switch (p_what) {

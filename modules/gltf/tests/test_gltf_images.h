@@ -36,9 +36,9 @@
 
 #ifdef TOOLS_ENABLED
 
-#include "editor/editor_file_system.h"
-#include "editor/editor_paths.h"
-#include "scene/resources/image_texture.h"
+#include "../../../editor/editor_file_system.h"
+#include "../../../editor/editor_paths.h"
+#include "../../../scene/resources/image_texture.h"
 
 namespace TestGltf {
 Ref<Texture2D> _check_texture(Node *p_node) {

@@ -32,7 +32,7 @@
 
 #include "audio_listener_3d.h"
 
-#include "scene/main/viewport.h"
+#include "../main/viewport.h"
 
 void AudioListener3D::_update_audio_listener_state() {
 }

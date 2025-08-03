@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/resources/material.h"
+#include "../material.h"
 
 class FogMaterial : public Material {
 	GDCLASS(FogMaterial, Material);

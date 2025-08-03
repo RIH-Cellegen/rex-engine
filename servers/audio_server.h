@@ -32,13 +32,13 @@
 
 #pragma once
 
-#include "core/math/audio_frame.h"
-#include "core/object/class_db.h"
-#include "core/os/os.h"
-#include "core/templates/safe_list.h"
-#include "core/variant/variant.h"
-#include "servers/audio/audio_effect.h"
-#include "servers/audio/audio_filter_sw.h"
+#include "../core/math/audio_frame.h"
+#include "../core/object/class_db.h"
+#include "../core/os/os.h"
+#include "../core/templates/safe_list.h"
+#include "../core/variant/variant.h"
+#include "audio/audio_effect.h"
+#include "audio/audio_filter_sw.h"
 
 #include <atomic>
 

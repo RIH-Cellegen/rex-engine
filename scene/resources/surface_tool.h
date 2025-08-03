@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/templates/local_vector.h"
-#include "scene/resources/mesh.h"
-#include "thirdparty/misc/mikktspace.h"
+#include "../../core/templates/local_vector.h"
+#include "mesh.h"
+#include "../../thirdparty/misc/mikktspace.h"
 
 class SurfaceTool : public RefCounted {
 	GDCLASS(SurfaceTool, RefCounted);

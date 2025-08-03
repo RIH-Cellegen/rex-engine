@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "servers/rendering/renderer_rd/shaders/effects/resolve.glsl.gen.h"
+#include "../shaders/effects/resolve.glsl.gen.h"
 
 namespace RendererRD {
 

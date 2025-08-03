@@ -32,7 +32,15 @@
 
 #pragma once
 
-#include "platform_config.h"
+#ifdef WINDOWS_ENABLED
+#include "../../platform/windows/platform_config.h"
+#endif
+#ifdef MACOS_ENABLED
+#include "../../platform/macos/platform_config.h"
+#endif
+#ifdef LINUXBSD_ENABLED
+#include "../../platform/linuxbsd/platform_config.h"
+#endif
 
 // Define PLATFORM_THREAD_OVERRIDE in your platform's `platform_config.h`
 // to use a custom Thread implementation defined in `platform/[your_platform]/platform_thread.h`.
@@ -44,17 +52,17 @@
 
 #else
 
-#include "core/typedefs.h"
+#include "../typedefs.h"
 
 #ifdef THREADS_ENABLED
 
-#include "core/templates/safe_refcount.h"
+#include "../templates/safe_refcount.h"
 
 #include <new> // IWYU pragma: keep // For hardware interference size.
 
 #ifdef MINGW_ENABLED
 #define MINGW_STDTHREAD_REDUNDANCY_WARNING
-#include "thirdparty/mingw-std-threads/mingw.thread.h"
+#include "../../thirdparty/mingw-std-threads/mingw.thread.h"
 #define THREADING_NAMESPACE mingw_stdthread
 #else
 #include <thread>

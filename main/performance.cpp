@@ -32,25 +32,25 @@
 
 #include "performance.h"
 
-#include "core/os/os.h"
-#include "core/variant/typed_array.h"
-#include "scene/main/node.h"
-#include "scene/main/scene_tree.h"
-#include "servers/audio_server.h"
+#include "../core/os/os.h"
+#include "../core/variant/typed_array.h"
+#include "../scene/main/node.h"
+#include "../scene/main/scene_tree.h"
+#include "../servers/audio_server.h"
 #ifndef NAVIGATION_2D_DISABLED
-#include "servers/navigation_server_2d.h"
+#include "../servers/navigation_server_2d.h"
 #endif // NAVIGATION_2D_DISABLED
 #ifndef NAVIGATION_3D_DISABLED
-#include "servers/navigation_server_3d.h"
+#include "../servers/navigation_server_3d.h"
 #endif // NAVIGATION_3D_DISABLED
-#include "servers/rendering_server.h"
+#include "../servers/rendering_server.h"
 
 #ifndef PHYSICS_2D_DISABLED
-#include "servers/physics_server_2d.h"
+#include "../servers/physics_server_2d.h"
 #endif // PHYSICS_2D_DISABLED
 
 #ifndef PHYSICS_3D_DISABLED
-#include "servers/physics_server_3d.h"
+#include "../servers/physics_server_3d.h"
 #endif // PHYSICS_3D_DISABLED
 
 Performance *Performance::singleton = nullptr;

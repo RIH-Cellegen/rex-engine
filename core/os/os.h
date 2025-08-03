@@ -32,13 +32,13 @@
 
 #pragma once
 
-#include "core/config/engine.h"
-#include "core/io/logger.h"
-#include "core/io/remote_filesystem_client.h"
-#include "core/os/time_enums.h"
-#include "core/string/ustring.h"
-#include "core/templates/list.h"
-#include "core/templates/vector.h"
+#include "../config/engine.h"
+#include "../io/logger.h"
+#include "../io/remote_filesystem_client.h"
+#include "time_enums.h"
+#include "../string/ustring.h"
+#include "../templates/list.h"
+#include "../templates/vector.h"
 
 #include <stdlib.h>
 

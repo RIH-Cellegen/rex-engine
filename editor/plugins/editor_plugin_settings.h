@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "editor/plugins/plugin_config_dialog.h"
+#include "plugin_config_dialog.h"
 
 class TextureRect;
 class Tree;

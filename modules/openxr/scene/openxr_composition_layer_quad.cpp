@@ -34,7 +34,7 @@
 
 #include "../openxr_interface.h"
 
-#include "scene/resources/3d/primitive_meshes.h"
+#include "../../../scene/resources/3d/primitive_meshes.h"
 
 OpenXRCompositionLayerQuad::OpenXRCompositionLayerQuad() :
 		OpenXRCompositionLayer((XrCompositionLayerBaseHeader *)&composition_layer) {

@@ -32,19 +32,19 @@
 
 #include "code_editor.h"
 
-#include "core/input/input.h"
-#include "core/os/keyboard.h"
-#include "core/string/string_builder.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/plugins/script_editor_plugin.h"
-#include "editor/themes/editor_scale.h"
-#include "editor/themes/editor_theme_manager.h"
-#include "scene/gui/line_edit.h"
-#include "scene/gui/menu_button.h"
-#include "scene/gui/separator.h"
-#include "scene/resources/font.h"
+#include "../core/input/input.h"
+#include "../core/os/keyboard.h"
+#include "../core/string/string_builder.h"
+#include "editor_node.h"
+#include "editor_settings.h"
+#include "editor_string_names.h"
+#include "plugins/script_editor_plugin.h"
+#include "themes/editor_scale.h"
+#include "themes/editor_theme_manager.h"
+#include "../scene/gui/line_edit.h"
+#include "../scene/gui/menu_button.h"
+#include "../scene/gui/separator.h"
+#include "../scene/resources/font.h"
 
 void GotoLinePopup::popup_find_line(CodeTextEditor *p_text_editor) {
 	text_editor = p_text_editor;

@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "editor/plugins/animation_tree_editor_plugin.h"
-#include "editor/plugins/editor_plugin.h"
-#include "scene/animation/animation_blend_space_1d.h"
-#include "scene/gui/graph_edit.h"
+#include "animation_tree_editor_plugin.h"
+#include "editor_plugin.h"
+#include "../../scene/animation/animation_blend_space_1d.h"
+#include "../../scene/gui/graph_edit.h"
 
 class Button;
 class CheckBox;

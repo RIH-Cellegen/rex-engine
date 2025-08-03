@@ -32,11 +32,11 @@
 
 #include "resource.h"
 
-#include "core/io/resource_loader.h"
-#include "core/math/math_funcs.h"
-#include "core/math/random_pcg.h"
-#include "core/os/os.h"
-#include "scene/main/node.h" //only so casting works
+#include "resource_loader.h"
+#include "../math/math_funcs.h"
+#include "../math/random_pcg.h"
+#include "../os/os.h"
+#include "../../scene/main/node.h" //only so casting works
 
 void Resource::emit_changed() {
 	if (emit_changed_state != EMIT_CHANGED_UNBLOCKED) {

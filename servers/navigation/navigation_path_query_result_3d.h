@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/object/ref_counted.h"
-#include "core/variant/typed_array.h"
-#include "servers/navigation/navigation_utilities.h"
+#include "../../core/object/ref_counted.h"
+#include "../../core/variant/typed_array.h"
+#include "navigation_utilities.h"
 
 class NavigationPathQueryResult3D : public RefCounted {
 	GDCLASS(NavigationPathQueryResult3D, RefCounted);

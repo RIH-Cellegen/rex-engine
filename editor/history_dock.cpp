@@ -32,13 +32,13 @@
 
 #include "history_dock.h"
 
-#include "core/io/config_file.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "scene/gui/check_box.h"
-#include "scene/gui/item_list.h"
+#include "../core/io/config_file.h"
+#include "editor_node.h"
+#include "editor_settings.h"
+#include "editor_string_names.h"
+#include "editor_undo_redo_manager.h"
+#include "../scene/gui/check_box.h"
+#include "../scene/gui/item_list.h"
 
 struct SortActionsByTimestamp {
 	bool operator()(const EditorUndoRedoManager::Action &l, const EditorUndoRedoManager::Action &r) const {

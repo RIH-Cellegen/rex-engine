@@ -32,13 +32,13 @@
 
 #include "gradient_texture_2d_editor_plugin.h"
 
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/gui/editor_spin_slider.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/button.h"
-#include "scene/gui/flow_container.h"
-#include "scene/gui/separator.h"
-#include "scene/resources/gradient_texture.h"
+#include "../editor_undo_redo_manager.h"
+#include "../gui/editor_spin_slider.h"
+#include "../themes/editor_scale.h"
+#include "../../scene/gui/button.h"
+#include "../../scene/gui/flow_container.h"
+#include "../../scene/gui/separator.h"
+#include "../../scene/resources/gradient_texture.h"
 
 Point2 GradientTexture2DEdit::_get_handle_pos(const Handle p_handle) {
 	// Get the handle's mouse position in pixels relative to offset.

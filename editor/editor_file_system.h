@@ -32,14 +32,14 @@
 
 #pragma once
 
-#include "core/io/dir_access.h"
-#include "core/io/resource_importer.h"
-#include "core/io/resource_loader.h"
-#include "core/os/thread.h"
-#include "core/os/thread_safe.h"
-#include "core/templates/hash_set.h"
-#include "core/templates/safe_refcount.h"
-#include "scene/main/node.h"
+#include "../core/io/dir_access.h"
+#include "../core/io/resource_importer.h"
+#include "../core/io/resource_loader.h"
+#include "../core/os/thread.h"
+#include "../core/os/thread_safe.h"
+#include "../core/templates/hash_set.h"
+#include "../core/templates/safe_refcount.h"
+#include "../scene/main/node.h"
 
 class FileAccess;
 

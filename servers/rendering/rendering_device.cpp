@@ -36,8 +36,8 @@
 #include "rendering_device_binds.h"
 #include "shader_include_db.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/dir_access.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/io/dir_access.h"
 
 #define FORCE_SEPARATE_PRESENT_QUEUE 0
 #define PRINT_FRAMEBUFFER_FORMAT 0

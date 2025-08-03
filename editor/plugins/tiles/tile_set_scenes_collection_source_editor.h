@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "editor/editor_inspector.h"
-#include "scene/gui/box_container.h"
-#include "scene/resources/2d/tile_set.h"
+#include "../../editor_inspector.h"
+#include "../../../scene/gui/box_container.h"
+#include "../../../scene/resources/2d/tile_set.h"
 
 class Button;
 class ItemList;

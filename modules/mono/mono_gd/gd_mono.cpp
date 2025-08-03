@@ -44,12 +44,12 @@
 #include "../editor/hostfxr_resolver.h"
 #endif
 
-#include "core/config/project_settings.h"
-#include "core/debugger/engine_debugger.h"
-#include "core/io/dir_access.h"
-#include "core/io/file_access.h"
-#include "core/os/os.h"
-#include "core/os/thread.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../core/debugger/engine_debugger.h"
+#include "../../../core/io/dir_access.h"
+#include "../../../core/io/file_access.h"
+#include "../../../core/os/os.h"
+#include "../../../core/os/thread.h"
 
 #ifdef UNIX_ENABLED
 #include <dlfcn.h>

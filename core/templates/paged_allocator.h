@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/core_globals.h"
-#include "core/os/memory.h"
-#include "core/os/spin_lock.h"
-#include "core/string/ustring.h"
-#include "core/typedefs.h"
+#include "../core_globals.h"
+#include "../os/memory.h"
+#include "../os/spin_lock.h"
+#include "../string/ustring.h"
+#include "../typedefs.h"
 
 #include <type_traits>
 #include <typeinfo> // IWYU pragma: keep // Used in macro.

@@ -34,7 +34,7 @@
 
 #include "godot_space_3d.h"
 
-#include "core/templates/local_vector.h"
+#include "../../core/templates/local_vector.h"
 
 class GodotStep3D {
 	uint64_t _step = 1;

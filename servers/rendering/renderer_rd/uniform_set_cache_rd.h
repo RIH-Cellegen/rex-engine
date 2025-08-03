@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/templates/local_vector.h"
-#include "core/templates/paged_allocator.h"
-#include "servers/rendering/rendering_device.h"
-#include "servers/rendering/rendering_device_binds.h"
+#include "../../../core/templates/local_vector.h"
+#include "../../../core/templates/paged_allocator.h"
+#include "../rendering_device.h"
+#include "../rendering_device_binds.h"
 
 class UniformSetCacheRD : public Object {
 	GDCLASS(UniformSetCacheRD, Object)

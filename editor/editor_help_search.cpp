@@ -32,13 +32,13 @@
 
 #include "editor_help_search.h"
 
-#include "editor/editor_feature_profile.h"
-#include "editor/editor_main_screen.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/themes/editor_scale.h"
-#include "editor/themes/editor_theme_manager.h"
+#include "editor_feature_profile.h"
+#include "editor_main_screen.h"
+#include "editor_node.h"
+#include "editor_settings.h"
+#include "editor_string_names.h"
+#include "themes/editor_scale.h"
+#include "themes/editor_theme_manager.h"
 
 bool EditorHelpSearch::_all_terms_in_name(const Vector<String> &p_terms, const String &p_name) const {
 	for (int i = 0; i < p_terms.size(); i++) {

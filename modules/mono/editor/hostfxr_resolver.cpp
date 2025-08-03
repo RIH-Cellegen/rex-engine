@@ -65,10 +65,10 @@ SOFTWARE.
 #include "../utils/path_utils.h"
 #include "semver.h"
 
-#include "core/config/engine.h"
-#include "core/io/dir_access.h"
-#include "core/io/file_access.h"
-#include "core/os/os.h"
+#include "../../../core/config/engine.h"
+#include "../../../core/io/dir_access.h"
+#include "../../../core/io/file_access.h"
+#include "../../../core/os/os.h"
 
 #ifdef WINDOWS_ENABLED
 #define WIN32_LEAN_AND_MEAN

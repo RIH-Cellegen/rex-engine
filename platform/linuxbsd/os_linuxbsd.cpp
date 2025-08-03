@@ -32,11 +32,11 @@
 
 #include "os_linuxbsd.h"
 
-#include "core/io/certs_compressed.gen.h"
-#include "core/io/dir_access.h"
-#include "main/main.h"
-#include "servers/display_server.h"
-#include "servers/rendering_server.h"
+#include "../../core/io/certs_compressed.gen.h"
+#include "../../core/io/dir_access.h"
+#include "../../main/main.h"
+#include "../../servers/display_server.h"
+#include "../../servers/rendering_server.h"
 
 #ifdef X11_ENABLED
 #include "x11/detect_prime_x11.h"
@@ -48,13 +48,13 @@
 #include "wayland/display_server_wayland.h"
 #endif
 
-#include "modules/modules_enabled.gen.h" // For regex.
+#include "../../modules/modules_enabled.gen.h" // For regex.
 #ifdef MODULE_REGEX_ENABLED
-#include "modules/regex/regex.h"
+#include "../../modules/regex/regex.h"
 #endif
 
 #if defined(RD_ENABLED)
-#include "servers/rendering/rendering_device.h"
+#include "../../servers/rendering/rendering_device.h"
 #endif
 
 #if defined(VULKAN_ENABLED)
@@ -66,7 +66,7 @@
 #endif
 #endif
 #if defined(GLES3_ENABLED)
-#include "drivers/gles3/rasterizer_gles3.h"
+#include "../../drivers/gles3/rasterizer_gles3.h"
 #endif
 
 #include <dlfcn.h>

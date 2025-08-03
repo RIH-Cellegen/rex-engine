@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "scene/resources/3d/height_map_shape_3d.h"
-#include "scene/resources/image_texture.h"
+#include "../../scene/resources/3d/height_map_shape_3d.h"
+#include "../../scene/resources/image_texture.h"
 
-#include "tests/test_macros.h"
-#include "tests/test_utils.h"
+#include "../test_macros.h"
+#include "../test_utils.h"
 
 namespace TestHeightMapShape3D {
 

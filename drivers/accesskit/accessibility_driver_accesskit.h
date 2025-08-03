@@ -34,18 +34,18 @@
 
 #ifdef ACCESSKIT_ENABLED
 
-#include "core/templates/rid_owner.h"
-#include "servers/display_server.h"
+#include "../../core/templates/rid_owner.h"
+#include "../../servers/display_server.h"
 
 #ifdef ACCESSKIT_DYNAMIC
 #ifdef LINUXBSD_ENABLED
-#include "drivers/accesskit/dynwrappers/accesskit-so_wrap.h"
+#include "dynwrappers/accesskit-so_wrap.h"
 #endif
 #ifdef MACOS_ENABLED
-#include "drivers/accesskit/dynwrappers/accesskit-dylib_wrap.h"
+#include "dynwrappers/accesskit-dylib_wrap.h"
 #endif
 #ifdef WINDOWS_ENABLED
-#include "drivers/accesskit/dynwrappers/accesskit-dll_wrap.h"
+#include "dynwrappers/accesskit-dll_wrap.h"
 #endif
 #else
 #include <accesskit.h>

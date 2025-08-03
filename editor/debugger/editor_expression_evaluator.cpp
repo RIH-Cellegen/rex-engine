@@ -32,10 +32,10 @@
 
 #include "editor_expression_evaluator.h"
 
-#include "editor/debugger/editor_debugger_inspector.h"
-#include "editor/debugger/script_editor_debugger.h"
-#include "scene/gui/button.h"
-#include "scene/gui/check_box.h"
+#include "editor_debugger_inspector.h"
+#include "script_editor_debugger.h"
+#include "../../scene/gui/button.h"
+#include "../../scene/gui/check_box.h"
 
 void EditorExpressionEvaluator::on_start() {
 	expression_input->set_editable(false);

@@ -34,15 +34,15 @@
 
 #ifdef UNIX_ENABLED
 
-#include "core/config/project_settings.h"
-#include "core/debugger/engine_debugger.h"
-#include "core/debugger/script_debugger.h"
-#include "drivers/unix/dir_access_unix.h"
-#include "drivers/unix/file_access_unix.h"
-#include "drivers/unix/file_access_unix_pipe.h"
-#include "drivers/unix/net_socket_unix.h"
-#include "drivers/unix/thread_posix.h"
-#include "servers/rendering_server.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/debugger/engine_debugger.h"
+#include "../../core/debugger/script_debugger.h"
+#include "dir_access_unix.h"
+#include "file_access_unix.h"
+#include "file_access_unix_pipe.h"
+#include "net_socket_unix.h"
+#include "thread_posix.h"
+#include "../../servers/rendering_server.h"
 
 #if defined(__APPLE__)
 #include <mach-o/dyld.h>

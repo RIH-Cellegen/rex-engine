@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/string/node_path.h"
+#include "../../../core/string/node_path.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestNodePath {
 

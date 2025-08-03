@@ -32,10 +32,10 @@
 
 #include "file_access_pack.h"
 
-#include "core/io/file_access_encrypted.h"
-#include "core/object/script_language.h"
-#include "core/os/os.h"
-#include "core/version.h"
+#include "file_access_encrypted.h"
+#include "../object/script_language.h"
+#include "../os/os.h"
+#include "../version.h"
 
 Error PackedData::add_pack(const String &p_path, bool p_replace_files, uint64_t p_offset) {
 	for (int i = 0; i < sources.size(); i++) {

@@ -32,19 +32,19 @@
 
 #include "mesh_instance_3d.h"
 
-#include "scene/3d/skeleton_3d.h"
+#include "skeleton_3d.h"
 
 #ifndef PHYSICS_3D_DISABLED
-#include "scene/3d/physics/collision_shape_3d.h"
-#include "scene/3d/physics/static_body_3d.h"
-#include "scene/resources/3d/concave_polygon_shape_3d.h"
-#include "scene/resources/3d/convex_polygon_shape_3d.h"
+#include "physics/collision_shape_3d.h"
+#include "physics/static_body_3d.h"
+#include "../resources/3d/concave_polygon_shape_3d.h"
+#include "../resources/3d/convex_polygon_shape_3d.h"
 #endif // PHYSICS_3D_DISABLED
 
 #ifndef NAVIGATION_3D_DISABLED
-#include "scene/resources/3d/navigation_mesh_source_geometry_data_3d.h"
-#include "scene/resources/navigation_mesh.h"
-#include "servers/navigation_server_3d.h"
+#include "../resources/3d/navigation_mesh_source_geometry_data_3d.h"
+#include "../resources/navigation_mesh.h"
+#include "../../servers/navigation_server_3d.h"
 
 Callable MeshInstance3D::_navmesh_source_geometry_parsing_callback;
 RID MeshInstance3D::_navmesh_source_geometry_parser;

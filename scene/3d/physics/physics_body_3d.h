@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "scene/3d/physics/collision_object_3d.h"
-#include "scene/3d/physics/kinematic_collision_3d.h"
-#include "scene/resources/physics_material.h"
-#include "servers/physics_server_3d.h"
+#include "collision_object_3d.h"
+#include "kinematic_collision_3d.h"
+#include "../../resources/physics_material.h"
+#include "../../../servers/physics_server_3d.h"
 
 class PhysicsBody3D : public CollisionObject3D {
 	GDCLASS(PhysicsBody3D, CollisionObject3D);

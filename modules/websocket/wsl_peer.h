@@ -37,8 +37,8 @@
 #include "packet_buffer.h"
 #include "websocket_peer.h"
 
-#include "core/crypto/crypto_core.h"
-#include "core/io/stream_peer_tcp.h"
+#include "../../core/crypto/crypto_core.h"
+#include "../../core/io/stream_peer_tcp.h"
 
 #include <wslay/wslay.h>
 

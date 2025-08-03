@@ -33,13 +33,13 @@
 #include "cpu_particles_3d.h"
 #include "cpu_particles_3d.compat.inc"
 
-#include "core/math/random_number_generator.h"
-#include "scene/3d/camera_3d.h"
-#include "scene/3d/gpu_particles_3d.h"
-#include "scene/main/viewport.h"
-#include "scene/resources/curve_texture.h"
-#include "scene/resources/gradient_texture.h"
-#include "scene/resources/particle_process_material.h"
+#include "../../core/math/random_number_generator.h"
+#include "camera_3d.h"
+#include "gpu_particles_3d.h"
+#include "../main/viewport.h"
+#include "../resources/curve_texture.h"
+#include "../resources/gradient_texture.h"
+#include "../resources/particle_process_material.h"
 
 AABB CPUParticles3D::get_aabb() const {
 	return AABB();

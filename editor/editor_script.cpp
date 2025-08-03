@@ -32,12 +32,12 @@
 
 #include "editor_script.h"
 
-#include "editor/editor_interface.h"
-#include "editor/editor_node.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/gui/editor_scene_tabs.h"
-#include "scene/main/node.h"
-#include "scene/resources/packed_scene.h"
+#include "editor_interface.h"
+#include "editor_node.h"
+#include "editor_undo_redo_manager.h"
+#include "gui/editor_scene_tabs.h"
+#include "../scene/main/node.h"
+#include "../scene/resources/packed_scene.h"
 
 void EditorScript::add_root_node(Node *p_node) {
 	if (!EditorNode::get_singleton()) {

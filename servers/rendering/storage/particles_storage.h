@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "servers/rendering_server.h"
+#include "../../rendering_server.h"
 
 class RendererParticlesStorage {
 public:

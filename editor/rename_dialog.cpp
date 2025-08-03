@@ -32,21 +32,21 @@
 
 #include "rename_dialog.h"
 
-#include "editor/editor_node.h"
-#include "editor/editor_string_names.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/plugins/script_editor_plugin.h"
-#include "scene/gui/check_box.h"
-#include "scene/gui/check_button.h"
-#include "scene/gui/control.h"
-#include "scene/gui/grid_container.h"
-#include "scene/gui/label.h"
-#include "scene/gui/option_button.h"
-#include "scene/gui/separator.h"
-#include "scene/gui/spin_box.h"
-#include "scene/gui/tab_container.h"
+#include "editor_node.h"
+#include "editor_string_names.h"
+#include "editor_undo_redo_manager.h"
+#include "plugins/script_editor_plugin.h"
+#include "../scene/gui/check_box.h"
+#include "../scene/gui/check_button.h"
+#include "../scene/gui/control.h"
+#include "../scene/gui/grid_container.h"
+#include "../scene/gui/label.h"
+#include "../scene/gui/option_button.h"
+#include "../scene/gui/separator.h"
+#include "../scene/gui/spin_box.h"
+#include "../scene/gui/tab_container.h"
 
-#include "modules/regex/regex.h"
+#include "../modules/regex/regex.h"
 
 RenameDialog::RenameDialog(SceneTreeEditor *p_scene_tree_editor) {
 	scene_tree_editor = p_scene_tree_editor;

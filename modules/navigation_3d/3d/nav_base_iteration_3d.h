@@ -34,7 +34,7 @@
 
 #include "../nav_utils_3d.h"
 
-#include "servers/navigation/navigation_utilities.h"
+#include "../../../servers/navigation/navigation_utilities.h"
 
 struct NavBaseIteration3D {
 	uint32_t id = UINT32_MAX;

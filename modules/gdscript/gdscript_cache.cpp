@@ -37,8 +37,8 @@
 #include "gdscript_compiler.h"
 #include "gdscript_parser.h"
 
-#include "core/io/file_access.h"
-#include "core/templates/vector.h"
+#include "../../core/io/file_access.h"
+#include "../../core/templates/vector.h"
 
 GDScriptParserRef::Status GDScriptParserRef::get_status() const {
 	return status;

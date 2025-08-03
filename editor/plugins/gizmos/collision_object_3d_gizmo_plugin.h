@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "editor/plugins/node_3d_editor_gizmos.h"
+#include "../node_3d_editor_gizmos.h"
 
 class CollisionObject3DGizmoPlugin : public EditorNode3DGizmoPlugin {
 	GDCLASS(CollisionObject3DGizmoPlugin, EditorNode3DGizmoPlugin);

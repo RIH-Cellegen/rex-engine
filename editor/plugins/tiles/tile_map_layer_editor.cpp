@@ -34,20 +34,20 @@
 
 #include "tiles_editor_plugin.h"
 
-#include "editor/editor_node.h"
-#include "editor/editor_resource_preview.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/multi_node_edit.h"
-#include "editor/plugins/canvas_item_editor_plugin.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/2d/tile_map_layer.h"
-#include "scene/gui/split_container.h"
+#include "../../editor_node.h"
+#include "../../editor_resource_preview.h"
+#include "../../editor_settings.h"
+#include "../../editor_undo_redo_manager.h"
+#include "../../multi_node_edit.h"
+#include "../canvas_item_editor_plugin.h"
+#include "../../themes/editor_scale.h"
+#include "../../../scene/2d/tile_map_layer.h"
+#include "../../../scene/gui/split_container.h"
 
-#include "core/input/input.h"
-#include "core/math/geometry_2d.h"
-#include "core/math/random_pcg.h"
-#include "core/os/keyboard.h"
+#include "../../../core/input/input.h"
+#include "../../../core/math/geometry_2d.h"
+#include "../../../core/math/random_pcg.h"
+#include "../../../core/os/keyboard.h"
 
 TileMapLayer *TileMapLayerSubEditorPlugin::_get_edited_layer() const {
 	return ObjectDB::get_instance<TileMapLayer>(edited_tile_map_layer_id);

@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/main/node.h"
+#include "../scene/main/node.h"
 
 class EditorPropertyNameProcessor : public Node {
 	GDCLASS(EditorPropertyNameProcessor, Node);

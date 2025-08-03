@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/math/projection.h"
-#include "core/templates/local_vector.h"
-#include "servers/rendering_server.h"
+#include "../../core/math/projection.h"
+#include "../../core/templates/local_vector.h"
+#include "../rendering_server.h"
 
 class RendererSceneOcclusionCull {
 protected:

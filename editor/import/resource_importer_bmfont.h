@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/io/resource_importer.h"
-#include "scene/resources/font.h"
-#include "servers/text_server.h"
+#include "../../core/io/resource_importer.h"
+#include "../../scene/resources/font.h"
+#include "../../servers/text_server.h"
 
 class ResourceImporterBMFont : public ResourceImporter {
 	GDCLASS(ResourceImporterBMFont, ResourceImporter);

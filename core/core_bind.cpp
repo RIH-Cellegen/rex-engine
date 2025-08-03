@@ -33,16 +33,16 @@
 #include "core_bind.h"
 #include "core_bind.compat.inc"
 
-#include "core/config/project_settings.h"
-#include "core/crypto/crypto_core.h"
-#include "core/debugger/engine_debugger.h"
-#include "core/debugger/script_debugger.h"
-#include "core/io/marshalls.h"
-#include "core/math/geometry_2d.h"
-#include "core/math/geometry_3d.h"
-#include "core/os/keyboard.h"
-#include "core/os/thread_safe.h"
-#include "core/variant/typed_array.h"
+#include "config/project_settings.h"
+#include "crypto/crypto_core.h"
+#include "debugger/engine_debugger.h"
+#include "debugger/script_debugger.h"
+#include "io/marshalls.h"
+#include "math/geometry_2d.h"
+#include "math/geometry_3d.h"
+#include "os/keyboard.h"
+#include "os/thread_safe.h"
+#include "variant/typed_array.h"
 
 namespace CoreBind {
 

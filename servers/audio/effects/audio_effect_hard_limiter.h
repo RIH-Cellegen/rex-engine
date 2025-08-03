@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "servers/audio/audio_effect.h"
+#include "../audio_effect.h"
 
 class AudioEffectHardLimiter;
 

@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "editor/plugins/editor_plugin.h"
-#include "scene/resources/3d/mesh_library.h"
+#include "editor_plugin.h"
+#include "../../scene/resources/3d/mesh_library.h"
 
 class EditorFileDialog;
 class ConfirmationDialog;

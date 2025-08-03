@@ -32,21 +32,21 @@
 
 #pragma once
 
-#include "servers/rendering/renderer_rd/pipeline_cache_rd.h"
-#include "servers/rendering/renderer_rd/shaders/effects/blur_raster.glsl.gen.h"
-#include "servers/rendering/renderer_rd/shaders/effects/copy.glsl.gen.h"
-#include "servers/rendering/renderer_rd/shaders/effects/copy_to_fb.glsl.gen.h"
-#include "servers/rendering/renderer_rd/shaders/effects/cube_to_dp.glsl.gen.h"
-#include "servers/rendering/renderer_rd/shaders/effects/cubemap_downsampler.glsl.gen.h"
-#include "servers/rendering/renderer_rd/shaders/effects/cubemap_downsampler_raster.glsl.gen.h"
-#include "servers/rendering/renderer_rd/shaders/effects/cubemap_filter.glsl.gen.h"
-#include "servers/rendering/renderer_rd/shaders/effects/cubemap_filter_raster.glsl.gen.h"
-#include "servers/rendering/renderer_rd/shaders/effects/cubemap_roughness.glsl.gen.h"
-#include "servers/rendering/renderer_rd/shaders/effects/cubemap_roughness_raster.glsl.gen.h"
-#include "servers/rendering/renderer_rd/shaders/effects/specular_merge.glsl.gen.h"
-#include "servers/rendering/renderer_scene_render.h"
+#include "../pipeline_cache_rd.h"
+#include "../shaders/effects/blur_raster.glsl.gen.h"
+#include "../shaders/effects/copy.glsl.gen.h"
+#include "../shaders/effects/copy_to_fb.glsl.gen.h"
+#include "../shaders/effects/cube_to_dp.glsl.gen.h"
+#include "../shaders/effects/cubemap_downsampler.glsl.gen.h"
+#include "../shaders/effects/cubemap_downsampler_raster.glsl.gen.h"
+#include "../shaders/effects/cubemap_filter.glsl.gen.h"
+#include "../shaders/effects/cubemap_filter_raster.glsl.gen.h"
+#include "../shaders/effects/cubemap_roughness.glsl.gen.h"
+#include "../shaders/effects/cubemap_roughness_raster.glsl.gen.h"
+#include "../shaders/effects/specular_merge.glsl.gen.h"
+#include "../../renderer_scene_render.h"
 
-#include "servers/rendering_server.h"
+#include "../../../rendering_server.h"
 
 namespace RendererRD {
 

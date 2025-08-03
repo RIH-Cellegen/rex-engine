@@ -32,13 +32,13 @@
 
 #pragma once
 
-#include "core/config/project_settings.h"
-#include "core/math/random_number_generator.h"
-#include "core/object/worker_thread_pool.h"
-#include "core/os/os.h"
-#include "core/os/thread.h"
-#include "core/templates/command_queue_mt.h"
-#include "tests/test_macros.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../core/math/random_number_generator.h"
+#include "../../../core/object/worker_thread_pool.h"
+#include "../../../core/os/os.h"
+#include "../../../core/os/thread.h"
+#include "../../../core/templates/command_queue_mt.h"
+#include "../../test_macros.h"
 
 namespace TestCommandQueue {
 

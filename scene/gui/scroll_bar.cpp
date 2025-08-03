@@ -32,8 +32,8 @@
 
 #include "scroll_bar.h"
 
-#include "scene/main/window.h"
-#include "scene/theme/theme_db.h"
+#include "../main/window.h"
+#include "../theme/theme_db.h"
 
 bool ScrollBar::focus_by_default = false;
 

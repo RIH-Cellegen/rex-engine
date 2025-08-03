@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/object/ref_counted.h"
-#include "core/string/ustring.h"
-#include "core/typedefs.h"
+#include "../object/ref_counted.h"
+#include "../string/ustring.h"
+#include "../typedefs.h"
 
 //@ TODO, excellent candidate for THREAD_SAFE MACRO, should go through all these and add THREAD_SAFE where it applies
 class DirAccess : public RefCounted {

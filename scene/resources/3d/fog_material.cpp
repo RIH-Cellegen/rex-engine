@@ -32,7 +32,7 @@
 
 #include "fog_material.h"
 
-#include "core/version.h"
+#include "../../../core/version.h"
 
 Mutex FogMaterial::shader_mutex;
 RID FogMaterial::shader;

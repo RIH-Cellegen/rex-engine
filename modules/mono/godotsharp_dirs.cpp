@@ -35,13 +35,13 @@
 #include "mono_gd/gd_mono.h"
 #include "utils/path_utils.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/dir_access.h"
-#include "core/os/os.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/io/dir_access.h"
+#include "../../core/os/os.h"
 
 #ifdef TOOLS_ENABLED
-#include "core/version.h"
-#include "editor/editor_paths.h"
+#include "../../core/version.h"
+#include "../../editor/editor_paths.h"
 #endif
 
 namespace GodotSharpDirs {

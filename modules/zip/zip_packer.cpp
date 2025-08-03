@@ -32,8 +32,8 @@
 
 #include "zip_packer.h"
 
-#include "core/io/zip_io.h"
-#include "core/os/os.h"
+#include "../../core/io/zip_io.h"
+#include "../../core/os/os.h"
 
 Error ZIPPacker::open(const String &p_path, ZipAppend p_append) {
 	if (fa.is_valid()) {

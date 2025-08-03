@@ -32,16 +32,16 @@
 
 #pragma once
 
-#include "core/object/worker_thread_pool.h"
-#include "core/os/condition_variable.h"
-#include "core/os/thread_safe.h"
-#include "core/templates/local_vector.h"
-#include "core/templates/rid_owner.h"
-#include "core/variant/typed_array.h"
-#include "servers/display_server.h"
-#include "servers/rendering/rendering_device_commons.h"
-#include "servers/rendering/rendering_device_driver.h"
-#include "servers/rendering/rendering_device_graph.h"
+#include "../../core/object/worker_thread_pool.h"
+#include "../../core/os/condition_variable.h"
+#include "../../core/os/thread_safe.h"
+#include "../../core/templates/local_vector.h"
+#include "../../core/templates/rid_owner.h"
+#include "../../core/variant/typed_array.h"
+#include "../display_server.h"
+#include "rendering_device_commons.h"
+#include "rendering_device_driver.h"
+#include "rendering_device_graph.h"
 
 class RDTextureFormat;
 class RDTextureView;

@@ -32,10 +32,10 @@
 
 #include "mesh_editor_plugin.h"
 
-#include "core/config/project_settings.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/button.h"
-#include "scene/main/viewport.h"
+#include "../../core/config/project_settings.h"
+#include "../themes/editor_scale.h"
+#include "../../scene/gui/button.h"
+#include "../../scene/main/viewport.h"
 
 void MeshEditor::gui_input(const Ref<InputEvent> &p_event) {
 	ERR_FAIL_COND(p_event.is_null());

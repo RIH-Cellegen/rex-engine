@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/main/timer.h"
+#include "../../scene/main/timer.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestTimer {
 

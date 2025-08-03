@@ -33,9 +33,9 @@
 #include "gdextension.h"
 #include "gdextension.compat.inc"
 
-#include "core/config/project_settings.h"
-#include "core/object/class_db.h"
-#include "core/object/method_bind.h"
+#include "../config/project_settings.h"
+#include "../object/class_db.h"
+#include "../object/method_bind.h"
 #include "gdextension_library_loader.h"
 #include "gdextension_manager.h"
 

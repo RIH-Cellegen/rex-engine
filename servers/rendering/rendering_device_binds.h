@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "servers/rendering/rendering_device.h"
+#include "rendering_device.h"
 
 #define RD_SETGET(m_type, m_member)            \
 	void set_##m_member(m_type p_##m_member) { \

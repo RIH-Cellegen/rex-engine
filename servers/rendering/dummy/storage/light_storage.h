@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "servers/rendering/storage/light_storage.h"
+#include "../../storage/light_storage.h"
 
 namespace RendererDummy {
 

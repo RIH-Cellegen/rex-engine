@@ -32,7 +32,7 @@
 
 #include "add_metadata_dialog.h"
 
-#include "editor/themes/editor_scale.h"
+#include "themes/editor_scale.h"
 
 AddMetadataDialog::AddMetadataDialog() {
 	VBoxContainer *vbc = memnew(VBoxContainer);

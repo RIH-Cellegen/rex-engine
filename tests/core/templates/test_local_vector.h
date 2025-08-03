@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/templates/local_vector.h"
+#include "../../../core/templates/local_vector.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestLocalVector {
 

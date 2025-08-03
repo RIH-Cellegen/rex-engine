@@ -32,11 +32,11 @@
 
 #include "text_editor.h"
 
-#include "core/io/json.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "scene/gui/menu_button.h"
-#include "scene/gui/split_container.h"
+#include "../../core/io/json.h"
+#include "../editor_node.h"
+#include "../editor_settings.h"
+#include "../../scene/gui/menu_button.h"
+#include "../../scene/gui/split_container.h"
 
 void TextEditor::add_syntax_highlighter(Ref<EditorSyntaxHighlighter> p_highlighter) {
 	ERR_FAIL_COND(p_highlighter.is_null());

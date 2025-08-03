@@ -32,9 +32,9 @@
 
 #include "translation.h"
 
-#include "core/os/os.h"
-#include "core/os/thread.h"
-#include "core/string/translation_server.h"
+#include "../os/os.h"
+#include "../os/thread.h"
+#include "translation_server.h"
 
 Dictionary Translation::_get_messages() const {
 	Dictionary d;

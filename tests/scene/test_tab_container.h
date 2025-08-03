@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/gui/tab_container.h"
+#include "../../scene/gui/tab_container.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestTabContainer {
 static inline Array build_array() {

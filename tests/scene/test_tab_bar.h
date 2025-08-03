@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "scene/gui/tab_bar.h"
-#include "scene/main/window.h"
+#include "../../scene/gui/tab_bar.h"
+#include "../../scene/main/window.h"
 
-#include "tests/test_macros.h"
+#include "../../tests/test_macros.h"
 
 namespace TestTabBar {
 static inline Array build_array() {

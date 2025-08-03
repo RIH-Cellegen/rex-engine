@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/templates/vector.h"
+#include "vector.h"
 
 template <typename T>
 class RingBuffer {

@@ -32,16 +32,16 @@
 
 #ifdef GLES3_ENABLED
 
-#include "core/config/project_settings.h"
+#include "../../../core/config/project_settings.h"
 
 #include "config.h"
 #include "material_storage.h"
 #include "particles_storage.h"
 #include "texture_storage.h"
 
-#include "drivers/gles3/rasterizer_canvas_gles3.h"
-#include "drivers/gles3/rasterizer_gles3.h"
-#include "servers/rendering/storage/variant_converters.h"
+#include "../rasterizer_canvas_gles3.h"
+#include "../rasterizer_gles3.h"
+#include "../../../servers/rendering/storage/variant_converters.h"
 
 using namespace GLES3;
 

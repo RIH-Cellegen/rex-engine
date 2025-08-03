@@ -32,8 +32,8 @@
 
 #include "progress_bar.h"
 
-#include "scene/resources/text_line.h"
-#include "scene/theme/theme_db.h"
+#include "../resources/text_line.h"
+#include "../theme/theme_db.h"
 
 Size2 ProgressBar::get_minimum_size() const {
 	Size2 minimum_size = theme_cache.background_style->get_minimum_size();

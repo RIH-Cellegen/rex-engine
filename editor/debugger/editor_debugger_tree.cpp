@@ -32,17 +32,17 @@
 
 #include "editor_debugger_tree.h"
 
-#include "editor/debugger/editor_debugger_node.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/gui/editor_file_dialog.h"
-#include "editor/gui/editor_toaster.h"
-#include "editor/scene_tree_dock.h"
-#include "scene/debugger/scene_debugger.h"
-#include "scene/gui/texture_rect.h"
-#include "scene/resources/packed_scene.h"
-#include "servers/display_server.h"
+#include "editor_debugger_node.h"
+#include "../editor_node.h"
+#include "../editor_settings.h"
+#include "../editor_string_names.h"
+#include "../gui/editor_file_dialog.h"
+#include "../gui/editor_toaster.h"
+#include "../scene_tree_dock.h"
+#include "../../scene/debugger/scene_debugger.h"
+#include "../../scene/gui/texture_rect.h"
+#include "../../scene/resources/packed_scene.h"
+#include "../../servers/display_server.h"
 
 EditorDebuggerTree::EditorDebuggerTree() {
 	set_v_size_flags(SIZE_EXPAND_FILL);

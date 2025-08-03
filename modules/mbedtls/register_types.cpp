@@ -37,14 +37,14 @@
 #include "packet_peer_mbed_dtls.h"
 #include "stream_peer_mbedtls.h"
 
-#include "core/config/project_settings.h"
+#include "../../core/config/project_settings.h"
 
 #if MBEDTLS_VERSION_MAJOR >= 3
 #include <psa/crypto.h>
 #endif
 
 #ifdef TESTS_ENABLED
-#include "tests/test_crypto_mbedtls.h"
+#include "../../tests/test_crypto_mbedtls.h"
 #endif
 
 static bool godot_mbedtls_initialized = false;

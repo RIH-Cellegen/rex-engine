@@ -32,17 +32,17 @@
 
 #include "run_instances_dialog.h"
 
-#include "core/config/project_settings.h"
-#include "editor/editor_settings.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/check_box.h"
-#include "scene/gui/grid_container.h"
-#include "scene/gui/label.h"
-#include "scene/gui/line_edit.h"
-#include "scene/gui/popup_menu.h"
-#include "scene/gui/spin_box.h"
-#include "scene/gui/tree.h"
-#include "scene/main/timer.h"
+#include "../core/config/project_settings.h"
+#include "editor_settings.h"
+#include "themes/editor_scale.h"
+#include "../scene/gui/check_box.h"
+#include "../scene/gui/grid_container.h"
+#include "../scene/gui/label.h"
+#include "../scene/gui/line_edit.h"
+#include "../scene/gui/popup_menu.h"
+#include "../scene/gui/spin_box.h"
+#include "../scene/gui/tree.h"
+#include "../scene/main/timer.h"
 
 void RunInstancesDialog::_fetch_main_args() {
 	if (!main_args_edit->has_focus()) { // Only set the text if the user is not currently editing it.

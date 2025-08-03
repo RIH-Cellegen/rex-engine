@@ -32,7 +32,7 @@
 
 #include "os_windows.h"
 
-#include "main/main.h"
+#include "../../main/main.h"
 
 #include <locale.h>
 #include <stdio.h>

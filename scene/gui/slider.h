@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/gui/range.h"
+#include "range.h"
 
 class Slider : public Range {
 	GDCLASS(Slider, Range);

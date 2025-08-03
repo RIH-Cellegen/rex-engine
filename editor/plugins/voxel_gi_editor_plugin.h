@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "editor/plugins/editor_plugin.h"
-#include "scene/3d/voxel_gi.h"
+#include "editor_plugin.h"
+#include "../../scene/3d/voxel_gi.h"
 
 class EditorFileDialog;
 struct EditorProgress;

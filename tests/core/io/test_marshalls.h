@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/io/marshalls.h"
+#include "../../../core/io/marshalls.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestMarshalls {
 

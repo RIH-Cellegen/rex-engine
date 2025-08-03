@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/io/dir_access.h"
-#include "core/io/logger.h"
-#include "modules/regex/regex.h"
-#include "tests/test_macros.h"
+#include "../../../core/io/dir_access.h"
+#include "../../../core/io/logger.h"
+#include "../../../modules/regex/regex.h"
+#include "../../test_macros.h"
 
 namespace TestLogger {
 

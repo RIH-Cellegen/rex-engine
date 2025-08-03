@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/resources/style_box.h"
+#include "style_box.h"
 
 class StyleBoxFlat : public StyleBox {
 	GDCLASS(StyleBoxFlat, StyleBox);

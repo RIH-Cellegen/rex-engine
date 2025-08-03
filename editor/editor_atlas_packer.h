@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/math/vector2.h"
-#include "core/math/vector2i.h"
-#include "core/templates/vector.h"
+#include "../core/math/vector2.h"
+#include "../core/math/vector2i.h"
+#include "../core/templates/vector.h"
 
 class EditorAtlasPacker {
 public:

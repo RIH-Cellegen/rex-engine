@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/io/image.h"
-#include "core/io/resource_importer.h"
-#include "core/object/ref_counted.h"
+#include "../../core/io/image.h"
+#include "../../core/io/resource_importer.h"
+#include "../../core/object/ref_counted.h"
 
 class CompressedTexture2D;
 

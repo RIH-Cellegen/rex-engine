@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/gui/texture_progress_bar.h"
+#include "../../scene/gui/texture_progress_bar.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestTextureProgressBar {
 

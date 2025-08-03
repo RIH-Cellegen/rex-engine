@@ -32,7 +32,7 @@
 
 #include "panel_container.h"
 
-#include "scene/theme/theme_db.h"
+#include "../theme/theme_db.h"
 
 Size2 PanelContainer::get_minimum_size() const {
 	Size2 ms;

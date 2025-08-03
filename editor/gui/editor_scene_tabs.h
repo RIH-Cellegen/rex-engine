@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/gui/margin_container.h"
+#include "../../scene/gui/margin_container.h"
 
 class Button;
 class HBoxContainer;

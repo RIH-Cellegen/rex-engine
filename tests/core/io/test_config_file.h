@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/io/config_file.h"
-#include "core/os/os.h"
+#include "../../../core/io/config_file.h"
+#include "../../../core/os/os.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestConfigFile {
 

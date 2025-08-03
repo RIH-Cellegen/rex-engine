@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/io/file_access.h"
-#include "core/io/resource_loader.h"
-#include "core/string/translation.h"
+#include "file_access.h"
+#include "resource_loader.h"
+#include "../string/translation.h"
 
 class TranslationLoaderPO : public ResourceFormatLoader {
 public:

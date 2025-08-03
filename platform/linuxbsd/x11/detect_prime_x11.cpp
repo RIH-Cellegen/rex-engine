@@ -34,11 +34,11 @@
 
 #include "detect_prime_x11.h"
 
-#include "core/string/print_string.h"
-#include "core/string/ustring.h"
+#include "../../../core/string/print_string.h"
+#include "../../../core/string/ustring.h"
 
-#include "thirdparty/glad/glad/gl.h"
-#include "thirdparty/glad/glad/glx.h"
+#include "../../../thirdparty/glad/glad/gl.h"
+#include "../../../thirdparty/glad/glad/glx.h"
 
 #ifdef SOWRAP_ENABLED
 #include "x11/dynwrappers/xlib-so_wrap.h"

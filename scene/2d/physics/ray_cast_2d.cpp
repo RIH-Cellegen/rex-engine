@@ -32,8 +32,8 @@
 
 #include "ray_cast_2d.h"
 
-#include "scene/2d/physics/collision_object_2d.h"
-#include "scene/resources/world_2d.h"
+#include "collision_object_2d.h"
+#include "../../resources/world_2d.h"
 
 void RayCast2D::set_target_position(const Vector2 &p_point) {
 	target_position = p_point;

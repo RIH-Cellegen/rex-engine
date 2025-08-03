@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "scene/3d/camera_3d.h"
-#include "scene/main/viewport.h"
-#include "scene/main/window.h"
+#include "../../scene/3d/camera_3d.h"
+#include "../../scene/main/viewport.h"
+#include "../../scene/main/window.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 TEST_CASE("[SceneTree][Camera3D] Getters and setters") {
 	Camera3D *test_camera = memnew(Camera3D);

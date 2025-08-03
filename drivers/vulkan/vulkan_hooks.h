@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "drivers/vulkan/godot_vulkan.h"
+#include "godot_vulkan.h"
 
 class VulkanHooks {
 private:

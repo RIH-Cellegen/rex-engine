@@ -32,10 +32,10 @@
 
 #include "core_constants.h"
 
-#include "core/input/input_event.h"
-#include "core/object/class_db.h"
-#include "core/os/keyboard.h"
-#include "core/variant/variant.h"
+#include "input/input_event.h"
+#include "object/class_db.h"
+#include "os/keyboard.h"
+#include "variant/variant.h"
 
 struct _CoreConstant {
 #ifdef DEBUG_METHODS_ENABLED

@@ -40,12 +40,12 @@
 #import "ios_terminal_logger.h"
 #import "view_controller.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/dir_access.h"
-#include "core/io/file_access.h"
-#include "core/io/file_access_pack.h"
-#include "drivers/unix/syslog_logger.h"
-#include "main/main.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/io/dir_access.h"
+#include "../../core/io/file_access.h"
+#include "../../core/io/file_access_pack.h"
+#include "../../drivers/unix/syslog_logger.h"
+#include "../../main/main.h"
 
 #import <AudioToolbox/AudioServices.h>
 #import <CoreText/CoreText.h>
@@ -54,11 +54,11 @@
 #include <sys/sysctl.h>
 
 #if defined(RD_ENABLED)
-#include "servers/rendering/renderer_rd/renderer_compositor_rd.h"
+#include "../../servers/rendering/renderer_rd/renderer_compositor_rd.h"
 #import <QuartzCore/CAMetalLayer.h>
 
 #if defined(VULKAN_ENABLED)
-#include "drivers/vulkan/godot_vulkan.h"
+#include "../../drivers/vulkan/godot_vulkan.h"
 #endif // VULKAN_ENABLED
 #endif
 

@@ -35,10 +35,10 @@
 #include "openxr_interface.h"
 #include "openxr_util.h"
 
-#include "core/config/engine.h"
-#include "core/config/project_settings.h"
-#include "core/os/memory.h"
-#include "core/version.h"
+#include "../../core/config/engine.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/os/memory.h"
+#include "../../core/version.h"
 
 #include "openxr_platform_inc.h"
 

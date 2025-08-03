@@ -34,8 +34,8 @@
 
 #include "dds_enums.h"
 
-#include "core/io/file_access.h"
-#include "core/io/stream_peer.h"
+#include "../../core/io/file_access.h"
+#include "../../core/io/stream_peer.h"
 
 Error save_dds(const String &p_path, const Ref<Image> &p_img) {
 	Vector<uint8_t> buffer = save_dds_buffer(p_img);

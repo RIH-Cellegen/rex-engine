@@ -32,12 +32,12 @@
 
 #include "skeleton_2d.h"
 
-#include "core/math/transform_interpolator.h"
+#include "../../core/math/transform_interpolator.h"
 
 #ifdef TOOLS_ENABLED
-#include "editor/editor_data.h"
-#include "editor/editor_settings.h"
-#include "editor/plugins/canvas_item_editor_plugin.h"
+#include "../../editor/editor_data.h"
+#include "../../editor/editor_settings.h"
+#include "../../editor/plugins/canvas_item_editor_plugin.h"
 #endif //TOOLS_ENABLED
 
 bool Bone2D::_set(const StringName &p_path, const Variant &p_value) {

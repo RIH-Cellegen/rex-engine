@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/io/xml_parser.h"
+#include "../../../core/io/xml_parser.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestXMLParser {
 TEST_CASE("[XMLParser] End-to-end") {

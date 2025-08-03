@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/string/ustring.h"
+#include "../../../core/string/ustring.h"
 
-#include "modules/regex/regex.h"
+#include "../../regex/regex.h"
 
 // <sys/sysmacros.h> is included somewhere, which defines major(dev) to gnu_dev_major(dev)
 #if defined(major)

@@ -34,7 +34,7 @@
 
 #include "../action_map/openxr_interaction_profile_metadata.h"
 
-#include "core/string/print_string.h"
+#include "../../../core/string/print_string.h"
 
 HashMap<String, bool *> OpenXRHTCViveTrackerExtension::get_requested_extensions() {
 	HashMap<String, bool *> request_extensions;

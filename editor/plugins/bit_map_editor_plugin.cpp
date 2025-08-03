@@ -32,13 +32,13 @@
 
 #include "bit_map_editor_plugin.h"
 
-#include "editor/editor_string_names.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/aspect_ratio_container.h"
-#include "scene/gui/label.h"
-#include "scene/gui/margin_container.h"
-#include "scene/gui/texture_rect.h"
-#include "scene/resources/image_texture.h"
+#include "../editor_string_names.h"
+#include "../themes/editor_scale.h"
+#include "../../scene/gui/aspect_ratio_container.h"
+#include "../../scene/gui/label.h"
+#include "../../scene/gui/margin_container.h"
+#include "../../scene/gui/texture_rect.h"
+#include "../../scene/resources/image_texture.h"
 
 void BitMapEditor::setup(const Ref<BitMap> &p_bitmap) {
 	Ref<ImageTexture> bitmap_texture = ImageTexture::create_from_image(p_bitmap->convert_to_image());

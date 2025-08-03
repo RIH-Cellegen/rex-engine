@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "Jolt/Jolt.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Jolt.h"
 
-#include "Jolt/Core/TempAllocator.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Core/TempAllocator.h"
 
 #include <stdint.h>
 

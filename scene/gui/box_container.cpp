@@ -32,9 +32,9 @@
 
 #include "box_container.h"
 
-#include "scene/gui/label.h"
-#include "scene/gui/margin_container.h"
-#include "scene/theme/theme_db.h"
+#include "label.h"
+#include "margin_container.h"
+#include "../theme/theme_db.h"
 
 struct _MinSizeCache {
 	int min_size = 0;

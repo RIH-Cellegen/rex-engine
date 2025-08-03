@@ -32,9 +32,9 @@
 
 #include "spin_box.h"
 
-#include "core/input/input.h"
-#include "core/math/expression.h"
-#include "scene/theme/theme_db.h"
+#include "../../core/input/input.h"
+#include "../../core/math/expression.h"
+#include "../theme/theme_db.h"
 
 void SpinBoxLineEdit::_accessibility_action_inc(const Variant &p_data) {
 	SpinBox *parent_sb = Object::cast_to<SpinBox>(get_parent());

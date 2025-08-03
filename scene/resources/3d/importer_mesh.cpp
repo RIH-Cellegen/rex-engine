@@ -32,12 +32,12 @@
 
 #include "importer_mesh.h"
 
-#include "core/io/marshalls.h"
-#include "core/math/random_pcg.h"
-#include "scene/resources/surface_tool.h"
+#include "../../../core/io/marshalls.h"
+#include "../../../core/math/random_pcg.h"
+#include "../surface_tool.h"
 
 #ifndef PHYSICS_3D_DISABLED
-#include "core/math/convex_hull.h"
+#include "../../../core/math/convex_hull.h"
 #endif // PHYSICS_3D_DISABLED
 
 String ImporterMesh::validate_blend_shape_name(const String &p_name) {

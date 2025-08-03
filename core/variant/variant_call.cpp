@@ -32,14 +32,14 @@
 
 #include "variant.h"
 
-#include "core/crypto/crypto_core.h"
-#include "core/debugger/engine_debugger.h"
-#include "core/io/compression.h"
-#include "core/io/marshalls.h"
-#include "core/object/class_db.h"
-#include "core/os/os.h"
-#include "core/templates/local_vector.h"
-#include "core/templates/oa_hash_map.h"
+#include "../crypto/crypto_core.h"
+#include "../debugger/engine_debugger.h"
+#include "../io/compression.h"
+#include "../io/marshalls.h"
+#include "../object/class_db.h"
+#include "../os/os.h"
+#include "../templates/local_vector.h"
+#include "../templates/oa_hash_map.h"
 
 typedef void (*VariantFunc)(Variant &r_ret, Variant &p_self, const Variant **p_args);
 typedef void (*VariantConstructFunc)(Variant &r_ret, const Variant **p_args);

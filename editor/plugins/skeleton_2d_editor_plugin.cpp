@@ -32,12 +32,12 @@
 
 #include "skeleton_2d_editor_plugin.h"
 
-#include "editor/editor_node.h"
-#include "editor/editor_string_names.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/plugins/canvas_item_editor_plugin.h"
-#include "scene/gui/dialogs.h"
-#include "scene/gui/menu_button.h"
+#include "../editor_node.h"
+#include "../editor_string_names.h"
+#include "../editor_undo_redo_manager.h"
+#include "canvas_item_editor_plugin.h"
+#include "../../scene/gui/dialogs.h"
+#include "../../scene/gui/menu_button.h"
 
 void Skeleton2DEditor::_node_removed(Node *p_node) {
 	if (p_node == node) {

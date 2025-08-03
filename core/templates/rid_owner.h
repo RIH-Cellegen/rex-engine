@@ -32,12 +32,12 @@
 
 #pragma once
 
-#include "core/os/memory.h"
-#include "core/os/mutex.h"
-#include "core/string/print_string.h"
-#include "core/templates/local_vector.h"
-#include "core/templates/rid.h"
-#include "core/templates/safe_refcount.h"
+#include "../os/memory.h"
+#include "../os/mutex.h"
+#include "../string/print_string.h"
+#include "local_vector.h"
+#include "rid.h"
+#include "safe_refcount.h"
 
 #include <stdio.h>
 #include <typeinfo> // IWYU pragma: keep // Used in macro.

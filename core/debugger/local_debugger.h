@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/debugger/engine_debugger.h"
-#include "core/object/script_language.h"
-#include "core/templates/list.h"
+#include "engine_debugger.h"
+#include "../object/script_language.h"
+#include "../templates/list.h"
 
 class LocalDebugger : public EngineDebugger {
 private:

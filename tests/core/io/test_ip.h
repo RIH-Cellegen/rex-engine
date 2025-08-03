@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/io/ip.h"
+#include "../../../core/io/ip.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestIP {
 

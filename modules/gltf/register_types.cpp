@@ -50,9 +50,9 @@
 #include "editor/editor_scene_importer_blend.h"
 #include "editor/editor_scene_importer_gltf.h"
 
-#include "core/config/project_settings.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
+#include "../../core/config/project_settings.h"
+#include "../../editor/editor_node.h"
+#include "../../editor/editor_settings.h"
 
 static void _editor_init() {
 	Ref<EditorSceneFormatImporterGLTF> import_gltf;

@@ -32,7 +32,7 @@
 
 #include "option_button.h"
 
-#include "scene/theme/theme_db.h"
+#include "../theme/theme_db.h"
 
 static const int NONE_SELECTED = -1;
 

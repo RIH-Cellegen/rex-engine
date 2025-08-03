@@ -34,9 +34,9 @@
 
 #include "../util.h"
 
-#include "core/templates/vector.h"
+#include "../../../core/templates/vector.h"
 #include "openxr_extension_wrapper.h"
-#include "scene/resources/mesh.h"
+#include "../../../scene/resources/mesh.h"
 
 // The OpenXR visibility mask extension provides a mesh for each eye that
 // can be used as a mask to determine which part of our rendered result

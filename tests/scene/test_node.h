@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/object/class_db.h"
-#include "scene/main/node.h"
-#include "scene/resources/packed_scene.h"
+#include "../../core/object/class_db.h"
+#include "../../scene/main/node.h"
+#include "../../scene/resources/packed_scene.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestNode {
 

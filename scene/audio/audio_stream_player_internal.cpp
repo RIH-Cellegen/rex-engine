@@ -32,8 +32,8 @@
 
 #include "audio_stream_player_internal.h"
 
-#include "scene/main/node.h"
-#include "servers/audio/audio_stream.h"
+#include "../main/node.h"
+#include "../../servers/audio/audio_stream.h"
 
 void AudioStreamPlayerInternal::_set_process(bool p_enabled) {
 	if (physical) {

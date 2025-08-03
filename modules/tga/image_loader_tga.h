@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/io/image_loader.h"
+#include "../../core/io/image_loader.h"
 
 #define TGA_IMAGE_DESCRIPTOR_ALPHA_MASK 0xf
 

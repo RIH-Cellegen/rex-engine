@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/2d/node_2d.h"
-#include "scene/resources/curve.h"
+#include "node_2d.h"
+#include "../resources/curve.h"
 
 class Timer;
 

@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/math/math_funcs.h"
-#include "core/math/rect2.h"
+#include "../../core/math/math_funcs.h"
+#include "../../core/math/rect2.h"
 
 class GodotCollisionObject2D;
 

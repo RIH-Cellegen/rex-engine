@@ -35,7 +35,7 @@
 #import "display_server_ios.h"
 #import "os_ios.h"
 
-#include "core/os/keyboard.h"
+#include "../../core/os/keyboard.h"
 
 @interface GodotKeyboardInputView () <UITextViewDelegate>
 

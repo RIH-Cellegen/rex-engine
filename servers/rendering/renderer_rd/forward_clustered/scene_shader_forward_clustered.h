@@ -33,8 +33,8 @@
 #pragma once
 
 #include "../storage_rd/material_storage.h"
-#include "servers/rendering/renderer_rd/pipeline_hash_map_rd.h"
-#include "servers/rendering/renderer_rd/shaders/forward_clustered/scene_forward_clustered.glsl.gen.h"
+#include "../pipeline_hash_map_rd.h"
+#include "../shaders/forward_clustered/scene_forward_clustered.glsl.gen.h"
 
 namespace RendererSceneRenderImplementation {
 

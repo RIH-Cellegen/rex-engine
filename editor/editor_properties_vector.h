@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "editor/editor_inspector.h"
+#include "editor_inspector.h"
 
 class EditorSpinSlider;
 class TextureButton;

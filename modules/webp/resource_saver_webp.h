@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/io/image.h"
-#include "core/io/resource_saver.h"
+#include "../../core/io/image.h"
+#include "../../core/io/resource_saver.h"
 
 class ResourceSaverWebP : public ResourceFormatSaver {
 public:

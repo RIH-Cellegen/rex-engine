@@ -35,12 +35,12 @@
 #include "../action_map/openxr_action_map.h"
 #include "../action_map/openxr_action_set.h"
 #include "../action_map/openxr_binding_modifier.h"
-#include "editor/editor_inspector.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "scene/gui/box_container.h"
-#include "scene/gui/button.h"
-#include "scene/gui/label.h"
-#include "scene/gui/panel_container.h"
+#include "../../../editor/editor_inspector.h"
+#include "../../../editor/editor_undo_redo_manager.h"
+#include "../../../scene/gui/box_container.h"
+#include "../../../scene/gui/button.h"
+#include "../../../scene/gui/label.h"
+#include "../../../scene/gui/panel_container.h"
 
 class EditorPropertyActionSet : public EditorProperty {
 	GDCLASS(EditorPropertyActionSet, EditorProperty);

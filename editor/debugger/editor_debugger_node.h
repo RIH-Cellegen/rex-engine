@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/object/script_language.h"
-#include "editor/debugger/editor_debugger_server.h"
-#include "scene/gui/margin_container.h"
+#include "../../core/object/script_language.h"
+#include "editor_debugger_server.h"
+#include "../../scene/gui/margin_container.h"
 
 class Button;
 class DebugAdapterParser;

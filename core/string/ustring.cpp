@@ -32,18 +32,18 @@
 
 #include "ustring.h"
 
-#include "core/crypto/crypto_core.h"
-#include "core/math/color.h"
-#include "core/math/math_funcs.h"
-#include "core/object/object.h"
-#include "core/os/memory.h"
-#include "core/os/os.h"
-#include "core/string/print_string.h"
-#include "core/string/string_name.h"
-#include "core/string/translation_server.h"
-#include "core/string/ucaps.h"
-#include "core/variant/variant.h"
-#include "core/version_generated.gen.h"
+#include "../crypto/crypto_core.h"
+#include "../math/color.h"
+#include "../math/math_funcs.h"
+#include "../object/object.h"
+#include "../os/memory.h"
+#include "../os/os.h"
+#include "print_string.h"
+#include "string_name.h"
+#include "translation_server.h"
+#include "ucaps.h"
+#include "../variant/variant.h"
+#include "../version_generated.gen.h"
 
 #ifdef _MSC_VER
 #define _CRT_SECURE_NO_WARNINGS // to disable build-time warning which suggested to use strcpy_s instead strcpy

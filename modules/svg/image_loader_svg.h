@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/io/image_loader.h"
+#include "../../core/io/image_loader.h"
 
 class ImageLoaderSVG : public ImageFormatLoader {
 	static HashMap<Color, Color> forced_color_map;

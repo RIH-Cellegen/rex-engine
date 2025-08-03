@@ -32,8 +32,8 @@
 
 #include "packet_peer_udp.h"
 
-#include "core/io/ip.h"
-#include "core/io/udp_server.h"
+#include "ip.h"
+#include "udp_server.h"
 
 void PacketPeerUDP::set_blocking_mode(bool p_enable) {
 	blocking = p_enable;

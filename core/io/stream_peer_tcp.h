@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/io/ip.h"
-#include "core/io/ip_address.h"
-#include "core/io/net_socket.h"
-#include "core/io/stream_peer.h"
+#include "ip.h"
+#include "ip_address.h"
+#include "net_socket.h"
+#include "stream_peer.h"
 
 class StreamPeerTCP : public StreamPeer {
 	GDCLASS(StreamPeerTCP, StreamPeer);

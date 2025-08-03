@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/io/ip.h"
+#include "../../core/io/ip.h"
 
 class IPWeb : public IP {
 	GDCLASS(IPWeb, IP);

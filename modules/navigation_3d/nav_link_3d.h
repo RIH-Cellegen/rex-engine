@@ -46,7 +46,7 @@ struct NavLinkIteration3D : NavBaseIteration3D {
 	bool is_bidirectional() const { return bidirectional; }
 };
 
-#include "core/templates/self_list.h"
+#include "../../core/templates/self_list.h"
 
 class NavLink3D : public NavBase3D {
 	NavMap3D *map = nullptr;

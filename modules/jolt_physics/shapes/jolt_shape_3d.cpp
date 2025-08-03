@@ -37,12 +37,12 @@
 #include "jolt_custom_double_sided_shape.h"
 #include "jolt_custom_user_data_shape.h"
 
-#include "Jolt/Physics/Collision/Shape/MutableCompoundShape.h"
-#include "Jolt/Physics/Collision/Shape/OffsetCenterOfMassShape.h"
-#include "Jolt/Physics/Collision/Shape/RotatedTranslatedShape.h"
-#include "Jolt/Physics/Collision/Shape/ScaledShape.h"
-#include "Jolt/Physics/Collision/Shape/SphereShape.h"
-#include "Jolt/Physics/Collision/Shape/StaticCompoundShape.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/Shape/MutableCompoundShape.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/Shape/OffsetCenterOfMassShape.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/Shape/RotatedTranslatedShape.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/Shape/ScaledShape.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/Shape/SphereShape.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/Shape/StaticCompoundShape.h"
 
 namespace {
 

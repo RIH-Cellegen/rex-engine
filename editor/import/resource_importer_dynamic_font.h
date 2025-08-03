@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/io/resource_importer.h"
+#include "../../core/io/resource_importer.h"
 
 class ResourceImporterDynamicFont : public ResourceImporter {
 	GDCLASS(ResourceImporterDynamicFont, ResourceImporter);

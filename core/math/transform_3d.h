@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/math/aabb.h"
-#include "core/math/basis.h"
-#include "core/math/plane.h"
-#include "core/templates/vector.h"
+#include "aabb.h"
+#include "basis.h"
+#include "plane.h"
+#include "../templates/vector.h"
 
 struct [[nodiscard]] Transform3D {
 	Basis basis;

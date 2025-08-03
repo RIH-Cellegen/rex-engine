@@ -34,17 +34,17 @@
 
 #include "jolt_body_accessor_3d.h"
 
-#include "servers/physics_server_3d.h"
+#include "../../../servers/physics_server_3d.h"
 
-#include "Jolt/Jolt.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Jolt.h"
 
-#include "Jolt/Core/JobSystem.h"
-#include "Jolt/Core/TempAllocator.h"
-#include "Jolt/Physics/Body/BodyInterface.h"
-#include "Jolt/Physics/Collision/BroadPhase/BroadPhaseQuery.h"
-#include "Jolt/Physics/Collision/NarrowPhaseQuery.h"
-#include "Jolt/Physics/Constraints/Constraint.h"
-#include "Jolt/Physics/PhysicsSystem.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Core/JobSystem.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Core/TempAllocator.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Body/BodyInterface.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/BroadPhase/BroadPhaseQuery.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/NarrowPhaseQuery.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Constraints/Constraint.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/PhysicsSystem.h"
 
 class JoltArea3D;
 class JoltBody3D;

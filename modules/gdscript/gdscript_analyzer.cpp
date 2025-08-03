@@ -36,19 +36,19 @@
 #include "gdscript_utility_callable.h"
 #include "gdscript_utility_functions.h"
 
-#include "core/config/engine.h"
-#include "core/config/project_settings.h"
-#include "core/core_constants.h"
-#include "core/io/file_access.h"
-#include "core/io/resource_loader.h"
-#include "core/object/class_db.h"
-#include "core/object/script_language.h"
-#include "core/templates/hash_map.h"
-#include "scene/main/node.h"
+#include "../../core/config/engine.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/core_constants.h"
+#include "../../core/io/file_access.h"
+#include "../../core/io/resource_loader.h"
+#include "../../core/object/class_db.h"
+#include "../../core/object/script_language.h"
+#include "../../core/templates/hash_map.h"
+#include "../../scene/main/node.h"
 
 #if defined(TOOLS_ENABLED) && !defined(DISABLE_DEPRECATED)
 #define SUGGEST_GODOT4_RENAMES
-#include "editor/renames_map_3_to_4.h"
+#include "../../editor/renames_map_3_to_4.h"
 #endif
 
 #define UNNAMED_ENUM "<anonymous enum>"

@@ -34,7 +34,7 @@
 
 #ifdef WEB_ENABLED
 
-#include "core/io/ip.h"
+#include "../../core/io/ip.h"
 
 void EMWSPeer::_esws_on_connect(void *p_obj, char *p_proto) {
 	EMWSPeer *peer = static_cast<EMWSPeer *>(p_obj);

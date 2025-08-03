@@ -32,8 +32,8 @@
 
 #include "math_funcs.h"
 
-#include "core/error/error_macros.h"
-#include "core/math/random_pcg.h"
+#include "../error/error_macros.h"
+#include "random_pcg.h"
 
 static RandomPCG default_rand;
 

@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "editor/export/editor_export_preset.h"
-#include "scene/gui/dialogs.h"
+#include "editor_export_preset.h"
+#include "../../scene/gui/dialogs.h"
 
 class CheckBox;
 class CheckButton;

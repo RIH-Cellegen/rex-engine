@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/templates/lru.h"
-#include "scene/resources/texture.h"
+#include "../../core/templates/lru.h"
+#include "texture.h"
 
 class BitMap;
 

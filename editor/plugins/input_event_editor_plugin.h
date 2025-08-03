@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "editor/action_map_editor.h"
-#include "editor/editor_inspector.h"
-#include "editor/plugins/editor_plugin.h"
+#include "../action_map_editor.h"
+#include "../editor_inspector.h"
+#include "editor_plugin.h"
 
 class InputEventConfigContainer : public VBoxContainer {
 	GDCLASS(InputEventConfigContainer, VBoxContainer);

@@ -32,10 +32,10 @@
 
 #include "voxel_gi_editor_plugin.h"
 
-#include "editor/editor_interface.h"
-#include "editor/editor_node.h"
-#include "editor/editor_string_names.h"
-#include "editor/gui/editor_file_dialog.h"
+#include "../editor_interface.h"
+#include "../editor_node.h"
+#include "../editor_string_names.h"
+#include "../gui/editor_file_dialog.h"
 
 void VoxelGIEditorPlugin::_bake() {
 	if (voxel_gi) {

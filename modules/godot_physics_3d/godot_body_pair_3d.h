@@ -36,7 +36,7 @@
 #include "godot_constraint_3d.h"
 #include "godot_soft_body_3d.h"
 
-#include "core/templates/local_vector.h"
+#include "../../core/templates/local_vector.h"
 
 class GodotBodyContact3D : public GodotConstraint3D {
 protected:

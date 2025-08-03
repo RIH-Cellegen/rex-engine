@@ -33,7 +33,7 @@
 #include "openxr_hand_interaction_extension.h"
 
 #include "../action_map/openxr_interaction_profile_metadata.h"
-#include "core/config/project_settings.h"
+#include "../../../core/config/project_settings.h"
 
 OpenXRHandInteractionExtension *OpenXRHandInteractionExtension::singleton = nullptr;
 

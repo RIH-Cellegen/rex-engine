@@ -35,9 +35,9 @@
 #include "../gdscript_parser.h"
 #include "../gdscript_tokenizer.h"
 
-#include "core/templates/hash_map.h"
-#include "core/templates/hash_set.h"
-#include "editor/editor_translation_parser.h"
+#include "../../../core/templates/hash_map.h"
+#include "../../../core/templates/hash_set.h"
+#include "../../../editor/editor_translation_parser.h"
 
 class GDScriptEditorTranslationParserPlugin : public EditorTranslationParserPlugin {
 	GDCLASS(GDScriptEditorTranslationParserPlugin, EditorTranslationParserPlugin);

@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/gui/panel_container.h"
+#include "../../scene/gui/panel_container.h"
 
 class BoxContainer;
 class Button;

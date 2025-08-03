@@ -33,7 +33,7 @@
 #pragma once
 
 #include "render_scene_buffers.h"
-#include "servers/rendering_server.h"
+#include "../../rendering_server.h"
 
 class RendererLightStorage {
 public:

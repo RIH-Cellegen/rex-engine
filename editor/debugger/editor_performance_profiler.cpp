@@ -32,12 +32,12 @@
 
 #include "editor_performance_profiler.h"
 
-#include "editor/editor_property_name_processor.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/themes/editor_scale.h"
-#include "editor/themes/editor_theme_manager.h"
-#include "main/performance.h"
+#include "../editor_property_name_processor.h"
+#include "../editor_settings.h"
+#include "../editor_string_names.h"
+#include "../themes/editor_scale.h"
+#include "../themes/editor_theme_manager.h"
+#include "../../main/performance.h"
 
 EditorPerformanceProfiler::Monitor::Monitor(const String &p_name, const String &p_base, int p_frame_index, Performance::MonitorType p_type, TreeItem *p_item) {
 	type = p_type;

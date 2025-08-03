@@ -32,7 +32,7 @@
 
 #include "openxr_select_action_dialog.h"
 
-#include "editor/themes/editor_scale.h"
+#include "../../../editor/themes/editor_scale.h"
 
 void OpenXRSelectActionDialog::_bind_methods() {
 	ADD_SIGNAL(MethodInfo("action_selected", PropertyInfo(Variant::STRING, "action")));

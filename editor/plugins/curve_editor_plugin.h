@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "editor/editor_inspector.h"
-#include "editor/editor_resource_preview.h"
-#include "editor/plugins/editor_plugin.h"
-#include "scene/resources/curve.h"
+#include "../editor_inspector.h"
+#include "../editor_resource_preview.h"
+#include "editor_plugin.h"
+#include "../../scene/resources/curve.h"
 
 class EditorSpinSlider;
 class MenuButton;

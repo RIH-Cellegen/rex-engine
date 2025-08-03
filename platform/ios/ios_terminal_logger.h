@@ -34,7 +34,7 @@
 
 #ifdef IOS_ENABLED
 
-#include "core/io/logger.h"
+#include "../../core/io/logger.h"
 
 class IOSTerminalLogger : public StdLogger {
 public:

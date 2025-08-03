@@ -32,9 +32,9 @@
 
 #include "gdscript_rpc_callable.h"
 
-#include "core/object/script_language.h"
-#include "core/templates/hashfuncs.h"
-#include "scene/main/node.h"
+#include "../../core/object/script_language.h"
+#include "../../core/templates/hashfuncs.h"
+#include "../../scene/main/node.h"
 
 bool GDScriptRPCCallable::compare_equal(const CallableCustom *p_a, const CallableCustom *p_b) {
 	return p_a->hash() == p_b->hash();

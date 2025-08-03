@@ -32,14 +32,14 @@
 
 #pragma once
 
-#include "core/input/shortcut.h"
-#include "core/object/ref_counted.h"
-#include "core/string/ustring.h"
-#include "core/templates/pair.h"
-#include "core/variant/array.h"
-#include "scene/gui/view_panner.h"
+#include "../../core/input/shortcut.h"
+#include "../../core/object/ref_counted.h"
+#include "../../core/string/ustring.h"
+#include "../../core/templates/pair.h"
+#include "../../core/variant/array.h"
+#include "../gui/view_panner.h"
 #ifndef _3D_DISABLED
-#include "scene/resources/mesh.h"
+#include "../resources/mesh.h"
 #endif // _3D_DISABLED
 
 class CanvasItem;

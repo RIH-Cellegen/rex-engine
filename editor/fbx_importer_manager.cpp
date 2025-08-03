@@ -32,12 +32,12 @@
 
 #include "fbx_importer_manager.h"
 
-#include "core/config/project_settings.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/link_button.h"
+#include "../core/config/project_settings.h"
+#include "editor_node.h"
+#include "editor_settings.h"
+#include "editor_string_names.h"
+#include "themes/editor_scale.h"
+#include "../scene/gui/link_button.h"
 
 void FBXImporterManager::_notification(int p_what) {
 	switch (p_what) {

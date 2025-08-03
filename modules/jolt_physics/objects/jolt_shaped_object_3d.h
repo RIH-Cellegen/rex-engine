@@ -34,12 +34,12 @@
 
 #include "jolt_object_3d.h"
 
-#include "core/templates/self_list.h"
+#include "../../../core/templates/self_list.h"
 
-#include "Jolt/Jolt.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Jolt.h"
 
-#include "Jolt/Physics/Body/Body.h"
-#include "Jolt/Physics/Body/BodyCreationSettings.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Body/Body.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Body/BodyCreationSettings.h"
 
 class JoltShapedObject3D : public JoltObject3D {
 	friend class JoltShape3D;

@@ -32,7 +32,7 @@
 
 #include "test_jsonrpc.h"
 
-#include "core/io/json.h"
+#include "../../../core/io/json.h"
 
 namespace TestJSONRPC {
 

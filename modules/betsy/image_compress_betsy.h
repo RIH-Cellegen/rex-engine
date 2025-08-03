@@ -32,19 +32,19 @@
 
 #pragma once
 
-#include "core/io/image.h"
-#include "core/object/worker_thread_pool.h"
-#include "core/os/thread.h"
-#include "core/templates/command_queue_mt.h"
+#include "../../core/io/image.h"
+#include "../../core/object/worker_thread_pool.h"
+#include "../../core/os/thread.h"
+#include "../../core/templates/command_queue_mt.h"
 
-#include "servers/rendering/rendering_device_binds.h"
-#include "servers/rendering/rendering_server_default.h"
+#include "../../servers/rendering/rendering_device_binds.h"
+#include "../../servers/rendering/rendering_server_default.h"
 
 #if defined(VULKAN_ENABLED)
-#include "drivers/vulkan/rendering_context_driver_vulkan.h"
+#include "../../drivers/vulkan/rendering_context_driver_vulkan.h"
 #endif
 #if defined(METAL_ENABLED)
-#include "drivers/metal/rendering_context_driver_metal.h"
+#include "../../drivers/metal/rendering_context_driver_metal.h"
 #endif
 
 enum BetsyFormat {

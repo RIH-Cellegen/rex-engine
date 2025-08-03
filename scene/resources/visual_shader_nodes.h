@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/resources/curve_texture.h"
-#include "scene/resources/visual_shader.h"
+#include "curve_texture.h"
+#include "visual_shader.h"
 
 class Cubemap;
 class Texture2DArray;

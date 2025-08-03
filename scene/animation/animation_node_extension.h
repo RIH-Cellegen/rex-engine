@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/animation/animation_tree.h"
+#include "animation_tree.h"
 
 class AnimationNodeExtension : public AnimationNode {
 	GDCLASS(AnimationNodeExtension, AnimationNode);

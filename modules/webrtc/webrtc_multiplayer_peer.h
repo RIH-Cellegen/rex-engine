@@ -34,7 +34,7 @@
 
 #include "webrtc_peer_connection.h"
 
-#include "scene/main/multiplayer_peer.h"
+#include "../../scene/main/multiplayer_peer.h"
 
 class WebRTCMultiplayerPeer : public MultiplayerPeer {
 	GDCLASS(WebRTCMultiplayerPeer, MultiplayerPeer);

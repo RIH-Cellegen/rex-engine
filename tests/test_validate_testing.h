@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/core_globals.h"
-#include "core/os/os.h"
+#include "../core/core_globals.h"
+#include "../core/os/os.h"
 
-#include "tests/test_macros.h"
-#include "tests/test_tools.h"
+#include "test_macros.h"
+#include "test_tools.h"
 
 TEST_SUITE("Validate tests") {
 	TEST_CASE("Always pass") {

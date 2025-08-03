@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/math/math_funcs.h"
+#include "math_funcs.h"
 
-#include "thirdparty/misc/pcg.h"
+#include "../../thirdparty/misc/pcg.h"
 
 #if defined(__GNUC__)
 #define CLZ32(x) __builtin_clz(x)

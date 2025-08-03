@@ -30,9 +30,9 @@
 /* SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                 */
 /**************************************************************************/
 
-#include "editor/event_listener_line_edit.h"
+#include "event_listener_line_edit.h"
 
-#include "core/input/input_map.h"
+#include "../core/input/input_map.h"
 
 // Maps to 2*axis if value is neg, or 2*axis+1 if value is pos.
 static const char *_joy_axis_descriptions[(size_t)JoyAxis::MAX * 2] = {

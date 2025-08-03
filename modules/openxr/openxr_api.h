@@ -36,15 +36,15 @@
 #include "extensions/openxr_extension_wrapper.h"
 #include "util.h"
 
-#include "core/error/error_macros.h"
-#include "core/math/projection.h"
-#include "core/math/transform_3d.h"
-#include "core/math/vector2.h"
-#include "core/string/ustring.h"
-#include "core/templates/rid_owner.h"
-#include "core/templates/vector.h"
-#include "servers/rendering_server.h"
-#include "servers/xr/xr_pose.h"
+#include "../../core/error/error_macros.h"
+#include "../../core/math/projection.h"
+#include "../../core/math/transform_3d.h"
+#include "../../core/math/vector2.h"
+#include "../../core/string/ustring.h"
+#include "../../core/templates/rid_owner.h"
+#include "../../core/templates/vector.h"
+#include "../../servers/rendering_server.h"
+#include "../../servers/xr/xr_pose.h"
 
 #include <openxr/openxr.h>
 

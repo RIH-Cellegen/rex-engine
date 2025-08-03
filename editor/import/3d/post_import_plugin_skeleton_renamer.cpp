@@ -32,11 +32,11 @@
 
 #include "post_import_plugin_skeleton_renamer.h"
 
-#include "scene/3d/bone_attachment_3d.h"
-#include "scene/3d/importer_mesh_instance_3d.h"
-#include "scene/3d/skeleton_3d.h"
-#include "scene/animation/animation_player.h"
-#include "scene/resources/bone_map.h"
+#include "../../../scene/3d/bone_attachment_3d.h"
+#include "../../../scene/3d/importer_mesh_instance_3d.h"
+#include "../../../scene/3d/skeleton_3d.h"
+#include "../../../scene/animation/animation_player.h"
+#include "../../../scene/resources/bone_map.h"
 
 void PostImportPluginSkeletonRenamer::get_internal_import_options(InternalImportCategory p_category, List<ResourceImporter::ImportOption> *r_options) {
 	if (p_category == INTERNAL_IMPORT_CATEGORY_SKELETON_3D_NODE) {

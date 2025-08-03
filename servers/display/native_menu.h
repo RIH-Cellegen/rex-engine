@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/input/input.h"
-#include "core/variant/callable.h"
+#include "../../core/input/input.h"
+#include "../../core/variant/callable.h"
 
 class Texture2D;
 

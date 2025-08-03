@@ -32,12 +32,12 @@
 
 #pragma once
 
-#include "core/input/input_enums.h"
-#include "core/io/resource.h"
-#include "core/math/transform_2d.h"
-#include "core/os/keyboard.h"
-#include "core/string/ustring.h"
-#include "core/typedefs.h"
+#include "input_enums.h"
+#include "../io/resource.h"
+#include "../math/transform_2d.h"
+#include "../os/keyboard.h"
+#include "../string/ustring.h"
+#include "../typedefs.h"
 
 /**
  * Input Event classes. These are used in the main loop.

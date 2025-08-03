@@ -35,8 +35,8 @@
 #include "nav_base_3d.h"
 #include "nav_utils_3d.h"
 
-#include "core/os/rw_lock.h"
-#include "scene/resources/navigation_mesh.h"
+#include "../../core/os/rw_lock.h"
+#include "../../scene/resources/navigation_mesh.h"
 
 struct NavRegionIteration3D;
 

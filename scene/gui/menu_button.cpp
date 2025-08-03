@@ -32,7 +32,7 @@
 
 #include "menu_button.h"
 
-#include "scene/main/window.h"
+#include "../main/window.h"
 
 void MenuButton::shortcut_input(const Ref<InputEvent> &p_event) {
 	ERR_FAIL_COND(p_event.is_null());

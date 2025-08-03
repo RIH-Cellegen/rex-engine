@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/resources/texture.h"
+#include "texture.h"
 
 class GradientTexture1D : public Texture2D {
 	GDCLASS(GradientTexture1D, Texture2D);

@@ -35,14 +35,14 @@
 class EditorFileSystemDirectory;
 struct EditorProgress;
 
-#include "core/config/project_settings.h"
-#include "core/io/dir_access.h"
-#include "core/io/zip_io.h"
-#include "core/os/shared_object.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/io/dir_access.h"
+#include "../../core/io/zip_io.h"
+#include "../../core/os/shared_object.h"
 #include "editor_export_preset.h"
-#include "scene/gui/rich_text_label.h"
-#include "scene/main/node.h"
-#include "scene/resources/image_texture.h"
+#include "../../scene/gui/rich_text_label.h"
+#include "../../scene/main/node.h"
+#include "../../scene/resources/image_texture.h"
 
 class EditorExportPlugin;
 

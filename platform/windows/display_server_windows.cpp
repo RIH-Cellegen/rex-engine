@@ -37,28 +37,28 @@
 #include "scene/main/window.h"
 #include "wgl_detect_version.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/marshalls.h"
-#include "core/io/xml_parser.h"
-#include "core/version.h"
-#include "drivers/png/png_driver_common.h"
-#include "main/main.h"
-#include "scene/resources/texture.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/io/marshalls.h"
+#include "../../core/io/xml_parser.h"
+#include "../../core/version.h"
+#include "../../drivers/png/png_driver_common.h"
+#include "../../main/main.h"
+#include "../../scene/resources/texture.h"
 
-#include "servers/rendering/dummy/rasterizer_dummy.h"
+#include "../../servers/rendering/dummy/rasterizer_dummy.h"
 
 #if defined(VULKAN_ENABLED)
 #include "rendering_context_driver_vulkan_windows.h"
 #endif
 #if defined(D3D12_ENABLED)
-#include "drivers/d3d12/rendering_context_driver_d3d12.h"
+#include "../../drivers/d3d12/rendering_context_driver_d3d12.h"
 #endif
 #if defined(GLES3_ENABLED)
-#include "drivers/gles3/rasterizer_gles3.h"
+#include "../../drivers/gles3/rasterizer_gles3.h"
 #endif
 
 #if defined(ACCESSKIT_ENABLED)
-#include "drivers/accesskit/accessibility_driver_accesskit.h"
+#include "../../drivers/accesskit/accessibility_driver_accesskit.h"
 #endif
 
 #include <avrt.h>

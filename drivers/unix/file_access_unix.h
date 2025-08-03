@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/io/file_access.h"
-#include "core/os/memory.h"
+#include "../../core/io/file_access.h"
+#include "../../core/os/memory.h"
 
 #include <stdio.h>
 

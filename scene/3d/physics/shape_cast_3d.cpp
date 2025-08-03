@@ -32,8 +32,8 @@
 
 #include "shape_cast_3d.h"
 
-#include "scene/3d/physics/collision_object_3d.h"
-#include "scene/resources/3d/concave_polygon_shape_3d.h"
+#include "collision_object_3d.h"
+#include "../../resources/3d/concave_polygon_shape_3d.h"
 
 void ShapeCast3D::_notification(int p_what) {
 	switch (p_what) {

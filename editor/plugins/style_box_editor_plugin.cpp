@@ -32,9 +32,9 @@
 
 #include "style_box_editor_plugin.h"
 
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/button.h"
-#include "scene/resources/style_box_texture.h"
+#include "../themes/editor_scale.h"
+#include "../../scene/gui/button.h"
+#include "../../scene/resources/style_box_texture.h"
 
 bool StyleBoxPreview::grid_preview_enabled = true;
 

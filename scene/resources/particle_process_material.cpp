@@ -32,7 +32,7 @@
 
 #include "particle_process_material.h"
 
-#include "core/version.h"
+#include "../../core/version.h"
 
 Mutex ParticleProcessMaterial::material_mutex;
 SelfList<ParticleProcessMaterial>::List ParticleProcessMaterial::dirty_materials;

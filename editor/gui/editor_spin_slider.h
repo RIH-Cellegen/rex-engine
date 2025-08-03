@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/gui/line_edit.h"
-#include "scene/gui/range.h"
-#include "scene/gui/texture_rect.h"
+#include "../../scene/gui/line_edit.h"
+#include "../../scene/gui/range.h"
+#include "../../scene/gui/texture_rect.h"
 
 class EditorSpinSlider : public Range {
 	GDCLASS(EditorSpinSlider, Range);

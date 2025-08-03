@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "editor/plugins/editor_plugin.h"
-#include "scene/3d/mesh_instance_3d.h"
-#include "scene/gui/option_button.h"
+#include "editor_plugin.h"
+#include "../../scene/3d/mesh_instance_3d.h"
+#include "../../scene/gui/option_button.h"
 
 class AcceptDialog;
 class AspectRatioContainer;

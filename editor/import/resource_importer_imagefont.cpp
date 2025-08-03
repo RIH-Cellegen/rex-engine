@@ -32,8 +32,8 @@
 
 #include "resource_importer_imagefont.h"
 
-#include "core/io/image_loader.h"
-#include "core/io/resource_saver.h"
+#include "../../core/io/image_loader.h"
+#include "../../core/io/resource_saver.h"
 
 String ResourceImporterImageFont::get_importer_name() const {
 	return "font_data_image";

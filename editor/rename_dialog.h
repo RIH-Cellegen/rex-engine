@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "editor/gui/scene_tree_editor.h"
-#include "scene/gui/dialogs.h"
-#include "scene/gui/line_edit.h"
+#include "gui/scene_tree_editor.h"
+#include "../scene/gui/dialogs.h"
+#include "../scene/gui/line_edit.h"
 
 class Button;
 class CheckBox;

@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/templates/pair.h"
-#include "servers/rendering/shader_language.h"
-#include "servers/rendering_server.h"
+#include "../../core/templates/pair.h"
+#include "shader_language.h"
+#include "../rendering_server.h"
 
 class ShaderCompiler {
 public:

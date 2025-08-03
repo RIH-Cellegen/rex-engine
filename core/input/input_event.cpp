@@ -32,10 +32,10 @@
 
 #include "input_event.h"
 
-#include "core/input/input_map.h"
-#include "core/input/shortcut.h"
-#include "core/os/keyboard.h"
-#include "core/os/os.h"
+#include "input_map.h"
+#include "shortcut.h"
+#include "../os/keyboard.h"
+#include "../os/os.h"
 
 void InputEvent::set_device(int p_device) {
 	device = p_device;

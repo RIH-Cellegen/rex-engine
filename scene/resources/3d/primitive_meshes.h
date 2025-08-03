@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/resources/font.h"
-#include "scene/resources/mesh.h"
-#include "servers/text_server.h"
+#include "../font.h"
+#include "../mesh.h"
+#include "../../../servers/text_server.h"
 
 ///@TODO probably should change a few integers to unsigned integers...
 

@@ -32,19 +32,19 @@
 
 #include "tile_set_scenes_collection_source_editor.h"
 
-#include "editor/editor_file_system.h"
-#include "editor/editor_node.h"
-#include "editor/editor_resource_preview.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/gui/editor_file_dialog.h"
-#include "editor/plugins/tiles/tile_set_editor.h"
-#include "editor/themes/editor_scale.h"
+#include "../../editor_file_system.h"
+#include "../../editor_node.h"
+#include "../../editor_resource_preview.h"
+#include "../../editor_settings.h"
+#include "../../editor_undo_redo_manager.h"
+#include "../../gui/editor_file_dialog.h"
+#include "tile_set_editor.h"
+#include "../../themes/editor_scale.h"
 
-#include "scene/gui/button.h"
-#include "scene/gui/item_list.h"
-#include "scene/gui/label.h"
-#include "scene/gui/split_container.h"
+#include "../../../scene/gui/button.h"
+#include "../../../scene/gui/item_list.h"
+#include "../../../scene/gui/label.h"
+#include "../../../scene/gui/split_container.h"
 
 void TileSetScenesCollectionSourceEditor::TileSetScenesCollectionProxyObject::set_id(int p_id) {
 	ERR_FAIL_COND(p_id < 0);

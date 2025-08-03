@@ -32,8 +32,8 @@
 
 #include "godot_navigation_server_2d.h"
 
-#include "core/os/mutex.h"
-#include "scene/main/node.h"
+#include "../../../core/os/mutex.h"
+#include "../../../scene/main/node.h"
 #include <cstdint>
 
 #ifdef CLIPPER2_ENABLED

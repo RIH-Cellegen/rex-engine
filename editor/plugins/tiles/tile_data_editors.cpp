@@ -34,25 +34,25 @@
 
 #include "tile_set_editor.h"
 
-#include "core/math/geometry_2d.h"
-#include "core/math/random_pcg.h"
-#include "core/os/keyboard.h"
+#include "../../../core/math/geometry_2d.h"
+#include "../../../core/math/random_pcg.h"
+#include "../../../core/os/keyboard.h"
 
-#include "editor/editor_node.h"
-#include "editor/editor_properties.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/themes/editor_scale.h"
+#include "../../editor_node.h"
+#include "../../editor_properties.h"
+#include "../../editor_settings.h"
+#include "../../editor_string_names.h"
+#include "../../editor_undo_redo_manager.h"
+#include "../../themes/editor_scale.h"
 
-#include "scene/gui/control.h"
-#include "scene/gui/label.h"
-#include "scene/gui/menu_button.h"
-#include "scene/gui/option_button.h"
-#include "scene/gui/separator.h"
-#include "scene/gui/spin_box.h"
+#include "../../../scene/gui/control.h"
+#include "../../../scene/gui/label.h"
+#include "../../../scene/gui/menu_button.h"
+#include "../../../scene/gui/option_button.h"
+#include "../../../scene/gui/separator.h"
+#include "../../../scene/gui/spin_box.h"
 
-#include "servers/navigation_server_2d.h"
+#include "../../../servers/navigation_server_2d.h"
 
 void TileDataEditor::_tile_set_changed_plan_update() {
 	_tile_set_changed_update_needed = true;

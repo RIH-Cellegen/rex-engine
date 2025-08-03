@@ -34,7 +34,7 @@
 
 #include "gdscript_utility_functions.h"
 
-#include "core/variant/callable.h"
+#include "../../core/variant/callable.h"
 
 class GDScriptUtilityCallable : public CallableCustom {
 	StringName function_name;

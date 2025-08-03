@@ -35,7 +35,7 @@
 #include "spatial_upscaler.h"
 
 #include "../storage_rd/render_scene_buffers_rd.h"
-#include "servers/rendering/renderer_rd/shaders/effects/fsr_upscale.glsl.gen.h"
+#include "../shaders/effects/fsr_upscale.glsl.gen.h"
 
 namespace RendererRD {
 

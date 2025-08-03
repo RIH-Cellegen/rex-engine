@@ -32,14 +32,14 @@
 
 #pragma once
 
-#include "core/io/image.h"
-#include "core/os/os.h"
+#include "../../../core/io/image.h"
+#include "../../../core/os/os.h"
 
-#include "tests/test_utils.h"
+#include "../../test_utils.h"
 
-#include "modules/modules_enabled.gen.h"
+#include "../../../modules/modules_enabled.gen.h"
 
-#include "thirdparty/doctest/doctest.h"
+#include "../../../thirdparty/doctest/doctest.h"
 
 namespace TestImage {
 

@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/object/ref_counted.h"
-#include "editor/editor_help.h"
-#include "scene/gui/dialogs.h"
-#include "scene/gui/tree.h"
+#include "../core/object/ref_counted.h"
+#include "editor_help.h"
+#include "../scene/gui/dialogs.h"
+#include "../scene/gui/tree.h"
 
 class EditorBuildProfile : public RefCounted {
 	GDCLASS(EditorBuildProfile, RefCounted);

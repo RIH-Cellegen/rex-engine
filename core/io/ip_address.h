@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/string/ustring.h"
+#include "../string/ustring.h"
 
 struct IPAddress {
 private:

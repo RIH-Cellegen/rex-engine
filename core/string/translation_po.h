@@ -34,8 +34,8 @@
 
 //#define DEBUG_TRANSLATION_PO
 
-#include "core/math/expression.h"
-#include "core/string/translation.h"
+#include "../math/expression.h"
+#include "translation.h"
 
 class TranslationPO : public Translation {
 	GDCLASS(TranslationPO, Translation);

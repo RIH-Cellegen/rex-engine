@@ -33,13 +33,13 @@
 #include "translation_server.h"
 #include "translation_server.compat.inc"
 
-#include "core/config/project_settings.h"
-#include "core/io/resource_loader.h"
-#include "core/os/os.h"
-#include "core/string/locales.h"
+#include "../config/project_settings.h"
+#include "../io/resource_loader.h"
+#include "../os/os.h"
+#include "locales.h"
 
 #ifdef TOOLS_ENABLED
-#include "main/main.h"
+#include "../../main/main.h"
 #endif
 
 Vector<TranslationServer::LocaleScriptInfo> TranslationServer::locale_script_info;

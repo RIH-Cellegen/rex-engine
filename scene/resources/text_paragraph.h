@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/templates/local_vector.h"
-#include "scene/resources/font.h"
-#include "servers/text_server.h"
+#include "../../core/templates/local_vector.h"
+#include "font.h"
+#include "../../servers/text_server.h"
 
 /*************************************************************************/
 

@@ -36,8 +36,8 @@
 
 #include "spatial_upscaler.h"
 
-#include "core/templates/paged_allocator.h"
-#include "servers/rendering/renderer_scene_render.h"
+#include "../../../../core/templates/paged_allocator.h"
+#include "../../renderer_scene_render.h"
 
 #ifdef __OBJC__
 @protocol MTLFXSpatialScaler;

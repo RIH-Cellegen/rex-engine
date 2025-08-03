@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/crypto/crypto.h"
-#include "core/io/packet_peer.h"
+#include "../../core/crypto/crypto.h"
+#include "../../core/io/packet_peer.h"
 
 class WebSocketPeer : public PacketPeer {
 	GDCLASS(WebSocketPeer, PacketPeer);

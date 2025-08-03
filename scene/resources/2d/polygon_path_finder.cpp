@@ -31,7 +31,7 @@
 /**************************************************************************/
 
 #include "polygon_path_finder.h"
-#include "core/math/geometry_2d.h"
+#include "../../../core/math/geometry_2d.h"
 
 bool PolygonPathFinder::_is_point_inside(const Vector2 &p_point) const {
 	int crosses = 0;

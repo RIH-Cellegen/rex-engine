@@ -34,14 +34,14 @@
 #include "godot_js.h"
 #include "os_web.h"
 
-#include "core/config/engine.h"
-#include "core/io/resource_loader.h"
-#include "main/main.h"
-#include "scene/main/scene_tree.h"
-#include "scene/main/window.h" // SceneTree only forward declares it.
+#include "../../core/config/engine.h"
+#include "../../core/io/resource_loader.h"
+#include "../../main/main.h"
+#include "../../scene/main/scene_tree.h"
+#include "../../scene/main/window.h" // SceneTree only forward declares it.
 
 #ifdef TOOLS_ENABLED
-#include "editor/web_tools_editor_plugin.h"
+#include "../../editor/web_tools_editor_plugin.h"
 #endif
 
 #include <emscripten/emscripten.h>

@@ -34,7 +34,7 @@
 
 #include "http_client.h"
 
-#include "core/crypto/crypto.h"
+#include "../crypto/crypto.h"
 
 class HTTPClientTCP : public HTTPClient {
 private:

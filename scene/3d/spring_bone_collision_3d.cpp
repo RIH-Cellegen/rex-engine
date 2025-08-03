@@ -32,7 +32,7 @@
 
 #include "spring_bone_collision_3d.h"
 
-#include "scene/3d/spring_bone_simulator_3d.h"
+#include "spring_bone_simulator_3d.h"
 
 PackedStringArray SpringBoneCollision3D::get_configuration_warnings() const {
 	PackedStringArray warnings = Node3D::get_configuration_warnings();

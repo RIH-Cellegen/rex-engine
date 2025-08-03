@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "servers/xr/xr_controller_tracker.h"
-#include "servers/xr/xr_interface.h"
+#include "../../servers/xr/xr_controller_tracker.h"
+#include "../../servers/xr/xr_interface.h"
 
 /**
 	The WebXR interface is a VR/AR interface that can be used on the web.

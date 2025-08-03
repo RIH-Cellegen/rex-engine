@@ -32,7 +32,7 @@
 
 #include "memory.h"
 
-#include "core/templates/safe_refcount.h"
+#include "../templates/safe_refcount.h"
 
 #include <stdlib.h>
 #include <string.h>

@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/gui/popup.h"
+#include "../scene/gui/popup.h"
 
 class Label;
 class VBoxContainer;

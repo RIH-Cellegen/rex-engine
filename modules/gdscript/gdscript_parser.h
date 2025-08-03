@@ -39,18 +39,18 @@
 #include "gdscript_warning.h"
 #endif
 
-#include "core/io/resource.h"
-#include "core/object/ref_counted.h"
-#include "core/object/script_language.h"
-#include "core/string/string_name.h"
-#include "core/string/ustring.h"
-#include "core/templates/hash_map.h"
-#include "core/templates/list.h"
-#include "core/templates/vector.h"
-#include "core/variant/variant.h"
+#include "../../core/io/resource.h"
+#include "../../core/object/ref_counted.h"
+#include "../../core/object/script_language.h"
+#include "../../core/string/string_name.h"
+#include "../../core/string/ustring.h"
+#include "../../core/templates/hash_map.h"
+#include "../../core/templates/list.h"
+#include "../../core/templates/vector.h"
+#include "../../core/variant/variant.h"
 
 #ifdef DEBUG_ENABLED
-#include "core/string/string_builder.h"
+#include "../../core/string/string_builder.h"
 #endif
 
 class GDScriptParser {

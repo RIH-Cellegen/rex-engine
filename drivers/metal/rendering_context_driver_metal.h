@@ -34,8 +34,8 @@
 
 #ifdef METAL_ENABLED
 
-#include "servers/rendering/rendering_context_driver.h"
-#include "servers/rendering/rendering_device_driver.h"
+#include "../../servers/rendering/rendering_context_driver.h"
+#include "../../servers/rendering/rendering_device_driver.h"
 
 #import <CoreGraphics/CGGeometry.h>
 

@@ -34,7 +34,7 @@
 
 #include "tls_context_mbedtls.h"
 
-#include "core/io/packet_peer_dtls.h"
+#include "../../core/io/packet_peer_dtls.h"
 
 #include <mbedtls/timing.h>
 

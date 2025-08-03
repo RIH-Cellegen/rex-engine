@@ -32,10 +32,10 @@
 
 #include "marshalls.h"
 
-#include "core/io/resource_loader.h"
-#include "core/object/ref_counted.h"
-#include "core/object/script_language.h"
-#include "core/variant/container_type_validate.h"
+#include "resource_loader.h"
+#include "../object/ref_counted.h"
+#include "../object/script_language.h"
+#include "../variant/container_type_validate.h"
 
 #include <limits.h>
 #include <stdio.h>

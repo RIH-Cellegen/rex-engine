@@ -32,14 +32,14 @@
 
 #include "renderer_scene_cull.h"
 
-#include "core/config/project_settings.h"
-#include "core/object/worker_thread_pool.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/object/worker_thread_pool.h"
 #include "rendering_light_culler.h"
 #include "rendering_server_default.h"
 
 #if defined(DEBUG_ENABLED) && defined(TOOLS_ENABLED)
 // This is used only to obtain node paths for user-friendly physics interpolation warnings.
-#include "scene/main/node.h"
+#include "../../scene/main/node.h"
 #endif
 
 /* HALTON SEQUENCE */

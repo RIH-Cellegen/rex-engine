@@ -34,7 +34,7 @@
 
 #ifdef WINDOWS_ENABLED
 
-#include "core/io/logger.h"
+#include "../../core/io/logger.h"
 
 class WindowsTerminalLogger : public StdLogger {
 public:

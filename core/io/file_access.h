@@ -32,12 +32,12 @@
 
 #pragma once
 
-#include "core/io/compression.h"
-#include "core/math/math_defs.h"
-#include "core/object/ref_counted.h"
-#include "core/os/memory.h"
-#include "core/string/ustring.h"
-#include "core/typedefs.h"
+#include "compression.h"
+#include "../math/math_defs.h"
+#include "../object/ref_counted.h"
+#include "../os/memory.h"
+#include "../string/ustring.h"
+#include "../typedefs.h"
 
 /**
  * Multi-Platform abstraction for accessing to files.

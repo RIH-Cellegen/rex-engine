@@ -32,7 +32,7 @@
 
 #include "theme.h"
 
-#include "scene/theme/theme_db.h"
+#include "../theme/theme_db.h"
 
 // Dynamic properties.
 bool Theme::_set(const StringName &p_name, const Variant &p_value) {

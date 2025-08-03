@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "editor/plugins/editor_plugin.h"
-#include "scene/3d/gpu_particles_collision_3d.h"
-#include "scene/resources/material.h"
+#include "editor_plugin.h"
+#include "../../scene/3d/gpu_particles_collision_3d.h"
+#include "../../scene/resources/material.h"
 
 struct EditorProgress;
 class EditorFileDialog;

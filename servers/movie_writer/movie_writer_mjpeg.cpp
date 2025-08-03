@@ -31,7 +31,7 @@
 /**************************************************************************/
 
 #include "movie_writer_mjpeg.h"
-#include "core/config/project_settings.h"
+#include "../../core/config/project_settings.h"
 
 uint32_t MovieWriterMJPEG::get_audio_mix_rate() const {
 	return mix_rate;

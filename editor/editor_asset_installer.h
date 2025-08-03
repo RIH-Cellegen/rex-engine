@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/gui/dialogs.h"
-#include "scene/gui/tree.h"
+#include "../scene/gui/dialogs.h"
+#include "../scene/gui/tree.h"
 
 class CheckBox;
 class EditorFileDialog;

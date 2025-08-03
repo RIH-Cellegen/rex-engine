@@ -32,7 +32,7 @@
 
 #include "macho.h"
 
-#include "core/crypto/crypto_core.h"
+#include "../../core/crypto/crypto_core.h"
 
 uint32_t MachO::seg_align(uint64_t p_vmaddr, uint32_t p_min, uint32_t p_max) {
 	uint32_t salign = p_max;

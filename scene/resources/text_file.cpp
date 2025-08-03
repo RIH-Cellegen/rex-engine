@@ -32,7 +32,7 @@
 
 #include "text_file.h"
 
-#include "core/io/resource_loader.h"
+#include "../../core/io/resource_loader.h"
 
 bool TextFile::has_text() const {
 	return !text.is_empty();

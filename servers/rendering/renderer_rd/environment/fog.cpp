@@ -32,10 +32,10 @@
 
 #include "fog.h"
 
-#include "servers/rendering/renderer_rd/renderer_compositor_rd.h"
-#include "servers/rendering/renderer_rd/storage_rd/material_storage.h"
-#include "servers/rendering/renderer_rd/storage_rd/texture_storage.h"
-#include "servers/rendering/rendering_server_default.h"
+#include "../renderer_compositor_rd.h"
+#include "../storage_rd/material_storage.h"
+#include "../storage_rd/texture_storage.h"
+#include "../../rendering_server_default.h"
 
 using namespace RendererRD;
 

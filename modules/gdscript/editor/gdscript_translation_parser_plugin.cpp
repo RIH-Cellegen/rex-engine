@@ -35,7 +35,7 @@
 #include "../gdscript.h"
 #include "../gdscript_analyzer.h"
 
-#include "core/io/resource_loader.h"
+#include "../../../core/io/resource_loader.h"
 
 void GDScriptEditorTranslationParserPlugin::get_recognized_extensions(List<String> *r_extensions) const {
 	GDScriptLanguage::get_singleton()->get_recognized_extensions(r_extensions);

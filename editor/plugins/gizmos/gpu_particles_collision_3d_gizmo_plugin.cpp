@@ -32,11 +32,11 @@
 
 #include "gpu_particles_collision_3d_gizmo_plugin.h"
 
-#include "editor/editor_settings.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/plugins/gizmos/gizmo_3d_helper.h"
-#include "editor/plugins/node_3d_editor_plugin.h"
-#include "scene/3d/gpu_particles_collision_3d.h"
+#include "../../editor_settings.h"
+#include "../../editor_undo_redo_manager.h"
+#include "gizmo_3d_helper.h"
+#include "../node_3d_editor_plugin.h"
+#include "../../../scene/3d/gpu_particles_collision_3d.h"
 
 GPUParticlesCollision3DGizmoPlugin::GPUParticlesCollision3DGizmoPlugin() {
 	helper.instantiate();

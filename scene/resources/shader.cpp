@@ -33,19 +33,19 @@
 #include "shader.h"
 #include "shader.compat.inc"
 
-#include "core/io/file_access.h"
-#include "scene/main/scene_tree.h"
-#include "servers/rendering/shader_language.h"
-#include "servers/rendering/shader_preprocessor.h"
-#include "servers/rendering_server.h"
+#include "../../core/io/file_access.h"
+#include "../main/scene_tree.h"
+#include "../../servers/rendering/shader_language.h"
+#include "../../servers/rendering/shader_preprocessor.h"
+#include "../../servers/rendering_server.h"
 #include "texture.h"
 
 #ifdef TOOLS_ENABLED
-#include "editor/editor_help.h"
+#include "../../editor/editor_help.h"
 
-#include "modules/modules_enabled.gen.h" // For regex.
+#include "../../modules/modules_enabled.gen.h" // For regex.
 #ifdef MODULE_REGEX_ENABLED
-#include "modules/regex/regex.h"
+#include "../../modules/regex/regex.h"
 #endif
 #endif
 

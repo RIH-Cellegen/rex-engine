@@ -32,19 +32,19 @@
 
 #pragma once
 
-#include "core/config/project_settings.h"
-#include "editor/action_map_editor.h"
-#include "editor/editor_autoload_settings.h"
-#include "editor/editor_data.h"
-#include "editor/editor_sectioned_inspector.h"
-#include "editor/group_settings_editor.h"
-#include "editor/import_defaults_editor.h"
-#include "editor/localization_editor.h"
-#include "editor/plugins/editor_plugin_settings.h"
-#include "editor/shader_globals_editor.h"
-#include "scene/gui/panel_container.h"
-#include "scene/gui/tab_container.h"
-#include "scene/gui/texture_rect.h"
+#include "../core/config/project_settings.h"
+#include "action_map_editor.h"
+#include "editor_autoload_settings.h"
+#include "editor_data.h"
+#include "editor_sectioned_inspector.h"
+#include "group_settings_editor.h"
+#include "import_defaults_editor.h"
+#include "localization_editor.h"
+#include "plugins/editor_plugin_settings.h"
+#include "shader_globals_editor.h"
+#include "../scene/gui/panel_container.h"
+#include "../scene/gui/tab_container.h"
+#include "../scene/gui/texture_rect.h"
 
 class FileSystemDock;
 

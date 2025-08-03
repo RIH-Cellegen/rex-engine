@@ -35,7 +35,7 @@
 #include "../action_map/openxr_interaction_profile_metadata.h"
 #include "../openxr_api.h"
 
-#include "editor/themes/editor_scale.h"
+#include "../../../editor/themes/editor_scale.h"
 
 void OpenXRSelectInteractionProfileDialog::_bind_methods() {
 	ADD_SIGNAL(MethodInfo("interaction_profile_selected", PropertyInfo(Variant::STRING, "interaction_profile")));

@@ -32,10 +32,10 @@
 
 #include "mesh_storage.h"
 
-#include "core/math/transform_interpolator.h"
+#include "../../../core/math/transform_interpolator.h"
 
 #if defined(DEBUG_ENABLED) && defined(TOOLS_ENABLED)
-#include "core/config/project_settings.h"
+#include "../../../core/config/project_settings.h"
 #endif
 
 RID RendererMeshStorage::multimesh_allocate() {

@@ -32,18 +32,18 @@
 
 #include "text_shader_editor.h"
 
-#include "core/config/project_settings.h"
-#include "core/version_generated.gen.h"
-#include "editor/editor_file_system.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/themes/editor_scale.h"
-#include "editor/themes/editor_theme_manager.h"
-#include "scene/gui/separator.h"
-#include "scene/gui/split_container.h"
-#include "servers/rendering/shader_preprocessor.h"
-#include "servers/rendering/shader_types.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/version_generated.gen.h"
+#include "../editor_file_system.h"
+#include "../editor_node.h"
+#include "../editor_settings.h"
+#include "../editor_string_names.h"
+#include "../themes/editor_scale.h"
+#include "../themes/editor_theme_manager.h"
+#include "../../scene/gui/separator.h"
+#include "../../scene/gui/split_container.h"
+#include "../../servers/rendering/shader_preprocessor.h"
+#include "../../servers/rendering/shader_types.h"
 
 /*** SHADER SYNTAX HIGHLIGHTER ****/
 

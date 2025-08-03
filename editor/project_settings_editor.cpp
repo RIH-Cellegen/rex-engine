@@ -32,17 +32,17 @@
 
 #include "project_settings_editor.h"
 
-#include "core/config/project_settings.h"
-#include "core/input/input_map.h"
-#include "editor/editor_inspector.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/export/editor_export.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/check_button.h"
-#include "servers/movie_writer/movie_writer.h"
+#include "../core/config/project_settings.h"
+#include "../core/input/input_map.h"
+#include "editor_inspector.h"
+#include "editor_node.h"
+#include "editor_settings.h"
+#include "editor_string_names.h"
+#include "editor_undo_redo_manager.h"
+#include "export/editor_export.h"
+#include "themes/editor_scale.h"
+#include "../scene/gui/check_button.h"
+#include "../servers/movie_writer/movie_writer.h"
 
 void ProjectSettingsEditor::connect_filesystem_dock_signals(FileSystemDock *p_fs_dock) {
 	localization_editor->connect_filesystem_dock_signals(p_fs_dock);

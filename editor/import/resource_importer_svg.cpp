@@ -32,8 +32,8 @@
 
 #include "resource_importer_svg.h"
 
-#include "core/io/file_access.h"
-#include "scene/resources/svg_texture.h"
+#include "../../core/io/file_access.h"
+#include "../../scene/resources/svg_texture.h"
 
 String ResourceImporterSVG::get_importer_name() const {
 	return "svg";

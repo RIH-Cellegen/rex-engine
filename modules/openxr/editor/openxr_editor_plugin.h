@@ -36,7 +36,7 @@
 #include "openxr_binding_modifier_editor.h"
 #include "openxr_select_runtime.h"
 
-#include "editor/plugins/editor_plugin.h"
+#include "../../../editor/plugins/editor_plugin.h"
 
 class OpenXREditorPlugin : public EditorPlugin {
 	GDCLASS(OpenXREditorPlugin, EditorPlugin);

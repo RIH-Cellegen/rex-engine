@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/io/ip.h"
-#include "core/io/net_socket.h"
-#include "core/io/stream_peer.h"
-#include "core/io/stream_peer_tcp.h"
+#include "ip.h"
+#include "net_socket.h"
+#include "stream_peer.h"
+#include "stream_peer_tcp.h"
 
 class TCPServer : public RefCounted {
 	GDCLASS(TCPServer, RefCounted);

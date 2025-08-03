@@ -32,7 +32,7 @@
 
 #include "tool_button_editor_plugin.h"
 
-#include "scene/gui/button.h"
+#include "../../scene/gui/button.h"
 
 void EditorInspectorToolButtonPlugin::_update_action_icon(Button *p_action_button, const String &p_action_icon) {
 	p_action_button->set_button_icon(p_action_button->get_editor_theme_icon(p_action_icon));

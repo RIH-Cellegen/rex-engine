@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "editor/plugins/editor_plugin.h"
-#include "scene/animation/animation_tree.h"
-#include "scene/gui/graph_edit.h"
+#include "editor_plugin.h"
+#include "../../scene/animation/animation_tree.h"
+#include "../../scene/gui/graph_edit.h"
 
 class Button;
 class EditorFileDialog;

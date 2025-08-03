@@ -34,10 +34,10 @@
 
 #include "scene_tree_fti.h"
 
-#include "core/config/engine.h"
-#include "core/math/transform_interpolator.h"
-#include "core/os/os.h"
-#include "scene/3d/visual_instance_3d.h"
+#include "../../core/config/engine.h"
+#include "../../core/math/transform_interpolator.h"
+#include "../../core/os/os.h"
+#include "../3d/visual_instance_3d.h"
 
 // Uncomment this to enable some slow extra DEV_ENABLED
 // checks to ensure there aren't more than one object added to the lists.

@@ -32,13 +32,13 @@
 
 #pragma once
 
-#include "core/os/spin_lock.h"
-#include "core/templates/hash_map.h"
+#include "../../../core/os/spin_lock.h"
+#include "../../../core/templates/hash_map.h"
 
-#include "Jolt/Jolt.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Jolt.h"
 
-#include "Jolt/Core/FixedSizeFreeList.h"
-#include "Jolt/Core/JobSystemWithBarrier.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Core/FixedSizeFreeList.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Core/JobSystemWithBarrier.h"
 
 #include <atomic>
 

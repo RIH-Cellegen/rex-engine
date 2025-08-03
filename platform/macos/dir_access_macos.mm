@@ -34,7 +34,7 @@
 
 #if defined(UNIX_ENABLED)
 
-#include "core/config/project_settings.h"
+#include "../../../core/config/project_settings.h"
 
 #include <errno.h>
 

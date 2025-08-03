@@ -34,8 +34,8 @@
 
 #include "../gltf_defines.h"
 
-#include "core/io/resource.h"
-#include "scene/resources/3d/skin.h"
+#include "../../../core/io/resource.h"
+#include "../../../scene/resources/3d/skin.h"
 
 template <typename T>
 class TypedArray;

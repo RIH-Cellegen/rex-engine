@@ -32,19 +32,19 @@
 
 #pragma once
 
-#include "core/disabled_classes.gen.h"
-#include "core/extension/gdextension_interface.h"
-#include "core/object/message_queue.h"
-#include "core/object/object_id.h"
-#include "core/os/rw_lock.h"
-#include "core/os/spin_lock.h"
-#include "core/templates/hash_map.h"
-#include "core/templates/hash_set.h"
-#include "core/templates/list.h"
-#include "core/templates/rb_map.h"
-#include "core/templates/safe_refcount.h"
-#include "core/variant/callable_bind.h"
-#include "core/variant/variant.h"
+#include "../disabled_classes.gen.h"
+#include "../extension/gdextension_interface.h"
+#include "message_queue.h"
+#include "object_id.h"
+#include "../os/rw_lock.h"
+#include "../os/spin_lock.h"
+#include "../templates/hash_map.h"
+#include "../templates/hash_set.h"
+#include "../templates/list.h"
+#include "../templates/rb_map.h"
+#include "../templates/safe_refcount.h"
+#include "../variant/callable_bind.h"
+#include "../variant/variant.h"
 
 template <typename T>
 class TypedArray;

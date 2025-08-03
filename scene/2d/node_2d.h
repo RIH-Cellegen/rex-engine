@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/main/canvas_item.h"
+#include "../main/canvas_item.h"
 
 class Node2D : public CanvasItem {
 	GDCLASS(Node2D, CanvasItem);

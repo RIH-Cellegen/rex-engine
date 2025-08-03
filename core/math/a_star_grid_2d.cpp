@@ -33,7 +33,7 @@
 #include "a_star_grid_2d.h"
 #include "a_star_grid_2d.compat.inc"
 
-#include "core/variant/typed_array.h"
+#include "../variant/typed_array.h"
 
 static real_t heuristic_euclidean(const Vector2i &p_from, const Vector2i &p_to) {
 	real_t dx = (real_t)Math::abs(p_to.x - p_from.x);

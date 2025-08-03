@@ -32,14 +32,14 @@
 
 #include "editor_profiler.h"
 
-#include "core/io/image.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/gui/editor_run_bar.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/check_box.h"
-#include "scene/gui/flow_container.h"
-#include "scene/resources/image_texture.h"
+#include "../../core/io/image.h"
+#include "../editor_settings.h"
+#include "../editor_string_names.h"
+#include "../gui/editor_run_bar.h"
+#include "../themes/editor_scale.h"
+#include "../../scene/gui/check_box.h"
+#include "../../scene/gui/flow_container.h"
+#include "../../scene/resources/image_texture.h"
 
 void EditorProfiler::_make_metric_ptrs(Metric &m) {
 	for (int i = 0; i < m.categories.size(); i++) {

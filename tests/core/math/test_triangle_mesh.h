@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/math/triangle_mesh.h"
-#include "scene/resources/3d/primitive_meshes.h"
+#include "../../../core/math/triangle_mesh.h"
+#include "../../../scene/resources/3d/primitive_meshes.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestTriangleMesh {
 

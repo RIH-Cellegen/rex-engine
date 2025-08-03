@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "editor/editor_translation_parser.h"
+#include "../editor_translation_parser.h"
 
 class PackedSceneEditorTranslationParserPlugin : public EditorTranslationParserPlugin {
 	GDCLASS(PackedSceneEditorTranslationParserPlugin, EditorTranslationParserPlugin);

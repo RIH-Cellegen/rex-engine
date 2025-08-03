@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/io/net_socket.h"
-#include "core/io/packet_peer_dtls.h"
+#include "net_socket.h"
+#include "packet_peer_dtls.h"
 
 class DTLSServer : public RefCounted {
 	GDCLASS(DTLSServer, RefCounted);

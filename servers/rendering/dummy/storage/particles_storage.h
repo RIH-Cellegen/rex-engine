@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "servers/rendering/storage/particles_storage.h"
+#include "../../storage/particles_storage.h"
 
 namespace RendererDummy {
 

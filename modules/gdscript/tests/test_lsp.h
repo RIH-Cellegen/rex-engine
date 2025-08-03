@@ -34,27 +34,27 @@
 
 #ifdef TOOLS_ENABLED
 
-#include "modules/modules_enabled.gen.h" // For jsonrpc.
+#include "../../modules_enabled.gen.h" // For jsonrpc.
 
 #ifdef MODULE_JSONRPC_ENABLED
 
-#include "tests/test_macros.h"
+#include "../../../tests/test_macros.h"
 
 #include "../language_server/gdscript_extend_parser.h"
 #include "../language_server/gdscript_language_protocol.h"
 #include "../language_server/gdscript_workspace.h"
 #include "../language_server/godot_lsp.h"
 
-#include "core/io/dir_access.h"
-#include "core/io/file_access_pack.h"
-#include "core/os/os.h"
-#include "editor/editor_help.h"
-#include "editor/editor_node.h"
+#include "../../../core/io/dir_access.h"
+#include "../../../core/io/file_access_pack.h"
+#include "../../../core/os/os.h"
+#include "../../../editor/editor_help.h"
+#include "../../../editor/editor_node.h"
 
-#include "modules/gdscript/gdscript_analyzer.h"
-#include "modules/regex/regex.h"
+#include "../../gdscript/gdscript_analyzer.h"
+#include "../../regex/regex.h"
 
-#include "thirdparty/doctest/doctest.h"
+#include "../../../thirdparty/doctest/doctest.h"
 
 template <>
 struct doctest::StringMaker<LSP::Position> {

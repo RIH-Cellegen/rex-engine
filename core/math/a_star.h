@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/object/gdvirtual.gen.inc"
-#include "core/object/ref_counted.h"
-#include "core/templates/oa_hash_map.h"
+#include "../object/gdvirtual.gen.inc"
+#include "../object/ref_counted.h"
+#include "../templates/oa_hash_map.h"
 
 /**
 	A* pathfinding algorithm.

@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/2d/node_2d.h"
-#include "scene/resources/navigation_mesh.h"
-#include "servers/navigation/navigation_globals.h"
+#include "../../2d/node_2d.h"
+#include "../navigation_mesh.h"
+#include "../../../servers/navigation/navigation_globals.h"
 
 class NavigationPolygon : public Resource {
 	GDCLASS(NavigationPolygon, Resource);

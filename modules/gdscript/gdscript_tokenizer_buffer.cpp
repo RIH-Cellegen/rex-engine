@@ -32,8 +32,8 @@
 
 #include "gdscript_tokenizer_buffer.h"
 
-#include "core/io/compression.h"
-#include "core/io/marshalls.h"
+#include "../../core/io/compression.h"
+#include "../../core/io/marshalls.h"
 
 #define TOKENIZER_VERSION 100
 

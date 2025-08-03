@@ -32,16 +32,16 @@
 
 #include "editor_log.h"
 
-#include "core/object/undo_redo.h"
-#include "core/os/keyboard.h"
-#include "core/version.h"
-#include "editor/editor_node.h"
-#include "editor/editor_paths.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/separator.h"
-#include "scene/resources/font.h"
+#include "../core/object/undo_redo.h"
+#include "../core/os/keyboard.h"
+#include "../core/version.h"
+#include "editor_node.h"
+#include "editor_paths.h"
+#include "editor_settings.h"
+#include "editor_string_names.h"
+#include "themes/editor_scale.h"
+#include "../scene/gui/separator.h"
+#include "../scene/resources/font.h"
 
 void EditorLog::_error_handler(void *p_self, const char *p_func, const char *p_file, int p_line, const char *p_error, const char *p_errorexp, bool p_editor_notify, ErrorHandlerType p_type) {
 	EditorLog *self = static_cast<EditorLog *>(p_self);

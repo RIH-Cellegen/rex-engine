@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/string/node_path.h"
-#include "core/variant/typed_array.h"
-#include "scene/main/scene_tree.h"
-#include "scene/scene_string_names.h"
+#include "../../core/string/node_path.h"
+#include "../../core/variant/typed_array.h"
+#include "scene_tree.h"
+#include "../scene_string_names.h"
 
 class Viewport;
 class Window;

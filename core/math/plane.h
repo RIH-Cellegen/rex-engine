@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/math/vector3.h"
+#include "vector3.h"
 
 class Variant;
 

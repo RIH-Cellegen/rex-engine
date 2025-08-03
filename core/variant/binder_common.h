@@ -32,15 +32,15 @@
 
 #pragma once
 
-#include "core/input/input_enums.h"
-#include "core/object/object.h"
-#include "core/os/keyboard.h"
-#include "core/templates/simple_type.h"
-#include "core/typedefs.h"
-#include "core/variant/method_ptrcall.h"
-#include "core/variant/type_info.h"
-#include "core/variant/variant.h"
-#include "core/variant/variant_internal.h"
+#include "../input/input_enums.h"
+#include "../object/object.h"
+#include "../os/keyboard.h"
+#include "../templates/simple_type.h"
+#include "../typedefs.h"
+#include "method_ptrcall.h"
+#include "type_info.h"
+#include "variant.h"
+#include "variant_internal.h"
 
 #include <stdio.h>
 

@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/main/node.h"
-#include "scene/resources/font.h"
+#include "node.h"
+#include "../resources/font.h"
 
 class CanvasLayer;
 class MultiMesh;

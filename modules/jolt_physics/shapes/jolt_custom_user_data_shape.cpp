@@ -32,10 +32,10 @@
 
 #include "jolt_custom_user_data_shape.h"
 
-#include "core/error/error_macros.h"
+#include "../../../core/error/error_macros.h"
 
-#include "Jolt/Physics/Collision/CollisionDispatch.h"
-#include "Jolt/Physics/Collision/ShapeCast.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/CollisionDispatch.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/ShapeCast.h"
 
 namespace {
 

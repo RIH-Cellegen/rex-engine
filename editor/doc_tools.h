@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/doc_data.h"
-#include "core/templates/rb_set.h"
+#include "../core/doc_data.h"
+#include "../core/templates/rb_set.h"
 
 class DocTools {
 public:

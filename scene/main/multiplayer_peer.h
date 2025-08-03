@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/io/packet_peer.h"
+#include "../../core/io/packet_peer.h"
 
-#include "core/extension/ext_wrappers.gen.inc"
-#include "core/object/gdvirtual.gen.inc"
-#include "core/variant/native_ptr.h"
+#include "../../core/extension/ext_wrappers.gen.inc"
+#include "../../core/object/gdvirtual.gen.inc"
+#include "../../core/variant/native_ptr.h"
 
 class MultiplayerPeer : public PacketPeer {
 	GDCLASS(MultiplayerPeer, PacketPeer);

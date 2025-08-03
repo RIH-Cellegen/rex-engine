@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/templates/local_vector.h"
+#include "../../core/templates/local_vector.h"
 
 template <typename T>
 struct NoopIndexer {

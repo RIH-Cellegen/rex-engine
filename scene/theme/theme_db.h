@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/object/ref_counted.h"
-#include "scene/resources/theme.h"
+#include "../../core/object/ref_counted.h"
+#include "../resources/theme.h"
 
 #include <functional>
 

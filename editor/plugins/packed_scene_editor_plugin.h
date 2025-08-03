@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "editor/editor_inspector.h"
-#include "editor/plugins/editor_plugin.h"
-#include "scene/gui/box_container.h"
+#include "../editor_inspector.h"
+#include "editor_plugin.h"
+#include "../../scene/gui/box_container.h"
 
 class PackedSceneEditor : public VBoxContainer {
 	GDCLASS(PackedSceneEditor, VBoxContainer);

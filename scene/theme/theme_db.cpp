@@ -32,16 +32,16 @@
 
 #include "theme_db.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/resource_loader.h"
-#include "scene/gui/control.h"
-#include "scene/main/node.h"
-#include "scene/main/window.h"
-#include "scene/resources/font.h"
-#include "scene/resources/style_box.h"
-#include "scene/resources/texture.h"
-#include "scene/theme/default_theme.h"
-#include "servers/text_server.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/io/resource_loader.h"
+#include "../gui/control.h"
+#include "../main/node.h"
+#include "../main/window.h"
+#include "../resources/font.h"
+#include "../resources/style_box.h"
+#include "../resources/texture.h"
+#include "default_theme.h"
+#include "../../servers/text_server.h"
 
 // Default engine theme creation and configuration.
 

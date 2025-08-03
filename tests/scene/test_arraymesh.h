@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "scene/resources/3d/primitive_meshes.h"
-#include "scene/resources/mesh.h"
+#include "../../scene/resources/3d/primitive_meshes.h"
+#include "../../scene/resources/mesh.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestArrayMesh {
 

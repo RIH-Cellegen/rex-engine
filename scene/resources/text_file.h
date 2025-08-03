@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/io/resource.h"
+#include "../../core/io/resource.h"
 
 class TextFile : public Resource {
 	GDCLASS(TextFile, Resource);

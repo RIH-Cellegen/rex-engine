@@ -32,9 +32,9 @@
 
 #include "audio_listener_3d_gizmo_plugin.h"
 
-#include "editor/editor_node.h"
-#include "editor/editor_string_names.h"
-#include "scene/3d/audio_listener_3d.h"
+#include "../../editor_node.h"
+#include "../../editor_string_names.h"
+#include "../../../scene/3d/audio_listener_3d.h"
 
 AudioListener3DGizmoPlugin::AudioListener3DGizmoPlugin() {
 	create_icon_material("audio_listener_3d_icon", EditorNode::get_singleton()->get_editor_theme()->get_icon(SNAME("GizmoAudioListener3D"), EditorStringName(EditorIcons)));

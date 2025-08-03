@@ -32,8 +32,8 @@
 
 #include "register_types.h"
 
-#include "core/config/engine.h"
-#include "servers/rendering/rendering_device.h"
+#include "../../core/config/engine.h"
+#include "../../servers/rendering/rendering_device.h"
 
 #include <glslang/Public/ResourceLimits.h>
 #include <glslang/Public/ShaderLang.h>

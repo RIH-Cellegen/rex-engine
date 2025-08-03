@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "editor/plugins/editor_plugin.h"
-#include "scene/gui/box_container.h"
-#include "scene/gui/button.h"
+#include "editor_plugin.h"
+#include "../../scene/gui/box_container.h"
+#include "../../scene/gui/button.h"
 
 class PhysicalBone3D;
 

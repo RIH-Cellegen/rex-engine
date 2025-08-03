@@ -52,14 +52,14 @@
 /* permissions and limitations under the License.                         */
 /**************************************************************************/
 
-#include "core/typedefs.h"
+#include "../../core/typedefs.h"
 
 GODOT_CLANG_WARNING_PUSH_AND_IGNORE("-Wdeprecated-declarations")
 
 #import "inflection_map.h"
 #import "metal_device_properties.h"
 
-#include "servers/rendering/rendering_device.h"
+#include "../../servers/rendering/rendering_device.h"
 
 #import <Metal/Metal.h>
 

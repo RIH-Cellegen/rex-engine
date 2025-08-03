@@ -35,9 +35,9 @@
 #include "godot_area_2d.h"
 #include "godot_collision_object_2d.h"
 
-#include "core/templates/list.h"
-#include "core/templates/pair.h"
-#include "core/templates/vset.h"
+#include "../../core/templates/list.h"
+#include "../../core/templates/pair.h"
+#include "../../core/templates/vset.h"
 
 class GodotConstraint2D;
 class GodotPhysicsDirectBodyState2D;

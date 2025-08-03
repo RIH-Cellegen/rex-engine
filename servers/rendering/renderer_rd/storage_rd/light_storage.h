@@ -32,17 +32,17 @@
 
 #pragma once
 
-#include "core/templates/local_vector.h"
-#include "core/templates/paged_array.h"
-#include "core/templates/rid_owner.h"
-#include "core/templates/self_list.h"
-#include "servers/rendering/renderer_rd/cluster_builder_rd.h"
-#include "servers/rendering/renderer_rd/environment/sky.h"
-#include "servers/rendering/renderer_rd/storage_rd/forward_id_storage.h"
-#include "servers/rendering/renderer_rd/storage_rd/render_scene_buffers_rd.h"
-#include "servers/rendering/renderer_rd/storage_rd/texture_storage.h"
-#include "servers/rendering/storage/light_storage.h"
-#include "servers/rendering/storage/utilities.h"
+#include "../../../../core/templates/local_vector.h"
+#include "../../../../core/templates/paged_array.h"
+#include "../../../../core/templates/rid_owner.h"
+#include "../../../../core/templates/self_list.h"
+#include "../cluster_builder_rd.h"
+#include "../environment/sky.h"
+#include "../storage_rd/forward_id_storage.h"
+#include "../storage_rd/render_scene_buffers_rd.h"
+#include "../storage_rd/texture_storage.h"
+#include "../../storage/light_storage.h"
+#include "../../storage/utilities.h"
 
 class RenderDataRD;
 

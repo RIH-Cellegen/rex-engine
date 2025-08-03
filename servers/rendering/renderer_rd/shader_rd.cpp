@@ -32,12 +32,12 @@
 
 #include "shader_rd.h"
 
-#include "core/io/dir_access.h"
-#include "core/io/file_access.h"
-#include "core/object/worker_thread_pool.h"
-#include "core/version.h"
-#include "servers/rendering/rendering_device.h"
-#include "servers/rendering/shader_include_db.h"
+#include "../../../core/io/dir_access.h"
+#include "../../../core/io/file_access.h"
+#include "../../../core/object/worker_thread_pool.h"
+#include "../../../core/version.h"
+#include "../rendering_device.h"
+#include "../shader_include_db.h"
 
 #define ENABLE_SHADER_CACHE 1
 

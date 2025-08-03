@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "editor/plugins/editor_plugin.h"
+#include "../../../editor/plugins/editor_plugin.h"
 
 class NoiseEditorPlugin : public EditorPlugin {
 	GDCLASS(NoiseEditorPlugin, EditorPlugin)

@@ -32,8 +32,8 @@
 
 #include "editor_export_plugin.h"
 
-#include "core/config/project_settings.h"
-#include "editor/export/editor_export_platform.h"
+#include "../../core/config/project_settings.h"
+#include "editor_export_platform.h"
 
 void EditorExportPlugin::set_export_preset(const Ref<EditorExportPreset> &p_preset) {
 	if (p_preset.is_valid()) {

@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/io/stream_peer.h"
+#include "stream_peer.h"
 
-#include "core/core_bind.h"
-#include "core/io/compression.h"
-#include "core/templates/ring_buffer.h"
+#include "../core_bind.h"
+#include "compression.h"
+#include "../templates/ring_buffer.h"
 
 class StreamPeerGZIP : public StreamPeer {
 	GDCLASS(StreamPeerGZIP, StreamPeer);

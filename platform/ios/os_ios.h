@@ -36,14 +36,14 @@
 
 #import "ios.h"
 
-#import "drivers/apple/joypad_apple.h"
-#import "drivers/coreaudio/audio_driver_coreaudio.h"
-#include "drivers/unix/os_unix.h"
-#include "servers/audio_server.h"
-#include "servers/rendering/renderer_compositor.h"
+#import ".../drivers/apple/joypad_apple.h"
+#import ".../drivers/coreaudio/audio_driver_coreaudio.h"
+#include "../../drivers/unix/os_unix.h"
+#include "../../servers/audio_server.h"
+#include "../../servers/rendering/renderer_compositor.h"
 
 #if defined(RD_ENABLED)
-#include "servers/rendering/rendering_device.h"
+#include "../../servers/rendering/rendering_device.h"
 
 #if defined(VULKAN_ENABLED)
 #import "rendering_context_driver_vulkan_ios.h"

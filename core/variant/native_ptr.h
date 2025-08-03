@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/math/audio_frame.h"
-#include "core/variant/method_ptrcall.h"
-#include "core/variant/type_info.h"
+#include "../math/audio_frame.h"
+#include "method_ptrcall.h"
+#include "type_info.h"
 
 template <typename T>
 struct GDExtensionConstPtr {

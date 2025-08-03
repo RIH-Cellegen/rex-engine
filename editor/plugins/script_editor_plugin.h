@@ -32,12 +32,12 @@
 
 #pragma once
 
-#include "core/object/script_language.h"
-#include "editor/plugins/editor_plugin.h"
-#include "scene/gui/dialogs.h"
-#include "scene/gui/panel_container.h"
-#include "scene/resources/syntax_highlighter.h"
-#include "scene/resources/text_file.h"
+#include "../../core/object/script_language.h"
+#include "editor_plugin.h"
+#include "../../scene/gui/dialogs.h"
+#include "../../scene/gui/panel_container.h"
+#include "../../scene/resources/syntax_highlighter.h"
+#include "../../scene/resources/text_file.h"
 
 class CodeTextEditor;
 class EditorFileDialog;

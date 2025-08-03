@@ -32,15 +32,15 @@
 
 #pragma once
 
-#include "core/object/script_language.h"
-#include "editor/editor_inspector.h"
-#include "editor/plugins/animation_tree_editor_plugin.h"
-#include "scene/animation/animation_blend_tree.h"
-#include "scene/gui/button.h"
-#include "scene/gui/dialogs.h"
-#include "scene/gui/graph_edit.h"
-#include "scene/gui/panel_container.h"
-#include "scene/gui/tree.h"
+#include "../../core/object/script_language.h"
+#include "../editor_inspector.h"
+#include "animation_tree_editor_plugin.h"
+#include "../../scene/animation/animation_blend_tree.h"
+#include "../../scene/gui/button.h"
+#include "../../scene/gui/dialogs.h"
+#include "../../scene/gui/graph_edit.h"
+#include "../../scene/gui/panel_container.h"
+#include "../../scene/gui/tree.h"
 
 class AcceptDialog;
 class CheckBox;

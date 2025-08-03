@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/gui/control.h"
-#include "scene/resources/shader.h"
+#include "../../../scene/gui/control.h"
+#include "../../../scene/resources/shader.h"
 
 class ShaderEditor : public Control {
 	GDCLASS(ShaderEditor, Control);

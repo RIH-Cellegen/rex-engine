@@ -32,7 +32,7 @@
 
 #include "animation_blend_tree.h"
 
-#include "scene/resources/animation.h"
+#include "../resources/animation.h"
 
 void AnimationNodeAnimation::set_animation(const StringName &p_name) {
 	animation = p_name;

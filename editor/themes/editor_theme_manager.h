@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "editor/themes/editor_theme.h"
-#include "scene/resources/style_box_flat.h"
+#include "editor_theme.h"
+#include "../../scene/resources/style_box_flat.h"
 
 class EditorThemeManager {
 	static int benchmark_run;

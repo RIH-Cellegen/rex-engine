@@ -32,7 +32,7 @@
 
 #include "sprite_base_3d_gizmo_plugin.h"
 
-#include "scene/3d/sprite_3d.h"
+#include "../../../scene/3d/sprite_3d.h"
 
 bool SpriteBase3DGizmoPlugin::has_gizmo(Node3D *p_spatial) {
 	return Object::cast_to<SpriteBase3D>(p_spatial) != nullptr;

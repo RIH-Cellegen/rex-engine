@@ -32,18 +32,18 @@
 
 #include "line_edit.h"
 
-#include "core/input/input_map.h"
-#include "core/os/keyboard.h"
-#include "core/os/os.h"
-#include "core/string/translation_server.h"
-#include "scene/gui/label.h"
-#include "scene/main/window.h"
-#include "scene/theme/theme_db.h"
-#include "servers/display_server.h"
-#include "servers/text_server.h"
+#include "../../core/input/input_map.h"
+#include "../../core/os/keyboard.h"
+#include "../../core/os/os.h"
+#include "../../core/string/translation_server.h"
+#include "label.h"
+#include "../main/window.h"
+#include "../theme/theme_db.h"
+#include "../../servers/display_server.h"
+#include "../../servers/text_server.h"
 
 #ifdef TOOLS_ENABLED
-#include "editor/editor_settings.h"
+#include "../../editor/editor_settings.h"
 #endif
 
 void LineEdit::edit() {

@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/os/memory.h"
-#include "core/typedefs.h"
+#include "../os/memory.h"
+#include "../typedefs.h"
 
 #include <initializer_list>
 

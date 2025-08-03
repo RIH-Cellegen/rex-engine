@@ -32,8 +32,8 @@
 
 #include "grid_container.h"
 
-#include "core/templates/rb_set.h"
-#include "scene/theme/theme_db.h"
+#include "../../core/templates/rb_set.h"
+#include "../theme/theme_db.h"
 
 void GridContainer::_notification(int p_what) {
 	switch (p_what) {

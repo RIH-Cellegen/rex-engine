@@ -34,8 +34,8 @@
 
 #include "../scene_replication_config.h"
 
-#include "editor/plugins/editor_plugin.h"
-#include "scene/gui/box_container.h"
+#include "../../../editor/plugins/editor_plugin.h"
+#include "../../../scene/gui/box_container.h"
 
 class ConfirmationDialog;
 class MultiplayerSynchronizer;

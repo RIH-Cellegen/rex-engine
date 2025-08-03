@@ -32,18 +32,18 @@
 
 #include "control_editor_plugin.h"
 
-#include "editor/editor_node.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/plugins/canvas_item_editor_plugin.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/button.h"
-#include "scene/gui/check_box.h"
-#include "scene/gui/check_button.h"
-#include "scene/gui/grid_container.h"
-#include "scene/gui/option_button.h"
-#include "scene/gui/panel_container.h"
-#include "scene/gui/separator.h"
-#include "scene/gui/texture_rect.h"
+#include "../editor_node.h"
+#include "../editor_undo_redo_manager.h"
+#include "canvas_item_editor_plugin.h"
+#include "../themes/editor_scale.h"
+#include "../../scene/gui/button.h"
+#include "../../scene/gui/check_box.h"
+#include "../../scene/gui/check_button.h"
+#include "../../scene/gui/grid_container.h"
+#include "../../scene/gui/option_button.h"
+#include "../../scene/gui/panel_container.h"
+#include "../../scene/gui/separator.h"
+#include "../../scene/gui/texture_rect.h"
 
 // Inspector controls.
 

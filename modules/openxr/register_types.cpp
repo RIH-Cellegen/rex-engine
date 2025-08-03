@@ -83,11 +83,11 @@
 #include "extensions/platform/openxr_android_extension.h"
 #endif
 
-#include "core/config/project_settings.h"
-#include "main/main.h"
+#include "../../core/config/project_settings.h"
+#include "../../main/main.h"
 
 #ifdef TOOLS_ENABLED
-#include "editor/editor_node.h"
+#include "../../editor/editor_node.h"
 
 #include "editor/openxr_binding_modifier_editor.h"
 #include "editor/openxr_interaction_profile_editor.h"

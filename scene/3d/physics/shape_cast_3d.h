@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "scene/3d/node_3d.h"
-#include "scene/resources/3d/shape_3d.h"
+#include "../node_3d.h"
+#include "../../resources/3d/shape_3d.h"
 
 class CollisionObject3D;
 

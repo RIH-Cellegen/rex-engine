@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/templates/simple_type.h"
-#include "core/typedefs.h"
+#include "../templates/simple_type.h"
+#include "../typedefs.h"
 
 #include <type_traits>
 

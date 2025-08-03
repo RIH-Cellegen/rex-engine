@@ -34,7 +34,7 @@
 
 #include "tls_context_mbedtls.h"
 
-#include "core/io/stream_peer_tls.h"
+#include "../../core/io/stream_peer_tls.h"
 
 class StreamPeerMbedTLS : public StreamPeerTLS {
 private:

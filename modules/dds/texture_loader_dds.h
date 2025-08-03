@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/io/resource_loader.h"
+#include "../../core/io/resource_loader.h"
 
 class ResourceFormatDDS : public ResourceFormatLoader {
 public:

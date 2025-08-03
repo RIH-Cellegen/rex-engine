@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "scene/2d/node_2d.h"
-#include "scene/gui/control.h"
+#include "../../scene/2d/node_2d.h"
+#include "../../scene/gui/control.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestControl {
 

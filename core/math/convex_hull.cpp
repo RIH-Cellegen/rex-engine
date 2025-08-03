@@ -60,11 +60,11 @@ subject to the following restrictions:
 
 #include "convex_hull.h"
 
-#include "core/error/error_macros.h"
-#include "core/math/aabb.h"
-#include "core/math/math_defs.h"
-#include "core/templates/oa_hash_map.h"
-#include "core/templates/paged_allocator.h"
+#include "../error/error_macros.h"
+#include "aabb.h"
+#include "math_defs.h"
+#include "../templates/oa_hash_map.h"
+#include "../templates/paged_allocator.h"
 
 //#define DEBUG_CONVEX_HULL
 //#define SHOW_ITERATIONS

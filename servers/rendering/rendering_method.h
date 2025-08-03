@@ -32,15 +32,15 @@
 
 #pragma once
 
-#include "servers/rendering/storage/render_scene_buffers.h"
-#include "servers/rendering_server.h"
+#include "storage/render_scene_buffers.h"
+#include "../rendering_server.h"
 
 #ifdef XR_DISABLED
 // RendererSceneCull::render_camera is empty when 3D is disabled, but
 // it and RenderingMethod::render_camera have a parameter for XRInterface.
 #define XRInterface RefCounted
 #else
-#include "servers/xr/xr_interface.h"
+#include "../xr/xr_interface.h"
 #endif // XR_DISABLED
 
 class RenderingMethod {

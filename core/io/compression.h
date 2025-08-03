@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/templates/vector.h"
-#include "core/typedefs.h"
+#include "../templates/vector.h"
+#include "../typedefs.h"
 
 #include <zlib.h>
 

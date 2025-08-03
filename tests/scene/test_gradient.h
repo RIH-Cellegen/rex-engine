@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/resources/gradient.h"
+#include "../../scene/resources/gradient.h"
 
-#include "thirdparty/doctest/doctest.h"
+#include "../../thirdparty/doctest/doctest.h"
 
 namespace TestGradient {
 

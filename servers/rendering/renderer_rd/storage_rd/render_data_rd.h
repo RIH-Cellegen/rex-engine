@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "servers/rendering/renderer_rd/storage_rd/render_scene_buffers_rd.h"
-#include "servers/rendering/renderer_rd/storage_rd/render_scene_data_rd.h"
-#include "servers/rendering/storage/render_data.h"
+#include "render_scene_buffers_rd.h"
+#include "render_scene_data_rd.h"
+#include "../../storage/render_data.h"
 
 class RenderDataRD : public RenderData {
 	GDCLASS(RenderDataRD, RenderData);

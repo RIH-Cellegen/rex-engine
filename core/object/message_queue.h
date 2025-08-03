@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/object/object_id.h"
-#include "core/os/thread_safe.h"
-#include "core/templates/local_vector.h"
-#include "core/templates/paged_allocator.h"
-#include "core/variant/variant.h"
+#include "object_id.h"
+#include "../os/thread_safe.h"
+#include "../templates/local_vector.h"
+#include "../templates/paged_allocator.h"
+#include "../variant/variant.h"
 
 class Object;
 

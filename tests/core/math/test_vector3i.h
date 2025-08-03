@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/math/vector3i.h"
-#include "tests/test_macros.h"
+#include "../../../core/math/vector3i.h"
+#include "../../test_macros.h"
 
 namespace TestVector3i {
 

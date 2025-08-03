@@ -34,8 +34,8 @@
 
 #include "godot_collision_object_3d.h"
 
-#include "core/templates/self_list.h"
-#include "servers/physics_server_3d.h"
+#include "../../core/templates/self_list.h"
+#include "../../servers/physics_server_3d.h"
 
 class GodotSpace3D;
 class GodotBody3D;

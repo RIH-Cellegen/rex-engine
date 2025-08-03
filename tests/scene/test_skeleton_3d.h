@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
-#include "scene/3d/skeleton_3d.h"
+#include "../../scene/3d/skeleton_3d.h"
 
 namespace TestSkeleton3D {
 

@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/io/resource.h"
-#include "core/os/rw_lock.h"
+#include "../../../core/io/resource.h"
+#include "../../../core/os/rw_lock.h"
 
 class NavigationMeshSourceGeometryData2D : public Resource {
 	friend class NavMeshGenerator2D;

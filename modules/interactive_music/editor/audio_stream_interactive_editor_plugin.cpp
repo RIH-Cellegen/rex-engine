@@ -33,15 +33,15 @@
 #include "audio_stream_interactive_editor_plugin.h"
 
 #include "../audio_stream_interactive.h"
-#include "editor/editor_node.h"
-#include "editor/editor_string_names.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/check_box.h"
-#include "scene/gui/option_button.h"
-#include "scene/gui/spin_box.h"
-#include "scene/gui/split_container.h"
-#include "scene/gui/tree.h"
+#include "../../../editor/editor_node.h"
+#include "../../../editor/editor_string_names.h"
+#include "../../../editor/editor_undo_redo_manager.h"
+#include "../../../editor/themes/editor_scale.h"
+#include "../../../scene/gui/check_box.h"
+#include "../../../scene/gui/option_button.h"
+#include "../../../scene/gui/spin_box.h"
+#include "../../../scene/gui/split_container.h"
+#include "../../../scene/gui/tree.h"
 
 void AudioStreamInteractiveTransitionEditor::_notification(int p_what) {
 	if (p_what == NOTIFICATION_READY || p_what == NOTIFICATION_THEME_CHANGED) {

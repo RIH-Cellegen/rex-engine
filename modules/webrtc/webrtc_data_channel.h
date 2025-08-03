@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/io/packet_peer.h"
+#include "../../core/io/packet_peer.h"
 
 class WebRTCDataChannel : public PacketPeer {
 	GDCLASS(WebRTCDataChannel, PacketPeer);

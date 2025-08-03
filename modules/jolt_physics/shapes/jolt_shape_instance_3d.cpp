@@ -34,7 +34,7 @@
 
 #include "jolt_shape_3d.h"
 
-#include "Jolt/Physics/Collision/Shape/DecoratedShape.h"
+#include "../../../thirdparty/jolt_physics/Jolt/Physics/Collision/Shape/DecoratedShape.h"
 
 JoltShapeInstance3D::ShapeReference::ShapeReference(JoltShapedObject3D *p_parent, JoltShape3D *p_shape) :
 		parent(p_parent),

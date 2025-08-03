@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "editor/editor_resource_preview.h"
+#include "../editor_resource_preview.h"
 
 class ScriptLanguage;
 

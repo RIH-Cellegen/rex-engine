@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "scene/2d/tile_map_layer.h"
-#include "scene/property_list_helper.h"
-#include "scene/resources/2d/tile_set.h"
+#include "tile_map_layer.h"
+#include "../property_list_helper.h"
+#include "../resources/2d/tile_set.h"
 
 class Control;
 #ifndef NAVIGATION_2D_DISABLED

@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/variant/typed_dictionary.h"
-#include "editor/editor_inspector.h"
+#include "../../core/variant/typed_dictionary.h"
+#include "../editor_inspector.h"
 
 class SceneDebuggerObject;
 

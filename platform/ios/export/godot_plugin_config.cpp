@@ -32,9 +32,9 @@
 
 #include "godot_plugin_config.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/dir_access.h"
-#include "core/io/file_access.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../core/io/dir_access.h"
+#include "../../../core/io/file_access.h"
 
 String PluginConfigIOS::resolve_local_dependency_path(String plugin_config_dir, String dependency_path) {
 	String absolute_path;

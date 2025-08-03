@@ -32,12 +32,12 @@
 
 #include "primitive_meshes.h"
 
-#include "core/config/project_settings.h"
-#include "core/math/math_funcs.h"
-#include "scene/resources/theme.h"
-#include "scene/theme/theme_db.h"
-#include "servers/rendering_server.h"
-#include "thirdparty/misc/polypartition.h"
+#include "../../../core/config/project_settings.h"
+#include "../../../core/math/math_funcs.h"
+#include "../theme.h"
+#include "../../theme/theme_db.h"
+#include "../../../servers/rendering_server.h"
+#include "../../../thirdparty/misc/polypartition.h"
 
 #define PADDING_REF_SIZE 1024.0
 

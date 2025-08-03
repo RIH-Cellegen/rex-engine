@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/io/image.h"
+#include "../../core/io/image.h"
 
 enum BasisDecompressFormat {
 	BASIS_DECOMPRESS_RG,

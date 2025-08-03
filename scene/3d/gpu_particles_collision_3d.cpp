@@ -32,10 +32,10 @@
 
 #include "gpu_particles_collision_3d.h"
 
-#include "core/object/worker_thread_pool.h"
+#include "../../core/object/worker_thread_pool.h"
 #include "mesh_instance_3d.h"
-#include "scene/3d/camera_3d.h"
-#include "scene/main/viewport.h"
+#include "camera_3d.h"
+#include "../main/viewport.h"
 
 void GPUParticlesCollision3D::set_cull_mask(uint32_t p_cull_mask) {
 	cull_mask = p_cull_mask;

@@ -32,9 +32,9 @@
 
 #include "physical_bone_3d.h"
 
-#include "scene/3d/physics/physical_bone_simulator_3d.h"
+#include "physical_bone_simulator_3d.h"
 #ifndef DISABLE_DEPRECATED
-#include "scene/3d/skeleton_3d.h"
+#include "../skeleton_3d.h"
 #endif //_DISABLE_DEPRECATED
 
 bool PhysicalBone3D::JointData::_set(const StringName &p_name, const Variant &p_value, RID j) {

@@ -32,10 +32,10 @@
 
 #include "crypto_mbedtls.h"
 
-#include "core/io/certs_compressed.gen.h"
-#include "core/io/compression.h"
-#include "core/io/file_access.h"
-#include "core/os/os.h"
+#include "../../core/io/certs_compressed.gen.h"
+#include "../../core/io/compression.h"
+#include "../../core/io/file_access.h"
+#include "../../core/os/os.h"
 
 #include <mbedtls/debug.h>
 #include <mbedtls/md.h>

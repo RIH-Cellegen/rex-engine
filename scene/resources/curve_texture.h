@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "scene/resources/texture.h"
+#include "texture.h"
 
 class CurveTexture : public Texture2D {
 	GDCLASS(CurveTexture, Texture2D);

@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/math/rect2.h"
-#include "core/math/rect2i.h"
+#include "../../../core/math/rect2.h"
+#include "../../../core/math/rect2i.h"
 
-#include "thirdparty/doctest/doctest.h"
+#include "../../../thirdparty/doctest/doctest.h"
 
 namespace TestRect2 {
 TEST_CASE("[Rect2] Constructor methods") {

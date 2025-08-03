@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/io/zip_io.h"
-#include "editor/plugins/editor_plugin.h"
+#include "../../../core/io/zip_io.h"
+#include "../../../editor/plugins/editor_plugin.h"
 
 class WebToolsEditorPlugin : public EditorPlugin {
 	GDCLASS(WebToolsEditorPlugin, EditorPlugin);

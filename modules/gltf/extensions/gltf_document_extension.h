@@ -34,7 +34,7 @@
 
 #include "../gltf_state.h"
 
-#include "scene/3d/node_3d.h"
+#include "../../../scene/3d/node_3d.h"
 
 class GLTFDocumentExtension : public Resource {
 	GDCLASS(GLTFDocumentExtension, Resource);

@@ -32,28 +32,28 @@
 
 #include "animation_player_editor_plugin.h"
 
-#include "core/config/project_settings.h"
-#include "core/input/input.h"
-#include "core/os/keyboard.h"
-#include "editor/editor_command_palette.h"
-#include "editor/editor_node.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_undo_redo_manager.h"
-#include "editor/gui/editor_bottom_panel.h"
-#include "editor/gui/editor_file_dialog.h"
-#include "editor/gui/editor_validation_panel.h"
-#include "editor/inspector_dock.h"
-#include "editor/plugins/canvas_item_editor_plugin.h" // For onion skinning.
-#include "editor/plugins/node_3d_editor_plugin.h" // For onion skinning.
-#include "editor/scene_tree_dock.h"
-#include "editor/themes/editor_scale.h"
-#include "editor/themes/editor_theme_manager.h"
-#include "scene/animation/animation_tree.h"
-#include "scene/gui/separator.h"
-#include "scene/main/window.h"
-#include "scene/resources/animation.h"
-#include "scene/resources/image_texture.h"
-#include "servers/rendering_server.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/input/input.h"
+#include "../../core/os/keyboard.h"
+#include "../editor_command_palette.h"
+#include "../editor_node.h"
+#include "../editor_settings.h"
+#include "../editor_undo_redo_manager.h"
+#include "../gui/editor_bottom_panel.h"
+#include "../gui/editor_file_dialog.h"
+#include "../gui/editor_validation_panel.h"
+#include "../inspector_dock.h"
+#include "canvas_item_editor_plugin.h" // For onion skinning.
+#include "node_3d_editor_plugin.h" // For onion skinning.
+#include "../scene_tree_dock.h"
+#include "../themes/editor_scale.h"
+#include "../themes/editor_theme_manager.h"
+#include "../../scene/animation/animation_tree.h"
+#include "../../scene/gui/separator.h"
+#include "../../scene/main/window.h"
+#include "../../scene/resources/animation.h"
+#include "../../scene/resources/image_texture.h"
+#include "../../servers/rendering_server.h"
 
 ///////////////////////////////////
 

@@ -32,7 +32,7 @@
 
 #include "visual_shader_particle_nodes.h"
 
-#include "scene/resources/image_texture.h"
+#include "image_texture.h"
 
 // VisualShaderNodeParticleEmitter
 

@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/templates/local_vector.h"
-#include "scene/3d/light_3d.h"
-#include "scene/3d/lightmapper.h"
-#include "scene/3d/visual_instance_3d.h"
+#include "../../core/templates/local_vector.h"
+#include "light_3d.h"
+#include "lightmapper.h"
+#include "visual_instance_3d.h"
 
 class Sky;
 class CameraAttributes;

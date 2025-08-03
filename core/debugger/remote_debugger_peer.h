@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/io/stream_peer_tcp.h"
-#include "core/object/ref_counted.h"
-#include "core/os/mutex.h"
-#include "core/os/thread.h"
-#include "core/string/ustring.h"
+#include "../io/stream_peer_tcp.h"
+#include "../object/ref_counted.h"
+#include "../os/mutex.h"
+#include "../os/thread.h"
+#include "../string/ustring.h"
 
 class RemoteDebuggerPeer : public RefCounted {
 protected:

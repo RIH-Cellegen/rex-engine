@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/io/resource.h"
-#include "core/templates/rid.h"
+#include "../../core/io/resource.h"
+#include "../../core/templates/rid.h"
 
 class CameraAttributes : public Resource {
 	GDCLASS(CameraAttributes, Resource);

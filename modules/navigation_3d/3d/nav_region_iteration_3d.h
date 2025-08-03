@@ -35,7 +35,7 @@
 #include "../nav_utils_3d.h"
 #include "nav_base_iteration_3d.h"
 
-#include "core/math/aabb.h"
+#include "../../../core/math/aabb.h"
 
 struct NavRegionIteration3D : NavBaseIteration3D {
 	Transform3D transform;

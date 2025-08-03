@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "servers/xr/xr_interface.h"
+#include "xr_interface.h"
 
 class XRInterfaceExtension : public XRInterface {
 	GDCLASS(XRInterfaceExtension, XRInterface);

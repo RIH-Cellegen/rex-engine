@@ -32,12 +32,12 @@
 
 #pragma once
 
-#include "core/os/mutex.h"
-#include "core/string/ustring.h"
-#include "core/templates/rid_owner.h"
+#include "../../core/os/mutex.h"
+#include "../../core/string/ustring.h"
+#include "../../core/templates/rid_owner.h"
 #include "rendering_device_driver_d3d12.h"
-#include "servers/display_server.h"
-#include "servers/rendering/rendering_context_driver.h"
+#include "../../servers/display_server.h"
+#include "../../servers/rendering/rendering_context_driver.h"
 
 #if defined(AS)
 #undef AS

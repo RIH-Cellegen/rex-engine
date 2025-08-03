@@ -32,7 +32,7 @@
 
 #include "openxr_util.h"
 
-#include "core/math/math_funcs.h"
+#include "../../core/math/math_funcs.h"
 
 #include <openxr/openxr_reflection.h>
 

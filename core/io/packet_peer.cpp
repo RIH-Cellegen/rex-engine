@@ -32,8 +32,8 @@
 
 #include "packet_peer.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/marshalls.h"
+#include "../config/project_settings.h"
+#include "marshalls.h"
 
 /* helpers / binders */
 

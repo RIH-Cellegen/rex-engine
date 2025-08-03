@@ -32,12 +32,12 @@
 
 #pragma once
 
-#include "core/templates/hash_map.h"
-#include "main/performance.h"
-#include "scene/gui/control.h"
-#include "scene/gui/label.h"
-#include "scene/gui/split_container.h"
-#include "scene/gui/tree.h"
+#include "../../core/templates/hash_map.h"
+#include "../../main/performance.h"
+#include "../../scene/gui/control.h"
+#include "../../scene/gui/label.h"
+#include "../../scene/gui/split_container.h"
+#include "../../scene/gui/tree.h"
 
 class EditorPerformanceProfiler : public HSplitContainer {
 	GDCLASS(EditorPerformanceProfiler, HSplitContainer);

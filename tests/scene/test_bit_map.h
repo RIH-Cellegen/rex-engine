@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/os/memory.h"
-#include "scene/resources/bit_map.h"
-#include "tests/test_macros.h"
+#include "../../core/os/memory.h"
+#include "../../scene/resources/bit_map.h"
+#include "../test_macros.h"
 
 namespace TestBitmap {
 

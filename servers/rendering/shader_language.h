@@ -32,15 +32,15 @@
 
 #pragma once
 
-#include "core/object/script_language.h"
-#include "core/string/string_name.h"
-#include "core/string/ustring.h"
-#include "core/templates/list.h"
-#include "core/templates/rb_map.h"
-#include "core/templates/safe_refcount.h"
-#include "core/typedefs.h"
-#include "core/variant/variant.h"
-#include "scene/resources/shader_include.h"
+#include "../../core/object/script_language.h"
+#include "../../core/string/string_name.h"
+#include "../../core/string/ustring.h"
+#include "../../core/templates/list.h"
+#include "../../core/templates/rb_map.h"
+#include "../../core/templates/safe_refcount.h"
+#include "../../core/typedefs.h"
+#include "../../core/variant/variant.h"
+#include "../../scene/resources/shader_include.h"
 
 #ifdef DEBUG_ENABLED
 #include "shader_warnings.h"

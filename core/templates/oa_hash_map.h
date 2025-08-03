@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/os/memory.h"
-#include "core/templates/hashfuncs.h"
-#include "core/templates/pair.h"
+#include "../os/memory.h"
+#include "hashfuncs.h"
+#include "pair.h"
 
 /**
  * A HashMap implementation that uses open addressing with Robin Hood hashing.

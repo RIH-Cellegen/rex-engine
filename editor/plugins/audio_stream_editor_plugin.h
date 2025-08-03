@@ -32,12 +32,12 @@
 
 #pragma once
 
-#include "editor/editor_inspector.h"
-#include "editor/plugins/editor_plugin.h"
-#include "scene/audio/audio_stream_player.h"
-#include "scene/gui/button.h"
-#include "scene/gui/color_rect.h"
-#include "scene/gui/label.h"
+#include "../editor_inspector.h"
+#include "editor_plugin.h"
+#include "../../scene/audio/audio_stream_player.h"
+#include "../../scene/gui/button.h"
+#include "../../scene/gui/color_rect.h"
+#include "../../scene/gui/label.h"
 
 class AudioStreamEditor : public ColorRect {
 	GDCLASS(AudioStreamEditor, ColorRect);

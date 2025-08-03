@@ -32,8 +32,8 @@
 
 #pragma once
 
-#include "core/variant/typed_array.h"
-#include "scene/resources/animation.h"
+#include "../../core/variant/typed_array.h"
+#include "animation.h"
 
 class AnimationLibrary : public Resource {
 	GDCLASS(AnimationLibrary, Resource)

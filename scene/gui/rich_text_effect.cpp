@@ -32,7 +32,7 @@
 
 #include "rich_text_effect.h"
 
-#include "core/object/script_language.h"
+#include "../../core/object/script_language.h"
 
 CharFXTransform::CharFXTransform() {
 }

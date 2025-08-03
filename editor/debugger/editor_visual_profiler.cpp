@@ -32,13 +32,13 @@
 
 #include "editor_visual_profiler.h"
 
-#include "core/io/image.h"
-#include "editor/editor_settings.h"
-#include "editor/editor_string_names.h"
-#include "editor/gui/editor_run_bar.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/flow_container.h"
-#include "scene/resources/image_texture.h"
+#include "../../core/io/image.h"
+#include "../editor_settings.h"
+#include "../editor_string_names.h"
+#include "../gui/editor_run_bar.h"
+#include "../themes/editor_scale.h"
+#include "../../scene/gui/flow_container.h"
+#include "../../scene/resources/image_texture.h"
 
 void EditorVisualProfiler::set_hardware_info(const String &p_cpu_name, const String &p_gpu_name) {
 	cpu_name = p_cpu_name;

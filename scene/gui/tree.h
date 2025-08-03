@@ -32,12 +32,12 @@
 
 #pragma once
 
-#include "scene/gui/control.h"
-#include "scene/gui/line_edit.h"
-#include "scene/gui/popup_menu.h"
-#include "scene/gui/scroll_bar.h"
-#include "scene/gui/slider.h"
-#include "scene/resources/text_paragraph.h"
+#include "control.h"
+#include "line_edit.h"
+#include "popup_menu.h"
+#include "scroll_bar.h"
+#include "slider.h"
+#include "../../scene/resources/text_paragraph.h"
 
 class TextEdit;
 class Tree;

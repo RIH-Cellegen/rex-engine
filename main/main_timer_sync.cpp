@@ -32,8 +32,8 @@
 
 #include "main_timer_sync.h"
 
-#include "core/os/os.h"
-#include "servers/display_server.h"
+#include "../core/os/os.h"
+#include "../servers/display_server.h"
 
 void MainFrameTime::clamp_process_step(double min_process_step, double max_process_step) {
 	if (process_step < min_process_step) {

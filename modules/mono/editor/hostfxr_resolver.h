@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/string/ustring.h"
+#include "../../../core/string/ustring.h"
 
 namespace godotsharp {
 namespace hostfxr_resolver {

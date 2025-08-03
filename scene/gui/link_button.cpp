@@ -32,7 +32,7 @@
 
 #include "link_button.h"
 
-#include "scene/theme/theme_db.h"
+#include "../theme/theme_db.h"
 
 void LinkButton::_shape() {
 	Ref<Font> font = theme_cache.font;

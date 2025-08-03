@@ -34,7 +34,7 @@
 
 #if defined(WINDOWS_ENABLED)
 
-#include "core/io/ip.h"
+#include "../../core/io/ip.h"
 
 class IPWindows : public IP {
 	GDCLASS(IPWindows, IP);

@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/math/color.h"
+#include "../../../core/math/color.h"
 
-#include "tests/test_macros.h"
+#include "../../test_macros.h"
 
 namespace TestColor {
 

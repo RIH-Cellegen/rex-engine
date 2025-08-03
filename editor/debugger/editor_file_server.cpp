@@ -33,8 +33,8 @@
 #include "editor_file_server.h"
 
 #include "../editor_settings.h"
-#include "editor/editor_node.h"
-#include "editor/export/editor_export_platform.h"
+#include "../editor_node.h"
+#include "../export/editor_export_platform.h"
 
 #define FILESYSTEM_PROTOCOL_VERSION 1
 #define PASSWORD_LENGTH 32

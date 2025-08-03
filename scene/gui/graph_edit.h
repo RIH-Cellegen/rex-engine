@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/variant/typed_dictionary.h"
-#include "scene/gui/box_container.h"
-#include "scene/gui/graph_frame.h"
-#include "scene/gui/graph_node.h"
+#include "../../core/variant/typed_dictionary.h"
+#include "box_container.h"
+#include "graph_frame.h"
+#include "graph_node.h"
 
 class Button;
 class GraphEdit;

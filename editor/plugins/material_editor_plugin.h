@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "editor/editor_inspector.h"
-#include "editor/plugins/editor_plugin.h"
-#include "editor/plugins/editor_resource_conversion_plugin.h"
-#include "scene/resources/3d/primitive_meshes.h"
-#include "scene/resources/material.h"
+#include "../editor_inspector.h"
+#include "editor_plugin.h"
+#include "editor_resource_conversion_plugin.h"
+#include "../../scene/resources/3d/primitive_meshes.h"
+#include "../../scene/resources/material.h"
 
 class Camera3D;
 class ColorRect;

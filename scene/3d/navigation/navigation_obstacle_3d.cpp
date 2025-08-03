@@ -32,10 +32,10 @@
 
 #include "navigation_obstacle_3d.h"
 
-#include "core/math/geometry_2d.h"
-#include "scene/resources/3d/navigation_mesh_source_geometry_data_3d.h"
-#include "scene/resources/navigation_mesh.h"
-#include "servers/navigation_server_3d.h"
+#include "../../../core/math/geometry_2d.h"
+#include "../../resources/3d/navigation_mesh_source_geometry_data_3d.h"
+#include "../../resources/navigation_mesh.h"
+#include "../../../servers/navigation_server_3d.h"
 
 Callable NavigationObstacle3D::_navmesh_source_geometry_parsing_callback;
 RID NavigationObstacle3D::_navmesh_source_geometry_parser;

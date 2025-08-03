@@ -32,10 +32,10 @@
 
 #include "worker_thread_pool.h"
 
-#include "core/object/script_language.h"
-#include "core/os/os.h"
-#include "core/os/safe_binary_mutex.h"
-#include "core/os/thread_safe.h"
+#include "script_language.h"
+#include "../os/os.h"
+#include "../os/safe_binary_mutex.h"
+#include "../os/thread_safe.h"
 
 WorkerThreadPool::Task *const WorkerThreadPool::ThreadData::YIELDING = (Task *)1;
 

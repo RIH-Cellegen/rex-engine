@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/extension/ext_wrappers.gen.inc"
-#include "core/object/gdvirtual.gen.inc"
-#include "core/object/script_language.h"
-#include "core/variant/native_ptr.h"
-#include "core/variant/typed_array.h"
+#include "../extension/ext_wrappers.gen.inc"
+#include "gdvirtual.gen.inc"
+#include "script_language.h"
+#include "../variant/native_ptr.h"
+#include "../variant/typed_array.h"
 
 class ScriptExtension : public Script {
 	GDCLASS(ScriptExtension, Script)

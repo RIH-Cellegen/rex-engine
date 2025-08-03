@@ -32,7 +32,7 @@
 
 #include "line_2d_editor_plugin.h"
 
-#include "editor/editor_undo_redo_manager.h"
+#include "../editor_undo_redo_manager.h"
 
 Node2D *Line2DEditor::_get_node() const {
 	return node;

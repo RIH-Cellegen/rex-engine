@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/crypto/hashing_context.h"
+#include "../../core/crypto/hashing_context.h"
 
-#include "tests/test_macros.h"
+#include "../test_macros.h"
 
 namespace TestHashingContext {
 

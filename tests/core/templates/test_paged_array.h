@@ -32,9 +32,9 @@
 
 #pragma once
 
-#include "core/templates/paged_array.h"
+#include "../../../core/templates/paged_array.h"
 
-#include "thirdparty/doctest/doctest.h"
+#include "../../../thirdparty/doctest/doctest.h"
 
 namespace TestPagedArray {
 

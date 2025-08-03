@@ -34,8 +34,8 @@
 
 #ifdef WEB_ENABLED
 
-#include "servers/xr/xr_controller_tracker.h"
-#include "servers/xr/xr_hand_tracker.h"
+#include "../../servers/xr/xr_controller_tracker.h"
+#include "../../servers/xr/xr_hand_tracker.h"
 #include "webxr_interface.h"
 
 /**

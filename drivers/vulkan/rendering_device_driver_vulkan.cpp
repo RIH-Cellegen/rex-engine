@@ -32,19 +32,19 @@
 
 #include "rendering_device_driver_vulkan.h"
 
-#include "core/config/project_settings.h"
-#include "core/io/marshalls.h"
-#include "thirdparty/misc/smolv.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/io/marshalls.h"
+#include "../../thirdparty/misc/smolv.h"
 #include "vulkan_hooks.h"
 
 #if defined(ANDROID_ENABLED)
-#include "platform/android/java_godot_wrapper.h"
-#include "platform/android/os_android.h"
-#include "platform/android/thread_jandroid.h"
+#include "../../platform/android/java_godot_wrapper.h"
+#include "../../platform/android/os_android.h"
+#include "../../platform/android/thread_jandroid.h"
 #endif
 
 #if defined(SWAPPY_FRAME_PACING_ENABLED)
-#include "thirdparty/swappy-frame-pacing/swappyVk.h"
+#include "../../thirdparty/swappy-frame-pacing/swappyVk.h"
 #endif
 
 #define ARRAY_SIZE(a) std::size(a)

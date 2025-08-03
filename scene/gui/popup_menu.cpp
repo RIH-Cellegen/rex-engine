@@ -33,14 +33,14 @@
 #include "popup_menu.h"
 #include "popup_menu.compat.inc"
 
-#include "core/config/project_settings.h"
-#include "core/input/input.h"
-#include "core/os/keyboard.h"
-#include "core/os/os.h"
-#include "scene/gui/menu_bar.h"
-#include "scene/gui/panel_container.h"
-#include "scene/resources/style_box_flat.h"
-#include "scene/theme/theme_db.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/input/input.h"
+#include "../../core/os/keyboard.h"
+#include "../../core/os/os.h"
+#include "menu_bar.h"
+#include "panel_container.h"
+#include "../resources/style_box_flat.h"
+#include "../theme/theme_db.h"
 
 HashMap<NativeMenu::SystemMenus, PopupMenu *> PopupMenu::system_menus;
 

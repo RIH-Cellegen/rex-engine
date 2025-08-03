@@ -32,8 +32,8 @@
 
 #include "godot_step_2d.h"
 
-#include "core/object/worker_thread_pool.h"
-#include "core/os/os.h"
+#include "../../core/object/worker_thread_pool.h"
+#include "../../core/os/os.h"
 #include "godot_constraint_2d.h"
 
 #define BODY_ISLAND_COUNT_RESERVE 128

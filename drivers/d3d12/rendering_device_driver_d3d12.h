@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/templates/hash_map.h"
-#include "core/templates/paged_allocator.h"
-#include "core/templates/self_list.h"
-#include "servers/rendering/rendering_device_driver.h"
+#include "../../core/templates/hash_map.h"
+#include "../../core/templates/paged_allocator.h"
+#include "../../core/templates/self_list.h"
+#include "../../servers/rendering/rendering_device_driver.h"
 
 #ifndef _MSC_VER
 // Match current version used by MinGW, MSVC and Direct3D 12 headers use 500.

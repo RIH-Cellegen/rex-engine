@@ -32,8 +32,8 @@
 
 #include "shader_compiler.h"
 
-#include "servers/rendering/rendering_server_globals.h"
-#include "servers/rendering/shader_types.h"
+#include "rendering_server_globals.h"
+#include "shader_types.h"
 
 #define SL ShaderLanguage
 

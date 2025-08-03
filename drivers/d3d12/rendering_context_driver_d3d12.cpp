@@ -34,12 +34,12 @@
 
 #include "d3d12_hooks.h"
 
-#include "core/config/engine.h"
-#include "core/config/project_settings.h"
-#include "core/string/ustring.h"
-#include "core/templates/local_vector.h"
-#include "core/version.h"
-#include "servers/rendering/rendering_device.h"
+#include "../../core/config/engine.h"
+#include "../../core/config/project_settings.h"
+#include "../../core/string/ustring.h"
+#include "../../core/templates/local_vector.h"
+#include "../../core/version.h"
+#include "../../servers/rendering/rendering_device.h"
 
 #include <dxcapi.h>
 

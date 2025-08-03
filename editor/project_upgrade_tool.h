@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/object/class_db.h"
+#include "../core/object/class_db.h"
 
 class ConfirmationDialog;
 class EditorFileSystemDirectory;

@@ -41,21 +41,21 @@
 #define DEBUG_LOG_WAYLAND(...)
 #endif
 
-#include "servers/rendering/dummy/rasterizer_dummy.h"
+#include "../../../servers/rendering/dummy/rasterizer_dummy.h"
 
 #ifdef VULKAN_ENABLED
-#include "servers/rendering/renderer_rd/renderer_compositor_rd.h"
+#include "../../../servers/rendering/renderer_rd/renderer_compositor_rd.h"
 #endif
 
 #ifdef GLES3_ENABLED
 #include "detect_prime_egl.h"
-#include "drivers/gles3/rasterizer_gles3.h"
-#include "wayland/egl_manager_wayland.h"
-#include "wayland/egl_manager_wayland_gles.h"
+#include "../../../drivers/gles3/rasterizer_gles3.h"
+#include "egl_manager_wayland.h"
+#include "egl_manager_wayland_gles.h"
 #endif
 
 #ifdef ACCESSKIT_ENABLED
-#include "drivers/accesskit/accessibility_driver_accesskit.h"
+#include "../../../drivers/accesskit/accessibility_driver_accesskit.h"
 #endif
 
 #define WAYLAND_MAX_FRAME_TIME_US (1'000'000)

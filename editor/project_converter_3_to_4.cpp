@@ -34,15 +34,15 @@
 
 #ifndef DISABLE_DEPRECATED
 
-#include "core/error/error_macros.h"
-#include "core/io/dir_access.h"
-#include "core/io/file_access.h"
-#include "core/object/ref_counted.h"
-#include "core/os/time.h"
-#include "core/templates/list.h"
-#include "editor/renames_map_3_to_4.h"
+#include "../core/error/error_macros.h"
+#include "../core/io/dir_access.h"
+#include "../core/io/file_access.h"
+#include "../core/object/ref_counted.h"
+#include "../core/os/time.h"
+#include "../core/templates/list.h"
+#include "renames_map_3_to_4.h"
 
-#include "modules/regex/regex.h"
+#include "../modules/regex/regex.h"
 
 // Find "OS.set_property(x)", capturing x into $1.
 static String make_regex_gds_os_property_set(const String &name_set) {

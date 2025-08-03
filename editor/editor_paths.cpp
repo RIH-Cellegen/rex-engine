@@ -32,11 +32,11 @@
 
 #include "editor_paths.h"
 
-#include "core/config/engine.h"
-#include "core/config/project_settings.h"
-#include "core/io/dir_access.h"
-#include "core/os/os.h"
-#include "main/main.h"
+#include "../core/config/engine.h"
+#include "../core/config/project_settings.h"
+#include "../core/io/dir_access.h"
+#include "../core/os/os.h"
+#include "../main/main.h"
 
 EditorPaths *EditorPaths::singleton = nullptr;
 

@@ -32,13 +32,13 @@
 
 #include "image.h"
 
-#include "core/config/project_settings.h"
-#include "core/error/error_macros.h"
-#include "core/io/image_loader.h"
-#include "core/io/resource_loader.h"
-#include "core/math/math_funcs.h"
-#include "core/templates/hash_map.h"
-#include "core/variant/dictionary.h"
+#include "../config/project_settings.h"
+#include "../error/error_macros.h"
+#include "image_loader.h"
+#include "resource_loader.h"
+#include "../math/math_funcs.h"
+#include "../templates/hash_map.h"
+#include "../variant/dictionary.h"
 
 const char *Image::format_names[Image::FORMAT_MAX] = {
 	"Lum8",

@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/object/script_language.h"
-#include "core/os/os.h"
-#include "editor/debugger/editor_debugger_inspector.h"
-#include "editor/debugger/editor_debugger_node.h"
-#include "scene/gui/margin_container.h"
+#include "../../core/object/script_language.h"
+#include "../../core/os/os.h"
+#include "editor_debugger_inspector.h"
+#include "editor_debugger_node.h"
+#include "../../scene/gui/margin_container.h"
 
 class Button;
 class Tree;

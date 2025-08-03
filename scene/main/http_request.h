@@ -32,11 +32,11 @@
 
 #pragma once
 
-#include "core/io/http_client.h"
-#include "core/io/stream_peer_gzip.h"
-#include "core/os/thread.h"
-#include "core/templates/safe_refcount.h"
-#include "scene/main/node.h"
+#include "../../core/io/http_client.h"
+#include "../../core/io/stream_peer_gzip.h"
+#include "../../core/os/thread.h"
+#include "../../core/templates/safe_refcount.h"
+#include "node.h"
 
 class Timer;
 

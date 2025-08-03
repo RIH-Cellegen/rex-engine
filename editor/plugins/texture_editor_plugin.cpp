@@ -32,19 +32,19 @@
 
 #include "texture_editor_plugin.h"
 
-#include "editor/editor_string_names.h"
-#include "editor/plugins/color_channel_selector.h"
-#include "editor/themes/editor_scale.h"
-#include "scene/gui/aspect_ratio_container.h"
-#include "scene/gui/color_rect.h"
-#include "scene/gui/label.h"
-#include "scene/gui/texture_rect.h"
-#include "scene/resources/animated_texture.h"
-#include "scene/resources/atlas_texture.h"
-#include "scene/resources/compressed_texture.h"
-#include "scene/resources/image_texture.h"
-#include "scene/resources/portable_compressed_texture.h"
-#include "scene/resources/style_box_flat.h"
+#include "../editor_string_names.h"
+#include "color_channel_selector.h"
+#include "../themes/editor_scale.h"
+#include "../../scene/gui/aspect_ratio_container.h"
+#include "../../scene/gui/color_rect.h"
+#include "../../scene/gui/label.h"
+#include "../../scene/gui/texture_rect.h"
+#include "../../scene/resources/animated_texture.h"
+#include "../../scene/resources/atlas_texture.h"
+#include "../../scene/resources/compressed_texture.h"
+#include "../../scene/resources/image_texture.h"
+#include "../../scene/resources/portable_compressed_texture.h"
+#include "../../scene/resources/style_box_flat.h"
 
 constexpr const char *texture_2d_shader = R"(
 shader_type canvas_item;

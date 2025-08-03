@@ -32,7 +32,7 @@
 
 #include "spring_bone_simulator_3d.h"
 
-#include "scene/3d/spring_bone_collision_3d.h"
+#include "spring_bone_collision_3d.h"
 
 // Original VRM Spring Bone movement logic was distributed by (c) VRM Consortium. Licensed under the MIT license.
 

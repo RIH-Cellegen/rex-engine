@@ -32,10 +32,10 @@
 
 #pragma once
 
-#include "core/templates/local_vector.h"
-#include "scene/3d/lightmapper.h"
-#include "scene/resources/mesh.h"
-#include "servers/rendering/rendering_device.h"
+#include "../../core/templates/local_vector.h"
+#include "../../scene/3d/lightmapper.h"
+#include "../../scene/resources/mesh.h"
+#include "../../servers/rendering/rendering_device.h"
 
 class RDShaderFile;
 class LightmapperRD : public Lightmapper {

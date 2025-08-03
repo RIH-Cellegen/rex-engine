@@ -32,7 +32,7 @@
 
 #pragma once
 
-#include "core/io/image.h"
+#include "../../core/io/image.h"
 
 namespace WebPCommon {
 // Given an image, pack this data into a WebP file.

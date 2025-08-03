@@ -32,8 +32,8 @@
 
 #include "geometry_instance_3d_gizmo_plugin.h"
 
-#include "editor/editor_settings.h"
-#include "scene/3d/visual_instance_3d.h"
+#include "../../editor_settings.h"
+#include "../../../scene/3d/visual_instance_3d.h"
 
 bool GeometryInstance3DGizmoPlugin::has_gizmo(Node3D *p_spatial) {
 	return Object::cast_to<GeometryInstance3D>(p_spatial) != nullptr;
