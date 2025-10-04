@@ -165,6 +165,7 @@ opts.Add(
     )
 )
 opts.Add(EnumVariable("arch", "CPU architecture", "auto", ["auto"] + architectures, architecture_aliases, ignorecase=2))
+opts.Add(EnumVariable('cpp_version', 'C++ standard version', '17', ['17', '20', '23']))
 opts.Add(BoolVariable("dev_build", "Developer build with dev-only debugging code (DEV_ENABLED)", False))
 opts.Add(
     EnumVariable(
@@ -818,19 +819,18 @@ else:
 if env["lto"] != "none":
     print("Using LTO: " + env["lto"])
 
-# Set our C and C++ standard requirements.
-# C++17 is required as we need guaranteed copy elision as per GH-36436.
+# Set our C and C++ standard requirements based on cpp_version option.
 # Prepending to make it possible to override.
 # This needs to come after `configure`, otherwise we don't have env.msvc.
 if not env.msvc:
     # Specifying GNU extensions support explicitly, which are supported by
-    # both GCC and Clang. Both currently default to gnu17 and gnu++17.
+    # both GCC and Clang.
     env.Prepend(CFLAGS=["-std=gnu17"])
-    env.Prepend(CXXFLAGS=["-std=gnu++17"])
+    env.Prepend(CXXFLAGS=[f"-std=gnu++{env['cpp_version']}"])
 else:
     # MSVC started offering C standard support with Visual Studio 2019 16.8, which covers all
     # of our supported VS2019 & VS2022 versions; VS2017 will only pass the C++ standard.
-    env.Prepend(CXXFLAGS=["/std:c++17"])
+    env.Prepend(CXXFLAGS=[f"/std:c++{env['cpp_version']}"])
     if cc_version_major < 16:
         print_warning("Visual Studio 2017 cannot specify a C-Standard.")
     else:
@@ -841,6 +841,10 @@ else:
     env.Prepend(CCFLAGS=["/permissive-"])
     # Allow use of `__cplusplus` macro to determine C++ standard universally.
     env.Prepend(CXXFLAGS=["/Zc:__cplusplus"])
+
+# Define a macro for the C++ version (works with #if, not #ifdef)
+env.Append(CPPDEFINES=[f"CPP_VERSION={env['cpp_version']}"])
+print(f'Using C++{env["cpp_version"]} for compilation.')
 
 # Disable exception handling. Godot doesn't use exceptions anywhere, and this
 # saves around 20% of binary size and very significant build time (GH-80513).

@@ -387,3 +387,4 @@ $RECYCLE.BIN/
 *.lnk
 *.generated.props
 build.sh
+/.github

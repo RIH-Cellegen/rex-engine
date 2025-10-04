@@ -228,7 +228,12 @@ bool _prepareLinear(SwFill* fill, const LinearGradient* linear, const Matrix& tr
     fill->linear.offset = -fill->linear.dx * x1 - fill->linear.dy * y1;
 
     auto gradTransform = linear->transform();
+    // MSVC C++20 replaces std::identity with tvg::identity
+    #if CPP_VERSION == 17
     bool isTransformation = !identity((const Matrix*)(&gradTransform));
+    #else
+    bool isTransformation = !tvg::identity((const Matrix*)(&gradTransform));
+    #endif
 
     if (isTransformation) {
         gradTransform = transform * gradTransform;
@@ -295,7 +300,13 @@ bool _prepareRadial(SwFill* fill, const RadialGradient* radial, const Matrix& tr
     if (fill->radial.a > 0) fill->radial.invA = 1.0f / fill->radial.a;
 
     auto gradTransform = radial->transform();
+
+    // MSVC C++20 replaces std::identity with tvg::identity 
+    #if CPP_VERSION == 17
     bool isTransformation = !identity((const Matrix*)(&gradTransform));
+    #else
+    bool isTransformation = !tvg::identity((const Matrix*)(&gradTransform));
+    #endif
 
     if (isTransformation) gradTransform = transform * gradTransform;
     else {
